@@ -1,0 +1,44 @@
+.page{
+display:block; 
+
+}
+
+.media{
+margin: 40px;
+}
+.product_item{
+margin-top: 30px;
+
+}
+.group_intro{
+margin-top: 40px;
+
+}
+
+.logo_short{
+margin-right:80px;
+
+}
+.logo_long{
+margin-right:30px;
+
+}
+
+.work_img{
+margin-top:5px;
+
+}
+
+.contact_us{
+margin-bottom:20px;
+
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  
+}
+
+
+
