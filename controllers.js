@@ -14,8 +14,6 @@ $(document)
     // Nav bar
     $('.menu_item').on("click",function(){
 
-
-
        // Active display control
        $('li').removeClass("active");
        $(this).addClass("active");
@@ -25,19 +23,21 @@ $(document)
        if(width<768)
           $('.navbar-toggle').click();
 
-
-       
-  
-
     });
 
-
   
-  $('.nav > li > a').click(function(){
+    $('.nav > li > a').click(function(){
     
      goToByScroll($(this).attr('class'));
         
-  });
+    });
+
+    $('#logo').click(function(){
+    alert("click!");
+     goToByScroll($(this).attr('class'));
+
+        
+    });
 
 
 
