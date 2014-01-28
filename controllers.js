@@ -1,8 +1,20 @@
 $(document)
   .ready(function() {
     
+
+    function goToByScroll(id){
+        // Remove "link" from the ID
+      id = id.replace("link", "");
+        // Scroll
+      $('html,body').animate({
+          scrollTop: $("#"+id).offset().top},
+          'slow');
+    }
+
     // Nav bar
     $('.menu_item').on("click",function(){
+
+
 
        // Active display control
        $('li').removeClass("active");
@@ -12,9 +24,20 @@ $(document)
        var width = $(window).width();
        if(width<768)
           $('.navbar-toggle').click();
+
+
+       
   
 
     });
+
+
+  
+  $('.nav > li > a').click(function(){
+    
+     goToByScroll($(this).attr('class'));
+        
+  });
 
 
 
