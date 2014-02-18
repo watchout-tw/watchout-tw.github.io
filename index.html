@@ -15,17 +15,18 @@
     <link href="dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    
+
     <link href="carousel.css" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
-    
+    <link rel="stylesheet" media="screen and (min-width: 400px)" href="main.css" >
+    <link rel="stylesheet" media="screen and (max-width: 400px)" href="mobile.css" />
+
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
 
@@ -33,6 +34,7 @@
   </head>
 
   <body id="home">
+  
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="HeaderController">
@@ -44,7 +46,7 @@
             <span class="icon-bar menu_item"></span>
             <span class="icon-bar menu_item"></span>
           </button>
-           <a class="navbar-brand" href="" class="home"><img src="img/watchout.png" height="18px"></a>
+          <a class="navbar-brand"><img src="img/watchout.png" height="18px" id="logo"></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -53,315 +55,396 @@
             <li class="menu_item"><a href="#" class="team">team</a></li>
             <li class="menu_item"><a href="#" class="contact">contact</a></li>
 
-        </div><!--/.nav-collapse -->
+          </div><!--/.nav-collapse -->
+        </div>
       </div>
-    </div>
 
-   
 
-<!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="img/cover1.jpg" id="cover_photo1">
-       
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>從人民到公民</h1>
-              <p>「我們都有那種，能讓社會更好的力量。」</p>   
+
+      <!-- Carousel
+      ================================================== -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/cover1.jpg" id="cover_photo1">
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>從人民到公民</h1>
+                <p>「我們都有那種，能讓社會更好的力量。」</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/cover2.jpg" id="cover_photo2">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Empowerment</h1>
+                <p>「我們致力於降低政治參與的門檻。」</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/cover3.jpg" id="cover_photo3">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 class="black_background">行動、串聯、改變</h1>
+                <p class="black_background">「能改變社會的，不是一個超級英雄，而是一群有行動力的公民。」</p>
+
+              </div>
             </div>
           </div>
         </div>
-        <div class="item">
-          <img src="img/cover2.jpg" id="cover_photo2">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Empowerment</h1>
-              <p>「我們致力於降低政治參與的門檻，讓資訊更清楚、更簡單、更容易了解。」</p>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+
+
+
+      </div><!-- /.carousel --><!-- end of page 1 -->
+
+
+
+
+<!-- ============================================================================= -->
+
+
+
+
+      <div class="container" id="about_page">
+
+<!-- film -->
+<script src="popup.js"></script> 
+<div id="blanket" style="display:none;"></div>
+<div id="popUpDiv" style="display:none;">
+<a href="#" onclick="popup('popUpDiv')" id="close_film"> 關閉 </a>
+ <iframe width="853" height="480" src="//www.youtube.com/embed/EuswSP1--r4" frameborder="0" id="youtubeplayer" allowfullscreen></iframe>
+</div>
+
+<!-- ///////////////////////////////////////////////////////////////////// -->
+
+
+        <div class="page">
+          <hr class="featurette-divider" id="about">
+          <h2 class="mobile_only mobile_title">about</h2>
+          <div class="about_slogan">
+            <p>“沃草的核心目標是<br class="mobile_only"/>「讓更多人一起來參與公民社會」；<br id="mobile_only"/>「沃草」象徵著<br class="mobile_only"/>「公民社會的肥沃草原」。”</p>
+          </div> 
+
+          <div id="about_content">
             
+          <div id="about_content_main">
+
+            <div class="about_story" id="story0">
+              
+              
+              <p>我們有一個很簡單而實際的夢想：我們相信台灣可以更好，而讓台灣更好的力量來自於更多主動參與、向外關注的公民。</p>
+
+              <p>沃草的英文名字「Watchout」，就代表著「向外觀看」和「關注」。</p>
+
+              <p>一個成熟的公民社會，絕對不能只靠少數人付出一切去投入在社會運動之中。每個人只要一起付出各自一小部分的時間心力，就能改變這個社會，更接近那個你我嚮往的理想樂土一步。</p>
+
+              <p>沃草希望做一個農夫，提供公民更好的參與時政的平台和工具，在這公民社會的土壤施肥灌溉，讓這個理想的種子在每個人心中萌芽滋長，建立真正的公民社會。</p>
+     
             </div>
+
           </div>
-        </div>
-        <div class="item">
-          <img src="img/cover3.jpg" id="cover_photo3">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>行動、串聯、改變</h1>
-              <p>「能改變社會的，不是一個超級英雄，而是一群有行動力的公民。」</p>
-             
-            </div>
+ 
+          <div id="about_content_sub">
+             <a href="#" id="watch_film"><img src="img/play.png" id="play_img" width="250"></a>
+             <div class="about_content_sub_title"><h3>沃草的故事</h3></div>
+            
           </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 
+          
 
-
-
-    </div><!-- /.carousel --><!-- end of page 1 -->
+          </div><!-- end of about_conent -->
 
         
-        
-        
-     
+
+
+        </div><!-- end of page-->
+
+
+      </div><!-- end of about_page -->
 
 
 
+<!-- ============================================================================= -->
 
-<div class="container">
+      <div class="container" id="products_page">
+      <hr class="featurette-divider" id="products">
 
+      <div class="page">
 
-<div class="page">
-  <hr class="featurette-divider" id="about">
-      <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-5">
-          <img class="img-circle" src="img/logo.png" width="65">
-          <h2>關於沃草</h2>
-          <p>「沃草」，是公民社會的肥沃草原；「watch out」則代表「注意」和「向外關注」。</p>
-          <p>我們相信台灣可以更好；而讓台灣更好的力量來自於更多主動參與、向外關注的公民。</p>
-          <p>我們相信許多人對台灣充滿了滿滿的愛，也希望能夠做點什麼；只是也許沒有太多時間、或不知道可以如何參與。</p>
-          <p>我們想做的事情很簡單：就是為大家打造有用的工具，讓每個人可以更有力量，去關注我們所愛的台灣。</p>
-        </div><!-- /.col-lg -->
-          <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/480x360/text:our video">
+        <h2 class="mobile_only mobile_title">products</h2>
 
-        </div>
-      </div><!-- /.row -->
-</div>
-
-</div>
-
-
-
-
-
-<div class="container">
-
-<div class="page">
-  <hr class="featurette-divider" id="products">
-
-  <div id="products-web">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-10">
-       <ul class="media-list">
-  <li class="media">
-    <a class="pull-left" href="http://musou.evendesign.tw/" target="_new">
-      <img class="media-object logo_short" src="img/cm2.png" width="150px">
-    </a>
-    <div class="media-body">
-      <h4 class="media-heading ">一個趣味化的立院監督平台</h4>
-      <p>立院花了許多錢維護了 IVOD 視訊系統，卻因為冗長與門檻太高而缺乏利用。國會無雙透過由專門的編輯與主播進行直播，以及線上互動的平台，使得觀看 IVOD 更加有趣；同時，我們也將每日議事的重要結果，整理成戰報，讓資訊簡單且容易理解。</p>
-
-    </div>
-  </li>
-   <li class="media">
-    <a class="pull-left">
-      <img class="media-object logo_short" src="img/kat2.png" width="150px">
-    </a>
-    <div class="media-body">
-      <h4 class="media-heading ">一個從互動產生成果的新型態媒體</h4>
-      <p>匯流各不同面向的報導，邀請全民參與，一起來還原真相、打擊錯誤、監督倫理，跳脫政黨既定立場，並消除資訊不對稱。當全民注視著媒體生態，我們可能改變它，促進正向循環。</p>
-    </div>
-  </li>
-   <li class="media">
-    <a class="pull-left">
-      <img class="media-object logo_long" src="img/ca2.png" width="200px">
-    </a>
-    <div class="media-body">
-      <h4 class="media-heading">一個公民社群的人力銀行</h4>
-      <p>就像企業與公司一樣，公民運動也是很欠缺人手的。我們發現，社運團體中人力的重複與不足，不是因為公民冷漠，而是因為不得其門而入。公民人力銀行，要提供公民團體、參與者與社會資本之間，更即時的媒合平台。</p>
-    </div>
-  </li>
-   <li class="media">
-    <a class="pull-left">
-      <img class="media-object logo_short" src="img/cu2.png" width="150px">
-    </a>
-    <div class="media-body">
-      <h4 class="media-heading">一個品質優良的公民的通識學院</h4>
-      <p>要參與社會，必須要有多元視野和知識份子技能。我們希望，透過提供與整理不同形式的線上課程、線上知識庫，除了能夠讓公民了解如何去表達意見、溝通說服、進行辯論，也能夠進能激發公民去找出解決問題的方法和培養思考的能力。</p>
-    </div>
-  </li>
-       </ul>
-    </div>
-  </div> <!-- End of products-web -->
-
-<div id="products-mobile">
-   <div class="product_item">
-   <div class="row">  
-      <div class="col-lg-5">     
-          <a class="pull-left" href="http://musou.evendesign.tw/" target="_new">
-            <img class="media-object logo_short" src="img/cm2.png" width="150px">
-          </a>
-      </div>
-   </div>
-   <div class="row">  
-      <div class="col-lg-5">
-        <h4>一個趣味化的立院監督平台</h4>
-        <p>立院花了許多錢維護了 IVOD 視訊系統，卻因為冗長與門檻太高而缺乏利用。國會無雙透過由專門的編輯與主播進行直播，以及線上互動的平台，使得觀看 IVOD 更加有趣；同時，我們也將每日議事的重要結果，整理成戰報，讓資訊簡單且容易理解。</p>
-      </div>
-   </div>
- </div>
-  <div class="product_item">
-  <div class="row">  
-      <div class="col-lg-5">     
-          <a class="pull-left">
-            <img class="media-object logo_short" src="img/kat2.png" width="150px">
-          </a>
-      </div>
-   </div>
-   <div class="row">  
-      <div class="col-lg-5">
-        <h4>一個從互動產生成果的新型態媒體</h4>
-        <p>匯流各不同面向的報導，邀請全民參與，一起來還原真相、打擊錯誤、監督倫理，跳脫政黨既定立場，並消除資訊不對稱。當全民注視著媒體生態，我們可能改變它，促進正向循環。</p>
-      </div>
-   </div>
-</div>
-
-  <div class="product_item">
-  <div class="row">  
-      <div class="col-lg-5">     
-          <a class="pull-left">
-            <img class="media-object logo_long" src="img/ca2.png" width="200px">
-          </a>
-      </div>
-   </div>
-   <div class="row">  
-      <div class="col-lg-5">
-        <h4>一個公民社群的人力銀行</h4>
-        <p>就像企業與公司一樣，公民運動也是很欠缺人手的。我們發現，社運團體中人力的重複與不足，不是因為公民冷漠，而是因為不得其門而入。公民人力銀行，要提供公民團體、參與者與社會資本之間，更即時的媒合平台。</p>
-      </div>
-   </div>
-</div>
- <div class="product_item">
-  <div class="row">  
-      <div class="col-lg-5">     
-          <a class="pull-left">
-            <img class="media-object logo_long" src="img/cu2.png" width="150px">
-          </a>
-      </div>
-   </div>
-   <div class="row">  
-      <div class="col-lg-5">
-        <h4>一個品質優良的公民的通識學院</h4>
-        <p>要參與社會，必須要有多元視野和知識份子技能。我們希望，透過提供與整理不同形式的線上課程、線上知識庫，除了能夠讓公民了解如何去表達意見、溝通說服、進行辯論，也能夠進能激發公民去找出解決問題的方法和培養思考的能力。</p>
-      </div>
-   </div>
-</div>
-
-</div> <!-- End of products-web -->
-
-
-
-</div>
-</div>
-
-<div class="container">
-
-
-<div class="page">
-  <hr class="featurette-divider" id="team">
-  <div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-10">
-    <img src="img/work1.jpg" width="180px" class="work_img">
-    <img src="img/work2.jpg" width="180px" class="work_img">
-    <img src="img/work3.jpg" width="180px" class="work_img">
-    <img src="img/work4.jpg" width="180px" class="work_img">
-    <img src="img/work5.jpg" width="180px" class="work_img">
-    </div>
-  </div>
-  
-  <div class="row group_intro">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-2">
-          <img class="img-circle" src="img/logo.png" width="65">
-          <h4>柳林瑋</h4>
-          <p>我們希望，加入我們的不只是那些原本就熱衷於公民運動的人。而是讓更多剛開始接觸社會與政治議題的人，也願意和我們一起參與，我們期望它是一個全民的運動。</p>
+          <div class="product_slogan">“曾經我們以為人人有票投就是民主，但如果缺乏監督機制，缺少了民意參與的民主如何為眾人謀福利？”
+          </div> 
           
-        </div><!-- /.col-lg -->
-        <div class="col-lg-2">
-          <img class="img-circle" src="img/logo.png" width="65">
-          <h4>王希</h4>
-          <p>2013年8月3日，在凱道上的公民銀十字告訴我們台灣人並不冷漠。我們意識到在公民社會裡的能力與責任，我們願意挺身而出，為公義站出來，也為自己站出來。</p>
+          <div id="products_content">
+               <div class="products_item">
+                  <div class="products_section_main">
+                       <a href="http://musou.tw/"><img class="media-object logo_short mobile_only" id="mobile_cm_logo" src="img/cm2.jpg" width="130px"></a>
+                       <div class="product_subtitle">我們的第一個產品：國會無雙</div>
+                       <p>我們認為，公民應該監督立法院與民意代表，因為我們都有能讓國家更好的權利，而我們應該為了自己、也為了自己珍惜的理念和人們，行使我們的權力。</p>
+
+                       <p>但要了解、進而監督立法院的運作，對非相關領域的公民來說，可能會不知道該如何做起；國會無雙想做的，就是要讓大家可以用更簡單的方式理解、關心立法院的運作，盡可能降低公民監督立法院的門檻。<p>
+
+                       <div class="product_subtitle">未來計劃：歡迎給我們建議：）</div>
+                       <p>「國會無雙」是沃草的第一個產品；目前，我們也正在構想關於媒體、公民教育、人力資源...等等的計劃。沃草是為了每一個想多參與公民社會的你所存在的，所以，如果你有什麼想法和建議，請務必要讓我們知道！</p>
+                  
+                  </div>
+                  
+                  <div class="products_section_sub">
+                    <div class="products_display  web_only">
+                          <div class="products_info" id="part0">讓關心立法院變得更簡單</div>
+                          <div class="products_info" id="part1">每日挑選重要會議進行直播與聊天室，讓立法院開會也成為全民運動</div>
+                          <div class="products_info" id="part2">篩選整理會議中的重要議題以及發展經過，讓你五分鐘能知立院大小事</div>
+                          <div class="products_info" id="part3">整理立法院的大小賽事，以議題的方式呈現，讓你看懂國家議題的發展脈絡</div>
+                          <div class="products_info" id="part4">找出MVP、每日好球與烏龍球，讓立院大小事變得更有意思</div>
+                          <div class="products_info" id="part5">透過整理每日會議前的觀賽重點整理，讓新手也能看懂立法院發生的事</div>
+                          <div class="products_info" id="part6">設計一個一個的立院小問題，逐步解答立院門外漢心中的疑惑</div>
+                       </div>
+                  <a href="http://musou.tw/"><img class="media-object logo_short web_only" id="part_0" src="img/cm2.jpg" width="130px"></a>
+                   
+                  <div class="products_section_part" id="part_1">賽事直播</div>
+                  <div class="products_section_part" id="part_2">戰報</div>
+                  <div class="products_section_part" id="part_3">重大議題</div>
+                  <div class="products_section_part" id="part_4">精彩事蹟</div>
+                  <div class="products_section_part" id="part_5">觀賽重點</div>
+                  <div class="products_section_part" id="part_6">立院知識</div>
+                  <p class="mobile_only" id="go_to_cm_mobile"><a href="http://musou.tw/">> 前往國會無雙</a></p>
+                  </div>
+
+
           
-        </div><!-- /.col-lg -->
-     
-     <div class="col-lg-2">
-          <img class="img-circle" src="img/logo.png" width="65">
-          <h4>noax</h4>
-          <p>以前我們都太習慣只關注自己身邊的事，這是有問題的，因為公民社會，我們就在裡面，當作沒看到、不去看的話，吃虧的只會是我們自己。所以說，要關注社會，要往外面看。要 Watch out。</p>
-          
-        </div><!-- /.col-lg -->
-        <div class="col-lg-2">
-          <img class="img-circle" src="img/logo.png" width="65">
-          <h4>洪偉</h4>
-          <p>我們的團隊非常年輕，但卻有著共同的目標與裡想。我們用同理心與單純的思考，想辦法讓『參與』這件事情變得有趣，讓人民平常看不到、或是懶得管的事情，變得簡單。</p>
-          
-        </div><!-- /.col-lg -->
-
-        <div class="col-lg-2">
-          <img class="img-circle" src="img/logo.png" width="65">
-          <h4>林立</h4>
-          <p>常有人說，我們只是社會上小螺絲釘，安安分分過自己的生活就好。也有人說，台灣是座鬼島，無論做什麼，都無法改變現實。但我們也許都忘了，我們還有那種，能讓社會更好的力量。</p>
-          
-        </div><!-- /.col-lg -->
-     
-     
-      </div><!-- /.row -->
-</div>
-</dvi>
+               </div> <!--end of products_item-->
 
 
+          </div> <!-- end of products_content -->
 
+        </div><!-- end of page -->
+      </div><!-- end of container -->
+      <!-- ============================================================================= -->
+ 
+      <div class="container" id="team_page">
+        <hr class="featurette-divider" id="team">
+        <div class="page" id="team_page">
 
-<div class="container">
+         <h2 class="mobile_only mobile_title">team</h2>
 
-  <hr class="featurette-divider" id="contact">
-<div class="page">
-      <div class="row">
-         <div class="col-md-2"></div>
-        <div class="col-md-4">
-          <h2 class="contact_us">聯絡我們</h2>
+          <div id="team_page_slogan">
+             “我們要用青春去實驗和實踐<br class="mobile_only"/>「下一個世代的公民運動」，<br class="mobile_only"/>請加入我們。”
+          </div>
+
+          <div id="team_page_content">
        
-         <p>沃草有限公司 Watchout, Co.</p>
-<p>
-地址：100 台北市中正區懷寧街92號7樓<br/>
-電話：02-2361-7588<br/>
-電子郵件：<a href="mailto:info@watchout.tw">info@watchout.tw</a><br/>
-網站：<a href="http://watchout.tw">http://watchout.tw</a><br/>
-</p>
+          <!--
+          <div class="team_circle">
+               <div class="team_item">
+                 <div class="team_circleborder">
+                 <div class="team_count">28</div>
+                 </div>
+               </div>
+               <div class="team_item">
+                 <div class="team_circleborder">
+                 <div class="team_count">6</div>
+                 </div> 
+               </div>
+          </div> 
+          -->
+
+          <div class="member_slot_collection">
+          <div class="member_slot member_slot_fill">
+             <h3>熱情</h3>
+             <div class="member_info ">
+              <p>我們是平均年齡 30 歲以下的年輕團隊，也許經驗不多，但我們有比別人多的熱情。</p>
+             </div>
+          </div>
+
+          <div class="member_slot">
+             <h3>多元</h3>
+             <div class="member_info">
+              <p>我們有醫學、法律、經濟、數學、設計、哲學、傳播、資工...等等不同領域的夥伴。</p>
+             </div>
+          </div>
+
+          <div class="member_slot member_slot_fill">
+             <h3>鄉民</h3>
+             <div class="member_info">
+              <p>我們有點宅，不過從當阿宅中，我們發想了許多好玩有趣的梗。</p>
+             </div>
+          </div>
+
+          <div class="member_slot">
+             <h3>實驗精神</h3>
+             <div class="member_info">
+              <p>我們想試試看另一種社會運動的模式，這是我們的實驗精神。</p>
+             </div>
+          </div>
+
+          <div class="member_slot member_slot_fill">
+             <h3>學習</h3>
+             <div class="member_info">
+              <p>我們喜歡學習—不管是不是我們原本大學時候的主修。</p>
+             </div>
+          </div>
+
+          <div class="member_slot">
+             <h3>力量</h3>
+             <div class="member_info">
+              <p>我們不斷讓自己成長，因為我們想讓公民社會更有力量。</p>
+             </div>
+          </div>
+
+          <div class="member_slot member_slot_fill">
+             <h3>改變</h3>
+             <div class="member_info">
+              <p>我們相信，想看到不同的結果，就得嘗試新的做法。</p>
+             </div>
+          </div>
+
+          <div class="member_slot">
+             <h3></h3>
+             <div class="member_info" id="member_slot_end">
+              <p>其實，我們的姓名並不重要，因為我們就是你——<br/>一個不放棄讓台灣變得更好的公民。</p>
+             </div>
+          </div>
+
+         </div><!-- end of member_slot_collection -->
+
+        
+
+          </div><!--end of team_page_content --> 
+ <div class="member_photo_collection">
+               <div class="member_photo">
+                 <div class="member_name">柳林瑋</div>
+                 <div class="circleborder">
+                 <img class="face" src="img/member01.jpg" width="60" id="member_1">
+                 </div> 
+               </div>
+
+               <div class="member_photo">
+                 <div class="member_name">王希</div>
+                 <div class="circleborder">
+                 <img class="face" src="img/member02.jpg" width="60" id="member_2">
+                 </div> 
+               </div>
+
+               <div class="member_photo">
+                 <div class="member_name">Noax</div>
+                 <div class="circleborder">
+                 <img class="face" src="img/member03.jpg" width="60" id="member_3">
+                 </div> 
+               </div>
+
+               <div class="member_photo">
+                 <div class="member_name">林立</div>
+                 <div class="circleborder">
+                 <img class="face" src="img/member04.jpg" width="60" id="member_4">
+                 </div> 
+               </div>
+
+               <div class="member_photo">
+                 <div class="member_name">Wayneh</div>
+                 <div class="circleborder">
+                 <img class="face" src="img/member05.jpg" width="60" id="member_5">
+                 </div> 
+               </div>
+
+                <div class="member_photo">
+                 <div class="member_name">BeiChou</div>
+                 <div class="circleborder">
+                 <img class="face" src="img/member06.jpg" width="60" id="member_6">
+                 </div> 
+               </div>
+
+                <div class="member_photo">
+                 <div class="member_name">joysponge</div>
+                 <div class="circleborder">
+                 <img class="face" src="img/member07.jpg" width="60" id="member_7">
+                 </div> 
+               </div>
+
+               <div class="member_photo">
+                 <div class="member_name">王希</div>
+                 <div class="circleborder">
+                 <img class="face" src="img/member08.jpg" width="60" id="member_8">
+                 </div> 
+               </div>
+
+                <div class="member_photo">
+                 <div class="member_name">鄉長</div>
+                 <div class="circleborder">
+                 <img class="face" src="img/member09.jpg" width="60" id="member_9">
+                 </div> 
+               </div>
+              
+                <div class="member_photo">
+                <div class="member_name">東東</div>
+                 <div class="circleborder">
+                 <img class="face" src="img/logo.png" width="60" id="member_10">
+                 </div> 
+               </div>
+              
+         </div><!-- end of member_photo_collection -->
+         <div id="members_voice_dispaly">
+               <div class="tape" id="tape1"></div>
+               <div class="tape" id="tape2">「I love Billy」</div>
+               <div class="tape" id="tape3">‘Never compromise.’</div>
+               <div class="tape" id="tape4"></div>
+               <div class="tape" id="tape5"></div>
+               <div class="tape" id="tape6">「社會運動是下一個全民運動」</div>
+               <div class="tape" id="tape7"></div>
+               <div class="tape" id="tape8">「about.me圖片」</div>
+               <div class="tape" id="tape9">你的鍵盤支持，是推動台灣改變的力量</div>
+               <div class="tape" id="tape10"></div>
+
+         </div>
+        </div><!--end of page-->
+      </div><!--end of container-->
+
+
+<!-- ============================================================================= -->
+
+      <div class="container" id="contact_page">
+
+        <hr class="featurette-divider" id="contact">
+        <div class="page" id="contact_content">
+              <div id="contact_text">
+              <h2 class="contact_us">聯絡我們</h2>
+
+              <p>沃草有限公司 Watchout, Co.</p>
+              <p>
+              地址：100 台北市中正區懷寧街92號7樓<br/>
+              電話：02-2361-7588<br/>
+              電子郵件：<a href="mailto:info@watchout.tw">info@watchout.tw</a><br/>
+              網站：<a href="http://watchout.tw">http://watchout.tw</a><br/>
+              </p>
+              </div>
         </div>
+
+      </div> <!-- /container -->
+
+      <div id="footer">Watchout 沃草 ©2014 All Rights Reserved.</div>
+     
+ 
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="dist/js/bootstrap.min.js"></script>
+      <script src="holder.js"></script>
+      <script src="controllers.js"></script>
       
-    
 
-      <div class="col-md-4">
-          <img class="featurette-image img-responsive" data-src="holder.js/400x300/text:group photo">
-        </div>
-  </div>
-</div>
-
-</div> <!-- /container -->
-
- <div id="footer">
-      <div class="container">
-        <p class="text-muted"></p>
-      </div>
-    </div>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
-    <script src="holder.js"></script>
-    <script src="controllers.js"></script>
-  </body>
-</html>
+    </body>
+  </html>
