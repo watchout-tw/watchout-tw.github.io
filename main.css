@@ -156,9 +156,9 @@ color: white;
 }
 .member_slot{
   background: rgba(255,255,255,0.9)!important;
-  width:160px;
-  height:150px;
-  margin:12px;
+  width:170px;
+  height:160px;
+  margin:10px;
   padding-right: 8px;
   padding-left: 8px;
   float: left;
@@ -484,6 +484,5 @@ z-index: 9002;
   display: none;
 }
 .black_background{
-
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -2px 0 black, 0 1.2px black, 2px 0 black, 0 -1.2px black;
 }
