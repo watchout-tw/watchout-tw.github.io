@@ -276,6 +276,18 @@ float:left;
 
  
  }
+ .products_item_six_cities{
+  border: 1px solid #d3d3d3;
+  border-radius: 2%;
+   margin-left: auto;
+  margin-right: auto;
+  height:650px;
+
+ }
+ #sixcitieslogo{
+  width:740px;
+  margin-bottom: 10px;
+}
  .products_section_main{
   width:800px;
   height:250px;
