@@ -35,6 +35,16 @@
   </head>
 
   <body id="home">
+<!-- fb -->
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=587133874688599";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- ///////////////////////////////////////////// -->
 
 
     <!-- Fixed navbar -->
@@ -126,7 +136,7 @@
 <div id="blanket" style="display:none;"></div>
 <div id="popUpDiv" style="display:none;">
 <a href="#" onclick="popup('popUpDiv')" id="close_film"> 關閉 </a>
- <iframe width="853" height="480" src="//www.youtube.com/watch?v=zH157ZvUj50" frameborder="0" id="youtubeplayer" allowfullscreen></iframe>
+ <iframe width="853" height="480" src="//www.youtube.com/embed/zH157ZvUj50" frameborder="0" id="youtubeplayer" allowfullscreen></iframe>
 </div>
 
 <!-- ///////////////////////////////////////////////////////////////////// -->
@@ -153,13 +163,14 @@
               <p>一個成熟的公民社會，絕對不能只靠少數人付出一切去投入在社會運動之中。每個人只要一起付出各自一小部分的時間心力，就能改變這個社會，更接近那個你我嚮往的理想樂土一步。</p>
 
               <p>沃草希望做一個農夫，提供公民更好的參與時政的平台和工具，在這公民社會的土壤施肥灌溉，讓這個理想的種子在每個人心中萌芽滋長，建立真正的公民社會。</p>
-
+              
+              <div class="fb-like" data-href="https://www.facebook.com/WatchOutTW" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
             </div>
 
           </div>
 
           <div id="about_content_sub">
-             <a href="#" id="watch_film"><img src="img/play.png" id="play_img" width="250"></a>
+             <a href="#" id="watch_film"><img src="img/play.gif" id="play_img" width="250"></a>
              <div class="about_content_sub_title"><h3>沃草的故事</h3></div>
 
           </div>
@@ -456,7 +467,10 @@
               電子郵件：<a href="mailto:info@watchout.tw">info@watchout.tw</a><br/>
               網站：<a href="http://watchout.tw">http://watchout.tw</a><br/>
               </p>
+
               </div>
+
+
         </div>
 
       </div> <!-- /container -->
@@ -472,6 +486,6 @@
       <script src="holder.js"></script>
       <script src="controllers.js"></script>
 
-
+   
     </body>
   </html>

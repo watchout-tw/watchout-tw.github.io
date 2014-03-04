@@ -58,11 +58,14 @@ $(document)
     ////////////////////////////////////////////////////////////
 
     $("#play_img").on("mouseover",function(){
-        $("#play_img").attr("src","img/play.gif");
+        if($("#play_img").attr("src") == "img/play.gif"){
+           $("#play_img").attr("src","img/play.png");
+        }else{
+           $("#play_img").attr("src","img/play.gif");
+        }
+        
     });
-    $("#play_img").on("mouseleave",function(){
-        $("#play_img").attr("src","img/play.png");
-    });
+
 
     function stopFilm(){
       //First get the  iframe URL

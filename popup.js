@@ -21,9 +21,9 @@ function blanket_size(popUpDivVar) {
 	var blanket = document.getElementById('blanket');
 	blanket.style.height = blanket_height + 'px';
 	var popUpDiv = document.getElementById(popUpDivVar);
-	popUpDiv_height=blanket_height/2-150;//150 is half popup's height
+	//popUpDiv_height=blanket_height/2-150;//150 is half popup's height
 	//popUpDiv.style.top = popUpDiv_height + 'px';
-	//popUpDiv.style.top = '50px';
+	popUpDiv.style.top = '50px';
 
 	//y is current window position (event.y)
 
@@ -62,7 +62,7 @@ function popup(windowname) {
 	toggle(windowname);	
 	
 	
-	event.preventDefault();
+	//event.preventDefault();
 	
 
 }
