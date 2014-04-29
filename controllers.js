@@ -75,7 +75,7 @@ $(document)
         $('#youtubeplayer').attr('src', '');
 
         // Finally you reasign the URL back to your iframe, so when you hide and load it again you still have the link
-        $('#youtubeplayer').attr('src', "//www.youtube.com/embed/zH157ZvUj50");
+        $('#youtubeplayer').attr('src', "//www.youtube.com/embed/V1VrrNS49PE");
     }
     function goToByScroll(id){
 
@@ -127,7 +127,7 @@ function adaptive(){
   var width = $(window).width();
  
   if(width<400){
-     $("#watch_film").attr("href","//www.youtube.com/embed/zH157ZvUj50")
+     $("#watch_film").attr("href","//www.youtube.com/embed/V1VrrNS49PE")
                      .attr("target","_blank");;
   }else{
      $("#watch_film").on("click",function(){
