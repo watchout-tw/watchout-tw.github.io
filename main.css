@@ -496,5 +496,9 @@ z-index: 9002;
   display: none;
 }
 .black_background{
-  text-shadow: -2px 0 black, 0 1.2px black, 2px 0 black, 0 -1.2px black;
+  background: rgba(0,0,0,.16);
+  box-shadow: 0 0 80px rgba(0,0,0,.42);
+}
+.black_background h1 {
+  font-weight: 700;
 }
