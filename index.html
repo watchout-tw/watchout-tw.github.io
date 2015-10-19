@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,55 +8,35 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="img/logo.png">
-
     <title>沃草！Watchout</title>
-    <meta name="description" content="沃草公司（Watchout）致力於提供公民更好的參與時政的平台和工具，目前已推出包括：「國會無雙」、「市長，給問嗎？」等產品。">
+    <meta name="description" content="沃草（Watchout）致力於提供公民更好的參與時政的平台和工具，目前已推出包括：「國會無雙」、「公民學院」、「立委出任務」、「總統，給問嗎？」、「市長，給問嗎？」等專案。">
     <meta property="og:image" content="http://watchout.tw/img/fb.jpg" />
     <link rel="image_src" href="http://watchout.tw/img/fb.jpg"/>
     <meta property="og:url" content="http://watchout.tw" />
     <meta property="og:title" content="沃草！Watchout" />
     <meta property="og:site_name" content="沃草！Watchout" />
-    <meta property="og:description" content="沃草公司（Watchout）致力於提供公民更好的參與時政的平台和工具，目前已推出包括：「國會無雙」、「市長，給問嗎？」等產品。" />
+    <meta property="og:description" content="沃草（Watchout）致力於提供公民更好的參與時政的平台和工具，目前已推出包括：「國會無雙」、「公民學院」、「立委出任務」、「總統，給問嗎？」、「市長，給問嗎？」等專案。"/>
     <meta property="og:type" content="website" />
 
-    <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-
-    <link href="carousel.css" rel="stylesheet">
-    <link rel="stylesheet" media="screen and (min-width: 400px)" href="main.css" >
-    <link rel="stylesheet" media="screen and (max-width: 400px)" href="mobile.css" />
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-
+    <link rel="stylesheet" href="main.css" >
+    
 
   </head>
-
   <body id="home">
-<!-- fb -->
+  <!-- fb -->
   <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=587133874688599";
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=587133874688599";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<!-- ///////////////////////////////////////////// -->
 
-
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="HeaderController">
-      <div class="container">
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="HeaderController">
+    <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -69,383 +49,232 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="menu_item"><a href="#" class="about">about</a></li>
-            <li class="menu_item"><a href="#" class="products">products</a></li>
+            <li class="menu_item"><a href="#" class="projects">projects</a></li>
             <li class="menu_item"><a href="#" class="team">team</a></li>
             <li class="menu_item"><a href="#" class="contact">contact</a></li>
-
-          </div><!--/.nav-collapse -->
+          </ul>
         </div>
-      </div>
-
-
-
-      <!-- Carousel
-      ================================================== -->
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="img/cover1.jpg" id="cover_photo1">
-
-            <div class="container">
-              <div class="carousel-caption">
-                <div class="black_background">
-                <h1>從人民到公民</h1>
-                <p>「我們都有那種，能讓社會更好的力量。」</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/cover2.jpg" id="cover_photo2">
-            <div class="container">
-              <div class="carousel-caption">
-                <div class="black_background">
-                <h1>Empowerment</h1>
-                <p>「我們致力於降低政治參與的門檻。」</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/cover3.jpg" id="cover_photo3">
-            <div class="container">
-              <div class="carousel-caption">
-                <div class="black_background">
-                <h1>行動、串聯、改變</h1>
-                <p>「能改變社會的，不是一個超級英雄，而是一群有行動力的公民。」</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-
-
-
-
-      </div><!-- /.carousel --><!-- end of page 1 -->
-
-
+    </div>
+</div>
+<img src="img/cover-mobile.jpg" class="coverImgMobile"/>
+<img src="img/cover-web.jpg" class="coverImgWeb"/>
 
 
 <!-- ============================================================================= -->
+<hr class="divider" id="about"/>
+<div class="page">
+    <div class="innerWrapper">
+        <h2 class="title about_title">about</h2>
+        <div class="slogan about_slogan">
+          “沃草的核心目標是「讓更多人一起來參與公民社會」；<br class="web_only"/>「沃草」象徵著「公民社會的肥沃草原」。”
+        </div>
+        <div class="content">
+            <p>我們有一個很簡單而實際的夢想：我們相信台灣可以更好，而讓台灣更好的力量來自於更多主動參與、向外關注的公民。</p>
+    
+            <p> 沃草的英文名字「Watchout」，原意是「提防」和「警戒」，只要我們每個小小公民都能時時張大眼睛、提防警戒，政客就不容易為所欲為。</p>
+    
+            <p>一個成熟的公民社會，絕對不能只靠少數人付出一切去投入在社會運動之中。每個人只要一起付出各自一小部分的時間心力，就能改變這個社會，更接近那個你我嚮往的理想樂土一步。</p>
+    
+            <p>沃草希望做一個農夫，提供公民更好的參與時政的平台和工具，在這公民社會的土壤施肥灌溉，讓這個理想的種子在每個人心中萌芽滋長，建立真正的公民社會。</p>
+           
+        </div>
+    </div>
+</div><!-- end of page-->
 
 
+<!-- ============================================================================= -->
+<hr class="divider" id="projects"/>
+      
+<div class="page">
+  
+    <div class="innerWrapper">
+        <h2 class="title projects_title">projects</h2>
+        
+        
+        <!-- 國會無雙 -->
+        <div class="content">
+          <div class="contentLeft"><img src="img/musou.png" class="musouImg"/></div>
+          <div class="contentRight">
+              <h3 class="project_title">全台最大「野生版」國會網站<br/>聚集所有關心立法院的熱血鄉民</h3>
+              <p class="project">生活中大小事，小到柴米油鹽醬醋茶、大至國防、世代正義、財政問題，處處皆政治。</p>
+              <p class="project">沃草希望，公民們一起來監督立法院與民意代表，因為我們都有能讓社會更好的能量！</p>
+              <p class="project">我們希望透過有趣的影片與熱血的直播賽事，讓公民能以低門檻的形式來輕鬆監督國會。</p>
+              <p class="project">在國會無雙，你可以：
+                  <ul>
+                    <li>收看超熱血的立院球賽直播</li>
+                    <li>觀賞超有梗的立委質詢好球、烏龍球影片</li>
+                    <li>了解更深入的立院質詢攻防戰報導</li>
+                  </ul>
+              </p>
+              <p class="project"><b>阿草邀請你，一天一分鐘，國會督督好！</b></p>
+              <div class="linkSection"><a class="link musou_link" target="_blank" href="//musou.tw">前往國會無雙</a></div>
+          </div>
+        </div>  
+        <!-- 公民學院 -->
+        <div class="content">
+          <div class="contentLeft"><img src="img/citizenedu.png" class="citizeneduImg"/></div>
+          <div class="contentRight">
+          <h3 class="project_title">公民學院相信：健全的民主社會是建立在積極的公民參政和有效的公共討論上，而人文學科帶來的分析方法和思考能協助大家良好地參與這些活動。</h3>
+          <p class="project">不論是作為讀者還是作者。我們希望跟大家一起培養清晰評論、參與討論並從討論中發展出自身觀點的能力和素養。</p>
+          <p class="project">為了培育對於人文寫作有興趣的作者，公民學院提供特殊的「寫作互助社群」支援，讓稿件在審查期間，就可以收到來自各方的意見和討論，並參考修改。而想要參與討論或看看別人怎麼說的公民也可以經由如此的討論滿足需求。</p>
+          <p class="project">我們的目標是建立開放的公民教育，讓作者、讀者、編輯和路人共同努力，累積更多方便取得且易懂的人文資源，讓清晰有邏輯的思考和溝通更加普及，讓臺灣民主社會當中的公共討論更有效率，降低公民參與政治的門檻。</p>
+          <div class="linkSection"><a class="link citizenedu_link" target="_blank" href="//blog.citizenedu.tw">前往公民學院</a></div>
+          </div>
+        </div>  
+
+        <!-- 立委出任務 -->
+        <div class="content">
+          <div class="contentLeft"><img src="img/wevote.svg" class="wevoteImg"/></div>
+          <div class="contentRight">
+          <h3 class="project_title">2016立委選舉，還不知道怎麼選出你想要的立委嗎？現在，你有更好的方式了解這些立委。</h3>
+          <p class="project">沃草正式推出立委投票攻略網站：「2016 立委出任務」，精準分析立委戰績！網站以遊戲化的方式，將立委比喻為電玩遊戲中的勇者，被人民選出去執行任務。同時將立委在各種議題上的表態以視覺化的方式呈現，提供選民輕鬆了解政黨及立委的議題表態攻略，在投票時做出正確選擇。</p>
+          <p class="project">「2016 立委出任務」選舉投票攻略特色：
+              <ol>
+                  <li>以立院官方資料為根據，整理分析政黨及立委的表態立場。</li>
+                  <li>提供議題懶人包，快速了解各方觀點和法案進度。</li>
+                  <li>未來將持續更新，增加候選人表態比較，更直覺找出你想要的候選人</li>
+              </ol>
+          </p>
+          <p><b>
+              現在就是選擇的時刻。<br/>
+              你能分辨誰是最能代表自由之島的勇者嗎？<br/>
+              你能改變這個島嶼未來的命運嗎？<br/>
+              島嶼的主人，一起出任務吧！<br/></b>
+          </p>
+          <div class="linkSection"><a class="link wevote_link" target="_blank" href="//wevote.tw">前往立委出任務</a></div>
+          </div>
+        </div>
+
+        <!-- 總統給問嗎 -->
+        <div class="content">
+          <div class="contentLeft"><img src="img/asktaiwan.jpg" class="asktaiwanImg"/></div>
+          <div class="contentRight">
+          <h3 class="project_title">2016 年，公民參與要創造出新的選舉文化。</h3>
+          <p class="project">我們認為民主不該只有投票當天才能體現。過往缺乏公民對候選人的體認，只能仰賴選前之夜的政見辯論會，及登記日當天才出現的選舉公報，造就了「一日公民」的文化。</p>
+          <p class="project">「我們認為民主不該讓我們以為只剩下選舉。政治關涉民主，政治是每個人的事。沃草不想「等待」政治強人的出現，而是嘗試讓選後的對罵，轉變成選前的對話。</p>
+          <p>因此，站在去年「市長，給問嗎？」的基礎，2016 年沃草與Google、Apple Daily、PTT實業坊聯合推動「總統，給問嗎？」，提供網友連署提問候選人的網站。只要你對台灣未來的總統候選人有疑慮，就可以上網提問。達到30天內1000人次的連署門檻時，候選人得在平台上以文字、圖像及影音的方式公開回應。
+          </p>
+          <p class="project"><b>我們深信：<br/>當參選成為事實，給問就是義務。</b></p>
+          <div class="linkSection"><a class="link asktaiwan_link" target="_blank">即將上線</a></div>
+          </div>
+        </div>  
+
+        <!-- 市長給問嗎 -->
+        <div class="content">
+          <div class="contentLeft"><img src="img/ask.png" class="askImg"/></div>
+          <div class="contentRight">
+          <h3 class="project_title">「市長，給問嗎？」是沃草（Watchout）團隊在2014年所推出的網站，希望讓選民藉由提問與連署，與未來的執政者進行直接溝通，進而改變「一日公民」的選舉文化。</h3>
+          <p class="project">在這裡，每一個市井小民，都有一樣的發言權；當你提出的問題達到連署門檻，候選人就必須嚴肅看待、認真回應。</p>
+          <p class="project">「市長，給問嗎？@台北」於2014年2月開始測試、7月初正式上線，台北市七位市長候選人中，有李宏信、馮光遠、連勝文、柯文哲等4人上線回覆網友提問。一共有 773 個問題被提出，40 個超過連署門檻，並有 32 個問題被回答。單日最高瀏覽人次 35,624，累積瀏覽人次 485,622。</p>
+          <p class="project">「市長，給問嗎？@台中」於2014年10月上線，並有林佳龍於線上回答 9 題網友提問。單日最高瀏覽人次 2,682，累積瀏覽人次 44,378。</p>
+          <p class="project">同時，「市長，給問嗎？」也與 PTT 鄉民有約，合作馮光遠、連勝文、柯文哲三場候選人直播給問活動。並與蘋果、udn 選舉專區合作，將選民提問、候選人回答，同步於其選舉專區刊出。</p>
+          <p class="project"><b>「市長，給問嗎？」是一個公開的平台，讓市民聲音得以串聯、共鳴，形成更大的力量。</b></p>
+          <div class="linkSection"><a class="link ask_link" target="_blank" href="//wethepeople.tw">前往市長給問嗎</a></div>
+          </div>
+        </div>  
 
 
-      <div class="container" id="about_page">
+    </div>
+</div><!-- end of page -->
+        
+<!-- ============================================================================= -->
+<hr class="divider" id="team"/>
+<div class="page" id="team_page">
+    <div class="innerWrapper">
+        <h2 class="title team_title">team</h2>
+        <div class="slogan team_slogan">
+          “我們要實驗並實踐「下一個世代的公民運動」，請加入我們。”
+        </div>
+        <div class="content">
+              <div class="member_slot member_slot_fill">
+                 <h3>熱情</h3>
+                 <div class="member_info ">
+                  <p>我們是平均年齡 30 歲以下的年輕團隊，也許經驗不多，但我們有比別人多的熱情。</p>
+                 </div>
+              </div>
+              <div class="member_slot">
+                 <h3>多元</h3>
+                 <div class="member_info">
+                  <p>我們有法律、經濟、數學、設計、哲學、傳播、資工、社會等不同領域的夥伴。</p>
+                 </div>
+              </div>
+              <div class="member_slot member_slot_fill">
+                 <h3>鄉民</h3>
+                 <div class="member_info">
+                  <p>我們有點宅，不過從當阿宅中，我們發想了許多好玩有趣的哏。</p>
+                 </div>
+              </div>
+              <div class="member_slot">
+                 <h3>實驗精神</h3>
+                 <div class="member_info">
+                  <p>我們想試試看另一種社會運動的模式，這是我們的實驗精神。</p>
+                 </div>
+              </div>
+              <div class="member_slot member_slot_fill">
+                 <h3>學習</h3>
+                 <div class="member_info">
+                  <p>我們喜歡學習——不管是不是我們原先的主修或專長。</p>
+                 </div>
+              </div>
+              <div class="member_slot">
+                 <h3>力量</h3>
+                 <div class="member_info">
+                  <p>我們不斷讓自己成長，因為我們想讓公民社會更有力量。</p>
+                 </div>
+              </div>
+              <div class="member_slot member_slot_fill">
+                 <h3>改變</h3>
+                 <div class="member_info">
+                  <p>我們相信，想看到不同的結果，就得嘗試新的做法。</p>
+                 </div>
+              </div>
+              <div class="member_slot last">
+                 <h3></h3>
+                 <div class="member_info" id="member_slot_end">
+                  <p>其實，我們的姓名並不重要，因為我們就是你——<br/>一個不放棄讓台灣變得更好的公民。</p>
+                 </div>
+              </div>
+            
+        </div>
+    </div>         
+</div><!--end of page-->
+ 
 
-<!-- film -->
-<script src="popup.js"></script>
-<div id="blanket" style="display:none;"></div>
-<div id="popUpDiv" style="display:none;">
-<a href="#" onclick="popup('popUpDiv')" id="close_film"> 關閉 </a>
- <iframe width="853" height="480" src="//www.youtube.com/embed/V1VrrNS49PE" frameborder="0" id="youtubeplayer" allowfullscreen></iframe>
+
+<!-- ============================================================================= -->
+<hr class="transparent_divider" id="contact"/>
+
+<div class="page contact_page">
+   
+    <h2 class="contact_us">Follow us on Facebook</h2>
+    
+    <div class="fb-page" data-href="https://www.facebook.com/WatchOutTW" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/WatchOutTW"><a href="https://www.facebook.com/WatchOutTW">沃草！（Watchout）</a></blockquote></div></div>
+     
+</div>
+ 
+
+<div id="footer">
+ <div class="contactSection">聯絡我們：<a class="contact_link">info@watchout.tw</a></div>
+ <div><div class="copyright">Watchout 沃草 © 2014-2015 All Rights Reserved.</div></div>
 </div>
 
-<!-- ///////////////////////////////////////////////////////////////////// -->
 
-
-        <div class="page">
-          <hr class="featurette-divider" id="about">
-          <h2 class="mobile_only mobile_title">about</h2>
-          <div class="about_slogan">
-            <p>“沃草的核心目標是<br class="mobile_only"/>「讓更多人一起來參與公民社會」；<br id="mobile_only"/>「沃草」象徵著<br class="mobile_only"/>「公民社會的肥沃草原」。”</p>
-          </div>
-
-          <div id="about_content">
-
-          <div id="about_content_main">
-
-            <div class="about_story" id="story0">
-
-
-              <p>我們有一個很簡單而實際的夢想：我們相信台灣可以更好，而讓台灣更好的力量來自於更多主動參與、向外關注的公民。</p>
-
-              <p>沃草的英文名字「Watchout」，原意是「提防」和「警戒」，只要我們每個小小公民都能時時張大眼睛、提防警戒，政客就不容易為所欲為。</p>
-
-              <p>一個成熟的公民社會，絕對不能只靠少數人付出一切去投入在社會運動之中。每個人只要一起付出各自一小部分的時間心力，就能改變這個社會，更接近那個你我嚮往的理想樂土一步。</p>
-
-              <p>沃草希望做一個農夫，提供公民更好的參與時政的平台和工具，在這公民社會的土壤施肥灌溉，讓這個理想的種子在每個人心中萌芽滋長，建立真正的公民社會。</p>
-
-              <div class="fb-like" data-href="https://www.facebook.com/WatchOutTW" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-            </div>
-
-          </div>
-
-          <div id="about_content_sub">
-             <a href="#" id="watch_film"><img src="img/play.gif" id="play_img" width="250"></a>
-             <div class="about_content_sub_title"><h3>沃草的故事</h3></div>
-
-          </div>
-
-
-
-          </div><!-- end of about_conent -->
-
-
-
-
-        </div><!-- end of page-->
-
-
-      </div><!-- end of about_page -->
-
-
-
-<!-- ============================================================================= -->
-
-      <div class="container" id="products_page">
-      <hr class="featurette-divider" id="products">
-
-      <div class="page">
-
-        <h2 class="mobile_only mobile_title">products</h2>
-
-          <div class="product_slogan">“曾經我們以為人人有票投就是民主，但如果缺乏監督機制，缺少了民意參與的民主如何為眾人謀福利？”
-          </div>
-
-          <div id="products_content">
-               <div class="products_item">
-                  <div class="products_section_main">
-                       <a href="http://musou.tw/"><img class="media-object logo_short mobile_only" id="mobile_cm_logo" src="img/cm2.jpg" width="130px"></a>
-                       <div class="product_subtitle">我們的第一個產品：國會無雙</div>
-                       <p>我們認為，公民應該監督立法院與民意代表，因為我們都有能讓國家更好的權利，而我們應該為了自己、也為了自己珍惜的理念和人們，行使我們的權力。</p>
-
-                       <p>國會無雙是一個想要盡可能降低公民監督立院的門檻的網站，包括：賽事直播、戰報、場邊焦點、重大議題、精彩事蹟、觀賽重點、立院小知識等功能與內容。<p>
-
-                       <div class="product_subtitle">回饋邀請</div>
-                       <p>「國會無雙」是沃草的第一個產品；目前，我們也正在構想關於媒體、公民教育、人力資源...等等的計劃。沃草是為了每一個想多參與公民社會的你所存在的，所以，如果你有什麼想法和建議，請務必要讓我們知道！</p>
-
-                  </div>
-
-                  <div class="products_section_sub">
-                    <div class="products_display  web_only">
-                          <div class="products_info" id="part0">讓關心立法院變得更簡單</div>
-                          <div class="products_info" id="part1">每日挑選重要戰事進行互動直播，讓立院開會成為全民運動</div>
-                          <div class="products_info" id="part2">篩選整理會議中的重要議題以及發展經過，讓你五分鐘能知立院大小事</div>
-                          <div class="products_info" id="part3">蒐集刊登各方來稿、邀稿，或是自撰稿，讓討論更加深入</div>
-                          <div class="products_info" id="part4">以議題陳列國會戰事，讓我們明白國家議題發展脈絡</div>
-                          <div class="products_info" id="part5">找出MVP、每日好球與烏龍球，讓立院大小事更有意思</div>
-                          <div class="products_info" id="part6">每日會議前的觀賽重點整理，讓誰也能看懂立院戰事</div>
-                          <div class="products_info" id="part7">一個個的立院小問答，逐步解答你心中疑惑</div>
-                       </div>
-                  <a href="http://musou.tw/"><img class="media-object logo_short web_only" id="part_0" src="img/cm2.jpg" width="130px"></a>
-
-                  <div class="products_section_part" id="part_1">賽事直播</div>
-                  <div class="products_section_part" id="part_2">戰報</div>
-                  <div class="products_section_part" id="part_3">場邊焦點</div>
-                  <div class="products_section_part" id="part_4">重大議題</div>
-                  <div class="products_section_part" id="part_5">精彩事蹟</div>
-                  <div class="products_section_part" id="part_6">觀賽重點</div>
-                  <div class="products_section_part" id="part_7">立院知識</div>
-                  <p class="mobile_only" id="go_to_cm_mobile"><a href="http://musou.tw/">> 前往國會無雙</a></p>
-                  </div>
-               </div> <!--end of products_item-->
-
-
-
-          </div> <!-- end of products_content -->
-
-        </div><!-- end of page -->
-      </div><!-- end of container -->
-      <!-- ============================================================================= -->
-      <!--    six cities                                                                 -->
-      <!-- ============================================================================= -->
-
-      <div class="container">
-      <hr class="featurette-divider">
-
-      <div class="page">
-
-        <h2 class="mobile_only mobile_title">products</h2>
-
-          <div id="products_content">
-               <div class="products_item_six_cities">
-
-                 <div class="products_section_main">
-                   <a href="http://wethepeople.tw/" target="_blank">
-                   <img src="img/sixcities.jpg" class="web_only" id="sixcitieslogo">
-                   <img src="img/sixcities_mobile.jpg" class="mobile_only" id="sixcitieslogo">
-                   </a>
-                   <p>相信許多人對台灣的選舉都有印象。</p>
-                   <p>飄揚的旗海、到處廣播的競選車輛、到處上台致詞的候選人，盛大的造勢大會，還有電視辯論會。</p>
-
-                   <p>候選人出現在各種場合到處和人招手，握手。可是，候選人聽的到選民的聲音嗎？各位朋友，你如果對候選人有意見，有沒有辦法提出來讓他回答嗎？</p>
-
-                   <p>沃草公司推出了「市長，給問嗎？」網站。我們希望每個人都可以擁有向未來市長提問的權利。同時，我們將會在市長選舉完成後，保留這個候選人的所有回答供大家驗證：這個市長是否如他所說的這樣守信用。</p>
-
-                   <p>只要用 Facebook 的帳號驗證登入之後，就可以在上面針對您指定的候選人提問。如果您喜歡其他人的問題，也可以去其他人的問題底下連署。愈多人連署的問題，也就有更多機會被注意。</p>
-
-                   <p>我們不要傳統的口水戰、文宣戰、旗海戰；不依賴投票前兩個禮拜才舉辦的政見辯論會；不單單只是憑藉著黨籍、省籍、性別、或者外表，就決定要投給誰；更不當只負責投票的「一日公民」。</p>
-
-                   <p>今年，你不必是媒體代表、知名人士，才能對候選人提問。每一個市井小民，都有一樣的發言權；當你說出了市民共同的心聲，候選人就必須嚴肅看待、認真回應。提問和回應都將被公開檢視與討論。</p>
-
-                   <p>「市長，給問嗎？」有別於過往的電話或投書反應。這是一個公開的平台，讓市民聲音得以串聯、共鳴，形成更大的力量。</p>
-
-                   <p>我們相信，你有權利也有義務參與這一次的討論，選出最符合你價值理念的候選人。因為政治不是「政治人物」或「社運人士」的事，政治關乎你我的生活，政治是我們的事。</p>
-                 </div>
-               </div> <!--end of products_item-->
-          </div> <!-- end of products_content -->
-
-        </div><!-- end of page -->
-      </div><!-- end of container -->
-      <!-- ============================================================================= -->
-      <div class="container" id="team_page">
-        <hr class="featurette-divider" id="team">
-        <div class="page" id="team_page">
-
-         <h2 class="mobile_only mobile_title">team</h2>
-
-          <div id="team_page_slogan">
-             “我們要用青春去實驗和實踐<br class="mobile_only"/>「下一個世代的公民運動」，<br class="mobile_only"/>請加入我們。”
-          </div>
-
-          <div id="team_page_content">
-
-          <!--
-          <div class="team_circle">
-               <div class="team_item">
-                 <div class="team_circleborder">
-                 <div class="team_count">28</div>
-                 </div>
-               </div>
-               <div class="team_item">
-                 <div class="team_circleborder">
-                 <div class="team_count">6</div>
-                 </div>
-               </div>
-          </div>
-          -->
-
-          <div class="member_slot_collection">
-          <div class="member_slot member_slot_fill">
-             <h3>熱情</h3>
-             <div class="member_info ">
-              <p>我們是平均年齡 30 歲以下的年輕團隊，也許經驗不多，但我們有比別人多的熱情。</p>
-             </div>
-          </div>
-
-          <div class="member_slot">
-             <h3>多元</h3>
-             <div class="member_info">
-              <p>我們有醫學、法律、經濟、數學、設計、哲學、傳播、資工、財金等不同領域的夥伴。</p>
-             </div>
-          </div>
-
-          <div class="member_slot member_slot_fill">
-             <h3>鄉民</h3>
-             <div class="member_info">
-              <p>我們有點宅，不過從當阿宅中，我們發想了許多好玩有趣的哏。</p>
-             </div>
-          </div>
-
-          <div class="member_slot">
-             <h3>實驗精神</h3>
-             <div class="member_info">
-              <p>我們想試試看另一種社會運動的模式，這是我們的實驗精神。</p>
-             </div>
-          </div>
-
-          <div class="member_slot member_slot_fill">
-             <h3>學習</h3>
-             <div class="member_info">
-              <p>我們喜歡學習——不管是不是我們原先的主修或專長。</p>
-             </div>
-          </div>
-
-          <div class="member_slot">
-             <h3>力量</h3>
-             <div class="member_info">
-              <p>我們不斷讓自己成長，因為我們想讓公民社會更有力量。</p>
-             </div>
-          </div>
-
-          <div class="member_slot member_slot_fill">
-             <h3>改變</h3>
-             <div class="member_info">
-              <p>我們相信，想看到不同的結果，就得嘗試新的做法。</p>
-             </div>
-          </div>
-
-          <div class="member_slot">
-             <h3></h3>
-             <div class="member_info" id="member_slot_end">
-              <p>其實，我們的姓名並不重要，因為我們就是你——<br/>一個不放棄讓台灣變得更好的公民。</p>
-             </div>
-          </div>
-
-         </div><!-- end of member_slot_collection -->
-
-
-
-          </div><!--end of team_page_content -->
-         <div id="members_voice_dispaly">
-               <div class="tape" id="tape1"></div>
-               <div class="tape" id="tape2"></div>
-               <div class="tape" id="tape3">‘Never compromise.’</div>
-               <div class="tape" id="tape4"></div>
-               <div class="tape" id="tape5"></div>
-               <div class="tape" id="tape6">「社會運動是下一個全民運動」</div>
-               <div class="tape" id="tape7"></div>
-               <div class="tape" id="tape8"></div>
-               <div class="tape" id="tape9">「你的鍵盤支持，是推動台灣改變的力量」</div>
-               <div class="tape" id="tape10"></div>
-
-         </div>
-        </div><!--end of page-->
-      </div><!--end of container-->
-
-
-<!-- ============================================================================= -->
-
-      <div class="container" id="contact_page">
-
-        <hr class="featurette-divider" id="contact">
-        <div class="page" id="contact_content">
-              <div id="contact_text">
-              <h2 class="contact_us">聯絡我們</h2>
-
-              <p>沃草有限公司 Watchout, Co.</p>
-              <p>
-              電子郵件：<a href="mailto:info@watchout.tw">info@watchout.tw</a><br/>
-              網站：<a href="http://watchout.tw">http://watchout.tw</a><br/>
-              </p>
-
-              </div>
-
-
-        </div>
-
-      </div> <!-- /container -->
-
-      <div id="footer">Watchout 沃草 ©2014 All Rights Reserved.</div>
-
-
-      <!-- Bootstrap core JavaScript
-      ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-      <script src="dist/js/bootstrap.min.js"></script>
-      <script src="holder.js"></script>
-      <script src="controllers.js"></script>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="holder.js"></script>
+<script src="controllers.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-48524226-3', 'watchout.tw');
+  ga('require', 'displayfeatures');
   ga('send', 'pageview');
-
 </script>
-    </body>
-  </html>
+</body>
+</html>
