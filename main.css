@@ -14,7 +14,14 @@
         	box-shadow: none;
 }
 .navbar-collapse {
-  float: right;
+  width: 100vw;
+  text-align: center;
+}
+@media all and (min-width: 767px){
+  .navbar-collapse {
+    float: right;
+    width: auto;
+  }
 }
 .logo_short {
   margin-right: 80px;
@@ -232,7 +239,7 @@ a.musou_link, a.musou_link:visited {
   border: 3px solid #8dd3c7;
 }
 .member_slot h3 {
-  margin: 10px 0;
+  margin: 10px 1px;
 }
 
 /*-----------------------------------------------------------------------*/
@@ -249,6 +256,8 @@ a.musou_link, a.musou_link:visited {
   margin: 0 auto 10px auto;
   padding: 0 8px;
   transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg); /* Ch <36, Saf 5.1+, iOS, An =<4.4.4 */
+      -ms-transform: rotate(-1deg); /* IE 9 */
 }
 a.contact_link, a.contact_link:visited {
   color: #333333;
@@ -270,5 +279,7 @@ a.contact_link, a.contact_link:visited {
   margin: 10px auto;
   padding: 0 8px;
   transform: rotate(1deg);
+  -webkit-transform: rotate(1deg); /* Ch <36, Saf 5.1+, iOS, An =<4.4.4 */
+      -ms-transform: rotate(1deg); /* IE 9 */
 
 }
