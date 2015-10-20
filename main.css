@@ -231,15 +231,9 @@ a.musou_link, a.musou_link:visited {
 .member_slot:hover, .member_slot.last {
   border: 3px solid #8dd3c7;
 }
-.member_photo_collection {
-  border-top: 2px solid gray;
-  width: 850px;
-  height: 90px;
-  display: block;
-  padding: 20px 0 0 90px;
-  margin: 20px auto 0 auto;
+.member_slot h3 {
+  margin: 10px 0;
 }
-
 
 /*-----------------------------------------------------------------------*/
 /* contact & footer */
@@ -261,8 +255,8 @@ a.contact_link, a.contact_link:visited {
   font-size: 14px;
   cursor: pointer;
 }
-.fb_section {
-  text-align: center;
+.fb-wrap {
+  margin: 0 8px 0 6px;
 }
 #footer{
   padding: 30px;
