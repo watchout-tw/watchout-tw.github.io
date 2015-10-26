@@ -245,6 +245,9 @@ a.musou_link, a.musou_link:visited {
 .member_slot h3 {
   margin: 10px 1px;
 }
+.watchout_team_img {
+  width: 100%;
+}
 
 /*-----------------------------------------------------------------------*/
 /* contact & footer */
