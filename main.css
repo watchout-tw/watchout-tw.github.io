@@ -220,6 +220,27 @@ a.musou_link, a.musou_link:visited {
 }
 .team_slogan {
   background: #8DD3C7;
+  position: relative;
+}
+.team_slogan:after {
+    content: '';
+    border-top: 30px solid #8DD3C7;
+    border-left: 20px solid transparent;
+    border-right: 0px solid transparent;
+    position: absolute;
+    bottom: -30px;
+    left: 40%;
+    height: 10px;
+    width: 20px; 
+}
+@media all and (min-width: 500px){
+ .team_slogan:after {
+    border-top: 55px solid #8DD3C7;
+    border-left: 30px solid transparent;
+    border-right: 0px solid transparent;
+    height: 60px;
+    bottom: -60px;
+  }
 }
 .member_slot {
   background: rgba(255,255,255,0.9)!important;
@@ -244,6 +265,9 @@ a.musou_link, a.musou_link:visited {
 }
 .member_slot h3 {
   margin: 10px 1px;
+}
+.watchout_team_img {
+  width: 100%;
 }
 
 /*-----------------------------------------------------------------------*/
