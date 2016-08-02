@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* --------------------------------
+Accordion
+-------------------------------- */
+
+#prodCategory .panel {
+	background-color: transparent;
+	border: 0;
+	box-shadow: none;
+	border-radius: 0;
+	> a {
+		background-color: transparent;
+		color: $color-1;
+		padding: 15px 0px;
+		margin-bottom: 0;
+		display: block;
+		font-size: 14px;
+		font-weight: 100;
+		font-family: $font-1;
+		text-transform: capitalize;
+		line-height: 1;
+		cursor: pointer;
+		border: 0;
+		border-bottom: 1px solid #E8E8E8;
+		svg {
+			float: right;
+			width: 0.8em;
+			height: 0.8em;
+		}
+	}
+	> li > ul {
+		border-bottom: 1px solid #E8E8E8;
+	}
+	> div a {
+		position: relative;
+		display: block;
+		padding: 3px 15px;
+		margin-bottom: 0;
+		font-size: 12px;
+		color: #6F6F6F;
+		cursor: pointer;
+		font-weight: 100;
+		font-family: $font-1;
+		text-transform: capitalize;
+	}
+	> div > div {
+		margin-left: 15px;
+		margin-bottom: 10px;
+		
+	}
+}

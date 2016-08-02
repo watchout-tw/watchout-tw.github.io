@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* --------------------------------
+Mega Menu
+-------------------------------- */
+
+.megamenu {
+	position: relative;
+	width: 600px;
+	left: 10%;
+	@include MQ(L) {
+		left: 0%;
+	}
+	@include MQ(M) {
+		display: none;
+	}
+}
+
+// .menu-mobile {
+// 	display: none;
+// 	padding: 20px;
+// 	&:after {
+// 		content: "\f394";
+// 		font-family: "Ionicons";
+// 		font-size: 2.5rem;
+// 		padding: 0;
+// 		float: right;
+// 		position: relative;
+// 		top: 50%;
+// 		transform: translateY(-25%);
+// 	}
+// }
+// .menu-dropdown-icon {
+// 	&:before {
+// 		content: "\f489";
+// 		font-family: "Ionicons";
+// 		display: none;
+// 		cursor: pointer;
+// 		float: right;
+// 		padding: 0em 2em;
+// 		background: #fff;
+// 		color: #333;
+// 	}
+// }
+ul.menu {
+	margin: 0 auto;
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	position: relative;
+	//position: relative;
+	/* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	@include MQ(S) {
+		display: none;
+	}
+	> li {
+		float: left;
+		padding: 0;
+		margin: 0;
+		border-left: 1px solid #4d9be7;
+		&:last-child {
+			border-right: 1px solid #4d9be7;
+		}
+		> a {
+			font-family: $font-2;
+			text-transform: uppercase;
+			letter-spacing: 0.12em;
+			font-size: 16px;
+			padding: 2.4em 1.9em;
+			display: block;
+			color: #fff;
+			@include MQ(M) {
+				font-size: 12px;
+				padding: 1em;
+			}
+		}
+		&:hover {
+			background: #229b96;
+		}
+		> ul {
+			display: none;
+			background: #000;
+			position: absolute;
+			z-index: 99;
+			left: 0;
+			margin: 0;
+			list-style: none;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		@include MQ(M) {
+			border-left: 0px;
+			border-right: 0px;
+		}
+	}
+}
+
+ul.mega-dropdown {
+	margin: 0;
+	width: 140%;
+	padding: 30px;
+	min-width: 880px;
+	ul,
+	li {
+		margin: 0;
+		list-style: none;
+		padding: 0;
+	}
+	li {
+		margin-bottom: 15px;
+	}
+	a {
+		font-family: $font-1;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 12px;
+		padding: 0 1em;
+		display: block;
+		color: #fff;
+	}
+}

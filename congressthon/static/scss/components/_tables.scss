@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+/* --------------------------------
+Table Style
+-------------------------------- */
+
+table {
+	max-width: 100%;
+	background-color: transparent;
+	border-collapse: collapse;
+	border-spacing: 0;
+	background-color: transparent;
+}
+
+.table {
+	width: 100%;
+	margin-bottom: 18px;color: #fff;
+}
+
+.table th,
+.table td {
+	padding: 15px 10px;
+	line-height: 1;
+	vertical-align: middle;
+	font-size: 15px;
+	@include MQ(S) {
+		font-size: 13px;
+	}
+}
+
+.table>thead>tr>th {
+	border-bottom: 0px solid #ddd;
+	text-align: left;
+	padding: 10px 20px;
+	vertical-align: middle;
+	border-bottom: 0px;
+	background: #dfb03f;
+
+}
+
+.table thead tr {
+	border-bottom: 0px;
+}
+
+.table thead th {
+	vertical-align: bottom;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+
+.table>tbody>tr>td {
+
+	padding: 15px 20px;
+}
+.table tbody th {
+	color: $color-1;
+	font-weight: 100;
+}
+
+.table tbody + tbody {
+	border-top: 1px solid #86d0cb;
+}
+
+.table tfoot tr {color: #fff;
+	border-top: 1px solid #86d0cb;
+}
+
+.table tbody,
+.table tfoot {
+	tr {
+		td {
+			border-left: 0px;
+			border-top: 1px solid #86d0cb;
+			&:first-child {
+				border-left: 0px;
+	padding-right: 0;
+				border-top: 1px solid #86d0cb;
+				;
+			}
+		}
+	}
+}
+
+.table thead,
+.table tfoot {
+	tr {
+		th {
+			border-left: 0px;
+			border-top: 1px solid #86d0cb;
+			&:first-child {
+				border-left: 0px;
+				border-top: 1px solid #86d0cb;
+				;
+			}
+		}
+	}
+}
+.table-hover>tbody>tr:hover>td, 
+.table-hover>tbody>tr:hover>th {
+	transition: ease background 0.2s;
+	background-color: #29a59d;
+	border-right: 0;
+				border-left: 0px;
+}
+
+/* --------------------------------
+Responsive Table
+-------------------------------- */
+
+@include MQ(S) {
+	.table th,
+	.table td {
+		padding: 5px 20px;
+		line-height: 18px;
+		vertical-align: middle;
+		border-top: 1px solid #ebebe9;
+	}
+	/* Force table to not be like tables anymore */
+	#responsive-table table,
+	#responsive-table thead,
+	#responsive-table tbody,
+	#responsive-table th,
+	#responsive-table td,
+	#responsive-table tr {
+		display: block;
+	}
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#responsive-table thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	#responsive-table td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 0;
+		position: relative;
+		padding-left: 35%;
+		white-space: normal;
+		text-align: left;
+		min-height: 30px;
+	}
+	#responsive-table td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		left: 6px;
+		width: 35%;
+		padding-right: 10px;
+		white-space: nowrap;
+		text-align: left;
+		color: #9A9A9A;
+	}
+	#responsive-table tr {
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #E0E0E0;
+		&:last-child {
+			padding-bottom: 0;
+			margin-bottom: 0;
+			border-bottom: 0;
+		}
+	}
+	#responsive-table .no-reponsive-td {
+		padding-left: 0;
+	}
+	#responsive-table td:before {
+		content: attr(data-title);
+	}
+	#responsive-table.table-cart {
+		tbody tr td:before {
+			position: relative;
+			left: 0;
+			width: 0;
+			padding-right: 10px;
+		}
+		td.product-title:before,
+		td.product-img:before,
+		td.product-size:before,
+		td.product-quantity:before {
+			display: none;
+		}
+	}
+	#responsive-table tr {
+		position: relative;
+	}
+	#responsive-table td.remove {
+		display: block;
+		position: absolute;
+		top: 5px;
+		right: 0;
+	}
+	.table-order-info {
+		td {
+			border-top: 0;
+		}
+	}
+	.table-cart {
+		tbody td {
+			display: block;
+			padding: 0 0 2px 0;
+			text-align: left;
+			width: auto;
+			margin: 0;
+			padding-left: 90px !important;
+		}
+		thead {
+			display: none;
+		}
+		.product-img {
+			width: 80px;
+			float: left;
+			text-align: center !important;
+			padding-left: 0 !important;
+		}
+	}
+}

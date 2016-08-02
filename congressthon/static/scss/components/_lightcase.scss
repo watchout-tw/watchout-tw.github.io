@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* --------------------------------
+Lightcase Lightbox
+-------------------------------- */
+
+#lightcase-overlay {
+	background: #fff;
+}
+
+#lightcase-case:not([data-lc-type=error]) #lightcase-content {
+	box-shadow: none;
+}
+
+#lightcase-case[data-lc-type=image] #lightcase-content,
+#lightcase-case[data-lc-type=video] #lightcase-content {
+	background-color: #fff;
+}
+
+#lightcase-nav a[class*='lightcase-icon-'],
+#lightcase-nav a[class*='lightcase-icon-']:focus {
+	text-decoration: none;
+	color: $color-1;
+}
+
+#lightcase-nav a[class*='lightcase-icon-']:hover {
+	color: $color-2;
+}

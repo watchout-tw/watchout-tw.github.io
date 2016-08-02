@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/* --------------------------------
+Buttons
+-------------------------------- */
+
+.btn {
+	padding: 12px 20px;
+	margin-bottom: 10px;
+	user-select: none;
+	&:focus {
+		outline: 0;
+	}
+}
+
+.btn-wide {
+	padding: 15px 10%;
+	text-transform: uppercase;
+}
+
+.btn-main {
+	color: #fff;
+	background: #0080bb;
+	font-family: $font-1;
+	border-radius: 30px;
+	letter-spacing: 0.05em;
+	padding: 15px 28px;
+	transition: all ease-in .2s;
+	&:hover,
+	&:focus {
+		color: #fff;
+		background: #229b96;
+	}
+}
+
+.btn-trans {
+	color: $color-1;
+	background: transparent;
+	font-family: $font-1;
+	transition: all ease-in .2s;
+	padding: 0;
+	margin-bottom: 0;
+	&:hover,
+	&:focus {
+		color: $color-2;
+	}
+}
+
+.btn-round {
+	color: #fff;
+	background: #0080bb;
+	font-family: $font-1;
+	border-radius: 50%;
+	padding: 15px;
+	width: 2.8em;
+	line-height: 1;
+	height: 2.8em;
+	transition: all ease-in .2s;
+	font-size: 20px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+	svg {
+		color: #fff;
+		vertical-align: middle;
+	}
+	&:hover,
+	&:focus {
+		color: #fff;
+		background: #229b96;
+	}
+}
+
+.btn-grey {
+	color: #777777;
+	background: #d6d6d6;
+	border-radius: 30px;
+	letter-spacing: 0.05em;
+	padding: 15px 28px;
+	transition: all ease-in .2s;
+	&:hover,
+	&:focus {
+		color: #F5F5F5;
+		background: #a2a2a2;
+	}
+}
+
+
+/* --------------------------------
+Owl-buttons
+-------------------------------- */
+.owl-buttons {
+	.owl-prev,
+	.owl-next {
+		padding: 0;
+		margin: 10px;
+		width: 30px;
+		height: 40px;
+		cursor: pointer;
+		transform: translate3d(0, 0, 0);
+		position: absolute;
+		top: 50%;
+		margin-top: -20px;
+		-webkit-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.2));
+	}
+	i {
+		position: absolute;
+		top: 40%;
+		width: 25px;
+		height: 5px;
+		border-radius: 2.5px;
+		background: #fff;
+		transition: all 0.15s ease;
+		&:hover {}
+	}
+	.owl-prev i {
+		transform-origin: 0% 50%;
+		left: 0;
+		&:first-child {
+			transform: translate(0, -1px) rotate(40deg);
+		}
+		&:last-child {
+			transform: translate(0, 1px) rotate(-40deg);
+		}
+	}
+	.owl-next i {
+		right: 0;
+		transform-origin: 100% 50%;
+		&:first-child {
+			transform: translate(0, 1px) rotate(40deg);
+		}
+		&:last-child {
+			transform: translate(0, -1px) rotate(-40deg);
+		}
+	}
+}

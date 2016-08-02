@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/* --------------------------------
+FOOTER STYLE
+-------------------------------- */
+
+.footer {
+	background: #fff;
+	padding: 15px 5px;
+	font-size: 13px;
+	.copyright {
+		float: right;
+	}
+	.fb-icon {
+		max-height: 30px;
+	}
+	@include MQ(S) {
+		text-align: center;
+		.copyright {
+			float: none;
+			text-align: center;
+		}
+	}
+}

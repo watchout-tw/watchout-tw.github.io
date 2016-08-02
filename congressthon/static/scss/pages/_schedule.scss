@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* --------------------------------
+	Schedule 活動流程
+-------------------------------- */
+
+section.sec-schedule {
+	position: relative;
+	padding: 5%;
+	overflow: hidden;
+	background-image: url('../images/schedule_bg.jpg');
+	.inner-wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+		z-index: 2;
+		position: relative;
+	}
+	.section-title h2 {
+		color: #fff;
+	}
+}
+
+.schedule-board {
+	background: rgba(255, 255, 255, 0.16);
+}
+
+.date-label {
+	background: #dfb03f;
+	padding: 10px 15px;
+	font-size: 20px;
+	border-radius: 10px 10px 0 0;
+	display: inline-block;
+	color: #fff;
+}
+
+.schedule-end {
+	text-align: center;
+	background: #339f99;
+}
+
+.table-time-col {
+	width: 154px;
+	padding-right: 0;
+	@include MQ(XS) {
+		width: 100px;
+	}
+}
+
+.left-table {
+	.date-label,
+	.table thead tr th {
+		background: rgba(223, 160, 63, 0.62);
+	}
+}
+
+.right-table {
+	.date-label,
+	.table thead tr th {
+		background: #dfa03f;
+	}
+}

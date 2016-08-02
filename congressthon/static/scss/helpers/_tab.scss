@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/* --------------------------------
+Tab Style
+-------------------------------- */
+
+// Give the tabs something to sit on
+.prod-tab {
+	.nav-tabs {
+		border-bottom: 1px solid #ECECEC;
+		> li {
+			float: left;
+			margin-bottom: -1px;
+			margin-right: 20px;
+			> a {
+				font-size: 12px;
+				padding: 0.75em 0;
+				color: #9b9b9c;
+				transition: color 0.3s;
+				font-family: $font-1;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				> .tab-title {
+				font-size: 12px;
+				color: #9b9b9c;
+				}
+				&:before {
+					content: '';
+					position: absolute;
+					bottom: -1px;
+					left: 0;
+					width: 100%;
+					height: 4px;
+					background: #1B1B1B;
+					transform: scale3d(0, 1, 1);
+					transition: transform 0.1s;
+				}
+				&:hover {
+					border-color: transparent;
+					background-color: transparent;
+					color: #262626;
+				}
+			}
+			// Active state, and its :hover to override normal :hover
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					transition: color 0.3s;
+					background-color: transparent;
+					border-color: transparent;
+					&:before {
+						transform: scale3d(1, 1, 1);
+						transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+						transition-duration: 0.3s;
+					}
+				}
+			}
+		}
+	}
+	.tab-content {
+		line-height: 1.8;
+		font-family: $font-3;
+	}
+	.tab-title-print {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.product-tab {
+		.nav-tabs {
+			border-bottom: 0;
+		}
+		.nav-tabs > li {
+			float: none;
+			margin-bottom: 2px;
+			width: 100% !important;
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					border-bottom-color: #dddddd;
+				}
+			}
+		}
+	}
+}
+
+.member-tab {
+	padding-top: 20px;
+	background: #fff;
+	.nav-tabs {
+		border-bottom: 1px solid #ECECEC;
+		> li {
+			float: left;
+			margin-bottom: -1px;
+			margin-right: 20px;
+			> a {
+				font-size: 12px;
+				padding: 1.5em;
+				color: #9b9b9c;
+				transition: color 0.3s;
+				font-family: $font-1;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				&:before {
+					content: '';
+					position: absolute;
+					bottom: -1px;
+					left: 0;
+					width: 100%;
+					height: 4px;
+					background: #0080BB;
+					transform: scale3d(0, 1, 1);
+					transition: transform 0.1s;
+				}
+				&:hover {
+					border-color: transparent;
+					background-color: transparent;
+					color: #262626;
+				}
+			}
+			// Active state, and its :hover to override normal :hover
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					transition: color 0.3s;
+					background-color: transparent;
+					border-color: transparent;
+					&:before {
+						transform: scale3d(1, 1, 1);
+						transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+						transition-duration: 0.3s;
+					}
+				}
+			}
+		}
+	}
+	.tab-content {
+		line-height: 1.8;
+		font-family: $font-3;
+	}
+}

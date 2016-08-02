@@ -1,0 +1,177 @@
+@charset "utf-8";
+video {
+	max-width: 100%;
+	height: auto;
+}
+
+div.header-panel {
+	border-bottom: solid 1px #ebebeb;
+	padding: 15px 0 10px 0;
+	@media only screen and(max-width: 991px) {
+		display: none;
+	}
+}
+
+
+/* --------------------------------
+Back to top Button
+-------------------------------- */
+
+.go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	width: 4em;
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 999;
+}
+
+.go-top:hover,
+.go-top:focus {
+	color: white;
+	background-color: rgba(0, 0, 0, 01);
+}
+
+@media only screen and (max-width: 991px) {
+	.go-top {
+		bottom: 1em;
+		right: 1em;
+		font-size: 12px;
+		width: 3em;
+		height: 3em;
+		line-height: 3em;
+	}
+}
+
+
+/* --------------------------------
+Breadcrumb
+-------------------------------- */
+
+.breadcrumb {
+	list-style: none;
+	padding: 0;
+	font-family: $font-1;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	background: transparent;
+	text-transform: uppercase;
+	border-bottom: 1px solid #E0DEDE;
+	font-size: 12px;
+	li {
+		display: inline-block;
+	}
+	> li + li:before {
+		padding: 0;
+		padding: 0 5px;
+		content: '>';
+		color: #aaa;
+	}
+	a {
+		color: $color-1;
+	}
+	@include MQ(S) {
+		display: none;
+	}
+}
+
+
+/* --------------------------------
+Nav Search
+-------------------------------- */
+
+.nav-search {
+	display: inline-block;
+	text-align: left;
+	.search-wrap {
+		display: inline-block;
+		background: inherit;
+		border-radius: 5px;
+		margin: 0;
+		.search-button,
+		.search-input {
+			border: 0;
+			margin: 0;
+			padding: 0;
+			background: transparent;
+			outline: none;
+			font-size: 14px;
+			font-family: $font-2;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+		.search-button {
+			transition: all .6s ease;
+			background: inherit;
+			color: #888;
+			.search-exp {
+				color: #c9c9c9;
+			}
+		}
+		.search-input {
+			transition: width .6s ease;
+			width: 0;
+			color: #CBCBCB;
+			.search-exp {
+				width: 120px;
+			}
+			@media screen only and (max-width: 768px) {
+				.search-exp {
+					width: 180px;
+				}
+			}
+		}
+	}
+}
+
+
+/* --------------------------------
+Pagination
+-------------------------------- */
+
+.pagination {
+	margin: 0;
+	> li {
+		> a,
+		> span {
+			color: #9b9b9c;
+			font-family: $font-1;
+			text-transform: uppercase;
+			border: 1px solid #E8E8E8;
+			padding: 10px 18px;
+			@include MQ(XS) {
+				padding: 8px 14px;
+			}
+		}
+	}
+	> li > a,
+	> li > span {
+		&:hover,
+		&:focus {
+			color: #3880C8;
+			background-color: #F8F8F8;
+			border-color: #E8E8E8;
+		}
+	}
+	> .active > a,
+	> .active > span {
+		&,
+		&:hover,
+		&:focus {
+			color: #9b9b9c;
+			background-color: #f8f8f8;
+			border-color: #e8e8e8;
+		}
+	}
+	svg {
+		width: 0.7em;
+		height: 0.7em;
+	}
+}

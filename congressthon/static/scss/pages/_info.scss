@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+/* --------------------------------
+	Info
+-------------------------------- */
+
+section.sec-info {
+	position: relative;
+	overflow: hidden;
+	.inner-wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+		z-index: 2;
+		position: relative;
+	}
+}
+
+.title-box {
+	width: 160px;
+	background-color: #f3a526;
+	position: relative;
+	border-radius: 30px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+	padding: 15px 20px;
+	text-align: center;
+	margin-bottom: 35px;
+	&:after {
+		content: "";
+		display: block;
+		border-width: 10px 10px 0;
+		border-style: solid;
+		border-color: #f3a526 transparent transparent;
+		margin-left: -10px;
+		position: absolute;
+		bottom: -10px;
+		left: 50%;
+	}
+}
+
+//活動介紹 黑客松
+.sec-info .topic {
+	background: #25a59d;
+	padding: 5%;
+	.section-title h2 {
+		color: #fff;
+	}
+}
+
+.topic-info {
+	h3 {
+		color: #fff;
+	}
+	color: #fff;
+}
+
+.topic-img {
+	text-align: center;
+	img {
+		max-width: 100%;
+	}
+}
+
+//活動介紹 主題論壇
+.sec-info .forum {
+	background: #deefee;
+	padding: 5%;
+}
+
+.topic-forum {
+	h3 {
+		color: $color-1;
+	}
+	color: $color-1;
+	margin-bottom: 30px;
+}
+
+.forum-block {
+	position: relative;
+	background: #fff;
+	padding: 4% 5%;
+	margin-bottom: 5%;
+	.title {
+		color: #dfa03f;
+	}
+	.des {
+		color: #4f4f4f;
+	}
+	.order-number {
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		border-radius: 50%;
+		background: #dfa03f;
+		color: #fff;
+		background: $color-2;
+		font-size: 24px;
+		position: absolute;
+		top: 58px;
+		box-shadow: 1px 2px 10px #c3c3c3;
+		left: -25px;
+		@include MQ(S) {
+			top: -25px;
+			left: calc(50% - 25px);
+		}
+	}
+}
+
+.forum-item {
+	.avatar {
+		img {
+			border-radius: 50%;
+		}
+	}
+	.info {
+		font-size: 15px;
+		@include MQ(S) {
+			font-size: 14px;
+		}
+	}
+	.title {
+		color: $color-1;
+		margin-top: 15px;
+	}
+	.subtitle {
+		font-weight: bold;
+	}
+	.avatar,
+	.title,
+	.subtitle {
+		text-align: center;
+	}
+}
+
+// 票券
+section.sec-ticket {
+	padding: 5%;
+	.inner-wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
+
+.ticket-title {
+	text-align: center;
+	img {
+		max-width: 100%
+	}
+}
+
+.sec-ticket iframe {
+	max-height: 300px;
+	margin: 50px auto;
+	width: 100%
+}

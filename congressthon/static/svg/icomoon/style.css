@@ -1,0 +1,94 @@
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+/* =======================================================================================
+Example showing how to change the color/size of the icons:
+.icon-name {
+	font-size: 32px; // works because "width" & "height" were set using em units
+	color: red; // works for single-colored icons, because "fill" was set to "currentColor"
+}
+======================================================================================== */
+
+.icon-intro_logo {
+	width: 1.9326171875em;
+}
+
+.icon-logo-home {
+	width: 1.4375em;
+}
+
+.icon-intro_home {
+	width: 1.1357421875em;
+}
+
+.icon-intro_hardware {
+	width: 1.0068359375em;
+}
+
+.icon-logo {
+	width: 1.537109375em;
+}
+#icon-logo .path1 {
+	fill: rgba(255, 255, 255, 0.4);
+}
+#icon-logo .path2, #icon-logo .path3, #icon-logo .path4, #icon-logo .path5, #icon-logo .path6, #icon-logo .path7, #icon-logo .path8, #icon-logo .path9, #icon-logo .path10, #icon-logo .path11, #icon-logo .path12, #icon-logo .path13, #icon-logo .path14, #icon-logo .path15, #icon-logo .path16, #icon-logo .path17, #icon-logo .path18, #icon-logo .path19, #icon-logo .path20, #icon-logo .path21, #icon-logo .path22, #icon-logo .path23 {
+	fill: #fff;
+}
+
+.icon-dialog {
+	width: 5.326171875em;
+}
+
+.icon-mail2 {
+	width: 1.2314453125em;
+}
+
+.icon-mail {
+	width: 1.3984375em;
+}
+#icon-mail .path1, #icon-mail .path2, #icon-mail .path3 {
+	fill: #fff;
+}
+#icon-mail .path4 {
+	fill: rgba(255, 255, 255, 0.45);
+}
+
+.icon-phone {
+	width: 0.6240234375em;
+}
+#icon-phone .path1, #icon-phone .path2, #icon-phone .path3, #icon-phone .path4, #icon-phone .path5, #icon-phone .path6, #icon-phone .path7 {
+	fill: #fff;
+}
+#icon-phone .path8 {
+	fill: rgba(255, 255, 255, 0.4);
+}
+
+.icon-location {
+	width: 0.6953125em;
+}
+#icon-location .path1, #icon-location .path2, #icon-location .path3 {
+	fill: #fff;
+}
+#icon-location .path4, #icon-location .path5 {
+	fill: rgba(255, 255, 255, 0.4);
+}
+
+.icon-arrow-round-left {
+	width: 0.6318359375em;
+}
+
+.icon-arrow-round-right {
+	width: 0.6318359375em;
+}
+
+.icon-pro_next {
+	width: 0.96875em;
+}
+
+.icon-pro_prev {
+	width: 0.96875em;
+}

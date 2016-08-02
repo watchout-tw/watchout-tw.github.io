@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/* --------------------------------
+Grid for five Layout
+-------------------------------- */
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.col-xs-15 {
+	width: 20%;
+	float: left;
+}
+
+@media (min-width: 768px) {
+	.col-sm-15 {
+		width: 20%;
+		float: left;
+	}
+}
+
+@media (min-width: 992px) {
+	.col-md-15 {
+		width: 20%;
+		float: left;
+	}
+}
+
+@media (min-width: 1200px) {
+	.col-lg-15 {
+		width: 20%;
+		float: left;
+	}
+}
+
+
+/* --------------------------------
+From Layout
+-------------------------------- */
+
+.form-control {
+	font-family: $font-1;
+	border: 0;
+	border-bottom: 2px solid #2ccac4;
+	appearance: none;
+	color: #969696;
+	background: transparent;
+	padding: 15px;
+	line-height: 20px;
+	height: auto;
+	@include transition(all 0.2s linear 0s);
+	@include box-shadow(none);
+	@include border-radius(2px);
+	font-family: $font-1;
+}
+
+.form-control {
+	&:focus {
+		background: transparent;
+		outline: 0 !important;
+		box-shadow: none;
+		&:-moz-placeholder,
+		&:-ms-input-placeholder,
+		&:-webkit-input-placeholder {
+			color: #757575;
+		}
+	}
+	&::-webkit-input-placeholder {
+		color: #757575;
+	}
+	&[disabled],
+	&[readonly] {
+		background: #f8f8f8;
+		color: rgba(98, 98, 98, 0.23);
+	}
+}
+
+.form-trandparent {
+	background: transparent;
+	border: 0;
+	max-width: 120px;
+	padding: 10px 0;
+}
+
+select.form-control,
+select.form-control:focus {
+	background-image: url('../images/formsvg/cd-icon-arrow.svg');
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 30px;
+	background-size: 28px;
+}
+
+fieldset[disabled] .form-control {
+	background: #f8f8f8;
+	color: rgba(98, 98, 98, 0.23);
+}
+
+label {
+	font-family: $font-1;
+	letter-spacing: 0.05em;
+	color: #202020;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.form-group {
+	font-size: 14px;
+	margin-bottom: 25px;
+	position: relative;
+	@include MQ(S) {
+		.form-group {
+			margin-bottom: 8px;
+		}
+	}
+}
+
+.input-group-addon {
+	background-color: transparent;
+	border: 0px;
+	padding: 6px 18px;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	svg {
+		color: #0080BB;
+	}
+}

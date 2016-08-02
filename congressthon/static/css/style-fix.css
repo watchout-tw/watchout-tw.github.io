@@ -1,0 +1,65 @@
+.party span{
+	font-size: 13px;
+}
+.feature-intro-text-00{
+	text-align: center;
+}
+.feature-intro-text-00 .it-center{
+	text-align: left;
+	max-width: 280px;
+	margin: auto;
+}
+.feature-intro-text-00 .it-center span{
+	letter-spacing: -5px;
+	padding-right: 7px;
+}
+.feature-intro-text em{
+	font-style: normal;
+	color: #d09c49;
+}
+.feature-intro-text-00 em{
+	font-style: normal;
+	color: #019e95;
+}
+.left-table .date-label, .left-table .table thead tr th{
+	background: #FFCC22;
+}
+.party-logo-group .title{
+	color: #5b5b5b;
+	font-size: 18px;
+	font-weight: bold;	
+	display: block;
+	clear: both;
+	width: 100%;
+	text-align: left;
+}
+.row.row-a{
+	width: 48%;
+	float: left;
+	padding-left: 15px;
+}
+.row.row-a.row-b{
+	float: right;
+}
+
+@media only screen and (max-width: 990px){
+.feature-intro-text-00 .it-center{
+	max-width: 230px;}
+.feature-intro-text-00 .it-center span{
+	letter-spacing: -3px;
+}
+.row.row-a .title{
+	font-size: 14px;
+}
+}
+
+@media only screen and (max-width: 960px){
+	.row.row-a{
+	width: 99%;
+	float: none;
+	clear: both;
+}
+.row.row-a.row-b{
+	float: none;
+}
+}

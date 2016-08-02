@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/* --------------------------------
+Index Slider
+-------------------------------- */
+
+.sp-layer {
+	width: 90%;
+	max-width: 470px;
+	border: 1px solid #fff;
+	background: rgba(0, 0, 0, 0.2);
+	text-align: center;
+	color: #fff;
+	padding: 30px 20px;
+	transition: .3s ease-in-out;
+	white-space: normal !important;
+	@media only screen and (max-width: 480px) {
+		display: none;
+	}
+	a {
+		color: #fff;
+	}
+}
+
+#index-slider .sp-slide {
+	&:hover .sp-layer {
+		background: rgba(0, 0, 0, 0.3);
+	}
+}
+
+#index-slider .sp-buttons {
+	position: absolute;
+	bottom: -40px;
+	.sp-button {
+		width: 10px;
+		height: 10px;
+		margin: 6px;
+	}
+}
+
+.sp-thumbnail-container {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.thumbnail-description {
+	margin-top: 5px;
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: #9e9e9e;
+	margin: 0;
+	padding: 0;
+}
+
+.sp-bottom-thumbnails {
+	left: 0;
+	margin: 0;
+	margin-top: 10px;
+}
+
+.sp-bottom-thumbnails .sp-thumbnail-container {
+	overflow: visible !important;
+	margin: 0;
+}
+
+.sp-bottom-thumbnails.sp-has-pointer {
+	margin-top: 0;
+}
+
+.sp-bottom-thumbnails.sp-has-pointer:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	border-bottom: 5px solid #000;
+	top: 0;
+	margin-top: 0px;
+}
+
+.sp-bottom-thumbnails.sp-has-pointer .sp-thumbnail {
+	padding: 0 10px;
+}
+
+.sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail {
+	.thumbnail-title {
+		color: #c89863;
+	}
+}
+
+.sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	border-bottom: 5px solid #c99964;
+	top: 0;
+	margin-top: 0px;
+}
+
+.sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 50%;
+	top: -13px;
+	margin-left: -8px;
+	border-bottom: 13px solid #c99964;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+}
+
+.sp-button {
+	border: 0;
+	background: #fff;
+	width: 8px;
+	height: 8px;
+}
+
+.sp-selected-button {
+	background-color: $color-1;
+}
+
+#prod {
+	.sp-slide {
+		background: #fff;
+	}
+	.sp-thumbnail-image {
+		max-height: 100%;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.sp-thumbnail-image-container {
+		width: 125px;
+		height: 125px;
+		overflow: hidden;
+		float: left;
+		background: #fff;
+		display: inline-flex;
+		align-items: center;
+		@include MQ(M) {
+			width: 80px;
+			height: 80px;
+		}
+	}
+}
+
+.sp-selectable {
+	cursor: pointer;
+}
+
+// fix index event caption fade problem
+.sp-caption-container {
+	position: relative;
+}
+
+.index-banner .tp-caption.News-Title,
+.News-Title {
+	color: $color-1;
+	font-family: $font-2;
+	font-weight: 100 !important;
+	line-height: 1.1 !important;
+}
+
+
+/* BULLETS */
+
+.uranus .tp-bullet {
+	box-shadow: 0 0 0 2px rgba(140, 140, 140, 0) !important;
+}
+
+.uranus .tp-bullet.selected,
+.uranus .tp-bullet:hover {
+	box-shadow: 0 0 0 2px #8c8c8c !important;
+}
+
+.uranus .tp-bullet-inner {
+	background-color: rgba(140, 140, 140, 0.7) !important;
+}
+
+.uranus .tp-bullet.selected .tp-bullet-inner,
+.uranus .tp-bullet:hover .tp-bullet-inner {
+	background-color: #8c8c8c !important;
+}

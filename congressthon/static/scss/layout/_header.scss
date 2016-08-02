@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------------------------
+HEADER AND MENU 
+--------------------------------------------------------------------------*/
+
+header {
+	z-index: 999;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #fff;
+	@include transition(all ease-in .2s);
+	.container {
+		padding: 10px 0;
+	}
+	@include MQ(S) {
+		background: transparent;
+	}
+}
+
+header .logo {
+	float: left;
+		padding: 10px 20px;
+	img {
+		height: 25px;
+		@include transition(all ease-in .2s);
+	}
+	@include MQ(M) {
+		img {
+			height: 25px;
+			margin-top: 0;
+		}
+	}
+	@include MQ(S) {
+		display: none;
+		img {
+			height: 18px;
+			margin-top: 0;
+		}
+	}
+}
+
+nav.main-nav {
+	top: 0px;
+	position: relative;
+}
+
+header .sf-menu {
+	float: right;
+	@include MQ(S) {
+		display: none;
+	}
+	@include MQ(XS) {
+		display: none;
+	}
+}
+
+
+/* --------------------------------
+Nav ( full screen mobile nav )
+-------------------------------- */
+
+nav.mobile-nav {
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: rgba(214, 139, 26, 0.89);
+	text-align: center;
+	display: table;
+	color: white;
+}
+
+nav.nav-hide {
+	display: none;
+}
+
+nav.mobile-nav ul {
+	// display: table-cell;
+	// vertical-align: middle;
+	padding-left: 0 !important;
+	margin: 10% auto;
+	display: block;
+	li {
+		list-style: none;
+		padding: 20px 0;
+		a {
+			font-size: 36px;
+			color: inherit;
+			font-weight: bolder;
+			text-decoration: none;
+			font-family: $font-1;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			@include transition(all ease-in .2s);
+			&:hover {
+				color: $color-3;
+			}
+		}
+	}
+}
+
+
+/* --------------------------------
+Nav toggle icon
+-------------------------------- */
+
+.nav-toggle {
+	display: none;
+	@include MQ(S) {
+		display: block;
+	}
+	z-index: 20;
+}
+
+.nav-icon {
+	z-index: 999;
+	float: right;
+	height: 30px;
+	width: 30px;
+	right: 0;
+	position: absolute;
+	cursor: pointer;
+	/* image replace */
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	background: url(../images/icon-nav.svg) no-repeat center center;
+}
+
+
+/* --------------------------------
+Toggle Blur
+-------------------------------- */
+
+.blur {
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	-o-filter: blur(10px);
+	-ms-filter: blur(10px);
+	filter: blur(10px);
+	@include transition(all 0.1s ease);
+}

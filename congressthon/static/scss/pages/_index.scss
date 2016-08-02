@@ -1,0 +1,228 @@
+@charset "utf-8";
+section > .container {
+	@include MQ(XS) {
+		padding: 0 15px;
+	}
+}
+
+.section-title {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 50px;
+	h2 {
+		font-size: 30px;
+		color: $color-1;
+		position: relative;
+		&:after {
+			content: '';
+			width: 40px;
+			height: 5px;
+			background: $color-2;
+			position: absolute;
+			left: calc(50% - 20px);
+			top: 50px;
+		}
+		@include MQ(S) {
+			font-size: 24px;
+		}
+		@include MQ(XS) {
+			font-size: 18px;
+		}
+	}
+}
+
+
+/* --------------------------------
+Index - Banner
+-------------------------------- */
+
+section.sec-main {
+	position: relative;
+	margin-top: 15%;
+	margin-bottom: 5%;
+	min-height: 600px;
+	max-width: 1500px;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 0;
+	@include MQ(M) {
+		min-height: 400px;
+	}
+	@include MQ(S) {
+		min-height: 300px;
+	}
+	.bg-light {
+		z-index: 2;
+		text-align: center;
+		width: 80%;
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		img {
+			max-width: 100%;
+			animation: rotating 5s linear infinite;
+		}
+	}
+	.legislature {
+		z-index: 2;
+		text-align: center;
+		width: 80%;
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		img {
+			max-width: 100%;
+		}
+	}
+	.banner-text {
+		z-index: 3;
+		position: absolute;
+		top: 23%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		img {
+			max-width: 100%;
+		}
+	}
+	.chout {
+		z-index: 4;
+		position: absolute;
+		width: 17%;
+		transform-origin: center;
+		transform-box: fill-box;
+		animation: balloon-anim 0.5s linear infinite;
+		img {
+			max-width: 100%;
+		}
+		&.right1 {
+			top: 30%;
+			right: 18%;
+		}
+		&.right2 {
+			top: 40%;
+			right: 2%;
+			animation: balloon-anim-reverse 0.5s linear infinite;
+		}
+		&.left1,
+		&.left2 {
+			> img {
+				transform: scaleX(-1);
+				filter: FlipH;
+			}
+		}
+		&.left1 {
+			top: 30%;
+			left: 18%;
+			animation: balloon-anim-reverse 0.5s linear infinite;
+		}
+		&.left2 {
+			top: 40%;
+			left: 2%;
+		}
+	}
+	.main-button {
+		z-index: 7;
+		position: absolute;
+		text-align: center;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		.btn {
+			background: #ffff77;
+			width: 300px;
+			color: #e09f32;
+			display: block;
+			font-size: 18px;
+			font-weight: bold;
+			letter-spacing: 0.2em;
+			&:hover {
+				background: #ffff2e;
+			}
+			@include MQ(S) {
+				width: 200px;
+				font-size: 15px;
+			}
+		}
+		@include MQ(M) {
+			top: 75%;
+		}
+		@include MQ(S) {
+			top: 75%;
+		}
+		@include MQ(XS) {
+			top: 60%;
+		}
+	}
+}
+
+.chout .dialogue {
+	position: absolute;
+	top: -30%;
+	right: 20%;
+	width: 40%;
+}
+
+.chout.left1,
+.chout.left2 {
+	.dialogue {
+		left: 20%;
+	}
+}
+
+.party {
+	position: absolute;
+	text-align: center;
+	top: 81%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	width: 80%;
+	max-width: 300px;
+	@include MQ(M) {
+		top: 90%;
+	}
+	@include MQ(S) {
+		top: 95%;
+	}
+	@include MQ(XS) {
+		top: 80%;
+	}
+	img {
+		max-width: 100%;
+	}
+}
+
+@keyframes rotating {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes balloon-anim {
+	0% {
+		transform: translateY(0)
+	}
+	50% {
+		transform: translateY(-8px)
+	}
+	100% {
+		transform: translateY(0)
+	}
+}
+
+@keyframes balloon-anim-reverse {
+	0% {
+		transform: translateY(-8px)
+	}
+	50% {
+		transform: translateY(0)
+	}
+	100% {
+		transform: translateY(-8px)
+	}
+}

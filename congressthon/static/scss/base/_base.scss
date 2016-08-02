@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+
+/* --------------------------------
+BASIC STYLE
+-------------------------------- */
+
+*,
+*::before,
+*::after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+// animation
+$animation-duration: 0.7s;
+// breakpoints
+$XS: 480px;
+$S: 767px;
+$M: 991px;
+$L: 1201px;
+// media queries
+@mixin MQ($canvas) {
+	@if $canvas==XS {
+		@media only screen and (max-width: $XS) {
+			@content;
+		}
+	}
+	@if $canvas==S {
+		@media only screen and (max-width: $S) {
+			@content;
+		}
+	}
+	@else if $canvas==M {
+		@media only screen and (max-width: $M) {
+			@content;
+		}
+	}
+	@else if $canvas==L {
+		@media only screen and (max-width: $L) {
+			@content;
+		}
+	}
+}
+
+/* --------------------------------
+Colors
+-------------------------------- */
+$color-1: #019e95;
+$color-2: #dfa03f;
+$color-3: #ffffff;
+
+/* --------------------------------
+Responsive
+-------------------------------- */
+
+body {
+	color: #6b6b6b;
+	font: normal 16px / 28px "微軟正黑體", "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	background-color: #efefef;
+}
+
+@media only screen and (max-width: 991px) {
+	body {
+		font: normal 13px / 28px "微軟正黑體", "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	h1,
+	.h1 {
+		font-size: 30px;
+	}
+	h2,
+	.h2 {
+		font-size: 24px;
+	}
+	h3,
+	.h3 {
+		font-size: 18px;
+	}
+	h4,
+	.h4 {
+		font-size: 14px;
+	}
+	p {
+		font-size: 13px;
+		line-height: 1.8;
+	}
+}
+
+/* --------------------------------
+Links
+-------------------------------- */
+
+a {
+	color: #000000;
+	text-decoration: none;
+	outline: 0;
+	@include transition(all .1s ease-in);
+	&:hover,
+	&:focus {
+		color: #424242;
+		text-decoration: none;
+		outline: none;
+	}
+}
+
+
+/* --------------------------------
+Typography
+-------------------------------- */
+
+p {
+	margin: 1.5em 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	display: block;
+	color: $color-1;
+	font-family: $font-1;
+	font-weight: bold;
+}
+
+
+/* --------------------------------
+Page Basic Style
+-------------------------------- */
+
+.container {
+	position: relative;
+	max-width: 1800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container-fluid {
+	padding: 0 30px;
+}
+
+main {
+	min-height: calc(100vh - 340px);
+	position: relative;
+	@include MQ(M) {
+	min-height: calc(100vh - 286px);
+	}
+}
+
+#sb-site > .container {
+	min-height: calc(100vh - 340px);
+}
