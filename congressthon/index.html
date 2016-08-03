@@ -9,7 +9,6 @@
 	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" href="favicon.ico" />
-	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 	<!-- CSS -->
 	<!-- Optmization  -->
@@ -358,7 +357,7 @@
 						</div>
 						<div class="col-sm-4">
 							<div class="avatar">
-								<img src="static/images/forum_speakers/default.jpg" alt="">
+								<img src="static/images/forum_speakers/topic_1_03.jpg" alt="">
 							</div>
 							<h4 class="title">
 								食夢黑貘
@@ -733,6 +732,7 @@
 	</div>
 </section>
 <div class="google-maps" id="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.729367005523!2d121.51770601539197!3d25.04325684407336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a973e1d861bb%3A0x199b56f0b680dbdb!2zMTAw5Y-w5YyX5biC5Lit5q2j5Y2A5r-f5Y2X6Lev5LiA5q61MeiZnw!5e0!3m2!1szh-TW!2stw!4v1470199147830" frameborder="0" style="border:0" allowfullscreen="" class="map-iframe"></iframe>
 </div>
 <!-- 主辦單位 -->
 <section class="sec-organizer" id="section-about">
@@ -826,53 +826,6 @@
 		</div>
 	</div>
 </section>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script type="text/javascript">
-// When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
-
-function init() {
-	// Basic options for a simple Google Map
-	// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-	var mapOptions = {
-		// How zoomed in you want the map to start at (always required)
-		zoom: 17,
-
-		// The latitude and longitude to center the map (always required)
-		center: new google.maps.LatLng(25.0431548, 121.5199148, 17.56), // New York
-		// How you would like to style the map. 
-		// This is where you would paste any style found on Snazzy Maps.
-	};
-
-	// Get the HTML DOM element that will contain your map 
-	// We are using a div with id="map" seen below in the <body>
-	var mapElement = document.getElementById('map');
-
-	// Create the Google Map using our element and options defined above
-	var map = new google.maps.Map(mapElement, mapOptions);
-
-
-
-	var marker = new google.maps.Marker({
-		animation: google.maps.Animation.DROP,
-		position: {
-			lat: 25.0431548,
-			lng: 121.5199148
-		},
-		map: map
-	});
-	marker.addListener('click', toggleBounce);
-
-}
-
-function toggleBounce() {
-	if (marker.getAnimation() !== null) {
-		marker.setAnimation(null);
-	} else {
-		marker.setAnimation(google.maps.Animation.BOUNCE);
-	}
-}
-</script>
 		</main>
 		<footer class="footer">
 			<div class="clearfix">
@@ -888,202 +841,6 @@ function toggleBounce() {
 				</div>
 			</div>
 		</footer>
-	</div>
-	<div class="sb-slidebar sb-left">
-		<div class="mobilenav">
-			<div class="mobilenav-container">
-				<ul class="mobilenav-root">
-					<div class="mobile-logo">
-						<a href="index.html">
-							<svg class="icon icon-logo">
-								<use xlink:href="#icon-logo"></use>
-							</svg>
-						</a>
-					</div>
-					<li>
-						<a href="index.html">HOME</a>
-					</li>
-					<li>
-						<a href="about.html">ABOUT</a>
-					</li>
-					<li>
-						<a href="#">PRODUCTS
-							<svg class="icon icon-play_arrow">
-								<use xlink:href="#icon-play_arrow"></use>
-							</svg>
-						</a>
-						<ul class="mobilenav-sub">
-							<h2>Products</h2>
-							<li>
-								<a href="products_list.html">Household & Kitchenware
-									<svg class="icon icon-play_arrow">
-										<use xlink:href="#icon-play_arrow"></use>
-									</svg>
-								</a>
-								<ul class="mobilenav-sub">
-									<h2>Household & Kitchenware</h2>
-									<li>
-										<a href="products_list.html">View All </a>
-									</li>
-									<li>
-										<a href="products_list.html">Blenders</a>
-									</li>
-									<li>
-										<a href="products_list.html">Can Openers</a>
-									</li>
-									<li>
-										<a href="products_list.html">Choppers</a>
-									</li>
-									<li>
-										<a href="products_list.html">Cleaners & Dryers</a>
-									</li>
-									<li>
-										<a href="products_list.html">Coffee Grinders & Makers</a>
-									</li>
-									<li class="mobilenav-back">
-										<a href="#">
-											<svg class="icon icon-arrow-left">
-												<use xlink:href="#icon-arrow-left"></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="products_list.html">Healthcare
-									<svg class="icon icon-play_arrow">
-										<use xlink:href="#icon-play_arrow"></use>
-									</svg>
-								</a>
-								<ul class="mobilenav-sub">
-									<h2>Household & Kitchenware</h2>
-									<li>
-										<a href="products_list.html">View All </a>
-									</li>
-									<li>
-										<a href="products_list.html">Blenders</a>
-									</li>
-									<li>
-										<a href="products_list.html">Can Openers</a>
-									</li>
-									<li>
-										<a href="products_list.html">Choppers</a>
-									</li>
-									<li>
-										<a href="products_list.html">Cleaners & Dryers</a>
-									</li>
-									<li>
-										<a href="products_list.html">Coffee Grinders & Makers</a>
-									</li>
-									<li class="mobilenav-back">
-										<a href="#">
-											<svg class="icon icon-arrow-left">
-												<use xlink:href="#icon-arrow-left"></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="products_list.html">Ootdoor & Sporting
-									<svg class="icon icon-play_arrow">
-										<use xlink:href="#icon-play_arrow"></use>
-									</svg>
-								</a>
-								<ul class="mobilenav-sub">
-									<h2>Household & Kitchenware</h2>
-									<li>
-										<a href="products_list.html">View All </a>
-									</li>
-									<li>
-										<a href="products_list.html">Blenders</a>
-									</li>
-									<li>
-										<a href="products_list.html">Can Openers</a>
-									</li>
-									<li>
-										<a href="products_list.html">Choppers</a>
-									</li>
-									<li>
-										<a href="products_list.html">Cleaners & Dryers</a>
-									</li>
-									<li>
-										<a href="products_list.html">Coffee Grinders & Makers</a>
-									</li>
-									<li class="mobilenav-back">
-										<a href="#">
-											<svg class="icon icon-arrow-left">
-												<use xlink:href="#icon-arrow-left"></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="products_list.html">Personal Safety & Anti-Crime
-									<svg class="icon icon-play_arrow">
-										<use xlink:href="#icon-play_arrow"></use>
-									</svg>
-								</a>
-								<ul class="mobilenav-sub">
-									<h2>Household & Kitchenware</h2>
-									<li>
-										<a href="products_list.html">View All </a>
-									</li>
-									<li>
-										<a href="products_list.html">Blenders</a>
-									</li>
-									<li>
-										<a href="products_list.html">Can Openers</a>
-									</li>
-									<li>
-										<a href="products_list.html">Choppers</a>
-									</li>
-									<li>
-										<a href="products_list.html">Cleaners & Dryers</a>
-									</li>
-									<li>
-										<a href="products_list.html">Coffee Grinders & Makers</a>
-									</li>
-									<li class="mobilenav-back">
-										<a href="#">
-											<svg class="icon icon-arrow-left">
-												<use xlink:href="#icon-arrow-left"></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</li>
-							<li class="mobilenav-back">
-								<a href="#">
-									<svg class="icon icon-arrow-left">
-										<use xlink:href="#icon-arrow-left"></use>
-									</svg>
-								</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="contact.html">CONTACT</a>
-					</li>
-					<li class="language">
-						<a>Select Language</a>
-						<ul id="language-list">
-							<li>
-								<a href="#">English</a>
-							</li>
-							<li>
-								<a href="#">Portuguese</a>
-							</li>
-						</ul>
-					</li>
-					<li class="member-link">
-						<a href="member_register.html">Register</a>
-						<a href="member_login.html">Login</a>
-					</li>
-				</ul>
-			</div>
-		</div>
 	</div>
 	<!-- Optmization  -->
 	<script src="static/vendor/smoothscroll/smoothscroll.js "></script>
