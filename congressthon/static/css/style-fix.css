@@ -41,7 +41,9 @@
 .row.row-a.row-b{
 	float: right;
 }
-
+.sec-ticket iframe{
+height: 320px;
+}
 @media only screen and (max-width: 990px){
 .feature-intro-text-00 .it-center{
 	max-width: 230px;}
@@ -61,5 +63,12 @@
 }
 .row.row-a.row-b{
 	float: none;
+}
+}
+
+
+@media only screen and (max-width: 630px){
+	.sec-ticket iframe{
+height: 370px;
 }
 }
