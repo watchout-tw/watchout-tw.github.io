@@ -49,8 +49,8 @@
           animation-iteration-count:infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation-duration: .8s;
-          animation-duration: .8s;
+  -webkit-animation-duration: .2s;
+          animation-duration: .2s;
   -webkit-animation-name: animsition-loading;
           animation-name: animsition-loading;
 }
