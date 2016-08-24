@@ -77,10 +77,9 @@ span.emphasize {
     font-size: 0.9em;
   }
 
-  &.unit[unit="篇"]:after { content: '篇'; }
-  &.unit[unit="筆"]:after { content: '筆'; }
-  &.unit[unit="則"]:after { content: '則'; }
-  &.unit[unit="場"]:after { content: '場'; }
+  @each $unit in (篇 筆 則 場) {
+    &.unit[unit="#{$unit}"]:after { content: '#{$unit}'; }
+  }
   &.unit:after {
   	display: block;
     position: absolute;

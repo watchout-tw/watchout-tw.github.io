@@ -81,13 +81,13 @@ span.emphasize {
   .number > .tw {
     font-size: 0.9em; }
   .number.unit[unit="篇"]:after {
-    content: '篇'; }
+    content: "篇"; }
   .number.unit[unit="筆"]:after {
-    content: '筆'; }
+    content: "筆"; }
   .number.unit[unit="則"]:after {
-    content: '則'; }
+    content: "則"; }
   .number.unit[unit="場"]:after {
-    content: '場'; }
+    content: "場"; }
   .number.unit:after {
     display: block;
     position: absolute;
