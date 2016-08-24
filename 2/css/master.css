@@ -402,7 +402,7 @@ section#sm {
     font-size: 1.5rem;
     background: rgba(0, 0, 0, 0.25);
     width: auto;
-    padding: 6px 8px 10px;
+    padding: 6px 14px 10px;
     margin: 0;
     box-shadow: none; }
   #timeline > .event .url, #timeline > .event .button.close {
