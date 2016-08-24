@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'century-std';
+  src: url('CenturyStd-Bold.eot?#iefix') format('embedded-opentype'),
+    url('CenturyStd-Bold.otf')  format('opentype'),
+    url('CenturyStd-Bold.woff') format('woff'),
+    url('CenturyStd-Bold.ttf')  format('truetype'),
+    url('CenturyStd-Bold.svg#CenturyStd-Bold') format('svg');
+  font-weight: bolder;
+  font-style: normal;
+}

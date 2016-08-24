@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'circular-pro';
+  src: url('CircularPro-Black.eot?#iefix') format('embedded-opentype'),
+    url('CircularPro-Black.otf')  format('opentype'),
+    url('CircularPro-Black.woff') format('woff'),
+    url('CircularPro-Black.ttf')  format('truetype'),
+    url('CircularPro-Black.svg#CircularPro-Black') format('svg');
+  font-weight: bolder;
+  font-style: normal;
+}
