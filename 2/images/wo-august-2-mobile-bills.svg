@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="132px" height="512px" viewBox="0 0 132 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>wo-august-2-mobile-bills</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wo-august-2-mobile-bills">
+            <path d="M37.016,56.032 L45.272,56.032 L32.6,22 L23.816,22 L11,56.032 L18.968,56.032 L21.416,49.12 L34.568,49.12 L37.016,56.032 Z M28.088,30.448 L32.168,42.208 L23.912,42.208 L28.088,30.448 Z" id="A" fill="#000000"></path>
+            <path d="M17,83 L17,117.032 L30.728,117.032 C37.16,117.032 41.384,112.952 41.384,107.384 C41.384,102.968 38.408,100.136 35.336,99.416 C38.12,98.504 40.328,95.624 40.328,92.12 C40.328,86.888 36.44,83 29.72,83 L17,83 Z M24.392,96.632 L24.392,89.288 L28.424,89.288 C31.4,89.288 32.888,90.728 32.888,92.936 C32.888,95.24 31.16,96.632 28.52,96.632 L24.392,96.632 Z M24.392,110.84 L24.392,102.872 L29.144,102.872 C32.12,102.872 33.848,104.504 33.848,106.856 C33.848,109.304 32.072,110.84 29.144,110.84 L24.392,110.84 Z" id="B" fill="#9B9B9B"></path>
+            <path d="M103.664,56.472 C114.224,56.472 118.736,49.272 119.84,44.568 L112.592,42.504 C111.92,44.952 109.568,48.888 103.664,48.888 C98.576,48.888 93.872,45.192 93.872,38.808 C93.872,31.656 99.008,28.392 103.568,28.392 C109.568,28.392 111.728,32.376 112.256,34.728 L119.408,32.472 C118.304,27.576 113.792,21 103.568,21 C94.064,21 86,28.2 86,38.808 C86,49.416 93.872,56.472 103.664,56.472 L103.664,56.472 Z" id="C" fill="#9B9B9B"></path>
+            <path d="M96.584,109.88 L96.584,90.152 L101,90.152 C106.232,90.152 110.504,93.224 110.504,100.04 C110.504,106.856 106.232,109.88 101,109.88 L96.584,109.88 Z M101.288,117.032 C111.56,117.032 118.424,110.552 118.424,100.04 C118.424,89.528 111.56,83 101.336,83 L89,83 L89,117.032 L101.288,117.032 Z" id="D" fill="#9B9B9B"></path>
+            <path d="M54.5621778,72.7583302 L59.5621778,72.7583302 L52.5621778,56.7583302 L45.5621778,72.7583302 L50.5621778,72.7583302 L50.5621778,82.7583302 L54.5621778,82.7583302 L54.5621778,72.7583302 Z" id="Combined-Shape" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" transform="translate(52.562178, 69.758330) rotate(-30.000000) translate(-52.562178, -69.758330) "></path>
+            <path d="M28,213 C36.3440289,213 43.6031124,208.354797 47.3322921,201.509349 C47.5402184,201.50935 33.2265625,191 33.2265625,191 C33.2265625,191 47.5402184,180.881669 47.5402176,180.881669 C43.8774945,173.822697 36.5019479,169 28,169 C15.8497355,169 6,178.849736 6,191 C6,203.150264 15.8497355,213 28,213 Z" id="Oval-17" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF"></path>
+            <path d="M112.829003,205.658005 C118.453258,205.658005 123.346212,202.526927 125.859849,197.912783 C126,197.912783 116.351944,190.829003 116.351944,190.829003 C116.351944,190.829003 126,184.008786 126,184.008786 C123.531158,179.250718 118.559703,176 112.829003,176 C104.639171,176 98,182.639171 98,190.829003 C98,199.018835 104.639171,205.658005 112.829003,205.658005 Z" id="Oval-17" stroke="#9B9B9B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" transform="translate(112.000000, 190.829003) scale(-1, 1) translate(-112.000000, -190.829003) "></path>
+            <path d="M73.6580054,158.829003 C79.2822612,158.829003 84.1752144,155.697924 86.6888515,151.083781 C86.8290032,151.083781 77.1809468,144 77.1809468,144 C77.1809468,144 86.8290032,137.179784 86.8290027,137.179784 C84.3601604,132.421715 79.3887058,129.170997 73.6580054,129.170997 C65.4681734,129.170997 58.8290027,135.810168 58.8290027,144 C58.8290027,152.189832 65.4681734,158.829003 73.6580054,158.829003 Z" id="Oval-17" stroke="#9B9B9B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" transform="translate(72.829003, 144.000000) scale(-1, 1) rotate(-270.000000) translate(-72.829003, -144.000000) "></path>
+            <path d="M73.6580054,252.829003 C79.2822612,252.829003 84.1752144,249.697924 86.6888515,245.083781 C86.8290032,245.083781 77.1809468,238 77.1809468,238 C77.1809468,238 86.8290032,231.179784 86.8290027,231.179784 C84.3601604,226.421715 79.3887058,223.170997 73.6580054,223.170997 C65.4681734,223.170997 58.8290027,229.810168 58.8290027,238 C58.8290027,246.189832 65.4681734,252.829003 73.6580054,252.829003 Z" id="Oval-17" stroke="#9B9B9B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" transform="translate(72.829003, 238.000000) scale(-1, 1) rotate(-90.000000) translate(-72.829003, -238.000000) "></path>
+            <g id="Wave" transform="translate(63.000000, 174.000000)" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9.63951911,19.2012199 C8.16301241,16.687489 5.43112448,15 2.30510237,15 C-0.800346805,15 -3.51683248,16.6653507 -5,19.1516975" id="Oval-18" transform="translate(2.319760, 17.100610) rotate(-270.000000) translate(-2.319760, -17.100610) "></path>
+                <path d="M26,21.470274 C22.6716994,15.8038911 16.513553,12 9.46696018,12 C2.46674234,12 -3.6566847,15.7539877 -7,21.358642" id="Oval-18" transform="translate(9.500000, 16.735137) rotate(-270.000000) translate(-9.500000, -16.735137) "></path>
+            </g>
+            <g id="Decoration" opacity="0.5" transform="translate(93.000000, 305.000000)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <polygon id="Rectangle-26" stroke="#50E3C2" fill-opacity="0.25" fill="#50E3C2" points="9 35 27 35 27 53 18 44 9 53"></polygon>
+                <circle id="Oval-16" stroke="#000000" fill="#FFFFFF" cx="18" cy="18" r="18"></circle>
+            </g>
+            <g id="Decoration" opacity="0.5" transform="translate(3.000000, 305.000000)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <polygon id="Rectangle-26" stroke="#50E3C2" fill-opacity="0.25" fill="#50E3C2" points="9 35 27 35 27 53 18 44 9 53"></polygon>
+                <circle id="Oval-16" stroke="#000000" fill="#FFFFFF" cx="18" cy="18" r="18"></circle>
+            </g>
+            <g id="Decoration" transform="translate(48.000000, 305.000000)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <polygon id="Rectangle-26" stroke="#50E3C2" fill-opacity="0.25" fill="#50E3C2" points="9 35 27 35 27 53 18 44 9 53"></polygon>
+                <circle id="Oval-16" stroke="#000000" fill="#FFFFFF" cx="18" cy="18" r="18"></circle>
+            </g>
+            <g id="Page-1" transform="translate(56.000000, 310.000000)" fill="#000000">
+                <polygon id="Fill-1" points="8.17813636 9.20634916e-05 5.62495455 4.40394921 8.07859091 6.1333619 11.0899545 1.81788571"></polygon>
+                <polygon id="Fill-2" points="11.7695455 2.60728413 9.11545455 6.77039524 11.3172727 8.26274444 14.4422727 4.69528413"></polygon>
+                <polygon id="Fill-3" points="15.0581364 5.52132381 10.9835909 11.1592921 12.7376818 12.5204508 17.3399545 7.62957778"></polygon>
+                <polygon id="Fill-4" points="13.7041364 13.1424778 15.2691364 14.7268905 19.8182273 11.0356048 17.8564091 8.69857302"></polygon>
+                <polygon id="Fill-5" points="0 11.0366635 6.05772727 20.4736317 4.93272727 28.9770762 10.5077273 28.9770762 11.2281818 20.6913619 10.8059091 20.6913619 10.8059091 20.0036476 11.5445455 19.3679492 7.66181818 11.7147111 4.70727273 10.7176635 4.85863636 10.2955524 6.07954545 10.4948698 6.25272727 10.2320286 5.40909091 8.76407619 5.74909091 8.49294921 7.56727273 10.6789968 10.2377273 10.6214571 11.0331818 9.1254254 4.27181818 4.81040952"></polygon>
+                <polygon id="Fill-6" points="8.811 11.9849635 13.0787273 20.0478841 13.0787273 20.6909476 12.3319091 20.6909476 11.5123636 28.965154 15.351 28.9384556 15.351 21.3478206 18.1473636 18.8934079 18.476 13.4989476 15.0673636 15.915154 12.7941818 13.3834079 9.06554545 11.7801222"></polygon>
+            </g>
+            <g id="Lock" transform="translate(49.000000, 421.000000)">
+                <rect id="Rectangle-23" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" x="0" y="23" width="34" height="34"></rect>
+                <path d="M28,11 C28,4.92486775 23.0751322,0 17,0 C10.9248678,0 6,4.92486775 6,11" id="Oval-8" stroke="#000000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M6,11 L6,21" id="Line" stroke="#000000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle id="Oval-9" fill="#000000" cx="17.5" cy="37.5" r="5.5"></circle>
+                <path d="M17.5,38 L17.5,47.0553856" id="Line" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <g id="Dialog-to-the-Right" opacity="0.25" transform="translate(4.000000, 406.000000)" stroke="#9B9B9B" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15.9777657,24 L36,24 L36,0 L0,0 L0,24 L6,24 L6,33.7607422 L15.9777657,24 Z" id="Combined-Shape" stroke-width="4"></path>
+                <path d="M7,6 L29,6" id="Line" stroke-width="2"></path>
+                <path d="M7,12 L29.0227146,12" id="Line" stroke-width="2"></path>
+                <path d="M7,18 L29.0227146,18" id="Line" stroke-width="2"></path>
+            </g>
+            <g id="Networked-Deliberation" opacity="0.25" transform="translate(68.000000, 387.000000)" stroke="#9B9B9B" stroke-linejoin="round">
+                <circle id="Oval-10" stroke-width="4" stroke-linecap="round" cx="39" cy="23" r="6"></circle>
+                <circle id="Oval-11" stroke-width="4" stroke-linecap="round" cx="57" cy="4" r="4"></circle>
+                <circle id="Oval-12" stroke-width="4" stroke-linecap="round" cx="48" cy="46" r="4"></circle>
+                <circle id="Oval-13" stroke-width="4" stroke-linecap="round" cx="8" cy="14" r="8"></circle>
+                <path d="M16,16 L33,21" id="Line" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M44,18 L53,8" id="Line" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M41,29 L46,41" id="Line" stroke-width="2" stroke-linecap="square"></path>
+            </g>
+            <g id="Coin" opacity="0.25" transform="translate(4.000000, 472.000000)">
+                <ellipse id="Oval-14" stroke="#9B9B9B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" cx="13.5" cy="13.5" rx="13.5" ry="13.5"></ellipse>
+                <text id="W" font-family="CircularStd-Black, Circular Std" font-size="14" font-weight="700" fill="#9B9B9B">
+                    <tspan x="6.227" y="19">W</tspan>
+                </text>
+                <path d="M5,12 L22,12" id="Line" stroke="#9B9B9B" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                <path d="M5,16 L22,16" id="Line" stroke="#9B9B9B" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+            </g>
+            <g id="Hierarchy" opacity="0.25" transform="translate(87.000000, 473.000000)" stroke="#9B9B9B" stroke-linejoin="round">
+                <rect id="Rectangle-24" stroke-width="4" stroke-linecap="round" x="14" y="0" width="14" height="14"></rect>
+                <rect id="Rectangle-24" stroke-width="4" stroke-linecap="round" x="0" y="22" width="14" height="14"></rect>
+                <rect id="Rectangle-24" stroke-width="4" stroke-linecap="round" x="28" y="22" width="14" height="14"></rect>
+                <path d="M14,14 L6.92893219,21.0710678" id="Line" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M36,14 L28.9289322,21.0710678" id="Line" stroke-width="2" stroke-linecap="square" transform="translate(32.000000, 18.000000) scale(-1, 1) translate(-32.000000, -18.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

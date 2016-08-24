@@ -15,3 +15,12 @@ $leadingTight: 1.375;
 $mincho: "century-std", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
 $monospace: "akkurat-mono", monospace;
 $grotesque: "circular-pro", "xin-gothic-tc", "PingFang TC", sans-serif;
+
+// layout & unified style elements
+$navHeight: 65px;
+$lightGold: rgba($gold, 0.75);
+$darkGold: rgba($gold, 0.85);
+$lightShadow: 0 2px 4px 0 rgba(black, 0.25);
+$darkShadow: 0 2px 4px 0 rgba(black, 0.35);
+$borderWidth: 4px;
+$borderGreen: $borderWidth solid $woc;
