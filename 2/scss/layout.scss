@@ -1,0 +1,34 @@
+@import 'variables';
+@import 'responsive';
+@import 'susy';
+$susy: (
+	columns: 4,
+	gutters: 1/3,
+	gutter-position: split,
+);
+
+.grid {
+	@include container();
+}
+
+#monthly-payments > .payment-option {
+	@include span(2);
+}
+#gifts > .gift {
+  @include span(2);
+}
+#one-time-purchases > .purchase-option {
+  @include span(4);
+}
+#bill-of-rights > .bill {
+  @include span(2);
+}
+#stats > .stat {
+  @include span(4);
+  &.tiny {
+    @include span(2);
+    > p {
+      min-height: $rem * $leadingTight * 2; // temporary fix
+    }
+  }
+}

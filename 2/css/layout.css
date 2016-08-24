@@ -1,0 +1,56 @@
+.medium-and-large-screen {
+  display: none !important; }
+
+@media (min-width: 481px) {
+  .medium-and-large-screen {
+    display: inherit !important; }
+
+  .small-screen {
+    display: none !important; } }
+.grid {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .grid:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+#monthly-payments > .payment-option {
+  width: 43.75%;
+  float: left;
+  margin-left: 3.125%;
+  margin-right: 3.125%; }
+
+#gifts > .gift {
+  width: 43.75%;
+  float: left;
+  margin-left: 3.125%;
+  margin-right: 3.125%; }
+
+#one-time-purchases > .purchase-option {
+  width: 93.75%;
+  float: left;
+  margin-left: 3.125%;
+  margin-right: 3.125%; }
+
+#bill-of-rights > .bill {
+  width: 43.75%;
+  float: left;
+  margin-left: 3.125%;
+  margin-right: 3.125%; }
+
+#stats > .stat {
+  width: 93.75%;
+  float: left;
+  margin-left: 3.125%;
+  margin-right: 3.125%; }
+  #stats > .stat.tiny {
+    width: 43.75%;
+    float: left;
+    margin-left: 3.125%;
+    margin-right: 3.125%; }
+    #stats > .stat.tiny > p {
+      min-height: 44px; }
+
+/*# sourceMappingURL=layout.css.map */

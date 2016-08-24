@@ -1,0 +1,169 @@
+@import 'variables';
+@import 'responsive';
+@import 'typography';
+
+$navHeight: 65px;
+$borderWidth: 4px;
+
+* {
+	box-sizing: border-box;
+}
+
+nav {
+	width: 100%;
+	height: $navHeight;
+	position: fixed;
+	top: 0;
+	background: $woc;
+}
+#nav-space {
+	height: $navHeight;
+}
+body > section {
+	> hgroup:first-child {
+		padding: 1rem 0;
+		background: rgba($woc, 0.25);
+	}
+	&#first-section > hgroup {
+		padding: 0;
+		background: none;
+	}
+	&#fertile-land > #stats > .stat {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		> .number-wrapper {
+			display: block;
+			margin: 0.5rem 0;
+		}
+		> .project-icon + .number-wrapper {
+			margin-top: 0;
+		}
+		> p {
+			margin: 0;
+		}
+	}
+}
+
+.pop {
+	background: $woc;
+}
+.prompt {
+	box-sizing: content-box;
+	display: block;
+	color: $grey;
+	width: 4em;
+	padding: 10px;
+	border: $borderWidth solid $grey;
+	border-radius: $borderWidth;
+	margin: 2rem auto 0.75rem;
+}
+$lightGold: rgba($gold, 0.75);
+$darkGold: rgba($gold, 0.85);
+$lightShadow: 0 2px 4px 0 rgba(black, 0.25);
+$darkShadow: 0 2px 4px 0 rgba(black, 0.35);
+.button {
+	box-sizing: content-box;
+	color: $orange;
+	background: $lightGold;
+	display: block;
+	width: 4em;
+	padding: 10px 12px;
+	margin: 0 auto;
+	box-shadow: $lightShadow;
+	cursor: pointer;
+
+	&:hover {
+		background: $darkGold;
+		box-shadow: $darkShadow;
+	}
+}
+$borderGreen: $borderWidth solid $woc;
+.divider {
+	position: relative;
+	border-top: $borderGreen;
+	border-bottom: $borderGreen;
+	@include medium-and-large-screen {
+		border: $borderGreen;
+		border-radius: $borderWidth;
+	}
+}
+badge {
+	box-sizing: content-box;
+	display: block;
+	color: $woc;
+	width: 2em;
+	padding: 8px 11px;
+	border: $borderGreen;
+	border-radius: 100%;
+	margin: 0 auto;
+	transform: rotate(-15deg);
+
+
+}
+.divider > badge {
+	position: absolute;
+	left: 50%;
+	background: white;
+	transform: translate(-50%, -50%) rotate(-15deg);
+}
+.support {
+	box-sizing: content-box;
+	display: block;
+	color: $orange;
+	width: 2em;
+	background: $lightGold;
+	padding: 16px 24px;
+	border-radius: 100%;
+	margin: 0 auto;
+	transform: scale(0.8);
+	box-shadow: $lightShadow;
+	cursor: pointer;
+
+	&:hover {
+		background: $darkGold;
+		box-shadow: $darkShadow;
+	}
+}
+
+section#sm {
+	padding: 3em 0;
+	background: rgba($woc, 0.25);
+}
+#email {
+	margin: 3em 0 1em;
+	transform: rotate(-5deg);
+	> span {
+		padding: 0.25em 0.375em;
+		background: $woc;
+	}
+}
+#copyright {
+	margin: 1em 0 5em;
+	transform: rotate(3deg);
+}
+
+@mixin icon($width, $height, $background, $step, $keys) {
+	display: block;
+	width: $width;
+	height: $height;
+	background: url('../images/' + $background);
+	background-size: 100%;
+	margin: 0 auto;
+
+	@for $i from 0 through length($keys)-1 {
+	  &[key="#{nth($keys, $i+1)}"] {
+	    background-position: unquote("0 ") -$i*$step; // shift window along Y
+	  }
+	}
+}
+.project-icon.small {
+	@include icon(30px, 30px, 'wo-august-2-project-logo-small.svg', 30px, (國會無雙 給問 公民學院 立委出任務));
+}
+
+.payment-icon {
+	@include icon(128px, 54px, 'wo-august-2-monthly-payments.svg', 64px, (100 300 500 1000));
+}
+
+.gift-icon {
+	@include icon(128px, 118px, 'wo-august-2-gifts.svg', 128px, (certificate, card, newsletter, present));
+}
