@@ -7,27 +7,34 @@ $grey: #9B9B9B;
 // typography
 $rem: 16px;
 
-$bodyText: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;
-$leadingNormal: 1.75;
-$leadingTight: 1.375;
+$font-body: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;
+$leading-normal: 1.75;
+$leading-tight: 1.375;
 
-//$mincho: "century-std", "ja-extension", "heisei-mincho-std", sans-serif;
-$mincho: "century-std", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
-$monospace: "akkurat-mono", monospace;
-$strong: "circular-pro", "xin-gothic-tc", "PingFang TC", sans-serif;
-$grotesque: "circular-pro", "source-han-sans-tc", sans-serif;
+$font-mincho: "century-std", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
+$font-monospace: "akkurat-mono", monospace;
+$font-strong: "circular-pro", "xin-gothic-tc", "PingFang TC", sans-serif;
+$font-grotesque: "circular-pro", "source-han-sans-tc", sans-serif;
 
 // layout & unified style elements
-$navHeight: 65px;
-$lightGold: rgba($gold, 0.75);
-$darkGold: rgba($gold, 0.85);
-$almostGold: rgba($gold, 0.95);
-$lightShadow: 0 2px 4px 0 rgba(black, 0.25);
-$darkShadow: 0 2px 4px 0 rgba(black, 0.35);
-$borderWidth: 4px;
-$borderGreen: $borderWidth solid $woc;
+$nav-height: 65px;
+$gold-light: rgba($gold, 0.75);
+$gold-dark: rgba($gold, 0.85);
+$gold-almost: rgba($gold, 0.95);
+$shadow-light: 0 2px 4px 0 rgba(black, 0.25);
+$shadow-dark: 0 2px 4px 0 rgba(black, 0.35);
+$border-width: 4px;
+$border-green: $border-width solid $woc;
+$border-gold: $border-width solid $gold;
 
 @mixin transform($attr) {
 	-webkit-transform: $attr;
 	transform: $attr;
+}
+@mixin background-gradient($dir, $from, $to) {
+	background: -webkit-linear-gradient($dir, $from, $to); // Safari 5.1, Chrome 10+
+	background: -moz-linear-gradient($dir, $from, $to); // Firefox 3.6+
+	background: -ms-linear-gradient($dir, $from, $to); // IE 10
+	background: -o-linear-gradient($dir, $from, $to); // Opera 11.10+
+	background: linear-gradient(from $dir, $from, $to);
 }
