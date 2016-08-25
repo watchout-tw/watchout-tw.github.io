@@ -140,19 +140,19 @@ pgroup {
 .single {
   line-height: 1em; }
 
-.button, .prompt, badge, .call, #support-button {
+.button, .prompt, badge, .call, .support-button {
   font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1em; }
 
-#support-button {
+.support-button {
   font-family: "circular-pro", "source-han-sans-tc", sans-serif;
   font-size: 2.25rem;
   font-weight: 900; }
 
-badge, .line, #support-button {
+badge, .line, .support-button {
   line-height: 1.22222222em; }
 
 .custom-line-break > .line {
@@ -215,6 +215,13 @@ ul {
   font-size: 0.8125rem;
   font-family: "circular-pro", "source-han-sans-tc", sans-serif;
   font-weight: 900; }
+
+.sticker-name {
+  color: #50E3C2;
+  font-size: 1.125rem;
+  font-family: "century-std", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
+  font-weight: 900;
+  line-height: 1; }
 
 * {
   box-sizing: border-box; }
@@ -332,7 +339,7 @@ badge {
   -webkit-transform: translate(-50%, -50%) rotate(-15deg);
   transform: translate(-50%, -50%) rotate(-15deg); }
 
-#support-button {
+.support-button {
   box-sizing: content-box;
   display: block;
   color: #F5A623;
@@ -345,16 +352,34 @@ badge {
   transform: scale(0.8);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
   cursor: pointer; }
-  #support-button:hover {
+  .support-button:hover {
     background: rgba(248, 231, 28, 0.85);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35); }
+  .support-button.shadow {
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: scale(0.8) translateX(-50%);
+    transform: scale(0.8) translateX(-50%); }
+
+#support-buttons.deployed > .support-button.light {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(248, 231, 28, 0.95); }
+#support-buttons.deployed > .support-button.shadow {
+  position: relative;
+  left: auto;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8); }
 
 section#sm {
-  padding: 3em 0;
+  padding: 4rem 0;
   background: rgba(80, 227, 194, 0.25); }
 
 #stickers {
-  margin: 1rem 0; }
+  margin-top: 2rem; }
 
 #email {
   margin: 3em 0 2em;
@@ -644,5 +669,16 @@ section#sm {
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat; }
+
+#stickers ul > li {
+  display: inline-block;
+  margin: 0.5rem 1rem; }
+  #stickers ul > li > .sticker-example, #stickers ul > li > .sticker-name {
+    display: block; }
+  #stickers ul > li > .sticker-example {
+    width: 100px; }
+  #stickers ul > li > .sticker-name {
+    padding-top: 0.36em;
+    margin-top: 0.25em; }
 
 /*# sourceMappingURL=master.css.map */

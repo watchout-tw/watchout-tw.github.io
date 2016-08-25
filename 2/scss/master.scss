@@ -134,7 +134,7 @@ badge {
 	background: white;
 	@include transform(translate(-50%, -50%) rotate(-15deg));
 }
-#support-button {
+.support-button {
 	box-sizing: content-box;
 	display: block;
 	color: $orange;
@@ -151,14 +151,34 @@ badge {
 		background: $darkGold;
 		box-shadow: $darkShadow;
 	}
+	&.shadow {
+		opacity: 0.1;
+		position: absolute;
+		left: 50%;
+		@include transform(scale(0.8) translateX(-50%));
+	}
+}
+#support-buttons.deployed {
+	> .support-button.light {
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 2;
+		background: $almostGold;
+	}
+	> .support-button.shadow {
+		position: relative;
+		left: auto;
+		@include transform(scale(0.8));
+	}
 }
 
 section#sm {
-	padding: 3em 0;
+	padding: 4rem 0;
 	background: rgba($woc, 0.25);
 }
 #stickers {
-	margin: 1rem 0;
+	margin-top: 2rem;
 }
 #email {
 	margin: 3em 0 2em;
@@ -385,4 +405,21 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	background-size: 100%;
 	background-position: center center;
 	background-repeat: no-repeat;
+}
+
+#stickers {
+	ul > li {
+		display: inline-block;
+		margin: 0.5rem 1rem;
+		> .sticker-example, > .sticker-name {
+			display: block;
+		}
+		> .sticker-example {
+			width: 100px;
+		}
+		> .sticker-name {
+			padding-top: 0.36em;
+			margin-top: 0.25em;
+		}
+	}
 }

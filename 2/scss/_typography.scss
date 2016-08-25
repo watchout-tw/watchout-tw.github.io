@@ -148,18 +148,18 @@ pgroup {
 .single {
   line-height: 1em;
 }
-.button, .prompt, badge, .call, #support-button {
+.button, .prompt, badge, .call, .support-button {
   @include font-body;
   font-size: 1.125rem; // 18px
   font-weight: 700;
   line-height: 1em;
 }
-#support-button {
+.support-button {
   font-family: "circular-pro", "source-han-sans-tc", sans-serif;
   font-size: 2.25rem; // 36px
   font-weight: 900;
 }
-badge, .line, #support-button {
+badge, .line, .support-button {
   line-height: 1.22222222em;
 }
 
@@ -228,4 +228,11 @@ ul {
   color: white;
   font-size: 0.8125rem;
   @include font-grotesque;
+}
+
+.sticker-name {
+  color: $woc;
+  font-size: 1.125rem;
+  @include font-mincho;
+  line-height: 1;
 }
