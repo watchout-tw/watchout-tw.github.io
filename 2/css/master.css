@@ -685,7 +685,8 @@ section#sm {
 
 #stickers > .sticker {
   display: inline-block;
-  margin: 0.5rem 1rem; }
+  margin: 0.5rem 1rem;
+  cursor: pointer; }
   #stickers > .sticker > .sticker-example, #stickers > .sticker > .sticker-name {
     display: block; }
   #stickers > .sticker > .sticker-example {

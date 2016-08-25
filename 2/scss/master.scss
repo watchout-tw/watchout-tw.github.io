@@ -431,6 +431,8 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	> .sticker {
 		display: inline-block;
 		margin: 0.5rem 1rem;
+		cursor: pointer;
+		
 		> .sticker-example, > .sticker-name {
 			display: block;
 		}
