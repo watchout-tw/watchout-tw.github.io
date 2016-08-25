@@ -8,6 +8,10 @@
   font-family: $mincho;
   font-weight: 900;
 }
+@mixin font-grotesque {
+  font-family: $grotesque;
+  font-weight: 900;
+}
 @mixin font-monospace {
   font-family: $monospace;
   font-weight: 400 !important; // no bold
@@ -217,4 +221,11 @@ ul {
 
 #copyright > .line {
   line-height: $leadingTight;
+}
+
+.t4 {
+  background: black;
+  color: white;
+  font-size: 0.8125rem;
+  @include font-grotesque;
 }

@@ -343,6 +343,40 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	}
 }
 
+#one-time-purchases > .purchase-option {
+	position: relative;
+	> .purchase-detail {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 300px + 2*$borderWidth;
+		height: 108px;
+		border: $borderGreen;
+		border-radius: $borderWidth;
+		margin: 0 auto;
+		padding: 6px;
+		background: rgba(white, 0.95);
+
+		line-height: $leadingTight;
+		text-align: left;
+
+		> li {
+			float: left;
+			width: 50%;
+
+			> .t4 {
+				display: inline-block;
+				padding: 0 2px;
+				margin-left: 2px;
+			}
+		}
+	}
+	&:hover > .purchase-detail {
+		display: block;
+	}
+}
+
 .info {
 	display: block;
 	width: 32px;
