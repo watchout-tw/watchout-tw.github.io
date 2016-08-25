@@ -221,6 +221,12 @@ ul {
   line-height: 1;
   color: #50E3C2; }
 
+.larger {
+  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 1.75rem 0; }
+
 #copyright > .line {
   line-height: 1.375; }
 
@@ -295,10 +301,18 @@ body > section {
   background-position: center center; }
   .full-screen-image#banner {
     padding-bottom: 60%;
-    background-image: url("../images/forward-compact.png"); }
+    background-image: url("../images/forward-compact.gif"); }
+    @media (min-width: 769px) {
+      .full-screen-image#banner {
+        padding-bottom: 35.75%;
+        background-image: url("../images/forward-wide.gif"); } }
   .full-screen-image#team {
     padding-bottom: 208.35%;
     background-image: url("../images/team-mobile.gif"); }
+    @media (min-width: 769px) {
+      .full-screen-image#team {
+        padding-bottom: 70.6908%;
+        background-image: url("../images/team-desktop.gif"); } }
 
 .pop {
   background: #50E3C2;
@@ -336,6 +350,7 @@ body > section {
   margin: 2rem 0; }
   @media (min-width: 481px) {
     .divider {
+      margin: 2rem;
       border: 4px solid #50E3C2;
       border-radius: 4px; } }
 
@@ -595,8 +610,28 @@ section#sm {
     #timeline > .event.small > .event-icon-wrapper > .event-icon {
       margin-top: -50px; }
   #timeline > .event > .event-icon-wrapper, #timeline > .event > .tagline {
+    position: relative;
     display: inline-block;
     vertical-align: middle; }
+  #timeline > .event > .tagline:after {
+    content: 'i';
+    display: block;
+    position: absolute;
+    font-family: "circular-pro", "source-han-sans-tc", sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0.25;
+    border: 2px solid black;
+    border-radius: 100%;
+    top: 0;
+    left: 100%;
+    margin-left: 2px; }
   #timeline > .event > .event-dialog {
     display: none;
     position: absolute;
@@ -659,7 +694,29 @@ section#sm {
 
 #one-time-purchases > .purchase-option {
   position: relative; }
-  #one-time-purchases > .purchase-option > .purchase-detail {
+  #one-time-purchases > .purchase-option > .purchase-icon-wrapper {
+    position: relative; }
+  #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-icon {
+    position: relative; }
+    #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-icon:before {
+      content: 'i';
+      display: block;
+      position: absolute;
+      font-family: "circular-pro", "source-han-sans-tc", sans-serif;
+      font-weight: 900;
+      font-size: 1rem;
+      line-height: 1;
+      text-align: center;
+      width: 1rem;
+      height: 1rem;
+      padding: 0;
+      overflow: hidden;
+      opacity: 0.25;
+      border: 2px solid black;
+      border-radius: 100%;
+      top: 0;
+      right: 0; }
+  #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail {
     display: none;
     position: absolute;
     left: 50%;
@@ -675,38 +732,34 @@ section#sm {
     background: rgba(255, 255, 255, 0.95);
     line-height: 1.375;
     text-align: left; }
-    #one-time-purchases > .purchase-option > .purchase-detail > li {
+    #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li {
       float: left;
       width: 50%; }
-      #one-time-purchases > .purchase-option > .purchase-detail > li > span {
+      #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li > span {
         display: inline-block;
-        vertical-align: middle;
+        vertical-align: baseline;
         margin-right: 2px; }
-        #one-time-purchases > .purchase-option > .purchase-detail > li > span.four {
+        #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li > span.four {
           padding: 0 4px; }
-  #one-time-purchases > .purchase-option.focus > .purchase-detail {
+  #one-time-purchases > .purchase-option.focus > .purchase-icon-wrapper > .purchase-detail {
     display: block; }
   @media (min-width: 481px) {
-    #one-time-purchases > .purchase-option.focus > .purchase-detail {
+    #one-time-purchases > .purchase-option.focus > .purchase-icon-wrapper > .purchase-detail {
       display: none; }
-    #one-time-purchases > .purchase-option:hover > .purchase-detail {
+    #one-time-purchases > .purchase-option:hover > .purchase-icon-wrapper > .purchase-detail {
       display: block; } }
 
 #one-time-purchases > .purchase-option.group-purchase {
   background: rgba(248, 231, 28, 0.25);
   border-top: 4px solid #F8E71C;
   border-bottom: 4px solid #F8E71C; }
-  #one-time-purchases > .purchase-option.group-purchase > .purchase-detail {
-    top: 1rem; }
-
-.info {
-  display: block;
-  width: 32px;
-  height: 32px;
-  background-image: url("../images/wo-august-2-info.svg");
-  background-size: 100%;
-  background-position: center center;
-  background-repeat: no-repeat; }
+  #one-time-purchases > .purchase-option.group-purchase > hgroup {
+    margin-top: -0.25rem;
+    margin-bottom: 0.25rem; }
+  @media (min-width: 481px) {
+    #one-time-purchases > .purchase-option.group-purchase {
+      border: 4px solid #F8E71C;
+      border-radius: 4px; } }
 
 #stickers > .sticker {
   display: inline-block;

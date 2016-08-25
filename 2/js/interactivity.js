@@ -38,3 +38,21 @@ $(function(){
     return false;
   })
 });
+
+// prevent event propagation at buttons
+$(function() {
+  $('.button').click(function(event) {
+    event.stopPropagation();
+  })
+});
+
+var frame_count = 0;
+$(function() {
+  setInterval(function() {
+    var $container = $('.split-flap');
+    var $items =  $container.find('> span');
+    $items.removeClass('focus').eq(frame_count%$items.length).addClass('focus');
+    frame_count++;
+  }, 1000)
+
+});

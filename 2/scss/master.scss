@@ -2,6 +2,23 @@
 @import 'responsive';
 @import 'typography';
 
+@mixin info {
+	content: 'i';
+	display: block;
+	position: absolute;
+	@include font-grotesque;
+	font-size: 1rem;
+	line-height: 1;
+	text-align: center;
+	width: 1rem;
+	height: 1rem;
+	padding: 0;
+	overflow: hidden;
+	opacity: 0.25;
+	border: 2px solid black;
+	border-radius: 100%;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -72,11 +89,19 @@ body > section {
 
 	&#banner {
 		padding-bottom: 60%;
-		background-image: url('../images/forward-compact.png');
+		background-image: url('../images/forward-compact.gif');
+		@include L-screen {
+			padding-bottom: 35.75%;
+			background-image: url('../images/forward-wide.gif');
+		}
 	}
 	&#team {
 		padding-bottom: 208.35%;
 		background-image: url('../images/team-mobile.gif');
+		@include L-screen {
+			padding-bottom: 70.6908%;
+			background-image: url('../images/team-desktop.gif');
+		}
 	}
 }
 
@@ -119,6 +144,7 @@ body > section {
 	border-bottom: $border-green;
 	margin: 2rem 0;
 	@include M-L-screen {
+		margin: 2rem;
 		border: $border-green;
 		border-radius: $border-width;
 	}
@@ -288,8 +314,15 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	}
 
 	> .event-icon-wrapper, > .tagline {
+		position: relative;
 		display: inline-block;
 		vertical-align: middle;
+	}
+	> .tagline:after {
+		@include info;
+		top: 0;
+		left: 100%;
+		margin-left: 2px;
 	}
 	> .event-dialog {
 		display: none;
@@ -371,7 +404,19 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 
 #one-time-purchases > .purchase-option {
 	position: relative;
-	> .purchase-detail {
+
+	> .purchase-icon-wrapper {
+		position: relative;
+	}
+	> .purchase-icon-wrapper > .purchase-icon {
+		position: relative;
+		&:before {
+			@include info;
+			top: 0;
+			right: 0;
+		}
+	}
+	> .purchase-icon-wrapper > .purchase-detail {
 		display: none;
 		position: absolute;
 		left: 50%;
@@ -382,7 +427,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 		border: $border-green;
 		border-radius: $border-width;
 		margin: 0 auto;
-		padding: 6px;
+		padding: $border-width*1.5;
 		background: rgba(white, 0.95);
 
 		line-height: $leading-tight;
@@ -394,7 +439,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 
 			> span {
 				display: inline-block;
-				vertical-align: middle;
+				vertical-align: baseline;
 				margin-right: 2px;
 				&.four {
 					padding: 0 4px;
@@ -403,14 +448,14 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 		}
 	}
 
-	&.focus > .purchase-detail {
+	&.focus > .purchase-icon-wrapper > .purchase-detail {
 		display: block;
 	}
 	@include M-L-screen {
-		&.focus > .purchase-detail {
+		&.focus > .purchase-icon-wrapper > .purchase-detail {
 			display: none;
 		}
-		&:hover > .purchase-detail {
+		&:hover > .purchase-icon-wrapper > .purchase-detail {
 			display: block;
 		}
 	}
@@ -420,19 +465,15 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	border-top: $border-gold;
 	border-bottom: $border-gold;
 
-	> .purchase-detail {
-		top: 1rem;
+	> hgroup {
+		margin-top: -0.25rem;
+		margin-bottom: 0.25rem;
 	}
-}
 
-.info {
-	display: block;
-	width: 32px;
-	height: 32px;
-	background-image: url('../images/wo-august-2-info.svg');
-	background-size: 100%;
-	background-position: center center;
-	background-repeat: no-repeat;
+	@include M-L-screen {
+		border: $border-gold;
+		border-radius: $border-width;
+	}
 }
 
 #stickers {
