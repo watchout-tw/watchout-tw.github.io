@@ -13,6 +13,7 @@
 	<link rel="shortcut icon" href="images/wo-favicon-01.png">
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 	<script src="js/emoji.js"></script>
+	<script src="js/interactivity.js"></script>
 	<script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-44242.js"></script>
 </head>
 <body>
@@ -28,8 +29,9 @@
 	<!--facebook-->
 	<div id="nav-space"></div>
 	<section id="first-section">
-		<hgroup><h1>國會監督</h1><h1>持續向前</h1></hgroup>
-		<a class="support" href="#support">我要支持</a>
+		<div id="banner" class="full-screen-image"></div>
+		<hgroup><h1>公民監督</h1><h1>持續向前</h1></hgroup>
+		<a id="support-button" href="#support">我要支持</a>
 	</section>
 	<section>
 		<hgroup><h2>關於沃草</h2></hgroup>
@@ -43,58 +45,39 @@
 				<div class="event-icon-wrapper"><label class="event-icon" key="誕生"></label></div>
 				<label class="tagline">阿草･誕生</label>
 				<div class="event-dialog">
-					<label class="datetime">2013年</label>
+					<label class="datetime">2013年11月</label>
 					<pgroup>
 						<p class="long">在一連串由新世代發起的社會運動之中，沃草正式成立。</p>
 					</pgroup>
-					<a class="url" href="#">watchout.tw</a><label class="button close">×</label>
+					<a class="url disabled">你現在就在沃草的首頁哦</a><label class="button close">×</label>
 				</div>
 			</li>
-			<li class="event small">
-				<div class="event-icon-wrapper">
-					<label class="event-icon" key="無雙"></label></div>
-					<label class="tagline">國會無雙</label>
-
+			<li class="year datetime">2014</li>
+			<li class="event medium">
+				<div class="event-icon-wrapper"><label class="event-icon" key="國會無雙"></label></div>
+				<label class="tagline">國會無雙</label>
 				<div class="event-dialog">
-					<label class="datetime">2013年</label>
+					<label class="datetime">2014年2月</label>
 					<pgroup>
 						<p class="long">用直播帶公民跨越高牆，詳實描寫立法院議事現場，產出第一手報導。</p>
 					</pgroup>
 					<a class="url" href="//musou.tw/" target="_blank">musou.tw</a><label class="button close">×</label>
 				</div>
 			</li>
-			<li class="year datetime">2014</li>
 			<li class="event medium">
-				<div class="event-icon-wrapper">
-					<label class="event-icon" key="無雙第一"></label></div>
-					<label class="tagline">首篇報導上線</label>
-
-				<div class="event-dialog">
-					<label class="datetime">2014年2月</label>
-					<pgroup>
-						<p class="long">國會無雙第一篇報導上線，內容是當時院會的法案概要。</p>
-					</pgroup>
-					<a class="url" href="//musou.tw/focuses/664" target="_blank">musou.tw/focuses/664</a><label class="button close">×</label>
-				</div>
-			</li>
-			<li class="event medium">
-				<div class="event-icon-wrapper">
-					<label class="event-icon" key="無雙眾籌"></label></div>
-					<label class="tagline">眾籌成功</label>
-
+				<div class="event-icon-wrapper"><label class="event-icon" key="無雙改版"></label></div>
+				<label class="tagline">2.0改版</label>
 				<div class="event-dialog">
 					<label class="datetime">2014年6月</label>
 					<pgroup>
-						<p class="long">國會無雙2.0群眾募資成功。</p>
+						<p class="long">國會無雙2.0改版，公民監督國會再進化。</p>
 					</pgroup>
-					<a class="url" href="//flyingv.cc/projects/3373" target="_blank">flyingv</a><label class="button close">×</label>
+					<a class="url" href="//musou.tw/" target="_blank">musou.tw</a><label class="button close">×</label>
 				</div>
 			</li>
 			<li class="event small">
-				<div class="event-icon-wrapper">
-					<label class="event-icon" key="市長給問"></label></div>
-					<label class="tagline">台灣第一次･市長給問</label>
-
+				<div class="event-icon-wrapper"><label class="event-icon" key="市長給問"></label></div>
+				<label class="tagline">台灣第一次･市長給問</label>
 				<div class="event-dialog">
 					<label class="datetime">2014年7月</label>
 					<pgroup>
@@ -104,10 +87,8 @@
 				</div>
 			</li>
 			<li class="event small">
-				<div class="event-icon-wrapper">
-					<label class="event-icon" key="公民學院"></label></div>
-					<label class="tagline">公民學院</label>
-
+				<div class="event-icon-wrapper"><label class="event-icon" key="公民學院"></label></div>
+				<label class="tagline">公民學院</label>
 				<div class="event-dialog">
 					<label class="datetime">2014年10月</label>
 					<pgroup>
@@ -118,10 +99,8 @@
 			</li>
 			<li class="year datetime">2015</li>
 			<li class="event medium">
-				<div class="event-icon-wrapper">
-					<label class="event-icon" key="無雙一千"></label></div>
-					<label class="tagline">第一千篇報導上線</label>
-
+				<div class="event-icon-wrapper"><label class="event-icon" key="無雙一千"></label></div>
+				<label class="tagline">第一千篇報導上線</label>
 				<div class="event-dialog">
 					<label class="datetime">2015年8月</label>
 					<pgroup>
@@ -131,10 +110,8 @@
 				</div>
 			</li>
 			<li class="event small">
-				<div class="event-icon-wrapper">
-					<label class="event-icon" key="立委出任務"></label></div>
-					<label class="tagline">立委出任務</label>
-
+				<div class="event-icon-wrapper"><label class="event-icon" key="立委出任務"></label></div>
+				<label class="tagline">立委出任務</label>
 				<div class="event-dialog">
 					<label class="datetime">2015年10月</label>
 					<pgroup>
@@ -144,10 +121,8 @@
 				</div>
 			</li>
 			<li class="event">
-				<div class="event-icon-wrapper">
-					<label class="event-icon" key="總統給問"></label></div>
-					<label class="tagline">總統給問</label>
-
+				<div class="event-icon-wrapper"><label class="event-icon" key="總統給問"></label></div>
+				<label class="tagline">總統給問</label>
 				<div class="event-dialog">
 					<label class="datetime">2015年10月</label>
 					<pgroup>
@@ -158,23 +133,19 @@
 			</li>
 			<li class="year datetime">2016</li>
 			<li class="event small">
-				<div class="event-icon-wrapper">
-					<label class="event-icon" key="總統辯論"></label></div>
-					<label class="tagline">總統辯論･公民提問</label>
-
+				<div class="event-icon-wrapper"><label class="event-icon" key="總統辯論"></label></div>
+				<label class="tagline">總統辯論･公民提問</label>
 				<div class="event-dialog">
 					<label class="datetime">2016年1月</label>
 					<pgroup>
-						<p class="long">總統給問嗎參戰總統辯論會，公民提問首次在電視上與候選人面對面。</p>
+						<p class="long">總統給問嗎參戰總統辯論會，由公民連署的提問首次在電視上與候選人面對面。</p>
 					</pgroup>
 					<a class="url" href="//zh.wikipedia.org/wiki/2016年中華民國總統選舉電視辯論" target="_blank">Wikipedia</a><label class="button close">×</label>
 				</div>
 			</li>
 			<li class="event">
-				<div class="event-icon-wrapper">
-					<label class="event-icon" key="開放國會松"></label></div>
-					<label class="tagline">開放國會松</label>
-
+				<div class="event-icon-wrapper"><label class="event-icon" key="開放國會松"></label></div>
+				<label class="tagline">開放國會松</label>
 				<div class="event-dialog">
 					<label class="datetime">2016年8月</label>
 					<pgroup>
@@ -215,7 +186,7 @@
 			</li>
 			<li class="stat tiny">
 				<label class="project-icon small" key="國會無雙"></label>
-				<label class="number-wrapper"><span class="number tiny unit" unit="則">1,217</span></label>
+				<label class="number-wrapper"><span class="number tiny unit" unit="則">1,070</span></label>
 				<p class="tight">專業國會報導</p>
 			</li>
 			<li class="stat tiny">
@@ -230,8 +201,6 @@
 			</li>
 		</ul>
 		<p class="custom-line-break">
-			<span class="line always">未來，沃草會繼續做這些事</span>
-			<span class="line always note">還有很多新想法等著被實現</span>
 			<span class="line always call">繼續向前，我們需要你的支持</span>
 		</p>
 	</section>
@@ -247,8 +216,8 @@
 				<a class="button" href="//watchout.backme.tw/" target="_blank">算我一份</a>
 			</li>
 			<li class="payment-option">
-				<div class="payment-icon" key="300"></div>
-				<label class="code">$300</label>
+				<div class="payment-icon" key="250"></div>
+				<label class="code">$250</label>
 				<a class="button" href="//watchout.backme.tw/" target="_blank">算我一份</a>
 			</li>
 			<li class="payment-option">
@@ -292,22 +261,27 @@
 		<h5>一次餵養，讓阿草吃飽加班不血汗</h5>
 		<ul id="one-time-purchases" class="grid">
 			<li class="purchase-option">
+				<div class="purchase-icon" key="600"></div>
 				<label class="code">$600</label>
 				<a class="button" href="//watchout.backme.tw/" target="_blank">算我一份</a>
 			</li>
 			<li class="purchase-option">
+				<div class="purchase-icon" key="1500"></div>
 				<label class="code">$1,500</label>
 				<a class="button" href="//watchout.backme.tw/" target="_blank">算我一份</a>
 			</li>
 			<li class="purchase-option">
+				<div class="purchase-icon" key="3000"></div>
 				<label class="code">$3,000</label>
 				<a class="button" href="//watchout.backme.tw/" target="_blank">算我一份</a>
 			</li>
 			<li class="purchase-option">
+				<div class="purchase-icon" key="3600"></div>
 				<label class="code">$3,600</label>
 				<a class="button" href="//watchout.backme.tw/" target="_blank">算我一份</a>
 			</li>
 			<li class="purchase-option">
+				<div class="purchase-icon" key="10000"></div>
 				<label class="code">$10,000</label>
 				<a class="button" href="//watchout.backme.tw/" target="_blank">算我一份</a>
 			</li>
@@ -322,7 +296,7 @@
 			<li class="bill">
 				<div class="bill-icon" key="voting"></div>
 				<label class="option-title">投票</label>
-				<p class="note custom-line-break"><span class="line">一起決定</span><span>沃草製作專題的方向</span></p>
+				<p class="note custom-line-break"><span class="line">幫你在乎的議題集氣</span><span>今日直播由你決定</span></p>
 			</li>
 			<li class="bill">
 				<div class="bill-icon" key="callin"></div>
@@ -332,20 +306,21 @@
 			<li class="bill">
 				<div class="bill-icon" key="achievement"></div>
 				<label class="option-title">徽章系統</label>
-				<p class="note custom-line-break"><span class="line">累積成就</span><span>讓台灣以你為榮</span></p>
+				<p class="note custom-line-break"><span class="line">沃草偉大嗎？</span><span>沃草因你而偉大</span></p>
 			</li>
 			<li class="bill">
 				<div class="bill-icon" key="more"></div>
 				<label class="option-title">進階功能</label>
-				<p class="note">優先使用更多新功能</p>
+				<p class="note custom-line-break">等你來解鎖</p>
 			</li>
 		</ul>
 	</section>
-	<section>
+	<section id="we-are-you">
 		<hgroup><h2 class="custom-line-break"><span class="line">Watchout!</span><span>我們就是你</span></h2></hgroup>
 		<pgroup>
 			<p>沃草的核心目標是：讓更多人一起來參與公民社會。一個成熟的公民社會，不能只靠少數人付出一切，投入社會運動。如果大家一起付出，只需要各自一小部分的時間心力，就能改變這個社會，更靠近那個你我嚮往的小國小民、好國好民。</p>
 		</pgroup>
+		<div id="team" class="full-screen-image"></div>
 	</section>
 	<section id="sm">
 		<div id="facebook">
@@ -357,7 +332,7 @@
 	</section>
 	<footer>
 		<div id="email"><label>聯絡我們 <span class="emoji" id="fax"></span> <span class="code">info@watchout.tw</span></label></div>
-		<div id="copyright" class="code custom-line-break"><label class="line always"><span class="code">Watchout</span> 沃草</label><label class="line always code">© 2014-2016 All Rights Reserved</label><label class="line always emoji" id="key"></label></div>
+		<div id="copyright" class="custom-line-break"><label class="line always">沃草 <span class="code">Watchout</span></label><label class="line always code">© 2014-2016 All Rights Reserved</label><label class="line always emoji" id="key"></label></div>
 	</footer>
 	<nav>
 		<div id="home"></div>

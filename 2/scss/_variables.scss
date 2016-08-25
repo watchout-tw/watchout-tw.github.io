@@ -25,3 +25,8 @@ $lightShadow: 0 2px 4px 0 rgba(black, 0.25);
 $darkShadow: 0 2px 4px 0 rgba(black, 0.35);
 $borderWidth: 4px;
 $borderGreen: $borderWidth solid $woc;
+
+@mixin transform($attr) {
+	-webkit-transform: $attr;
+	transform: $attr;
+}

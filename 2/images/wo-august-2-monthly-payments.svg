@@ -4,16 +4,16 @@
     <title>wo-august-2-monthly-payments</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.25">
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="wo-august-2-monthly-payments">
-            <g id="$300" transform="translate(38.000000, 78.000000)" fill="#D0011B">
-                <rect id="Rectangle-4" x="0" y="12" width="40" height="24"></rect>
-                <rect id="Rectangle-4" x="6" y="6" width="40" height="24"></rect>
-                <rect id="Rectangle-4" x="12" y="0" width="40" height="24"></rect>
+            <g id="$250" transform="translate(29.000000, 84.000000)">
+                <rect id="Rectangle-4" fill-opacity="0.25" fill="#D0011B" x="0" y="6" width="40" height="24"></rect>
+                <rect id="Rectangle-4" fill-opacity="0.25" fill="#D0011B" x="6" y="0" width="40" height="24"></rect>
+                <circle id="Oval-2" fill="#F8E81C" cx="61" cy="21" r="9"></circle>
             </g>
-            <rect id="Rectangle-4" fill="#D0011B" x="44" y="26" width="40" height="24"></rect>
-            <rect id="Rectangle-4" fill="#8B572A" x="41" y="154" width="46" height="24"></rect>
-            <rect id="Rectangle-4" fill="#4990E2" x="38" y="218" width="52" height="24"></rect>
+            <rect id="Rectangle-4" fill-opacity="0.25" fill="#D0011B" x="44" y="26" width="40" height="24"></rect>
+            <rect id="Rectangle-4" fill-opacity="0.25" fill="#8B572A" x="41" y="154" width="46" height="24"></rect>
+            <rect id="Rectangle-4" fill-opacity="0.25" fill="#4990E2" x="38" y="218" width="52" height="24"></rect>
         </g>
     </g>
 </svg>

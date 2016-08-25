@@ -36,6 +36,8 @@ $susy: (
 }
 #one-time-purchases > .purchase-option {
   @include span(4);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 #bill-of-rights > .bill {
   @include span(2);

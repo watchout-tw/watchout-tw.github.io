@@ -45,7 +45,9 @@
   width: 93.75%;
   float: left;
   margin-left: 3.125%;
-  margin-right: 3.125%; }
+  margin-right: 3.125%;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 #bill-of-rights > .bill {
   width: 43.75%;

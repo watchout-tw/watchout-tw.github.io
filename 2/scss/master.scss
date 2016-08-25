@@ -28,6 +28,9 @@ body > section {
 		padding: 1rem 0;
 		background: rgba($woc, 0.25);
 	}
+	&#first-section {
+		margin: 1rem 0;
+	}
 	&#first-section > hgroup {
 		padding: 0;
 		background: none;
@@ -51,6 +54,26 @@ body > section {
 	}
 	&#fertile-land {
 		margin-bottom: -$navHeight; // to absorb that space
+	}
+	&#we-are-you {
+		margin-bottom: 1rem;
+	}
+}
+
+.full-screen-image {
+	width: 100%;
+	height: 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+
+	&#banner {
+		padding-bottom: 60%;
+		background-image: url('../images/forward-compact.png');
+	}
+	&#team {
+		padding-bottom: 208.35%;
+		background-image: url('../images/team-mobile.gif');
 	}
 }
 
@@ -103,15 +126,15 @@ badge {
 	border: $borderGreen;
 	border-radius: 100%;
 	margin: 0 auto;
-	transform: rotate(-15deg);
+	@include transform(rotate(-15deg));
 }
 .divider > badge {
 	position: absolute;
 	left: 50%;
 	background: white;
-	transform: translate(-50%, -50%) rotate(-15deg);
+	@include transform(translate(-50%, -50%) rotate(-15deg));
 }
-.support {
+#support-button {
 	box-sizing: content-box;
 	display: block;
 	color: $orange;
@@ -120,7 +143,7 @@ badge {
 	padding: 15px 24px;
 	border-radius: 100%;
 	margin: 0 auto;
-	transform: scale(0.8);
+	@include transform(scale(0.8));
 	box-shadow: $lightShadow;
 	cursor: pointer;
 
@@ -134,17 +157,20 @@ section#sm {
 	padding: 3em 0;
 	background: rgba($woc, 0.25);
 }
+#stickers {
+	margin: 1rem 0;
+}
 #email {
-	margin: 3em 0 1em;
-	transform: rotate(-5deg);
+	margin: 3em 0 2em;
+	@include transform(rotate(-5deg));
 	> label {
 		padding: 0.25em 0.375em;
 		background: $woc;
 	}
 }
 #copyright {
-	margin: 1em 0 5em;
-	transform: rotate(3deg);
+	margin: 2em 0 6em;
+	@include transform(rotate(3deg));
 }
 
 @mixin icon($width, $height, $background, $step, $keys, $custom-width:(), $full-width: 100%) {
@@ -165,7 +191,7 @@ section#sm {
 	}
 }
 $event-icon-height: 160px;
-$event-icon-key: (誕生 無雙 無雙第一 無雙眾籌 市長給問 公民學院 無雙一千 立委出任務 總統給問 總統辯論 開放國會松);
+$event-icon-key: (誕生 國會無雙 無雙第一 無雙改版 市長給問 公民學院 無雙一千 立委出任務 總統給問 總統辯論 開放國會松);
 $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-height);
 .event-icon {
 	@include icon(192px, $event-icon-height, 'desktop-events', $event-icon-height, $event-icon-key, $event-icon-width, 192px);
@@ -185,10 +211,13 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	@include icon(30px, 30px, 'project-logo-small', 30px, (國會無雙 給問 公民學院 立委出任務));
 }
 .payment-icon {
-	@include icon(128px, 54px, 'monthly-payments', 64px, (100 300 500 1000));
+	@include icon(128px, 54px, 'monthly-payments', 64px, (100 250 500 1000));
 }
 .gift-icon {
 	@include icon(128px, 118px, 'gifts', 128px, (certificate card newsletter present));
+}
+.purchase-icon {
+	@include icon(284px, 108px, 'purchases', 108px, (600 1500 3000 3600 10000));
 }
 .bill-icon {
 	@include icon(132px, 128px, 'mobile-bills', 128px, (voting callin achievement more));
@@ -199,6 +228,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 
 #timeline {
 	position: relative;
+	padding-bottom: 0.5rem;
 }
 #timeline:before {
 	content: '';
@@ -273,7 +303,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 				padding-right: 4px;
 			}
 
-			&:after {
+			&:not(.disabled):after {
 				content: '→';
 				display: inline-block;
 				padding-left: 0.5em;
@@ -301,4 +331,24 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 			text-align: center;
 		}
 	}
+
+	&.focus > .event-dialog {
+		display: block;
+		position: absolute;
+		left: -32px;
+		top: 50%;
+		@include transform(translateY(-50%));
+		z-index: 1;
+		box-shadow: $lightShadow;
+	}
+}
+
+.info {
+	display: block;
+	width: 32px;
+	height: 32px;
+	background-image: url('../images/wo-august-2-info.svg');
+	background-size: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
 }

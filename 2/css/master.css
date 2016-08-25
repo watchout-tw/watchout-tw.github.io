@@ -46,6 +46,9 @@ h4 {
   font-size: 1.125rem;
   line-height: 1.3333; }
 
+h3 + h4 {
+  margin-top: 0.25rem; }
+
 h5 {
   font-size: 1rem;
   line-height: 1.75;
@@ -112,7 +115,6 @@ span.emphasize {
     position: absolute;
     left: 100%;
     top: 56%;
-    transform: translateY(-50%);
     font-size: 0.8125rem;
     font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;
     font-weight: 400;
@@ -120,6 +122,7 @@ span.emphasize {
     margin: 0;
     padding: 0;
     padding-left: 2px;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
 
 pgroup {
@@ -137,19 +140,19 @@ pgroup {
 .single {
   line-height: 1em; }
 
-.button, .prompt, badge, .call, .support {
+.button, .prompt, badge, .call, #support-button {
   font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1em; }
 
-.support {
+#support-button {
   font-family: "circular-pro", "source-han-sans-tc", sans-serif;
   font-size: 2.25rem;
   font-weight: 900; }
 
-badge, .line, .support {
+badge, .line, #support-button {
   line-height: 1.22222222em; }
 
 .custom-line-break > .line {
@@ -203,6 +206,9 @@ ul {
   line-height: 1;
   color: #50E3C2; }
 
+#copyright > .line {
+  line-height: 1.375; }
+
 * {
   box-sizing: border-box; }
 
@@ -227,6 +233,8 @@ body > section {
   body > section > hgroup:first-child {
     padding: 1rem 0;
     background: rgba(80, 227, 194, 0.25); }
+  body > section#first-section {
+    margin: 1rem 0; }
   body > section#first-section > hgroup {
     padding: 0;
     background: none; }
@@ -244,6 +252,21 @@ body > section {
     padding-top: 65px; }
   body > section#fertile-land {
     margin-bottom: -65px; }
+  body > section#we-are-you {
+    margin-bottom: 1rem; }
+
+.full-screen-image {
+  width: 100%;
+  height: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center; }
+  .full-screen-image#banner {
+    padding-bottom: 60%;
+    background-image: url("../images/forward-compact.png"); }
+  .full-screen-image#team {
+    padding-bottom: 208.35%;
+    background-image: url("../images/team-mobile.gif"); }
 
 .pop {
   background: #50E3C2;
@@ -292,15 +315,17 @@ badge {
   border: 4px solid #50E3C2;
   border-radius: 100%;
   margin: 0 auto;
+  -webkit-transform: rotate(-15deg);
   transform: rotate(-15deg); }
 
 .divider > badge {
   position: absolute;
   left: 50%;
   background: white;
+  -webkit-transform: translate(-50%, -50%) rotate(-15deg);
   transform: translate(-50%, -50%) rotate(-15deg); }
 
-.support {
+#support-button {
   box-sizing: content-box;
   display: block;
   color: #F5A623;
@@ -309,10 +334,11 @@ badge {
   padding: 15px 24px;
   border-radius: 100%;
   margin: 0 auto;
+  -webkit-transform: scale(0.8);
   transform: scale(0.8);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
   cursor: pointer; }
-  .support:hover {
+  #support-button:hover {
     background: rgba(248, 231, 28, 0.85);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35); }
 
@@ -320,15 +346,20 @@ section#sm {
   padding: 3em 0;
   background: rgba(80, 227, 194, 0.25); }
 
+#stickers {
+  margin: 1rem 0; }
+
 #email {
-  margin: 3em 0 1em;
+  margin: 3em 0 2em;
+  -webkit-transform: rotate(-5deg);
   transform: rotate(-5deg); }
   #email > label {
     padding: 0.25em 0.375em;
     background: #50E3C2; }
 
 #copyright {
-  margin: 1em 0 5em;
+  margin: 2em 0 6em;
+  -webkit-transform: rotate(3deg);
   transform: rotate(3deg); }
 
 .event-icon {
@@ -341,13 +372,13 @@ section#sm {
   .event-icon[key="誕生"] {
     width: 160px;
     background-position: center 0px; }
-  .event-icon[key="無雙"] {
+  .event-icon[key="國會無雙"] {
     width: 48;
     background-position: center -160px; }
   .event-icon[key="無雙第一"] {
     width: 48;
     background-position: center -320px; }
-  .event-icon[key="無雙眾籌"] {
+  .event-icon[key="無雙改版"] {
     width: 48;
     background-position: center -480px; }
   .event-icon[key="市長給問"] {
@@ -408,7 +439,7 @@ section#sm {
   margin: 0 auto; }
   .payment-icon[key="100"] {
     background-position: center 0px; }
-  .payment-icon[key="300"] {
+  .payment-icon[key="250"] {
     background-position: center -64px; }
   .payment-icon[key="500"] {
     background-position: center -128px; }
@@ -430,6 +461,24 @@ section#sm {
     background-position: center -256px; }
   .gift-icon[key="present"] {
     background-position: center -384px; }
+
+.purchase-icon {
+  display: block;
+  width: 284px;
+  height: 108px;
+  background: url("../images/wo-august-2-purchases.svg");
+  background-size: 100%;
+  margin: 0 auto; }
+  .purchase-icon[key="600"] {
+    background-position: center 0px; }
+  .purchase-icon[key="1500"] {
+    background-position: center -108px; }
+  .purchase-icon[key="3000"] {
+    background-position: center -216px; }
+  .purchase-icon[key="3600"] {
+    background-position: center -324px; }
+  .purchase-icon[key="10000"] {
+    background-position: center -432px; }
 
 .bill-icon {
   display: block;
@@ -464,7 +513,8 @@ section#sm {
         background-position: center -384px; } }
 
 #timeline {
-  position: relative; }
+  position: relative;
+  padding-bottom: 0.5rem; }
 
 #timeline:before {
   content: '';
@@ -521,7 +571,7 @@ section#sm {
       @media (min-width: 481px) {
         #timeline > .event > .event-dialog > .url {
           padding-right: 4px; } }
-      #timeline > .event > .event-dialog > .url:after {
+      #timeline > .event > .event-dialog > .url:not(.disabled):after {
         content: '→';
         display: inline-block;
         padding-left: 0.5em; }
@@ -543,5 +593,23 @@ section#sm {
       vertical-align: top;
       line-height: 1.5rem;
       text-align: center; }
+  #timeline > .event.focus > .event-dialog {
+    display: block;
+    position: absolute;
+    left: -32px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25); }
+
+.info {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("../images/wo-august-2-info.svg");
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=master.css.map */
