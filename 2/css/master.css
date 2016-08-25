@@ -77,11 +77,10 @@ span.emphasize {
 .url {
   font-family: "akkurat-mono", monospace;
   font-weight: 400 !important; }
-  .code > .tw,
-  .close > .tw,
-  .url > .tw {
-    font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;
-    font-weight: 400; }
+
+.url.disabled {
+  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", sans-serif;
+  font-weight: 700 !important; }
 
 .number {
   position: relative;
