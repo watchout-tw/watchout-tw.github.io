@@ -1,27 +1,27 @@
-@mixin medium-and-large-screen {
+@mixin M-L-screen {
 	@media (min-width: 481px) {
 		@content;
 	}
 }
-@mixin medium-screen {
+@mixin M-screen {
   @media (min-width: 481px) and (max-width: 768px) {
     @content;
   }
 }
-@mixin large-screen {
+@mixin L-screen {
   @media (min-width: 769px) {
     @content;
   }
 }
 
-.medium-and-large-screen {
+.M-L-screen {
   display: none !important;
 }
-@include medium-and-large-screen {
-  .medium-and-large-screen {
+@include M-L-screen {
+  .M-L-screen {
     display: inherit !important;
   }
-  .small-screen {
+  .S-screen {
     display: none !important;
   }
 }

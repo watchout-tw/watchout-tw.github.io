@@ -16,6 +16,12 @@ nav {
 #nav-space {
 	height: $navHeight;
 }
+nav > #home {
+	width: 200px;
+	height: $navHeight;
+	background: url('../images/watchout-tw-first.svg');
+	margin-left: 24px;
+}
 body > section {
 	position: relative;
 	> hgroup:first-child {
@@ -81,7 +87,7 @@ body > section {
 	position: relative;
 	border-top: $borderGreen;
 	border-bottom: $borderGreen;
-	@include medium-and-large-screen {
+	@include M-L-screen {
 		border: $borderGreen;
 		border-radius: $borderWidth;
 	}
@@ -96,8 +102,6 @@ badge {
 	border-radius: 100%;
 	margin: 0 auto;
 	transform: rotate(-15deg);
-
-
 }
 .divider > badge {
 	position: absolute;
@@ -131,7 +135,7 @@ section#sm {
 #email {
 	margin: 3em 0 1em;
 	transform: rotate(-5deg);
-	> span {
+	> label {
 		padding: 0.25em 0.375em;
 		background: $woc;
 	}
@@ -141,19 +145,39 @@ section#sm {
 	transform: rotate(3deg);
 }
 
-@mixin icon($width, $height, $background, $step, $keys) {
+@mixin icon($width, $height, $background, $step, $keys, $custom-width:(), $full-width: 100%) {
 	display: block;
 	width: $width;
 	height: $height;
 	background: url('../images/wo-august-2-' + $background + '.svg');
-	background-size: 100%;
+	background-size: $full-width;
 	margin: 0 auto;
 
 	@for $i from 0 through length($keys)-1 {
 	  &[key="#{nth($keys, $i+1)}"] {
-	    background-position: unquote("0 ") -$i*$step; // shift window along Y
+			@if length($custom-width) > 0 {
+				width: #{nth($custom-width, $i+1)};
+			}
+	    background-position: center #{-$i*$step}; // shift window along Y
 	  }
 	}
+}
+$event-icon-height: 160px;
+$event-icon-key: (誕生 無雙 無雙第一 無雙眾籌 市長給問 公民學院 無雙一千 立委出任務 總統給問 總統辯論 開放國會松);
+$event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-height);
+.event-icon {
+	@include icon(192px, $event-icon-height, 'desktop-events', $event-icon-height, $event-icon-key, $event-icon-width, 192px);
+}
+.event-icon[key="誕生"], .event-icon[key="開放國會松"] {
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.event-icon[key="誕生"] {
+	background-image: url('../images/goodfriend.png');
+}
+.event-icon[key="開放國會松"] {
+	background-image: url('../images/congressthon-small.png');
 }
 .project-icon.small {
 	@include icon(30px, 30px, 'project-logo-small', 30px, (國會無雙 給問 公民學院 立委出任務));
@@ -166,46 +190,113 @@ section#sm {
 }
 .bill-icon {
 	@include icon(132px, 128px, 'mobile-bills', 128px, (voting callin achievement more));
-	@include medium-and-large-screen {
+	@include M-L-screen {
 		@include icon(192px, 128px, 'desktop-bills', 128px, (voting callin achievement more));
 	}
 }
 
+#timeline {
+	position: relative;
+}
+#timeline:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	width: $borderWidth;
+	height: 100%;
+	background-repeat: repeat-x;
+	background: $woc;
+	$from: rgba($woc, 0.25);
+	$to: $woc;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to)); // Safari 4-5, Chrome 1-9
+  background: -webkit-linear-gradient(top, $from, $to); // Safari 5.1, Chrome 10+
+  background: -moz-linear-gradient(top, $from, $to); // Firefox 3.6+
+  background: -ms-linear-gradient(top, $from, $to); // IE 10
+  background: -o-linear-gradient(top, $from, $to); // Opera 11.10+
+	background: linear-gradient(from top, $from, $to);
+}
 #timeline > .event {
+	position: relative;
 	margin: 1rem 0;
-	> .event-dialog {
-		width: 300px;
-		margin: 0 auto;
-		background: rgba(black, 0.05);
-	}
-	pgroup {
-		margin: 0 auto 0.5rem;
+	text-align: left;
 
-		> p {
-			line-height: $leadingTight;
+	$M-event-icon-height: 92px;
+	$S-event-icon-height: 60px;
+	&.medium > .event-icon-wrapper {
+		height: $M-event-icon-height;
+		> .event-icon {
+			margin-top: -($event-icon-height - $M-event-icon-height)/2;
 		}
 	}
-	.url {
-		background: $woc;
-		padding: 8px;
-		&:after {
-			content: '→';
-			display: inline-block;
-			padding-left: 0.5em;
+	&.small > .event-icon-wrapper {
+		height: $S-event-icon-height;
+		> .event-icon {
+			margin-top: -($event-icon-height - $S-event-icon-height)/2;
 		}
 	}
-	.button.close {
-		color: black;
-		font-size: 1.5rem;
-		background: rgba(black, 0.25);
-		width: auto;
-		padding: 6px 14px 10px;
-		margin: 0;
-		box-shadow: none;
-	}
-	.url, .button.close {
+
+	> .event-icon-wrapper, > .tagline {
 		display: inline-block;
-		vertical-align: top;
-		line-height: 1.5rem;
+		vertical-align: middle;
+	}
+	> .event-dialog {
+		display: none;
+		position: relative;
+		width: 300px + 2*$borderWidth;
+		border: $borderGreen;
+		border-radius: $borderWidth;
+		margin: 0 auto;
+		background: rgba(white, 0.95);
+		text-align: left;
+
+		> .datetime {
+			display: inline-block;
+			margin: 0.25em 6px -0.25em;
+		}
+		> pgroup {
+			margin: 0 auto 0.5rem;
+
+			> p {
+				line-height: $leadingTight;
+			}
+		}
+		> .url {
+			display: inline-block;
+			background: $woc;
+			width: 100%;
+			padding: 8px 42px 8px 4px;
+
+			@include M-L-screen {
+				padding-right: 4px;
+			}
+
+			&:after {
+				content: '→';
+				display: inline-block;
+				padding-left: 0.5em;
+			}
+		}
+		> .button.close {
+			display: inline-block;
+			color: black;
+			font-size: 1.5rem;
+			background: hsla(0%, 0%, 88%, 100%);
+			position: absolute;
+			right: 0;
+			width: 42px;
+			padding: 6px 0 10px;
+			margin: 0;
+			box-shadow: none;
+
+			@include M-L-screen {
+				display: none;
+			}
+		}
+		.url, .button.close {
+			vertical-align: top;
+			line-height: 1.5rem;
+			text-align: center;
+		}
 	}
 }

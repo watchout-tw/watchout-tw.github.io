@@ -1,11 +1,11 @@
-.medium-and-large-screen {
+.M-L-screen {
   display: none !important; }
 
 @media (min-width: 481px) {
-  .medium-and-large-screen {
+  .M-L-screen {
     display: inherit !important; }
 
-  .small-screen {
+  .S-screen {
     display: none !important; } }
 .grid {
   max-width: 100%;
@@ -15,6 +15,17 @@
     content: " ";
     display: block;
     clear: both; }
+
+#timeline {
+  width: 320px;
+  margin: 0 auto; }
+  #timeline:before {
+    left: 24px; }
+  #timeline > .year {
+    margin-left: 32px;
+    text-align: left; }
+  #timeline > .event {
+    margin-left: 40px; }
 
 #monthly-payments > .payment-option {
   width: 43.75%;

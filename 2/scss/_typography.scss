@@ -1,8 +1,21 @@
 @import 'variables';
 
+@mixin font-body {
+  font-family: $bodyText;
+  font-weight: 400;
+}
+@mixin font-mincho {
+  font-family: $mincho;
+  font-weight: 900;
+}
+@mixin font-monospace {
+  font-family: $monospace;
+  font-weight: 400 !important; // no bold
+}
+
 html, body {
 	font-size: 16px;
-	font-family: $bodyText;
+	@include font-body;
 	margin: 0;
 	padding: 0;
   line-height: $leadingNormal;
@@ -13,15 +26,14 @@ a {
 }
 h1, h2, h3, h4 {
 	list-style: none;
-	font-family: $mincho;
-	font-weight: 900;
+	@include font-mincho;
   margin: 0;
   padding-top: 0.36em; // shift baseline down
 }
 h1 {
 	font-size: 4.8rem;
   line-height: 1;
-  @include medium-and-large-screen {
+  @include M-L-screen {
     font-size: 6rem;
   }
 }
@@ -40,8 +52,7 @@ h4 {
 h5 {
   font-size: 1rem;
   line-height: $leadingNormal;
-  font-family: $bodyText;
-  font-weight: 400;
+  @include font-body;
   margin: 0;
 }
 span.italic {
@@ -53,29 +64,35 @@ span.underline {
 	border-bottom: 3px solid black;
 }
 span.emphasize {
-  font-family: $mincho;
-  font-weight: 900;
+  @include font-mincho;
+}
+.emoji {
+  font-family: sans-serif;
+  font-weight: 400;
 }
 .code,
 .close,
 .url {
-  font-family: $monospace;
-  font-weight: 400 !important; // there is no bold font
+  @include font-monospace;
+
+  > .tw {
+    @include font-body;
+  }
 }
 .number {
   position: relative;
-  font-family: "circular-pro", "source-han-sans-tc", sans-serif;
+  font-family: $grotesque;
   font-weight: 900;
   font-size: 5.25rem;
   line-height: 1em;
   word-wrap: break-word;
-  @include medium-and-large-screen {
+  @include M-L-screen {
     font-size: 8.5rem;
   }
 
   &.small {
     font-size: 4rem;
-    @include medium-and-large-screen {
+    @include M-L-screen {
       font-size: 4.5rem;
     }
   }
@@ -96,8 +113,7 @@ span.emphasize {
     top: 56%;
     transform: translateY(-50%);
     font-size: 0.8125rem;
-    font-weight: 400;
-    font-family: $bodyText;
+    @include font-body;
     line-height: 1;
     margin: 0;
     padding: 0;
@@ -127,14 +143,15 @@ pgroup {
   line-height: 1em;
 }
 .button, .prompt, badge, .call, .support {
-  font-family: $bodyText;
+  @include font-body;
   font-size: 1.125rem; // 18px
   font-weight: 700;
   line-height: 1em;
 }
 .support {
-  font-family: $grotesque;
+  font-family: "circular-pro", "source-han-sans-tc", sans-serif;
   font-size: 2.25rem; // 36px
+  font-weight: 900;
 }
 badge, .line, .support {
   line-height: 1.22222222em;
@@ -143,7 +160,7 @@ badge, .line, .support {
 // custom line break
 .custom-line-break > .line {
   display: block;
-  @include medium-and-large-screen {
+  @include M-L-screen {
     &:not(.always) {
       display: inline;
     }
@@ -154,7 +171,7 @@ badge, .line, .support {
 }
 .custom-line-break > .hide {
   display: none;
-  @include medium-and-large-screen {
+  @include M-L-screen {
     display: inline;
   }
 }
@@ -169,7 +186,7 @@ ul {
 }
 
 .option-title {
-  font-family: $grotesque;
+  font-family: $strong;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -180,9 +197,18 @@ ul {
   margin: 0;
 }
 .datetime {
-  font-family: $mincho;
-  font-weight: 900;
+  @include font-mincho;
 }
 .tight {
   line-height: $leadingTight;
+}
+
+.tagline {
+  @include font-mincho;
+}
+.year {
+  @include font-mincho;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: $woc;
 }

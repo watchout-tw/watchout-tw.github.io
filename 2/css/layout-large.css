@@ -1,11 +1,11 @@
-.medium-and-large-screen {
+.M-L-screen {
   display: none !important; }
 
 @media (min-width: 481px) {
-  .medium-and-large-screen {
+  .M-L-screen {
     display: inherit !important; }
 
-  .small-screen {
+  .S-screen {
     display: none !important; } }
 .grid {
   max-width: 960px;
