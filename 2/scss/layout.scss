@@ -31,12 +31,16 @@ $susy: (
 }
 #gifts > .gift {
   @include span(2);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 #one-time-purchases > .purchase-option {
   @include span(4);
 }
 #bill-of-rights > .bill {
   @include span(2);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 #stats > .stat {
   @include span(4);

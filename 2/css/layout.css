@@ -37,7 +37,9 @@
   width: 43.75%;
   float: left;
   margin-left: 3.125%;
-  margin-right: 3.125%; }
+  margin-right: 3.125%;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 #one-time-purchases > .purchase-option {
   width: 93.75%;
@@ -49,7 +51,9 @@
   width: 43.75%;
   float: left;
   margin-left: 3.125%;
-  margin-right: 3.125%; }
+  margin-right: 3.125%;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 #stats > .stat {
   width: 93.75%;

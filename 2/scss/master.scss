@@ -56,6 +56,7 @@ body > section {
 
 .pop {
 	background: $woc;
+	margin: 2rem 0;
 }
 .prompt {
 	box-sizing: content-box;
@@ -87,6 +88,7 @@ body > section {
 	position: relative;
 	border-top: $borderGreen;
 	border-bottom: $borderGreen;
+	margin: 2rem 0;
 	@include M-L-screen {
 		border: $borderGreen;
 		border-radius: $borderWidth;
@@ -113,9 +115,9 @@ badge {
 	box-sizing: content-box;
 	display: block;
 	color: $orange;
-	width: 2em;
+	width: 2.05555555em; // 74px
 	background: $lightGold;
-	padding: 16px 24px;
+	padding: 15px 24px;
 	border-radius: 100%;
 	margin: 0 auto;
 	transform: scale(0.8);

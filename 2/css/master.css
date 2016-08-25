@@ -246,7 +246,8 @@ body > section {
     margin-bottom: -65px; }
 
 .pop {
-  background: #50E3C2; }
+  background: #50E3C2;
+  margin: 2rem 0; }
 
 .prompt {
   box-sizing: content-box;
@@ -275,7 +276,8 @@ body > section {
 .divider {
   position: relative;
   border-top: 4px solid #50E3C2;
-  border-bottom: 4px solid #50E3C2; }
+  border-bottom: 4px solid #50E3C2;
+  margin: 2rem 0; }
   @media (min-width: 481px) {
     .divider {
       border: 4px solid #50E3C2;
@@ -302,9 +304,9 @@ badge {
   box-sizing: content-box;
   display: block;
   color: #F5A623;
-  width: 2em;
+  width: 2.05555555em;
   background: rgba(248, 231, 28, 0.75);
-  padding: 16px 24px;
+  padding: 15px 24px;
   border-radius: 100%;
   margin: 0 auto;
   transform: scale(0.8);
