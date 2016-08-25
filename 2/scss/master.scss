@@ -294,13 +294,18 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	}
 	> .event-dialog {
 		display: none;
-		position: relative;
+		position: absolute;
+		left: -32px;
+		top: 50%;
 		width: 300px + 2*$borderWidth;
 		border: $borderGreen;
 		border-radius: $borderWidth;
 		margin: 0 auto;
 		background: rgba(white, 0.95);
 		text-align: left;
+		@include transform(translateY(-50%));
+		z-index: 1;
+		box-shadow: $lightShadow;
 
 		> .datetime {
 			display: inline-block;
@@ -354,12 +359,14 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 
 	&.focus > .event-dialog {
 		display: block;
-		position: absolute;
-		left: -32px;
-		top: 50%;
-		@include transform(translateY(-50%));
-		z-index: 1;
-		box-shadow: $lightShadow;
+	}
+	@include M-L-screen {
+		&.focus > .event-dialog {
+			display: none;
+		}
+		&:hover > .event-dialog {
+			display: block;
+		}
 	}
 }
 
@@ -368,7 +375,8 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	> .purchase-detail {
 		display: none;
 		position: absolute;
-		left: 0;
+		left: 50%;
+		@include transform(translateX(-50%));
 		top: 0;
 		width: 300px + 2*$borderWidth;
 		height: 108px;
@@ -385,15 +393,27 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 			float: left;
 			width: 50%;
 
-			> .t4 {
+			> span {
 				display: inline-block;
-				padding: 0 2px;
-				margin-left: 2px;
+				vertical-align: middle;
+				margin-right: 2px;
+				&.four {
+					padding: 0 4px;
+				}
 			}
 		}
 	}
-	&:hover > .purchase-detail {
+
+	&.focus > .purchase-detail {
 		display: block;
+	}
+	@include M-L-screen {
+		&.focus > .purchase-detail {
+			display: none;
+		}
+		&:hover > .purchase-detail {
+			display: block;
+		}
 	}
 }
 
@@ -408,7 +428,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 }
 
 #stickers {
-	ul > li {
+	> .sticker {
 		display: inline-block;
 		margin: 0.5rem 1rem;
 		> .sticker-example, > .sticker-name {
