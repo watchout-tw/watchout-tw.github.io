@@ -5,6 +5,6 @@
     url('CircularPro-Black.woff') format('woff'),
     url('CircularPro-Black.ttf')  format('truetype'),
     url('CircularPro-Black.svg#CircularPro-Black') format('svg');
-  font-weight: bolder;
+  font-weight: 900;
   font-style: normal;
 }

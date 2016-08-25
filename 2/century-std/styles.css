@@ -5,6 +5,6 @@
     url('CenturyStd-Bold.woff') format('woff'),
     url('CenturyStd-Bold.ttf')  format('truetype'),
     url('CenturyStd-Bold.svg#CenturyStd-Bold') format('svg');
-  font-weight: bolder;
+  font-weight: 900;
   font-style: normal;
 }

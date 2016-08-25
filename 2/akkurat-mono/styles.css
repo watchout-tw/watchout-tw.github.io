@@ -5,6 +5,6 @@
     url('Akkurat-Mono.woff') format('woff'),
     url('Akkurat-Mono.ttf')  format('truetype'),
     url('Akkurat-Mono.svg#Akkurat-Mono') format('svg');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
