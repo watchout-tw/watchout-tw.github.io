@@ -49,6 +49,11 @@
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
+#one-time-purchases > .purchase-option.group-purchase {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem 3.125%; }
+
 #bill-of-rights > .bill {
   width: 43.75%;
   float: left;

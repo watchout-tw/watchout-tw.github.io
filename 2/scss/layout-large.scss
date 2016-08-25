@@ -27,7 +27,7 @@ $susy: (
 #stats > .stat {
   @include span(12);
   > p {
-    min-height: $rem * $leadingTight * 2; // temporary fix
+    min-height: $rem * $leading-tight * 2; // temporary fix
   }
   &.small {
     @include span(6);

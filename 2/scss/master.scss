@@ -6,19 +6,22 @@
 	box-sizing: border-box;
 }
 
+html, body {
+	overflow-x: hidden;
+}
 nav {
 	width: 100%;
-	height: $navHeight;
+	height: $nav-height;
 	position: fixed;
 	top: 0;
 	background: $woc;
 }
 #nav-space {
-	height: $navHeight;
+	height: $nav-height;
 }
 nav > #home {
 	width: 200px;
-	height: $navHeight;
+	height: $nav-height;
 	background: url('../images/watchout-tw-first.svg');
 	margin-left: 24px;
 }
@@ -50,10 +53,10 @@ body > section {
 		}
 	}
 	&#support {
-		padding-top: $navHeight; // to make space for nav while jumping
+		padding-top: $nav-height; // to make space for nav while jumping
 	}
 	&#fertile-land {
-		margin-bottom: -$navHeight; // to absorb that space
+		margin-bottom: -$nav-height; // to absorb that space
 	}
 	&#we-are-you {
 		margin-bottom: 1rem;
@@ -86,35 +89,38 @@ body > section {
 	display: block;
 	color: $grey;
 	width: 4em;
-	padding: 10px;
-	border: $borderWidth solid $grey;
-	border-radius: $borderWidth;
-	margin: 2rem auto 0.75rem;
+	padding: $border-width 1.5em;
+	border-bottom: $border-width solid $grey;
+	margin: 2rem auto 0.25rem;
 }
 .button {
 	box-sizing: content-box;
 	color: $orange;
-	background: $lightGold;
+	background: $gold-light;
 	display: block;
 	width: 4em;
 	padding: 10px 12px;
 	margin: 0 auto;
-	box-shadow: $lightShadow;
+	box-shadow: $shadow-light;
 	cursor: pointer;
 
+	&.wide {
+		width: 5em;
+	}
+
 	&:hover {
-		background: $darkGold;
-		box-shadow: $darkShadow;
+		background: $gold-dark;
+		box-shadow: $shadow-dark;
 	}
 }
 .divider {
 	position: relative;
-	border-top: $borderGreen;
-	border-bottom: $borderGreen;
+	border-top: $border-green;
+	border-bottom: $border-green;
 	margin: 2rem 0;
 	@include M-L-screen {
-		border: $borderGreen;
-		border-radius: $borderWidth;
+		border: $border-green;
+		border-radius: $border-width;
 	}
 }
 badge {
@@ -123,7 +129,7 @@ badge {
 	color: $woc;
 	width: 2em;
 	padding: 8px 11px;
-	border: $borderGreen;
+	border: $border-green;
 	border-radius: 100%;
 	margin: 0 auto;
 	@include transform(rotate(-15deg));
@@ -139,17 +145,17 @@ badge {
 	display: block;
 	color: $orange;
 	width: 2.05555555em; // 74px
-	background: $lightGold;
+	background: $gold-light;
 	padding: 15px 24px;
 	border-radius: 100%;
 	margin: 0 auto;
 	@include transform(scale(0.8));
-	box-shadow: $lightShadow;
+	box-shadow: $shadow-light;
 	cursor: pointer;
 
 	&:hover {
-		background: $darkGold;
-		box-shadow: $darkShadow;
+		background: $gold-dark;
+		box-shadow: $shadow-dark;
 	}
 	&.shadow {
 		opacity: 0.1;
@@ -164,7 +170,7 @@ badge {
 		top: 0;
 		right: 0;
 		z-index: 2;
-		background: $almostGold;
+		background: $gold-almost;
 	}
 	> .support-button.shadow {
 		position: relative;
@@ -255,18 +261,11 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	display: block;
 	position: absolute;
 	top: 0;
-	width: $borderWidth;
+	width: $border-width;
 	height: 100%;
 	background-repeat: repeat-x;
 	background: $woc;
-	$from: rgba($woc, 0.25);
-	$to: $woc;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to)); // Safari 4-5, Chrome 1-9
-  background: -webkit-linear-gradient(top, $from, $to); // Safari 5.1, Chrome 10+
-  background: -moz-linear-gradient(top, $from, $to); // Firefox 3.6+
-  background: -ms-linear-gradient(top, $from, $to); // IE 10
-  background: -o-linear-gradient(top, $from, $to); // Opera 11.10+
-	background: linear-gradient(from top, $from, $to);
+	@include background-gradient(top, rgba($woc, 0.25), rgba($woc, 1));
 }
 #timeline > .event {
 	position: relative;
@@ -297,15 +296,15 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 		position: absolute;
 		left: -32px;
 		top: 50%;
-		width: 300px + 2*$borderWidth;
-		border: $borderGreen;
-		border-radius: $borderWidth;
+		width: 300px + 2*$border-width;
+		border: $border-green;
+		border-radius: $border-width;
 		margin: 0 auto;
 		background: rgba(white, 0.95);
 		text-align: left;
 		@include transform(translateY(-50%));
 		z-index: 1;
-		box-shadow: $lightShadow;
+		box-shadow: $shadow-light;
 
 		> .datetime {
 			display: inline-block;
@@ -315,7 +314,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 			margin: 0 auto 0.5rem;
 
 			> p {
-				line-height: $leadingTight;
+				line-height: $leading-tight;
 			}
 		}
 		> .url {
@@ -338,7 +337,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 			display: inline-block;
 			color: black;
 			font-size: 1.5rem;
-			background: hsla(0%, 0%, 88%, 100%);
+			background: #E0E0E0; // 88% grey
 			position: absolute;
 			right: 0;
 			width: 42px;
@@ -378,15 +377,15 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 		left: 50%;
 		@include transform(translateX(-50%));
 		top: 0;
-		width: 300px + 2*$borderWidth;
+		width: 300px + 2*$border-width;
 		height: 108px;
-		border: $borderGreen;
-		border-radius: $borderWidth;
+		border: $border-green;
+		border-radius: $border-width;
 		margin: 0 auto;
 		padding: 6px;
 		background: rgba(white, 0.95);
 
-		line-height: $leadingTight;
+		line-height: $leading-tight;
 		text-align: left;
 
 		> li {
@@ -414,6 +413,15 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 		&:hover > .purchase-detail {
 			display: block;
 		}
+	}
+}
+#one-time-purchases > .purchase-option.group-purchase {
+	background: rgba($gold, 0.25);
+	border-top: $border-gold;
+	border-bottom: $border-gold;
+
+	> .purchase-detail {
+		top: 1rem;
 	}
 }
 
@@ -444,4 +452,15 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 			margin-top: 0.25em;
 		}
 	}
+}
+
+.split-flap {
+	> span:not(.focus) {
+		display: none;
+	}
+}
+
+#we-need-you {
+	padding: 2rem 0 1rem;
+	margin: 0;
 }

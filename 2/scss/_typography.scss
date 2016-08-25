@@ -1,23 +1,23 @@
 @import 'variables';
 
 @mixin font-body {
-  font-family: $bodyText;
+  font-family: $font-body;
   font-weight: 400;
 }
 @mixin font-mincho {
-  font-family: $mincho;
+  font-family: $font-mincho;
   font-weight: 900;
 }
 @mixin font-strong {
-  font-family: $strong;
+  font-family: $font-strong;
   font-weight: 700;
 }
 @mixin font-grotesque {
-  font-family: $grotesque;
+  font-family: $font-grotesque;
   font-weight: 900;
 }
 @mixin font-monospace {
-  font-family: $monospace;
+  font-family: $font-monospace;
   font-weight: 400 !important; // no bold
 }
 
@@ -26,7 +26,7 @@ html, body {
 	@include font-body;
 	margin: 0;
 	padding: 0;
-  line-height: $leadingNormal;
+  line-height: $leading-normal;
   text-align: center;
 }
 a {
@@ -62,7 +62,7 @@ h3 + h4 {
 }
 h5 {
   font-size: 1rem;
-  line-height: $leadingNormal;
+  line-height: $leading-normal;
   @include font-body;
   margin: 0;
 }
@@ -87,7 +87,7 @@ span.emphasize {
   @include font-monospace;
 }
 .url.disabled {
-  font-family: $strong;
+  font-family: $font-strong;
   font-weight: 700 !important;
 }
 .number {
@@ -138,7 +138,7 @@ pgroup {
   text-align: left;
 
   > p {
-    margin: $leadingNormal*1em auto;
+    margin: $leading-normal*1em auto;
   }
   > p:first-child {
     margin-top: 0;
@@ -151,7 +151,7 @@ pgroup {
 .single {
   line-height: 1em;
 }
-.button, .prompt, badge, .call, .support-button {
+.button, .prompt, badge, .support-button {
   @include font-body;
   font-size: 1.125rem; // 18px
   font-weight: 700;
@@ -164,6 +164,20 @@ pgroup {
 }
 badge, .line, .support-button {
   line-height: 1.22222222em;
+}
+
+.call {
+  @include background-gradient(top, rgba($woc, 0), rgba($woc, 0.25));
+  color: rgba($woc, 0.75);
+  @include font-mincho;
+  font-size: 1.375rem;
+  line-height: 1;
+
+  > .you {
+    color: $woc;
+    display: inline-block;
+    border-bottom: $border-green;
+  }
 }
 
 // custom line break
@@ -195,7 +209,7 @@ ul {
 }
 
 .option-title {
-  font-family: $strong;
+  font-family: $font-strong;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -209,7 +223,7 @@ ul {
   @include font-mincho;
 }
 .tight {
-  line-height: $leadingTight;
+  line-height: $leading-tight;
 }
 
 .tagline {
@@ -223,7 +237,7 @@ ul {
 }
 
 #copyright > .line {
-  line-height: $leadingTight;
+  line-height: $leading-tight;
 }
 
 .four {

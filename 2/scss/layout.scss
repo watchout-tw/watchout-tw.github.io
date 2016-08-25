@@ -39,6 +39,11 @@ $susy: (
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+#one-time-purchases > .purchase-option.group-purchase {
+	width: 100%;
+	margin: 2rem 0;
+	padding: 1rem gutter(4);
+}
 #bill-of-rights > .bill {
   @include span(2);
   margin-top: 1rem;
@@ -49,7 +54,7 @@ $susy: (
   &.tiny {
     @include span(2);
     > p {
-      min-height: $rem * $leadingTight * 2; // temporary fix
+      min-height: $rem * $leading-tight * 2; // temporary fix
     }
   }
 }
