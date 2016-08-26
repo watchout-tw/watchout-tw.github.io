@@ -8,8 +8,8 @@
 	<link rel="stylesheet" href="century-std/styles.css"/>
 	<link rel="stylesheet" href="circular-pro/styles.css"/>
 	<link rel="stylesheet" href="css/master.css"/>
-	<link rel="stylesheet" href="css/layout.css"/>
-	<link rel="stylesheet" href="css/layout-large.css" media="(min-width: 769px)"/>
+	<link rel="stylesheet" href="css/layout-S-L.css" media="(max-width: 768px)"/>
+	<link rel="stylesheet" href="css/layout-L-.css" media="(min-width: 769px)"/>
 	<link rel="shortcut icon" href="images/wo-favicon-01.png">
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 	<script src="js/emoji.js"></script>
@@ -44,120 +44,136 @@
 			<p>我們有一個很簡單而實際的夢想：相信台灣可以更好。讓台灣更好的力量，來自於更多主動參與、向外關注的公民，所以，我們致力於<span class="underline">降低公民參與政治的門檻</span>。</p>
 			<p>沃草的英文名字<span class="underline">Watchout</span>，原意是<span class="underline">提防</span>和<span class="underline">警戒</span>。只要我們每個小小公民都能時時張大眼睛、提高警覺，政客就不容易為所欲為，台灣的公民社會才能茁壯。</p>
 		</pgroup>
-		<ul id="timeline">
-			<li class="year datetime">2013</li>
-			<li class="event">
-				<div class="event-icon-wrapper"><label class="event-icon" key="誕生"></label></div>
-				<label class="tagline">阿草･誕生</label>
-				<div class="event-dialog">
-					<label class="datetime">2013年11月</label>
-					<pgroup>
-						<p class="long">在一連串由新世代發起的社會運動之中，沃草正式成立。</p>
-					</pgroup>
-					<a class="url disabled">你現在就在沃草的首頁哦</a><label class="button close">×</label>
-				</div>
+		<ul id="timeline" class="grid full-screen-grid">
+			<li class="year" id="Y2013">
+				<label class="datetime year">2013</label>
+				<ul class="events">
+					<li class="event L">
+						<div class="event-icon-wrapper"><label class="event-icon" key="誕生"></label></div>
+						<label class="tagline">阿草･誕生</label>
+						<div class="event-dialog">
+							<label class="datetime">2013年11月</label>
+							<pgroup>
+								<p class="long">在一連串由新世代發起的社會運動之中，沃草正式成立。</p>
+							</pgroup>
+							<a class="url disabled">你現在就在沃草的首頁哦</a><label class="button close">×</label>
+						</div>
+					</li>
+				</ul>
 			</li>
-			<li class="year datetime">2014</li>
-			<li class="event medium">
-				<div class="event-icon-wrapper"><label class="event-icon" key="國會無雙"></label></div>
-				<label class="tagline">國會無雙</label>
-				<div class="event-dialog">
-					<label class="datetime">2014年2月</label>
-					<pgroup>
-						<p class="long">用直播帶公民跨越高牆，詳實描寫立法院議事現場，產出第一手報導。</p>
-					</pgroup>
-					<a class="url" href="//musou.tw/" target="_blank">musou.tw</a><label class="button close">×</label>
-				</div>
+			<li class="year" id="Y2014">
+				<label class="datetime year">2014</label>
+				<ul class="events">
+					<li class="event C">
+						<div class="event-icon-wrapper"><label class="event-icon" key="國會無雙"></label></div>
+						<label class="tagline">國會無雙</label>
+						<div class="event-dialog">
+							<label class="datetime">2014年2月</label>
+							<pgroup>
+								<p class="long">用直播帶公民跨越高牆，詳實描寫立法院議事現場，產出第一手報導。</p>
+							</pgroup>
+							<a class="url" href="//musou.tw/" target="_blank">musou.tw</a><label class="button close">×</label>
+						</div>
+					</li>
+					<li class="event M">
+						<div class="event-icon-wrapper"><label class="event-icon" key="無雙改版"></label></div>
+						<label class="tagline">2.0改版</label>
+						<div class="event-dialog">
+							<label class="datetime">2014年6月</label>
+							<pgroup>
+								<p class="long">國會無雙2.0改版，公民監督國會再進化。</p>
+							</pgroup>
+							<a class="url" href="//musou.tw/" target="_blank">musou.tw</a><label class="button close">×</label>
+						</div>
+					</li>
+					<li class="event S">
+						<div class="event-icon-wrapper"><label class="event-icon" key="市長給問"></label></div>
+						<label class="tagline custom-line-break-reverse"><span class="line">台灣第一次</span><span class="hide">･</span><span>市長給問</span></label>
+						<div class="event-dialog">
+							<label class="datetime">2014年7月</label>
+							<pgroup>
+								<p class="long">台灣史上第一次，市長給問。藉由網路提問與連署，人民與未來的市長直接溝通。</p>
+							</pgroup>
+							<a class="url" href="//wethepeople.tw/" target="_blank">wethepeople.tw</a><label class="button close">×</label>
+						</div>
+					</li>
+					<li class="event C">
+						<div class="event-icon-wrapper"><label class="event-icon" key="公民學院"></label></div>
+						<label class="tagline">公民學院</label>
+						<div class="event-dialog">
+							<label class="datetime">2014年10月</label>
+							<pgroup>
+								<p class="long">那些年被借去考數理化的公民課，現在補課也不遲。目前由烙哲學社群，穩定為公民社會提供批判思考的教材。</p>
+							</pgroup>
+							<a class="url" href="//citizenedu.tw/" target="_blank">citizenedu.tw</a><label class="button close">×</label>
+						</div>
+					</li>
+				</ul>
 			</li>
-			<li class="event medium">
-				<div class="event-icon-wrapper"><label class="event-icon" key="無雙改版"></label></div>
-				<label class="tagline">2.0改版</label>
-				<div class="event-dialog">
-					<label class="datetime">2014年6月</label>
-					<pgroup>
-						<p class="long">國會無雙2.0改版，公民監督國會再進化。</p>
-					</pgroup>
-					<a class="url" href="//musou.tw/" target="_blank">musou.tw</a><label class="button close">×</label>
-				</div>
+			<li class="year" id="Y2015">
+				<label class="datetime year">2015</label>
+				<ul class="events">
+					<li class="event M">
+						<div class="event-icon-wrapper"><label class="event-icon" key="無雙一千"></label></div>
+						<label class="tagline">第一千篇報導</label>
+						<div class="event-dialog">
+							<label class="datetime">2015年8月</label>
+							<pgroup>
+								<p class="long">一年六個月，累積了一千篇報導，讓更多人能知國會大小事。</p>
+							</pgroup>
+							<a class="url" href="//musou.tw/" target="_blank">musou.tw</a><label class="button close">×</label>
+						</div>
+					</li>
+					<li class="event C">
+						<div class="event-icon-wrapper"><label class="event-icon" key="立委出任務"></label></div>
+						<label class="tagline">立委出任務</label>
+						<div class="event-dialog">
+							<label class="datetime">2015年10月</label>
+							<pgroup>
+								<p class="long">立委候選人化身戰士，誰來捍衛民主正義價值，由你來決定。兩千多筆立院議事資料，七大議題，視覺化給你看。</p>
+							</pgroup>
+							<a class="url" href="//wevote.tw/" target="_blank">wevote.tw</a><label class="button close">×</label>
+						</div>
+					</li>
+					<li class="event">
+						<div class="event-icon-wrapper"><label class="event-icon" key="總統給問"></label></div>
+						<label class="tagline">總統給問</label>
+						<div class="event-dialog">
+							<label class="datetime">2015年10月</label>
+							<pgroup>
+								<p class="long">台灣史上第一次，三個政黨，四個總統候選人給問。沃草與Google台灣、蘋果日報、Ptt實業坊協力推出。</p>
+							</pgroup>
+							<a class="url" href="//taiwan.wethepeople.tw/" target="_blank">taiwan.wethepeople.tw</a><label class="button close">×</label>
+						</li>
+					</div>
+				</ul>
 			</li>
-			<li class="event small">
-				<div class="event-icon-wrapper"><label class="event-icon" key="市長給問"></label></div>
-				<label class="tagline">台灣第一次･市長給問</label>
-				<div class="event-dialog">
-					<label class="datetime">2014年7月</label>
-					<pgroup>
-						<p class="long">台灣史上第一次，市長給問。藉由網路提問與連署，人民與未來的市長直接溝通。</p>
-					</pgroup>
-					<a class="url" href="//wethepeople.tw/" target="_blank">wethepeople.tw</a><label class="button close">×</label>
-				</div>
-			</li>
-			<li class="event small">
-				<div class="event-icon-wrapper"><label class="event-icon" key="公民學院"></label></div>
-				<label class="tagline">公民學院</label>
-				<div class="event-dialog">
-					<label class="datetime">2014年10月</label>
-					<pgroup>
-						<p class="long">那些年被借去考數理化的公民課，現在補課也不遲。目前由烙哲學社群，穩定為公民社會提供批判思考的教材。</p>
-					</pgroup>
-					<a class="url" href="//citizenedu.tw/" target="_blank">citizenedu.tw</a><label class="button close">×</label>
-				</div>
-			</li>
-			<li class="year datetime">2015</li>
-			<li class="event medium">
-				<div class="event-icon-wrapper"><label class="event-icon" key="無雙一千"></label></div>
-				<label class="tagline">第一千篇報導</label>
-				<div class="event-dialog">
-					<label class="datetime">2015年8月</label>
-					<pgroup>
-						<p class="long">一年六個月，累積了一千篇報導，讓更多人能知國會大小事。</p>
-					</pgroup>
-					<a class="url" href="//musou.tw/" target="_blank">musou.tw</a><label class="button close">×</label>
-				</div>
-			</li>
-			<li class="event small">
-				<div class="event-icon-wrapper"><label class="event-icon" key="立委出任務"></label></div>
-				<label class="tagline">立委出任務</label>
-				<div class="event-dialog">
-					<label class="datetime">2015年10月</label>
-					<pgroup>
-						<p class="long">立委候選人化身戰士，誰來捍衛民主正義價值，由你來決定。兩千多筆立院議事資料，七大議題，視覺化給你看。</p>
-					</pgroup>
-					<a class="url" href="//wevote.tw/" target="_blank">wevote.tw</a><label class="button close">×</label>
-				</div>
-			</li>
-			<li class="event">
-				<div class="event-icon-wrapper"><label class="event-icon" key="總統給問"></label></div>
-				<label class="tagline">總統給問</label>
-				<div class="event-dialog">
-					<label class="datetime">2015年10月</label>
-					<pgroup>
-						<p class="long">台灣史上第一次，三個政黨，四個總統候選人給問。沃草與Google台灣、蘋果日報、Ptt實業坊協力推出。</p>
-					</pgroup>
-					<a class="url" href="//taiwan.wethepeople.tw/" target="_blank">taiwan.wethepeople.tw</a><label class="button close">×</label>
-				</div>
-			</li>
-			<li class="year datetime">2016</li>
-			<li class="event small">
-				<div class="event-icon-wrapper"><label class="event-icon" key="總統辯論"></label></div>
-				<label class="tagline">總統辯論･公民提問</label>
-				<div class="event-dialog">
-					<label class="datetime">2016年1月</label>
-					<pgroup>
-						<p class="long">總統給問嗎參戰總統辯論會，由公民連署的提問首次在電視上與候選人面對面。</p>
-					</pgroup>
-					<a class="url" href="//zh.wikipedia.org/wiki/2016年中華民國總統選舉電視辯論" target="_blank">Wikipedia</a><label class="button close">×</label>
-				</div>
-			</li>
-			<li class="event">
-				<div class="event-icon-wrapper"><label class="event-icon" key="開放國會松"></label></div>
-				<label class="tagline">開放國會松</label>
-				<div class="event-dialog">
-					<label class="datetime">2016年8月</label>
-					<pgroup>
-						<p class="long">台灣史上第一次，開放國會松，沃草與台灣公民要用科技、創意和熱血強制更新立法院。</p>
-					</pgroup>
-					<a class="url" href="//watchout.tw/congressthon" target="_blank">congressthon</a><label class="button close">×</label>
-				</div>
+			<li class="year" id="Y2016">
+				<label class="datetime year">2016</label>
+				<ul class="events">
+					<li class="event S">
+						<div class="event-icon-wrapper"><label class="event-icon" key="總統辯論"></label></div>
+						<label class="tagline custom-line-break-reverse"><span class="line">總統辯論</span><span class="hide">･</span><span>公民提問</span></label>
+						<div class="event-dialog">
+							<label class="datetime">2016年1月</label>
+							<pgroup>
+								<p class="long">總統給問嗎參戰總統辯論會，由公民連署的提問首次在電視上與候選人面對面。</p>
+							</pgroup>
+							<a class="url" href="//zh.wikipedia.org/wiki/2016年中華民國總統選舉電視辯論" target="_blank">Wikipedia</a><label class="button close">×</label>
+						</div>
+					</li>
+					<li class="event L">
+						<div class="event-icon-wrapper"><label class="event-icon" key="開放國會松"></label></div>
+						<label class="tagline">開放國會松</label>
+						<div class="event-dialog">
+							<label class="datetime">2016年8月</label>
+							<pgroup>
+								<p class="long">台灣史上第一次，開放國會松，沃草與台灣公民要用科技、創意和熱血強制更新立法院。</p>
+							</pgroup>
+							<a class="url" href="//watchout.tw/congressthon" target="_blank">congressthon</a><label class="button close">×</label>
+						</div>
+					</li>
+				</ul>
 			</li>
 		</ul>
 	</section>
@@ -166,7 +182,7 @@
 		<ul id="stats" class="grid">
 			<li class="stat">
 				<label class="project-icon small" key="國會無雙"></label>
-				<label class="number-wrapper M-L-screen"><span class="number">1,200,000+</span></label>
+				<label class="number-wrapper M--screen"><span class="number">1,200,000+</span></label>
 				<label class="number-wrapper S-screen"><span class="number">120<span class="tw">萬</span>+</span></label>
 				<p class="tight">國會無雙直播累積觀看人次</p>
 			</li>
@@ -234,7 +250,7 @@
 				<a class="button" href="//watchout.backme.tw/" target="_blank">算我一份</a>
 			</li>
 		</ul>
-		<div class="divider grid">
+		<div class="divider">
 			<badge>餵食就有</badge>
 			<ul id="gifts" class="grid">
 				<li class="gift">
@@ -244,7 +260,7 @@
 				</li>
 				<li class="gift">
 					<div class="gift-icon" key="card"></div>
-					<label class="option-title">aCAO明信片</label>
+					<label class="option-title">acao明信片</label>
 					<p class="note custom-line-break"><span class="line always">那些年</span><span>與阿草一起追的理想</span></p>
 				</li>
 				<li class="gift">
@@ -314,27 +330,28 @@
 				<label class="code">$3,600</label>
 				<a class="button" href="//watchout.backme.tw/" target="_blank">算我一份</a>
 			</li>
-			<li class="purchase-option group-purchase">
-				<hgroup>
-					<h4>烙人一起餵養阿草</h4>
-					<h4>四人作伙成為草民</h4>
-				</hgroup>
-				<div class="purchase-icon-wrapper">
-					<div class="purchase-icon" key="10000"></div>
-					<ul class="purchase-detail">
-						<li><span>紀念磁鐵徽章</span><span class="four">×4</span></li>
-						<li><span>草T</span><span class="four">×4</span></li>
-						<li><span>運動毛巾</span><span class="four">×4</span></li>
-						<li><span>阿草娃娃</span><span class="four">×4</span></li>
-						<li><span>束口袋</span><span class="four">×4</span></li>
-						<li><span>運動矽膠手環</span><span class="four">×4</span></li>
-						<li><span>紀念鑰匙圈</span><span class="four">×4</span></li>
-					</ul>
-				</div>
-				<label class="code">$10,000</label>
-				<a class="button wide" href="//watchout.backme.tw/" target="_blank">算我們一份</a>
-			</li>
 		</ul>
+		<div id="group-purchase">
+			<hgroup>
+				<h4>同胞須團結，團結真有力</h4>
+				<h4>無驚風雨天，四人做伙行</h4>
+			</hgroup>
+			<div class="purchase-icon-wrapper">
+				<div class="purchase-icon" key="10000"></div>
+				<ul class="purchase-detail">
+					<li><span>紀念磁鐵徽章</span><span class="four">×4</span></li>
+					<li><span>草T</span><span class="four">×4</span></li>
+					<li><span>運動毛巾</span><span class="four">×4</span></li>
+					<li><span>阿草娃娃</span><span class="four">×4</span></li>
+					<li><span>束口袋</span><span class="four">×4</span></li>
+					<li><span>運動矽膠手環</span><span class="four">×4</span></li>
+					<li><span>紀念鑰匙圈</span><span class="four">×4</span></li>
+				</ul>
+			</div>
+			<label class="code">$10,000</label>
+			<a class="button wide" href="//watchout.backme.tw/" target="_blank">算我們一份</a>
+		</div>
+
 		<div class="pop"><p>支持沃草的你，就是享有<span class="underline">草民權</span>的<span class="emphasize">草民</span></p></div>
 		<hgroup>
 			<h3>草民權憲法草案</h3>

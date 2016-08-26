@@ -1,8 +1,8 @@
-.M-L-screen {
+.M--screen {
   display: none !important; }
 
 @media (min-width: 481px) {
-  .M-L-screen {
+  .M--screen {
     display: inherit !important; }
 
   .S-screen {
@@ -20,12 +20,28 @@
   width: 320px;
   margin: 0 auto; }
   #timeline:before {
-    left: 24px; }
+    top: 0;
+    left: 24px;
+    width: 4px;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(80, 227, 194, 0.25), #50e3c2);
+    background: -moz-linear-gradient(top, rgba(80, 227, 194, 0.25), #50e3c2);
+    background: -ms-linear-gradient(top, rgba(80, 227, 194, 0.25), #50e3c2);
+    background: -o-linear-gradient(top, rgba(80, 227, 194, 0.25), #50e3c2);
+    background: linear-gradient(from top, rgba(80, 227, 194, 0.25), #50e3c2); }
   #timeline > .year {
     margin-left: 32px;
     text-align: left; }
-  #timeline > .event {
-    margin-left: 40px; }
+  #timeline > .year > .events > .event {
+    margin: 1rem 0;
+    text-align: left; }
+    #timeline > .year > .events > .event > .tagline:after {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 0.125rem; }
+    #timeline > .year > .events > .event > .event-dialog {
+      left: -24px;
+      top: 50%; }
 
 #monthly-payments > .payment-option {
   width: 43.75%;
@@ -49,11 +65,6 @@
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
-#one-time-purchases > .purchase-option.group-purchase {
-  width: 100%;
-  margin: 2rem 0;
-  padding: 1rem 3.125%; }
-
 #bill-of-rights > .bill {
   width: 43.75%;
   float: left;
@@ -75,4 +86,4 @@
     #stats > .stat.tiny > p {
       min-height: 44px; }
 
-/*# sourceMappingURL=layout.css.map */
+/*# sourceMappingURL=layout-S-L.css.map */

@@ -4,8 +4,6 @@
 
 @mixin info {
 	content: 'i';
-	display: block;
-	position: absolute;
 	@include font-grotesque;
 	font-size: 1rem;
 	line-height: 1;
@@ -90,7 +88,7 @@ body > section {
 	&#banner {
 		padding-bottom: 60%;
 		background-image: url('../images/forward-compact.gif');
-		@include L-screen {
+		@include L--screen {
 			padding-bottom: 35.75%;
 			background-image: url('../images/forward-wide.gif');
 		}
@@ -98,7 +96,7 @@ body > section {
 	&#team {
 		padding-bottom: 208.35%;
 		background-image: url('../images/team-mobile.gif');
-		@include L-screen {
+		@include L--screen {
 			padding-bottom: 70.6908%;
 			background-image: url('../images/team-desktop.gif');
 		}
@@ -108,6 +106,11 @@ body > section {
 .pop {
 	background: $woc;
 	margin: 2rem 0;
+	padding: 0.25rem 0;
+
+	> p {
+		margin: 0;
+	}
 }
 .prompt {
 	box-sizing: content-box;
@@ -138,16 +141,29 @@ body > section {
 		box-shadow: $shadow-dark;
 	}
 }
-.divider {
+
+@mixin divider($border, $background) {
 	position: relative;
-	border-top: $border-green;
-	border-bottom: $border-green;
-	margin: 2rem 0;
-	@include M-L-screen {
-		margin: 2rem;
-		border: $border-green;
+	background: $background;
+	border-top: $border;
+	border-bottom: $border;
+	margin: 2rem auto;
+	max-width: 960px;
+	@include M--screen {
+		border: $border;
 		border-radius: $border-width;
 	}
+	@include M-X-screen {
+		margin: 2rem;
+	}
+	@include X--screen {
+		margin: 2rem auto;
+	}
+
+}
+
+.divider {
+	@include divider($border-green, none);
 }
 badge {
 	box-sizing: content-box;
@@ -246,7 +262,7 @@ $event-icon-height: 160px;
 $event-icon-key: (誕生 國會無雙 無雙第一 無雙改版 市長給問 公民學院 無雙一千 立委出任務 總統給問 總統辯論 開放國會松);
 $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-height);
 .event-icon {
-	@include icon(192px, $event-icon-height, 'desktop-events', $event-icon-height, $event-icon-key, $event-icon-width, 192px);
+	@include icon(192px, $event-icon-height, 'events', $event-icon-height, $event-icon-key, $event-icon-width, 192px);
 }
 .event-icon[key="誕生"], .event-icon[key="開放國會松"] {
 	background-position: center center;
@@ -273,7 +289,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 }
 .bill-icon {
 	@include icon(132px, 128px, 'mobile-bills', 128px, (voting callin achievement more));
-	@include M-L-screen {
+	@include M--screen {
 		@include icon(192px, 128px, 'desktop-bills', 128px, (voting callin achievement more));
 	}
 }
@@ -286,20 +302,27 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	content: '';
 	display: block;
 	position: absolute;
-	top: 0;
-	width: $border-width;
-	height: 100%;
 	background-repeat: repeat-x;
 	background: $woc;
-	@include background-gradient(top, rgba($woc, 0.25), rgba($woc, 1));
 }
-#timeline > .event {
+#timeline > .year > .events > .event {
 	position: relative;
-	margin: 1rem 0;
-	text-align: left;
 
-	$M-event-icon-height: 92px;
-	$S-event-icon-height: 60px;
+	$icon-heights: (
+		L: 150px,
+		M: 80px,
+		S: 62px,
+		C: 46px, // compact
+	);
+	@each $name, $size in $icon-heights {
+		&.#{$name} > .event-icon-wrapper {
+			height: $size;
+			> .event-icon {
+				margin-top: -($event-icon-height - $size)/2;
+			}
+		}
+	}
+	/*
 	&.medium > .event-icon-wrapper {
 		height: $M-event-icon-height;
 		> .event-icon {
@@ -311,8 +334,11 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 		> .event-icon {
 			margin-top: -($event-icon-height - $S-event-icon-height)/2;
 		}
-	}
+	}*/
 
+	> .event-icon-wrapper {
+		overflow: hidden;
+	}
 	> .event-icon-wrapper, > .tagline {
 		position: relative;
 		display: inline-block;
@@ -320,19 +346,13 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	}
 	> .tagline:after {
 		@include info;
-		top: 0;
-		left: 100%;
-		margin-left: 2px;
 	}
 	> .event-dialog {
 		display: none;
 		position: absolute;
-		left: -32px;
-		top: 50%;
 		width: 300px + 2*$border-width;
 		border: $border-green;
 		border-radius: $border-width;
-		margin: 0 auto;
 		background: rgba(white, 0.95);
 		text-align: left;
 		@include transform(translateY(-50%));
@@ -356,7 +376,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 			width: 100%;
 			padding: 8px 42px 8px 4px;
 
-			@include M-L-screen {
+			@include M--screen {
 				padding-right: 4px;
 			}
 
@@ -378,7 +398,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 			margin: 0;
 			box-shadow: none;
 
-			@include M-L-screen {
+			@include M--screen {
 				display: none;
 			}
 		}
@@ -392,7 +412,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	&.focus > .event-dialog {
 		display: block;
 	}
-	@include M-L-screen {
+	@include M--screen {
 		&.focus > .event-dialog {
 			display: none;
 		}
@@ -402,7 +422,8 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	}
 }
 
-#one-time-purchases > .purchase-option {
+#one-time-purchases > .purchase-option,
+#group-purchase {
 	position: relative;
 
 	> .purchase-icon-wrapper {
@@ -412,6 +433,8 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 		position: relative;
 		&:before {
 			@include info;
+			display: block;
+			position: absolute;
 			top: 0;
 			right: 0;
 		}
@@ -451,7 +474,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	&.focus > .purchase-icon-wrapper > .purchase-detail {
 		display: block;
 	}
-	@include M-L-screen {
+	@include M--screen {
 		&.focus > .purchase-icon-wrapper > .purchase-detail {
 			display: none;
 		}
@@ -460,19 +483,13 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 		}
 	}
 }
-#one-time-purchases > .purchase-option.group-purchase {
-	background: rgba($gold, 0.25);
-	border-top: $border-gold;
-	border-bottom: $border-gold;
+#group-purchase {
+	@include divider($border-gold, $gold-faint);
+	padding: 1rem 0;
 
 	> hgroup {
 		margin-top: -0.25rem;
 		margin-bottom: 0.25rem;
-	}
-
-	@include M-L-screen {
-		border: $border-gold;
-		border-radius: $border-width;
 	}
 }
 

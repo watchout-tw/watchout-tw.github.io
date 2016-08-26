@@ -17,7 +17,10 @@ $font-strong: "circular-pro", "xin-gothic-tc", "PingFang TC", sans-serif;
 $font-grotesque: "circular-pro", "source-han-sans-tc", sans-serif;
 
 // layout & unified style elements
+$max-width: 960px;
+
 $nav-height: 65px;
+$gold-faint: rgba($gold, 0.25);
 $gold-light: rgba($gold, 0.75);
 $gold-dark: rgba($gold, 0.85);
 $gold-almost: rgba($gold, 0.95);

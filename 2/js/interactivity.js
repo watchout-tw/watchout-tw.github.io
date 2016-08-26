@@ -3,10 +3,10 @@ $(function() {
   var enable_click_focus = function(list_sel, item_sel) {
     var _focus_ = 'focus';
     var $list = $(list_sel);
-    $(list_sel + ' > ' + item_sel).click(function() {
+    $(list_sel + ' ' + item_sel).click(function() {
       var $item = $(this);
       if(!$item.hasClass(_focus_)) {
-        $(list_sel + ' > ' + item_sel).removeClass(_focus_);
+        $(list_sel + ' ' + item_sel).removeClass(_focus_);
       }
       $item.toggleClass(_focus_);
     });
@@ -41,7 +41,7 @@ $(function(){
 
 // prevent event propagation at buttons
 $(function() {
-  $('.button').click(function(event) {
+  $('.button:not(.close)').click(function(event) {
     event.stopPropagation();
   })
 });

@@ -14,15 +14,31 @@ $susy: (
 #timeline {
   width: 320px;
   margin: 0 auto;
+
   &:before {
-    left: 24px;
+		top: 0;
+		left: 24px;
+		width: $border-width;
+		height: 100%;
+		@include background-gradient(top, rgba($woc, 0.25), rgba($woc, 1));
   }
   > .year {
     margin-left: 32px;
     text-align: left;
   }
-  > .event {
-    margin-left: 40px;
+  > .year > .events > .event {
+    margin: 1rem 0;
+		text-align: left;
+
+		> .tagline:after {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 0.125rem;
+		}
+		> .event-dialog {
+			left: -24px;
+			top: 50%;
+		}
   }
 }
 
@@ -38,11 +54,6 @@ $susy: (
   @include span(4);
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-#one-time-purchases > .purchase-option.group-purchase {
-	width: 100%;
-	margin: 2rem 0;
-	padding: 1rem gutter(4);
 }
 #bill-of-rights > .bill {
   @include span(2);

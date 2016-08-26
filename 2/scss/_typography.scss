@@ -41,7 +41,7 @@ h1, h2, h3, h4 {
 h1 {
 	font-size: 4.8rem;
   line-height: 1;
-  @include M-L-screen {
+  @include M--screen {
     font-size: 6rem;
   }
 }
@@ -96,13 +96,13 @@ span.emphasize {
   font-size: 5.25rem;
   line-height: 1em;
   word-wrap: break-word;
-  @include M-L-screen {
+  @include M--screen {
     font-size: 8.5rem;
   }
 
   &.small {
     font-size: 4rem;
-    @include M-L-screen {
+    @include M--screen {
       font-size: 4.5rem;
     }
   }
@@ -183,23 +183,31 @@ badge, .line, .support-button {
 // custom line break
 .custom-line-break > .line {
   display: block;
-  @include M-L-screen {
+  @include M--screen {
     &:not(.always) {
       display: inline;
     }
     &:not(:last-child) {
-      margin-right: 0.125em;
+      //margin-right: 0.125em;
     }
   }
 }
 .custom-line-break > .hide {
   display: none;
-  @include M-L-screen {
+  @include M--screen {
     display: inline;
   }
 }
 .custom-line-break > .line + .hide {
   margin-left: -0.125em;
+}
+@include L--screen {
+  .custom-line-break-reverse > .line {
+    display: block;
+  }
+  .custom-line-break-reverse > .hide {
+    display: none;
+  }
 }
 
 ul {
@@ -228,8 +236,9 @@ ul {
 
 .tagline {
   @include font-mincho;
+  line-height: $leading-tight;
 }
-.year {
+.datetime.year {
   @include font-mincho;
   font-size: 1.5rem;
   line-height: 1;
