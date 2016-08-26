@@ -119,14 +119,14 @@ body > section {
 	border-bottom: $border;
 	margin: 2rem auto;
 	max-width: 960px;
-	@include M--screen {
+	@include screen-gt-M {
 		border: $border;
 		border-radius: $border-width;
 	}
-	@include M-X-screen {
+	@include screen-M-X {
 		margin: 2rem;
 	}
-	@include X--screen {
+	@include screen-gt-X {
 		margin: 2rem auto;
 	}
 
@@ -259,7 +259,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 }
 .bill-icon {
 	@include icon(132px, 128px, 'mobile-bills', 128px, (voting callin achievement more));
-	@include M--screen {
+	@include screen-gt-M {
 		@include icon(192px, 128px, 'desktop-bills', 128px, (voting callin achievement more));
 	}
 }
@@ -350,7 +350,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 			width: 100%;
 			padding: 8px 42px 8px 4px;
 
-			@include M--screen {
+			@include screen-gt-M {
 				padding-right: 4px;
 			}
 
@@ -372,7 +372,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 			margin: 0;
 			box-shadow: none;
 
-			@include M--screen {
+			@include screen-gt-M {
 				display: none;
 			}
 		}
@@ -386,7 +386,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	&.focus > .event-dialog {
 		display: block;
 	}
-	@include M--screen {
+	@include screen-gt-M {
 		&.focus > .event-dialog {
 			display: none;
 		}
@@ -448,7 +448,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	&.focus > .purchase-icon-wrapper > .purchase-detail {
 		display: block;
 	}
-	@include M--screen {
+	@include screen-gt-M {
 		&.focus > .purchase-icon-wrapper > .purchase-detail {
 			display: none;
 		}

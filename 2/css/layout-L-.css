@@ -1,20 +1,20 @@
-.M--screen {
+[screen="gt-M"] {
   display: none !important; }
 
 @media (min-width: 481px) {
-  .M--screen {
+  [screen="gt-M"] {
     display: inherit !important; }
 
-  .S-screen {
+  [screen="S"] {
     display: none !important; } }
-.L--screen {
+[screen="gt-L"] {
   display: none !important; }
 
 @media (min-width: 769px) {
-  .L--screen {
+  [screen="gt-L"] {
     display: inherit !important; }
 
-  .S-L-screen {
+  [screen="S-L"] {
     display: none !important; } }
 .grid {
   max-width: 960px;

@@ -27,7 +27,7 @@ $susy: (
     margin-left: 32px;
     text-align: left;
   }
-	@include M-L-screen {
+	@include screen-M-L {
 		> .year {
 			margin-bottom: 0;
 		}

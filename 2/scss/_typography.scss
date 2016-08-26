@@ -41,7 +41,7 @@ h1, h2, h3, h4 {
 h1 {
 	font-size: 4.8rem;
   line-height: 1;
-  @include M--screen {
+  @include screen-gt-M {
     font-size: 6rem;
   }
 }
@@ -102,13 +102,13 @@ span.fixed-width-center {
   font-size: 5.25rem;
   line-height: 1em;
   word-wrap: break-word;
-  @include M--screen {
+  @include screen-gt-M {
     font-size: 8.5rem;
   }
 
   &.small {
     font-size: 4rem;
-    @include M--screen {
+    @include screen-gt-M {
       font-size: 4.5rem;
     }
   }
@@ -189,7 +189,7 @@ badge, .line, .support-button {
 // custom line break
 .custom-line-break > .line {
   display: block;
-  @include M--screen {
+  @include screen-gt-M {
     &:not(.always) {
       display: inline;
     }
@@ -200,14 +200,14 @@ badge, .line, .support-button {
 }
 .custom-line-break > .hide {
   display: none;
-  @include M--screen {
+  @include screen-gt-M {
     display: inline;
   }
 }
 .custom-line-break > .line + .hide {
   margin-left: -0.125em;
 }
-@include L--screen {
+@include screen-gt-L {
   .custom-line-break-reverse > .line {
     display: block;
   }
