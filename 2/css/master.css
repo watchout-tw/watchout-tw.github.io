@@ -524,7 +524,7 @@ section#sm {
     background-position: center -64px; }
   .payment-icon[key="500"] {
     background-position: center -128px; }
-  .payment-icon[key="1000"] {
+  .payment-icon[key="custom"] {
     background-position: center -192px; }
 
 .gift-icon {

@@ -264,7 +264,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	@include icon(30px, 30px, 'project-logo-small', 30px, (國會無雙 給問 公民學院 立委出任務));
 }
 .payment-icon {
-	@include icon(128px, 54px, 'monthly-payments', 64px, (100 250 500 1000));
+	@include icon(128px, 54px, 'monthly-payments', 64px, (100 250 500 custom));
 }
 .gift-icon {
 	@include icon(128px, 118px, 'gifts', 128px, (certificate card newsletter present));
