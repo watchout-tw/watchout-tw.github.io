@@ -56,7 +56,7 @@ $(document).ready(function() {
 		animation: {
 			opacity: 'show',
 			height: 'show'
-		}, // fade-in and slide-down animation 
+		}, // fade-in and slide-down animation
 		cssArrows: false,
 		delay: 300
 	});
@@ -167,6 +167,7 @@ $(document).ready(function() {
 var $$ = function(tagname) {
 	return document.getElementsByTagName(tagname); }
 
+/*
 function onYouTubeIframeAPIReady() {
 	var videos = $$('iframe'), // the iframes elements
 		players = [], // an array where we stock each videos youtube instances class
@@ -187,6 +188,5 @@ function onYouTubeIframeAPIReady() {
 			playingID = currentHoveredElement.id;
 		};
 	}
-
 }
-onYouTubeIframeAPIReady();
+onYouTubeIframeAPIReady();*/
