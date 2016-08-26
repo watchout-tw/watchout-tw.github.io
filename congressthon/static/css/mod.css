@@ -1,0 +1,99 @@
+#slides {
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 0;
+}
+#slides > .slide {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+#arrows {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 96%;
+  margin: -22.5px 2% 0;
+}
+.sp-arrow {
+  width: 45px;
+  height: 45px;
+}
+#arrows .sp-previous-arrow {
+  left: 0;
+}
+#arrows .sp-next-arrow {
+  right: 0;
+}
+#promo-video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+#promo-video-wrapper > iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.three-by-three {
+  white-space: normal;
+  font-size: 0;
+}
+.three-by-three > .box {
+  position: relative;
+  box-sizing: border-box;
+  width: 33.33%;
+  height: 0;
+  padding-bottom: 18.75%;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #019e95;
+}
+.three-by-three > .box > label {
+  position: absolute;
+  padding: 0 8px;
+  text-align: center;
+  background: #019e95;
+  color: white;
+  font-size: 1.5rem;
+}
+.three-by-three > .box[key="姚文智"] {
+  background-image: url('../images/supporting_legislators/姚文智-s.jpg');
+}
+.three-by-three > .box[key="柯志恩"] {
+  background-image: url('../images/supporting_legislators/柯志恩-s.jpg');
+}
+.three-by-three > .box[key="洪宗熠"] {
+  background-image: url('../images/supporting_legislators/洪宗熠-s.jpg');
+  background-size: contain;
+}
+.three-by-three > .box[key="羅致政"] {
+  background-image: url('../images/supporting_legislators/羅致政-s.jpg');
+}
+.three-by-three > .box[key="趙正宇"] {
+  background-image: url('../images/supporting_legislators/趙正宇-s.jpg');
+}
+.three-by-three > .box[key="鄭寶清"] {
+  background-image: url('../images/supporting_legislators/鄭寶清-s.jpg');
+  background-size: contain;;
+}
+.three-by-three > .box[key="陳亭妃"] {
+  background-image: url('../images/supporting_legislators/陳亭妃-s.jpg');
+}
+.three-by-three > .box[key="陳學聖"] {
+  background-image: url('../images/supporting_legislators/陳學聖-s.jpg');
+}
+.three-by-three > .box[key="顏寬恒"] {
+  background-image: url('../images/supporting_legislators/顏寬恒-s.jpg');
+}

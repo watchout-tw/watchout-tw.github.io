@@ -33,10 +33,11 @@
 	<link rel="stylesheet" href="static/css/bootstrap.css">
 	<link rel="stylesheet" href="static/css/style.css">
 	<link rel="stylesheet" href="static/css/style-fix.css">
-	<link rel="stylesheet" href="static/css/photogrid.css">
+	<link rel="stylesheet" href="static/css/mod.css">
 	<!-- Core -->
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="static/js/bootstrap.min.js"></script>
+	<script src="static/js/mod.js"></script>
 </head>
 
 <body>
@@ -151,14 +152,26 @@
 	</div>
 </section>
 <!-- 影片-->
-<section class="sec-intro">
-	<div class="slider-pro" id="index-slider">
-		<div class="sp-slides">
-			<div class="sp-slide">
-				<iframe class="sp-video" src="http://www.youtube.com/embed/6Bi2jRiDEhY?enablejsapi=1&amp;wmode=opaque" frameborder="0" allowfullscreen yt:stretch=16:9></iframe>
+<section class="sec-intro" style="position: relative; padding: 0;">
+	<div id="slides" status="0">
+		<div class="slide" id="promo-video-wrapper">
+			<iframe src="https://www.youtube.com/embed/6Bi2jRiDEhY" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class="slide" id="supporting-legislators">
+			<div class="three-by-three">
+				<div class="box" key="姚文智"><label>姚文智</label></div>
+				<div class="box" key="柯志恩"><label>柯志恩</label></div>
+				<div class="box" key="洪宗熠"><label>洪宗熠</label></div>
+				<div class="box" key="羅致政"><label>羅致政</label></div>
+				<div class="box" key="趙正宇"><label>趙正宇</label></div>
+				<div class="box" key="鄭寶清"><label>鄭寶清</label></div>
+				<div class="box" key="陳亭妃"><label>陳亭妃</label></div>
+				<div class="box" key="陳學聖"><label>陳學聖</label></div>
+				<div class="box" key="顏寬恒"><label>顏寬恒</label></div>
 			</div>
 		</div>
 	</div>
+	<div class="sp-arrows" id="arrows"><div class="sp-arrow sp-previous-arrow"></div><div class="sp-arrow sp-next-arrow"></div></div>
 </section>
 <!-- 活動特色 -->
 <section class="sec-feature" id="section-feature">
