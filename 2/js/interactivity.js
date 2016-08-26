@@ -30,11 +30,11 @@ $(function(){
     }
   });
 
-  var $html = $('html, body');
+  var $html = $('html,body');
   var $button = $('#support-buttons > .support-button.light');
   var $scrollTarget = $($button.attr('href'));
   $button.click(function() {
-    $html.animate({scrollTop: $scrollTarget.offset().top}, 750);
+    $html.scrollTo($scrollTarget.offset().top, 750);
     return false;
   })
 });
