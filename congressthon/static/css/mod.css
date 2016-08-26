@@ -97,3 +97,8 @@
 .three-by-three > .box[key="顏寬恒"] {
   background-image: url('../images/supporting_legislators/顏寬恒-s.jpg');
 }
+
+.nav-icon {
+  top: 10px;
+  right: 15px;
+}
