@@ -2,7 +2,6 @@ $(function() {
   var $slides = $('#slides');
   var $all_slides = $slides.find('.slide');
   var $first_slide = $all_slides.filter(':eq(0)');
-  console.log($first_slide);
   var $prev = $('#arrows > .sp-previous-arrow');
   var $next = $('#arrows > .sp-next-arrow');
 
