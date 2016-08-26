@@ -25,3 +25,15 @@
     display: none !important;
   }
 }
+
+.L--screen {
+	display: none !important;
+}
+@include L--screen {
+	.L--screen {
+		display: inherit !important;
+	}
+	.S-L-screen {
+		display: none !important;
+	}
+}

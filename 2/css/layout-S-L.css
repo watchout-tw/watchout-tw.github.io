@@ -7,6 +7,15 @@
 
   .S-screen {
     display: none !important; } }
+.L--screen {
+  display: none !important; }
+
+@media (min-width: 769px) {
+  .L--screen {
+    display: inherit !important; }
+
+  .S-L-screen {
+    display: none !important; } }
 .grid {
   max-width: 100%;
   margin-left: auto;

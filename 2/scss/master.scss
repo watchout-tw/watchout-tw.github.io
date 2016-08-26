@@ -65,26 +65,11 @@ body > section {
 
 .full-screen-image {
 	width: 100%;
-	height: 0;
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center center;
-
-	&#banner {
-		padding-bottom: 60%;
-		background-image: url('../images/forward-compact.gif');
-		@include L--screen {
-			padding-bottom: 35.75%;
-			background-image: url('../images/forward-wide.gif');
-		}
-	}
-	&#team {
-		padding-bottom: 208.35%;
-		background-image: url('../images/team-mobile.gif');
-		@include L--screen {
-			padding-bottom: 70.6908%;
-			background-image: url('../images/team-desktop.gif');
-		}
+	max-width: 1200px;
+	margin: 0 auto;
+	> img {
+		display: block;
+		width: 100%;
 	}
 }
 

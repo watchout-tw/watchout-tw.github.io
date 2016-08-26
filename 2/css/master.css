@@ -8,6 +8,15 @@
 
   .S-screen {
     display: none !important; } }
+.L--screen {
+  display: none !important; }
+
+@media (min-width: 769px) {
+  .L--screen {
+    display: inherit !important; }
+
+  .S-L-screen {
+    display: none !important; } }
 html, body {
   font-size: 16px;
   font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;
@@ -67,6 +76,12 @@ span.underline {
 span.emphasize {
   font-family: "century-std", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
   font-weight: 900; }
+
+span.fixed-width-center {
+  display: inline-block;
+  width: 5em;
+  text-align: center;
+  letter-spacing: 0.25; }
 
 .emoji {
   font-family: sans-serif;
@@ -300,24 +315,11 @@ body > section {
 
 .full-screen-image {
   width: 100%;
-  height: 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center; }
-  .full-screen-image#banner {
-    padding-bottom: 60%;
-    background-image: url("../images/forward-compact.gif"); }
-    @media (min-width: 769px) {
-      .full-screen-image#banner {
-        padding-bottom: 35.75%;
-        background-image: url("../images/forward-wide.gif"); } }
-  .full-screen-image#team {
-    padding-bottom: 208.35%;
-    background-image: url("../images/team-mobile.gif"); }
-    @media (min-width: 769px) {
-      .full-screen-image#team {
-        padding-bottom: 70.6908%;
-        background-image: url("../images/team-desktop.gif"); } }
+  max-width: 1200px;
+  margin: 0 auto; }
+  .full-screen-image > img {
+    display: block;
+    width: 100%; }
 
 .pop {
   background: #50E3C2;

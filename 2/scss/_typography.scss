@@ -77,6 +77,12 @@ span.underline {
 span.emphasize {
   @include font-mincho;
 }
+span.fixed-width-center {
+  display: inline-block;
+  width: 5em;
+  text-align: center;
+  letter-spacing: 0.25;
+}
 .emoji {
   font-family: sans-serif;
   font-weight: 400;
