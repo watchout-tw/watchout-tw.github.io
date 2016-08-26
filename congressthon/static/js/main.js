@@ -105,12 +105,12 @@ $(document).ready(function() {
 		outClass: 'fade-out'
 	})
 });
-/*
+
 $(window).load(function() {
 	// Animate loader off screen
 	$(".loader-wrap").fadeOut("slow");
 });
-*/
+
 /*----------------------------------------------------*/
 /*  Tab smooth scrool to , hash change
 /*----------------------------------------------------*/
