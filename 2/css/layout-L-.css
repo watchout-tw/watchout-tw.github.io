@@ -45,10 +45,10 @@
     width: 29.16667%;
     float: left; }
   #timeline > .year#Y2015 {
-    width: 29.16667%;
+    width: 20.83333%;
     float: left; }
   #timeline > .year#Y2016 {
-    width: 20.83333%;
+    width: 29.16667%;
     float: left; }
   #timeline > .year > .events > .event {
     display: inline-block;
@@ -57,7 +57,6 @@
     #timeline > .year > .events > .event > .event-icon-wrapper, #timeline > .year > .events > .event > .tagline {
       display: block; }
     #timeline > .year > .events > .event > .tagline:after {
-      display: block;
       margin: 0 auto; }
     #timeline > .year > .events > .event > .event-dialog {
       top: 50%;

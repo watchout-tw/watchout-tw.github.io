@@ -270,6 +270,7 @@ ul {
 
 @mixin info {
 	content: 'i';
+  display: block;
 	@include font-grotesque;
 	font-size: 1rem;
 	line-height: 1;

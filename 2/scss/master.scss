@@ -282,13 +282,17 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 #timeline {
 	position: relative;
 	padding-bottom: 0.5rem;
-}
-#timeline:before {
-	content: '';
-	display: block;
-	position: absolute;
-	background-repeat: repeat-x;
-	background: $woc;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		background-repeat: repeat-x;
+		background: $woc;
+	}
+	& > .year {
+		position: relative;
+	}
 }
 #timeline > .year > .events > .event {
 	position: relative;

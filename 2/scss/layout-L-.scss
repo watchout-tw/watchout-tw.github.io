@@ -40,10 +40,10 @@ $susy: (
       @include span(3.5 wide no-gutters);
     }
     &#Y2015 {
-      @include span(3.5 wide no-gutters);
+      @include span(2.5 wide no-gutters);
     }
     &#Y2016 {
-      @include span(2.5 wide no-gutters);
+      @include span(3.5 wide no-gutters);
     }
   }
   > .year > .events > .event {
@@ -53,8 +53,7 @@ $susy: (
     > .event-icon-wrapper, > .tagline {
       display: block;
     }
-    > .tagline:after {
-      display: block;
+    > .tagline:after { // info
       margin: 0 auto;
     }
     > .event-dialog {

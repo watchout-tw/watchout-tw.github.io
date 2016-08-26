@@ -596,13 +596,14 @@ section#sm {
 #timeline {
   position: relative;
   padding-bottom: 0.5rem; }
-
-#timeline:before {
-  content: '';
-  display: block;
-  position: absolute;
-  background-repeat: repeat-x;
-  background: #50E3C2; }
+  #timeline:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-repeat: repeat-x;
+    background: #50E3C2; }
+  #timeline > .year {
+    position: relative; }
 
 #timeline > .year > .events > .event {
   position: relative;
@@ -643,6 +644,7 @@ section#sm {
     vertical-align: middle; }
   #timeline > .year > .events > .event > .tagline:after {
     content: 'i';
+    display: block;
     font-family: "circular-pro", "source-han-sans-tc", sans-serif;
     font-weight: 900;
     font-size: 1rem;
@@ -724,6 +726,7 @@ section#sm {
     #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-icon:before,
     #group-purchase > .purchase-icon-wrapper > .purchase-icon:before {
       content: 'i';
+      display: block;
       font-family: "circular-pro", "source-han-sans-tc", sans-serif;
       font-weight: 900;
       font-size: 1rem;
