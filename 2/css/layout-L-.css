@@ -64,8 +64,6 @@
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
-    #timeline > .year > .events > .event:hover > .event-dialog {
-      display: none; }
 
 #monthly-payments > .payment-option {
   width: 22.91667%;

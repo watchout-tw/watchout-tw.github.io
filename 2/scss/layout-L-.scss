@@ -62,10 +62,6 @@ $susy: (
       left: 50%;
       @include transform(translate(-50%, -50%));
     }
-
-    &:hover > .event-dialog {
-      display: none; // temporary
-    }
   }
 }
 
