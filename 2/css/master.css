@@ -410,8 +410,8 @@ badge {
     opacity: 0.1;
     position: absolute;
     left: 50%;
-    -webkit-transform: scale(0.8) translateX(-50%);
-    transform: scale(0.8) translateX(-50%); }
+    -webkit-transform: translateX(-50%) scale(0.8);
+    transform: translateX(-50%) scale(0.8); }
 
 #support-buttons.deployed > .support-button.light {
   position: fixed;

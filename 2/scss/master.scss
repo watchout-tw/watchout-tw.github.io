@@ -173,7 +173,7 @@ badge {
 		opacity: 0.1;
 		position: absolute;
 		left: 50%;
-		@include transform(scale(0.8) translateX(-50%));
+		@include transform(translateX(-50%) scale(0.8));
 	}
 }
 #support-buttons.deployed {
