@@ -54,6 +54,10 @@ $susy: (
 		> .event-dialog {
 			left: -24px;
 			top: 50%;
+			width: 300px + 2*$border-width;
+			> pgroup {
+        width: 18em;
+      }
 		}
   }
 }

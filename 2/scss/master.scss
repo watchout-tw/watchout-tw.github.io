@@ -318,13 +318,15 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 		display: inline-block;
 		vertical-align: middle;
 	}
-	> .tagline:after {
-		@include info;
+	> .tagline{
+		margin: 0.25rem 0;
+		&:after {
+			@include info;
+		}
 	}
 	> .event-dialog {
 		display: none;
 		position: absolute;
-		width: 300px + 2*$border-width;
 		border: $border-green;
 		border-radius: $border-width;
 		background: rgba(white, 0.95);
@@ -339,7 +341,6 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 		}
 		> pgroup {
 			margin: 0 auto 0.5rem;
-
 			> p {
 				line-height: $leading-tight;
 			}

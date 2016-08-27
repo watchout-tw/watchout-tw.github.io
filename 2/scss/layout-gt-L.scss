@@ -57,9 +57,13 @@ $susy: (
       margin: 0 auto;
     }
     > .event-dialog {
+      width: 236px + 2*$border-width;
       top: 50%;
       left: 50%;
       @include transform(translate(-50%, -50%));
+      > pgroup {
+        width: 14em;
+      }
     }
   }
 }

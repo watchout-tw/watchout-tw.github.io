@@ -63,7 +63,10 @@
       margin-left: 0.25rem; }
     #timeline > .year > .events > .event > .event-dialog {
       left: -24px;
-      top: 50%; }
+      top: 50%;
+      width: 308px; }
+      #timeline > .year > .events > .event > .event-dialog > pgroup {
+        width: 18em; }
 
 #monthly-payments > .payment-option {
   width: 43.75%;

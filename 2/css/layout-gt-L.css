@@ -68,10 +68,13 @@
     #timeline > .year > .events > .event > .tagline:after {
       margin: 0 auto; }
     #timeline > .year > .events > .event > .event-dialog {
+      width: 244px;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
+      #timeline > .year > .events > .event > .event-dialog > pgroup {
+        width: 14em; }
 
 #monthly-payments > .payment-option {
   width: 22.91667%;
