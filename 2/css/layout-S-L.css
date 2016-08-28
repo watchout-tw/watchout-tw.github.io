@@ -38,34 +38,34 @@
     background: -ms-linear-gradient(top, rgba(80, 227, 194, 0.25), #50e3c2);
     background: -o-linear-gradient(top, rgba(80, 227, 194, 0.25), #50e3c2);
     background: linear-gradient(from top, rgba(80, 227, 194, 0.25), #50e3c2); }
-  #timeline > .year {
+  #timeline > .years > .year {
     margin-bottom: 1.5rem;
     margin-left: 32px;
     text-align: left; }
   @media (min-width: 481px) and (max-width: 768px) {
-    #timeline > .year {
+    #timeline > .years > .year {
       margin-bottom: 0; }
-    #timeline > .year > .datetime.year {
+    #timeline > .years > .year > .datetime.year {
       position: absolute;
       left: -72px;
       top: 0; } }
-  #timeline > .year > .events > .event {
+  #timeline > .years > .year > .events > .event {
     margin: 1rem 0;
     text-align: left; }
-    #timeline > .year > .events > .event > .tagline {
+    #timeline > .years > .year > .events > .event > .tagline {
       padding-top: 0.36em; }
-    #timeline > .year > .events > .event > .tagline:after {
+    #timeline > .years > .year > .events > .event > .tagline:after {
       position: absolute;
       left: 100%;
       top: 50%;
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
       margin-left: 0.25rem; }
-    #timeline > .year > .events > .event > .event-dialog {
+    #timeline > .years > .year > .events > .event > .event-dialog {
       left: -24px;
       top: 50%;
       width: 308px; }
-      #timeline > .year > .events > .event > .event-dialog > pgroup {
+      #timeline > .years > .year > .events > .event > .event-dialog > pgroup {
         width: 18em; }
 
 #monthly-payments > .payment-option {

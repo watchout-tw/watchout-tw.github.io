@@ -27,7 +27,11 @@ $susy: (
 		@include background-gradient(left, rgba($woc, 0.25), rgba($woc, 1));
     @include transform(translateY(-50%));
   }
-  > .year {
+  > .years {
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+  > .years > .year {
     > .datetime.year {
       display: block;
       margin: 0 0.25rem;
@@ -46,7 +50,7 @@ $susy: (
       @include span(3.5 wide no-gutters);
     }
   }
-  > .year > .events > .event {
+  > .years > .year > .events > .event {
     display: inline-block;
     vertical-align: bottom;
     text-align: center;

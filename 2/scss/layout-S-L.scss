@@ -22,22 +22,22 @@ $susy: (
 		height: 100%;
 		@include background-gradient(top, rgba($woc, 0.25), rgba($woc, 1));
   }
-  > .year {
+  > .years > .year {
 		margin-bottom: 1.5rem;
     margin-left: 32px;
     text-align: left;
   }
 	@include screen-M-L {
-		> .year {
+		> .years > .year {
 			margin-bottom: 0;
 		}
-		> .year > .datetime.year {
+		> .years > .year > .datetime.year {
 			position: absolute;
 			left: -72px;
 			top: 0;
 		}
 	}
-  > .year > .events > .event {
+  > .years > .year > .events > .event {
     margin: 1rem 0;
 		text-align: left;
 

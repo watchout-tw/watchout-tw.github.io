@@ -43,37 +43,40 @@
     background: linear-gradient(from left, rgba(80, 227, 194, 0.25), #50e3c2);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
-  #timeline > .year > .datetime.year {
+  #timeline > .years {
+    max-width: 75rem;
+    margin: 0 auto; }
+  #timeline > .years > .year > .datetime.year {
     display: block;
     margin: 0 0.25rem;
     text-align: left; }
-  #timeline > .year#Y2013 {
+  #timeline > .years > .year#Y2013 {
     width: 20.83333%;
     float: left; }
-  #timeline > .year#Y2014 {
+  #timeline > .years > .year#Y2014 {
     width: 29.16667%;
     float: left; }
-  #timeline > .year#Y2015 {
+  #timeline > .years > .year#Y2015 {
     width: 20.83333%;
     float: left; }
-  #timeline > .year#Y2016 {
+  #timeline > .years > .year#Y2016 {
     width: 29.16667%;
     float: left; }
-  #timeline > .year > .events > .event {
+  #timeline > .years > .year > .events > .event {
     display: inline-block;
     vertical-align: bottom;
     text-align: center; }
-    #timeline > .year > .events > .event > .event-icon-wrapper, #timeline > .year > .events > .event > .tagline {
+    #timeline > .years > .year > .events > .event > .event-icon-wrapper, #timeline > .years > .year > .events > .event > .tagline {
       display: block; }
-    #timeline > .year > .events > .event > .tagline:after {
+    #timeline > .years > .year > .events > .event > .tagline:after {
       margin: 0 auto; }
-    #timeline > .year > .events > .event > .event-dialog {
+    #timeline > .years > .year > .events > .event > .event-dialog {
       width: 244px;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
-      #timeline > .year > .events > .event > .event-dialog > pgroup {
+      #timeline > .years > .year > .events > .event > .event-dialog > pgroup {
         width: 14em; }
 
 #monthly-payments > .payment-option {

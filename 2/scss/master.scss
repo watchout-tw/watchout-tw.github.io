@@ -281,11 +281,11 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 		background-repeat: repeat-x;
 		background: $woc;
 	}
-	& > .year {
+	& > .years > .year {
 		position: relative;
 	}
 }
-#timeline > .year > .events > .event {
+#timeline > .years > .year > .events > .event {
 	position: relative;
 
 	$icon-heights: (

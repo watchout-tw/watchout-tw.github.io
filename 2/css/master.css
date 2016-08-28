@@ -614,36 +614,36 @@ section#sm {
     position: absolute;
     background-repeat: repeat-x;
     background: #50E3C2; }
-  #timeline > .year {
+  #timeline > .years > .year {
     position: relative; }
 
-#timeline > .year > .events > .event {
+#timeline > .years > .year > .events > .event {
   position: relative; }
-  #timeline > .year > .events > .event.L > .event-icon-wrapper {
+  #timeline > .years > .year > .events > .event.L > .event-icon-wrapper {
     height: 150px; }
-    #timeline > .year > .events > .event.L > .event-icon-wrapper > .event-icon {
+    #timeline > .years > .year > .events > .event.L > .event-icon-wrapper > .event-icon {
       margin-top: -5px; }
-  #timeline > .year > .events > .event.M > .event-icon-wrapper {
+  #timeline > .years > .year > .events > .event.M > .event-icon-wrapper {
     height: 80px; }
-    #timeline > .year > .events > .event.M > .event-icon-wrapper > .event-icon {
+    #timeline > .years > .year > .events > .event.M > .event-icon-wrapper > .event-icon {
       margin-top: -40px; }
-  #timeline > .year > .events > .event.S > .event-icon-wrapper {
+  #timeline > .years > .year > .events > .event.S > .event-icon-wrapper {
     height: 62px; }
-    #timeline > .year > .events > .event.S > .event-icon-wrapper > .event-icon {
+    #timeline > .years > .year > .events > .event.S > .event-icon-wrapper > .event-icon {
       margin-top: -49px; }
-  #timeline > .year > .events > .event.C > .event-icon-wrapper {
+  #timeline > .years > .year > .events > .event.C > .event-icon-wrapper {
     height: 46px; }
-    #timeline > .year > .events > .event.C > .event-icon-wrapper > .event-icon {
+    #timeline > .years > .year > .events > .event.C > .event-icon-wrapper > .event-icon {
       margin-top: -57px; }
-  #timeline > .year > .events > .event > .event-icon-wrapper {
+  #timeline > .years > .year > .events > .event > .event-icon-wrapper {
     overflow: hidden; }
-  #timeline > .year > .events > .event > .event-icon-wrapper, #timeline > .year > .events > .event > .tagline {
+  #timeline > .years > .year > .events > .event > .event-icon-wrapper, #timeline > .years > .year > .events > .event > .tagline {
     position: relative;
     display: inline-block;
     vertical-align: middle; }
-  #timeline > .year > .events > .event > .tagline {
+  #timeline > .years > .year > .events > .event > .tagline {
     margin: 0.25rem 0; }
-    #timeline > .year > .events > .event > .tagline:after {
+    #timeline > .years > .year > .events > .event > .tagline:after {
       content: 'i';
       display: block;
       font-family: "circular-pro", "source-han-sans-tc", sans-serif;
@@ -658,7 +658,7 @@ section#sm {
       opacity: 0.25;
       border: 2px solid black;
       border-radius: 100%; }
-  #timeline > .year > .events > .event > .event-dialog {
+  #timeline > .years > .year > .events > .event > .event-dialog {
     display: block;
     visibility: hidden;
     opacity: 0;
@@ -673,28 +673,28 @@ section#sm {
     transform: translateY(-50%);
     z-index: 1;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25); }
-    #timeline > .year > .events > .event > .event-dialog > .datetime {
+    #timeline > .years > .year > .events > .event > .event-dialog > .datetime {
       display: inline-block;
       margin: 0.25em 6px -0.25em; }
-    #timeline > .year > .events > .event > .event-dialog > pgroup {
+    #timeline > .years > .year > .events > .event > .event-dialog > pgroup {
       margin: 0 auto 0.5rem; }
-      #timeline > .year > .events > .event > .event-dialog > pgroup > p {
+      #timeline > .years > .year > .events > .event > .event-dialog > pgroup > p {
         line-height: 1.375; }
-    #timeline > .year > .events > .event > .event-dialog > .url {
+    #timeline > .years > .year > .events > .event > .event-dialog > .url {
       display: inline-block;
       background: #50E3C2;
       width: 100%;
       padding: 8px 42px 8px 4px; }
       @media (min-width: 481px) {
-        #timeline > .year > .events > .event > .event-dialog > .url {
+        #timeline > .years > .year > .events > .event > .event-dialog > .url {
           padding-right: 4px; } }
-      #timeline > .year > .events > .event > .event-dialog > .url:not(.disabled):after {
+      #timeline > .years > .year > .events > .event > .event-dialog > .url:not(.disabled):after {
         font-family: "akkurat-mono", monospace;
         font-weight: 400 !important;
         content: '→';
         display: inline-block;
         padding-left: 0.5em; }
-    #timeline > .year > .events > .event > .event-dialog > .button.close {
+    #timeline > .years > .year > .events > .event > .event-dialog > .button.close {
       display: inline-block;
       color: black;
       font-size: 1.5rem;
@@ -706,18 +706,18 @@ section#sm {
       margin: 0;
       box-shadow: none; }
       @media (min-width: 481px) {
-        #timeline > .year > .events > .event > .event-dialog > .button.close {
+        #timeline > .years > .year > .events > .event > .event-dialog > .button.close {
           display: none; } }
-    #timeline > .year > .events > .event > .event-dialog .url, #timeline > .year > .events > .event > .event-dialog .button.close {
+    #timeline > .years > .year > .events > .event > .event-dialog .url, #timeline > .years > .year > .events > .event > .event-dialog .button.close {
       vertical-align: top;
       line-height: 1.5rem;
       text-align: center; }
   @media (max-width: 480px) {
-    #timeline > .year > .events > .event.focus > .event-dialog {
+    #timeline > .years > .year > .events > .event.focus > .event-dialog {
       visibility: visible;
       opacity: 1; } }
   @media (min-width: 481px) {
-    #timeline > .year > .events > .event:hover > .event-dialog {
+    #timeline > .years > .year > .events > .event:hover > .event-dialog {
       visibility: visible;
       opacity: 1; } }
 
