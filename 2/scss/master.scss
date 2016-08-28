@@ -91,9 +91,12 @@ body > section {
 	border-bottom: $border-width solid $grey;
 	margin: 2rem auto 0.25rem;
 }
-.button {
+a.button {
 	box-sizing: content-box;
 	color: $orange;
+	&:active {
+		color: $red;
+	}
 	background: $gold-light;
 	display: block;
 	width: 4em;
@@ -152,10 +155,13 @@ badge {
 	background: white;
 	@include transform(translate(-50%, -50%) rotate(-15deg));
 }
-.support-button {
+a.support-button {
 	box-sizing: content-box;
 	display: block;
 	color: $orange;
+	&:active {
+		color: $red;
+	}
 	width: 2.05555555em; // 74px
 	background: $gold-light;
 	padding: 15px 24px;
@@ -296,20 +302,6 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 			}
 		}
 	}
-	/*
-	&.medium > .event-icon-wrapper {
-		height: $M-event-icon-height;
-		> .event-icon {
-			margin-top: -($event-icon-height - $M-event-icon-height)/2;
-		}
-	}
-	&.small > .event-icon-wrapper {
-		height: $S-event-icon-height;
-		> .event-icon {
-			margin-top: -($event-icon-height - $S-event-icon-height)/2;
-		}
-	}*/
-
 	> .event-icon-wrapper {
 		overflow: hidden;
 	}
@@ -318,14 +310,17 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 		display: inline-block;
 		vertical-align: middle;
 	}
-	> .tagline{
+	> .tagline {
 		margin: 0.25rem 0;
 		&:after {
 			@include info;
 		}
 	}
 	> .event-dialog {
-		display: none;
+		display: block;
+		visibility: hidden;
+		opacity: 0;
+		@include transition-visibility;
 		position: absolute;
 		border: $border-green;
 		border-radius: $border-width;
@@ -356,6 +351,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 			}
 
 			&:not(.disabled):after {
+				@include font-monospace;
 				content: '→';
 				display: inline-block;
 				padding-left: 0.5em;
@@ -384,15 +380,16 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 		}
 	}
 
-	&.focus > .event-dialog {
-		display: block;
+	@include screen-S {
+		&.focus > .event-dialog {
+			visibility: visible;
+			opacity: 1;
+		}
 	}
 	@include screen-gt-M {
-		&.focus > .event-dialog {
-			display: none;
-		}
 		&:hover > .event-dialog {
-			display: block;
+			visibility: visible;
+			opacity: 1;
 		}
 	}
 }
@@ -400,7 +397,6 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 #one-time-purchases > .purchase-option,
 #group-purchase {
 	position: relative;
-
 	> .purchase-icon-wrapper {
 		position: relative;
 	}
@@ -411,11 +407,14 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 			display: block;
 			position: absolute;
 			top: 0;
-			right: 0;
+			left: -12px;
 		}
 	}
 	> .purchase-icon-wrapper > .purchase-detail {
-		display: none;
+		display: block;
+		visibility: hidden;
+		opacity: 0;
+		@include transition-visibility;
 		position: absolute;
 		left: 50%;
 		@include transform(translateX(-50%));
@@ -426,14 +425,43 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 		border-radius: $border-width;
 		margin: 0 auto;
 		padding: $border-width*1.5;
-		background: rgba(white, 0.95);
+		background: rgba(white, 0.75);
 
 		line-height: $leading-tight;
 		text-align: left;
 
 		> li {
-			float: left;
-			width: 50%;
+			position: absolute;
+
+			$gap: 6px;
+			&.ma {
+				bottom: $gap;
+				@include centering-hor;
+			}
+			&.ct {
+				top: 2rem;
+				@include centering-hor;
+			}
+			&.to {
+				right: 3rem;
+				@include centering-ver;
+			}
+			&.fi {
+				right: $gap;
+				bottom: $gap;
+			}
+			&.ba {
+				left: 2.75rem;
+				top: 1.5rem;
+			}
+			&.br {
+				left: $gap;
+				bottom: $gap;
+			}
+			&.ke {
+				right: $gap;
+				top: $gap;
+			}
 
 			> span {
 				display: inline-block;
@@ -446,15 +474,16 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 		}
 	}
 
-	&.focus > .purchase-icon-wrapper > .purchase-detail {
-		display: block;
+	@include screen-S {
+		&.focus > .purchase-icon-wrapper > .purchase-detail {
+			visibility: visible;
+			opacity: 1;
+		}
 	}
 	@include screen-gt-M {
-		&.focus > .purchase-icon-wrapper > .purchase-detail {
-			display: none;
-		}
 		&:hover > .purchase-icon-wrapper > .purchase-detail {
-			display: block;
+			visibility: visible;
+			opacity: 1;
 		}
 	}
 }
@@ -462,10 +491,43 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 	@include divider($border-gold, $gold-faint);
 	padding: 1rem 0;
 
+	> .purchase-icon-wrapper > .purchase-icon {
+		height: 140px;
+	}
+	> .purchase-icon-wrapper > .four,
+	> .purchase-icon-wrapper > .purchase-detail > li > .four {
+		display: block;
+		text-align: center;
+		width: 2em;
+		margin: 0 auto;
+		line-height: 1.15;
+	}
+	> .purchase-icon-wrapper > .four {
+		position: absolute;
+		@include centering-both;
+		opacity: 1;
+		@include transition-fade-and-scale;
+	}
+	> .purchase-icon-wrapper > .purchase-detail {
+		height: 140px;
+
+		> li {
+			&.ba {
+				top: 1.75rem;
+			}
+			&.ct {
+				top: 2.25rem;
+			}
+		}
+	}
 	> hgroup {
 		margin-top: -0.25rem;
 		margin-bottom: 0.25rem;
 	}
+}
+#group-purchase:hover > .purchase-icon-wrapper > .four {
+	transform: translate(-50%, -50%) scale(2);
+	opacity: 0;
 }
 
 #stickers {

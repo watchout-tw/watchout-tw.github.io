@@ -1,3 +1,6 @@
+@mixin screen-S {
+	@media (max-width: 480px) { @content; }
+}
 @mixin screen-gt-M { // M and up
 	@media (min-width: 481px) { @content; }
 }

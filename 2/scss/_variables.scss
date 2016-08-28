@@ -2,6 +2,7 @@
 $woc: #50E3C2;
 $gold: #F8E71C;
 $orange: #F5A623;
+$red: #F54B23;
 $grey: #9B9B9B;
 
 // typography
@@ -40,4 +41,25 @@ $border-gold: $border-width solid $gold;
 	background: -ms-linear-gradient($dir, $from, $to); // IE 10
 	background: -o-linear-gradient($dir, $from, $to); // Opera 11.10+
 	background: linear-gradient(from $dir, $from, $to);
+}
+@mixin transition-visibility {
+	-webkit-transition: visibility 0s, opacity .25s ease-in-out;
+	transition: visibility 0s, opacity .25s ease-in-out;
+}
+@mixin transition-fade-and-scale {
+	-webkit-transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+	transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+}
+@mixin centering-hor {
+	left: 50%;
+	@include transform(translateX(-50%));
+}
+@mixin centering-ver {
+	top: 50%;
+	@include transform(translateY(-50%));
+}
+@mixin centering-both {
+	top: 50%;
+	left: 50%;
+	@include transform(translate(-50%, -50%));
 }
