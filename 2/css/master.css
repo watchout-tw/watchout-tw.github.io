@@ -722,16 +722,16 @@ section#sm {
       opacity: 1; } }
 
 #one-time-purchases > .purchase-option,
-#group-purchase {
+#group-purchases > .purchase-option {
   position: relative; }
   #one-time-purchases > .purchase-option > .purchase-icon-wrapper,
-  #group-purchase > .purchase-icon-wrapper {
+  #group-purchases > .purchase-option > .purchase-icon-wrapper {
     position: relative; }
   #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-icon,
-  #group-purchase > .purchase-icon-wrapper > .purchase-icon {
+  #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-icon {
     position: relative; }
     #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-icon:before,
-    #group-purchase > .purchase-icon-wrapper > .purchase-icon:before {
+    #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-icon:before {
       content: 'i';
       display: block;
       font-family: "circular-pro", "source-han-sans-tc", sans-serif;
@@ -751,7 +751,7 @@ section#sm {
       top: 0;
       left: -12px; }
   #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail,
-  #group-purchase > .purchase-icon-wrapper > .purchase-detail {
+  #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail {
     display: block;
     visibility: hidden;
     opacity: 0;
@@ -772,62 +772,62 @@ section#sm {
     line-height: 1.375;
     text-align: left; }
     #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li,
-    #group-purchase > .purchase-icon-wrapper > .purchase-detail > li {
+    #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li {
       position: absolute; }
       #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ma,
-      #group-purchase > .purchase-icon-wrapper > .purchase-detail > li.ma {
+      #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ma {
         bottom: 6px;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%); }
       #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ct,
-      #group-purchase > .purchase-icon-wrapper > .purchase-detail > li.ct {
+      #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ct {
         top: 2rem;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%); }
       #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.to,
-      #group-purchase > .purchase-icon-wrapper > .purchase-detail > li.to {
+      #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.to {
         right: 3rem;
         top: 50%;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%); }
       #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.fi,
-      #group-purchase > .purchase-icon-wrapper > .purchase-detail > li.fi {
+      #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.fi {
         right: 6px;
         bottom: 6px; }
       #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ba,
-      #group-purchase > .purchase-icon-wrapper > .purchase-detail > li.ba {
+      #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ba {
         left: 2.75rem;
         top: 1.5rem; }
       #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.br,
-      #group-purchase > .purchase-icon-wrapper > .purchase-detail > li.br {
+      #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.br {
         left: 6px;
         bottom: 6px; }
       #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ke,
-      #group-purchase > .purchase-icon-wrapper > .purchase-detail > li.ke {
+      #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ke {
         right: 6px;
         top: 6px; }
       #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li > span,
-      #group-purchase > .purchase-icon-wrapper > .purchase-detail > li > span {
+      #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li > span {
         display: inline-block;
         vertical-align: baseline;
         margin-right: 2px; }
         #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li > span.four,
-        #group-purchase > .purchase-icon-wrapper > .purchase-detail > li > span.four {
+        #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li > span.four {
           padding: 0 4px; }
   @media (max-width: 480px) {
     #one-time-purchases > .purchase-option.focus > .purchase-icon-wrapper > .purchase-detail,
-    #group-purchase.focus > .purchase-icon-wrapper > .purchase-detail {
+    #group-purchases > .purchase-option.focus > .purchase-icon-wrapper > .purchase-detail {
       visibility: visible;
       opacity: 1; } }
   @media (min-width: 481px) {
     #one-time-purchases > .purchase-option:hover > .purchase-icon-wrapper > .purchase-detail,
-    #group-purchase:hover > .purchase-icon-wrapper > .purchase-detail {
+    #group-purchases > .purchase-option:hover > .purchase-icon-wrapper > .purchase-detail {
       visibility: visible;
       opacity: 1; } }
 
-#group-purchase {
+#group-purchases > .purchase-option {
   position: relative;
   background: rgba(248, 231, 28, 0.25);
   border-top: 4px solid #F8E71C;
@@ -836,25 +836,25 @@ section#sm {
   max-width: 960px;
   padding: 1rem 0; }
   @media (min-width: 481px) {
-    #group-purchase {
+    #group-purchases > .purchase-option {
       border: 4px solid #F8E71C;
       border-radius: 4px; } }
   @media (min-width: 481px) and (max-width: 960px) {
-    #group-purchase {
+    #group-purchases > .purchase-option {
       margin: 2rem; } }
   @media (min-width: 961px) {
-    #group-purchase {
+    #group-purchases > .purchase-option {
       margin: 2rem auto; } }
-  #group-purchase > .purchase-icon-wrapper > .purchase-icon {
+  #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-icon {
     height: 140px; }
-  #group-purchase > .purchase-icon-wrapper > .four,
-  #group-purchase > .purchase-icon-wrapper > .purchase-detail > li > .four {
+  #group-purchases > .purchase-option > .purchase-icon-wrapper > .four,
+  #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li > .four {
     display: block;
     text-align: center;
     width: 2em;
     margin: 0 auto;
     line-height: 1.15; }
-  #group-purchase > .purchase-icon-wrapper > .four {
+  #group-purchases > .purchase-option > .purchase-icon-wrapper > .four {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -863,20 +863,24 @@ section#sm {
     opacity: 1;
     -webkit-transition: transform .5s ease-in-out, opacity .5s ease-in-out;
     transition: transform .5s ease-in-out, opacity .5s ease-in-out; }
-  #group-purchase > .purchase-icon-wrapper > .purchase-detail {
+  #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail {
     height: 140px; }
-    #group-purchase > .purchase-icon-wrapper > .purchase-detail > li.ba {
+    #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ba {
       top: 1.75rem; }
-    #group-purchase > .purchase-icon-wrapper > .purchase-detail > li.ct {
+    #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ct {
       top: 2.25rem; }
-  #group-purchase > hgroup {
+  #group-purchases > .purchase-option > hgroup {
     margin-top: -0.25rem;
     margin-bottom: 0.25rem; }
 
-#group-purchase:hover > .purchase-icon-wrapper > .four {
-  transform: translate(-50%, -50%) scale(2);
-  opacity: 0; }
-
+@media (max-width: 480px) {
+  #group-purchases > .purchase-option.focus > .purchase-icon-wrapper > .four {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0; } }
+@media (min-width: 481px) {
+  #group-purchases > .purchase-option:hover > .purchase-icon-wrapper > .four {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0; } }
 #stickers > .sticker {
   display: inline-block;
   margin: 0.5rem 1rem; }

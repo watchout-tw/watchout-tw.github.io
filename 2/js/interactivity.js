@@ -13,6 +13,7 @@ $(function() {
   }
   enable_click_focus('#timeline', '.event');
   enable_click_focus('#one-time-purchases', '.purchase-option');
+  enable_click_focus('#group-purchases', '.purchase-option');
 });
 
 // support button
