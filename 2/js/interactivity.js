@@ -22,14 +22,15 @@ $(function(){
   var redline = $('#about').offset().top - $('nav').outerHeight();
   var $el = $('#support-buttons');
   var _deployed_ = 'deployed';
-
-  $window.scroll(function(){
+  var onScroll = function(){
     if($window.scrollTop() > redline) {
       $el.addClass(_deployed_);
     } else {
       $el.removeClass(_deployed_);
     }
-  });
+  };
+  $window.scroll(onScroll);
+  onScroll();
 
   var $html = $('html,body');
   var $button = $('#support-buttons > .support-button.light');

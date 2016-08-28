@@ -1,7 +1,7 @@
 [screen="gt-M"] {
   display: none !important; }
 
-@media (min-width: 481px) {
+@media (min-width: 480px) {
   [screen="gt-M"] {
     display: inherit !important; }
 
@@ -10,7 +10,7 @@
 [screen="gt-L"] {
   display: none !important; }
 
-@media (min-width: 769px) {
+@media (min-width: 750px) {
   [screen="gt-L"] {
     display: inherit !important; }
 
@@ -48,19 +48,19 @@
     margin: 0 auto; }
   #timeline > .years > .year > .datetime.year {
     display: block;
-    margin: 0 0.25rem;
+    margin: 0 1rem;
     text-align: left; }
   #timeline > .years > .year#Y2013 {
-    width: 20.83333%;
+    width: 12.5%;
     float: left; }
   #timeline > .years > .year#Y2014 {
-    width: 29.16667%;
+    width: 33.33333%;
     float: left; }
   #timeline > .years > .year#Y2015 {
-    width: 20.83333%;
+    width: 29.16667%;
     float: left; }
   #timeline > .years > .year#Y2016 {
-    width: 29.16667%;
+    width: 25%;
     float: left; }
   #timeline > .years > .year > .events > .event {
     display: inline-block;

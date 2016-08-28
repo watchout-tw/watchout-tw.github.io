@@ -236,7 +236,7 @@ section#sm {
 }
 $event-icon-height: 160px;
 $event-icon-key: (誕生 國會無雙 無雙第一 無雙改版 市長給問 公民學院 無雙一千 立委出任務 總統給問 總統辯論 開放國會松);
-$event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-height);
+$event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 .event-icon {
 	@include icon(192px, $event-icon-height, 'events', $event-icon-height, $event-icon-key, $event-icon-width, 192px);
 }
@@ -506,7 +506,7 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 		position: absolute;
 		@include centering-both;
 		opacity: 1;
-		@include transition-fade-and-scale;
+		@include transition-opacity
 	}
 	> .purchase-icon-wrapper > .purchase-detail {
 		height: 140px;
@@ -527,13 +527,11 @@ $event-icon-width: ($event-icon-height 48 48 48 48 48 48 48 186 128 $event-icon-
 }
 @include screen-S {
 	#group-purchases > .purchase-option.focus > .purchase-icon-wrapper > .four {
-		transform: translate(-50%, -50%) scale(2);
 		opacity: 0;
 	}
 }
 @include screen-gt-M {
 	#group-purchases > .purchase-option:hover > .purchase-icon-wrapper > .four {
-		transform: translate(-50%, -50%) scale(2);
 		opacity: 0;
 	}
 }

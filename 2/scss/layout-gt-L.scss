@@ -34,20 +34,20 @@ $susy: (
   > .years > .year {
     > .datetime.year {
       display: block;
-      margin: 0 0.25rem;
+      margin: 0 1rem;
       text-align: left;
     }
     &#Y2013 {
-      @include span(2.5 wide no-gutters);
+      @include span(1.5 wide no-gutters);
     }
     &#Y2014 {
-      @include span(3.5 wide no-gutters);
+      @include span(4 wide no-gutters);
     }
     &#Y2015 {
-      @include span(2.5 wide no-gutters);
+      @include span(3.5 wide no-gutters);
     }
     &#Y2016 {
-      @include span(3.5 wide no-gutters);
+      @include span(3 wide no-gutters);
     }
   }
   > .years > .year > .events > .event {
