@@ -321,7 +321,8 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 		vertical-align: middle;
 	}
 	> .tagline {
-		margin: 0.25rem 0;
+		padding: 0.25rem 0;
+		cursor: pointer;
 		&:after {
 			@include info;
 		}
