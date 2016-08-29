@@ -325,8 +325,8 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 	}
 	> .event-dialog {
 		display: block;
-		//visibility: hidden;
-		opacity: 0.25;
+		visibility: hidden;
+		opacity: 0;
 		@include transition-visibility;
 		position: absolute;
 		border: $border-green;

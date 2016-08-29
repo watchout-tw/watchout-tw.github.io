@@ -668,7 +668,8 @@ section#sm {
     opacity: 1; }
   #timeline > .years > .year > .events > .event > .event-dialog {
     display: block;
-    opacity: 0.25;
+    visibility: hidden;
+    opacity: 0;
     -webkit-transition: visibility 0s, opacity .25s ease-in-out;
     transition: visibility 0s, opacity .25s ease-in-out;
     position: absolute;
