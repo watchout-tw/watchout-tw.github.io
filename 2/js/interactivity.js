@@ -11,13 +11,13 @@ $(function() {
       }
       $item.toggleClass(_focus_);
       var max = $(window).width();
-      if(dialog_sel && max >= 750 && $item.hasClass(_focus_)) {
+      if(dialog_sel && $item.hasClass(_focus_)) {
         // detect if dialog is out of viewport
         var $dialog = $item.find(dialog_sel);
         var m = $item.offset().left + $item.outerWidth()/2.0;
         var r = $dialog.outerWidth()/2.0;
         var g = 4;
-        $dialog.css('margin-left', (m + r > max ? max - (m + r) - g : (m - r < 0 ? r - m + g : 0)))
+        $dialog.css('margin-left', (max >= 750 ? (m + r > max ? max - (m + r) - g : (m - r < 0 ? r - m + g : 0)) : 0))
       }
     });
     $all_items.find('.close').click(function(event) {

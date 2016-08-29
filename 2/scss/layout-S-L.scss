@@ -53,7 +53,6 @@ $susy: (
 		> .event-dialog {
 			left: -24px;
 			@include centering-ver;
-			width: 300px + 2*$border-width;
 			> pgroup {
         width: 18em;
       }

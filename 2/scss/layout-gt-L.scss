@@ -60,13 +60,9 @@ $susy: (
       margin: 0 auto;
     }
     > .event-dialog {
-      width: 236px + 2*$border-width;
       bottom: 2048%; // funny fix
       @include centering-hor;
       margin: 0.5rem 0;
-      > pgroup {
-        width: 14em;
-      }
     }
     &.focus > .event-dialog {
       bottom: 75%;

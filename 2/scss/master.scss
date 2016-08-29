@@ -330,6 +330,7 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 		opacity: 0;
 		@include transition-visibility;
 		position: absolute;
+		width: 300px + 2*$border-width;
 		border: $border-green;
 		border-radius: $border-width;
 		background: rgba(white, 0.95);
