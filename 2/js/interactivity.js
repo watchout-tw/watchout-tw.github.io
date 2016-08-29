@@ -3,12 +3,18 @@ $(function() {
   var enable_click_focus = function(list_sel, item_sel) {
     var _focus_ = 'focus';
     var $list = $(list_sel);
-    $(list_sel + ' ' + item_sel).click(function() {
+    var $all_items = $(list_sel + ' ' + item_sel);
+    $all_items.click(function() {
       var $item = $(this);
       if(!$item.hasClass(_focus_)) {
-        $(list_sel + ' ' + item_sel).removeClass(_focus_);
+        $all_items.removeClass(_focus_);
       }
       $item.toggleClass(_focus_);
+      return false;
+    });
+    $all_items.find('.close').click(function(event) {
+      $(this).closest(item_sel).removeClass('focus');
+      event.stopPropagation();
     });
   }
   enable_click_focus('#timeline', '.event');

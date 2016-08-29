@@ -50,6 +50,10 @@ $border-gold: $border-width solid $gold;
 	-webkit-transition: opacity .25s ease-in-out;
 	transition: opacity .25s ease-in-out;
 }
+@mixin transition-highlight {
+	-webkit-transition: transform .25s, opacity .25s ease-in-out;
+	transition: transform .25s, opacity .25s ease-in-out;
+}
 @mixin centering-hor {
 	left: 50%;
 	@include transform(translateX(-50%));

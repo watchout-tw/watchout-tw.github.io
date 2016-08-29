@@ -72,13 +72,15 @@
       margin: 0 auto; }
     #timeline > .years > .year > .events > .event > .event-dialog {
       width: 244px;
-      bottom: 75%;
+      bottom: 2048%;
       left: 50%;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
       margin: 0.5rem 0; }
       #timeline > .years > .year > .events > .event > .event-dialog > pgroup {
         width: 14em; }
+    #timeline > .years > .year > .events > .event.focus > .event-dialog {
+      bottom: 75%; }
 
 #monthly-payments > .payment-option {
   width: 22.91667%;

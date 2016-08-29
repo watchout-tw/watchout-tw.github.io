@@ -15,6 +15,7 @@ nav {
 	position: fixed;
 	top: 0;
 	background: $woc;
+	z-index: 2;
 }
 #nav-space {
 	height: $nav-height;
@@ -187,7 +188,7 @@ a.support-button {
 		position: fixed;
 		top: 0;
 		right: 0;
-		z-index: 2;
+		z-index: 3;
 		background: $gold-almost;
 	}
 	> .support-button.shadow {
@@ -239,6 +240,7 @@ $event-icon-key: (誕生 國會無雙 無雙第一 無雙改版 市長給問 公
 $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 .event-icon {
 	@include icon(192px, $event-icon-height, 'events', $event-icon-height, $event-icon-key, $event-icon-width, 192px);
+	cursor: pointer;
 }
 .event-icon[key="誕生"], .event-icon[key="開放國會松"] {
 	background-position: center center;
@@ -262,6 +264,7 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 }
 .purchase-icon {
 	@include icon(284px, 108px, 'purchases', 108px, (600 1500 3000 3600 10000));
+	cursor: pointer;
 }
 .bill-icon {
 	@include icon(132px, 128px, 'mobile-bills', 128px, (voting callin achievement more));
@@ -287,7 +290,6 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 }
 #timeline > .years > .year > .events > .event {
 	position: relative;
-
 	$icon-heights: (
 		L: 150px,
 		M: 80px,
@@ -316,10 +318,15 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 			@include info;
 		}
 	}
+	&:hover > .tagline {
+		&:after {
+			@include info-highlighted;
+		}
+	}
 	> .event-dialog {
 		display: block;
-		visibility: hidden;
-		opacity: 0;
+		//visibility: hidden;
+		opacity: 0.25;
 		@include transition-visibility;
 		position: absolute;
 		border: $border-green;
@@ -328,6 +335,7 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 		text-align: left;
 		z-index: 1;
 		box-shadow: $shadow-light;
+		cursor: pointer;
 
 		> .datetime {
 			display: inline-block;
@@ -345,10 +353,6 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 			width: 100%;
 			padding: 8px 42px 8px 4px;
 			pointer-events: none;
-
-			@include screen-gt-M {
-				padding-right: 4px;
-			}
 
 			&:not(.disabled):after {
 				@include font-monospace;
@@ -368,34 +372,19 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 			padding: 6px 0 10px;
 			margin: 0;
 			box-shadow: none;
-
-			@include screen-gt-M {
-				display: none;
-			}
+			cursor: pointer;
 		}
 		.url, .button.close {
 			vertical-align: top;
 			line-height: 1.5rem;
 			text-align: center;
 		}
-	}
-
-	@include screen-S {
-		&.focus > .event-dialog {
-			visibility: visible;
-			opacity: 1;
-			> .url {
-				pointer-events: auto;
-			}
-		}
-	}
-	@include screen-gt-M {
-		&:hover > .event-dialog {
-			visibility: visible;
-			opacity: 1;
-			> .url {
-				pointer-events: auto;
-			}
+	} // end of event-dialog
+	&.focus > .event-dialog {
+		visibility: visible;
+		opacity: 1;
+		> .url {
+			pointer-events: auto;
 		}
 	}
 }
@@ -412,8 +401,13 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 			@include info;
 			display: block;
 			position: absolute;
-			top: 0;
-			left: -12px;
+			top: 0.5rem;
+			left: -0.25rem;
+		}
+	}
+	&:hover > .purchase-icon-wrapper > .purchase-icon {
+		&:before {
+			@include info-highlighted;
 		}
 	}
 	> .purchase-icon-wrapper > .purchase-detail {
@@ -478,18 +472,9 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 			}
 		}
 	}
-
-	@include screen-S {
-		&.focus > .purchase-icon-wrapper > .purchase-detail {
-			visibility: visible;
-			opacity: 1;
-		}
-	}
-	@include screen-gt-M {
-		&:hover > .purchase-icon-wrapper > .purchase-detail {
-			visibility: visible;
-			opacity: 1;
-		}
+	&.focus > .purchase-icon-wrapper > .purchase-detail {
+		visibility: visible;
+		opacity: 1;
 	}
 }
 #group-purchases > .purchase-option {

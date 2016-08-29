@@ -299,4 +299,9 @@ ul {
 	opacity: 0.25;
 	border: 2px solid black;
 	border-radius: 100%;
+  @include transition-highlight;
+}
+@mixin info-highlighted {
+  transform: scale(1.25);
+  opacity: 1;
 }

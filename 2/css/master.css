@@ -281,7 +281,8 @@ nav {
   height: 65px;
   position: fixed;
   top: 0;
-  background: #50E3C2; }
+  background: #50E3C2;
+  z-index: 2; }
 
 #nav-space {
   height: 65px; }
@@ -427,7 +428,7 @@ a.support-button {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
   background: rgba(248, 231, 28, 0.95); }
 #support-buttons.deployed > .support-button.shadow {
   position: relative;
@@ -461,7 +462,8 @@ section#sm {
   height: 160px;
   background: url("../images/wo-august-2-events.svg");
   background-size: 192px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  cursor: pointer; }
   .event-icon[key="誕生"] {
     width: 72;
     background-position: center 0px; }
@@ -561,7 +563,8 @@ section#sm {
   height: 108px;
   background: url("../images/wo-august-2-purchases.svg");
   background-size: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  cursor: pointer; }
   .purchase-icon[key="600"] {
     background-position: center 0px; }
   .purchase-icon[key="1500"] {
@@ -657,11 +660,15 @@ section#sm {
       overflow: hidden;
       opacity: 0.25;
       border: 2px solid black;
-      border-radius: 100%; }
+      border-radius: 100%;
+      -webkit-transition: transform .25s, opacity .25s ease-in-out;
+      transition: transform .25s, opacity .25s ease-in-out; }
+  #timeline > .years > .year > .events > .event:hover > .tagline:after {
+    transform: scale(1.25);
+    opacity: 1; }
   #timeline > .years > .year > .events > .event > .event-dialog {
     display: block;
-    visibility: hidden;
-    opacity: 0;
+    opacity: 0.25;
     -webkit-transition: visibility 0s, opacity .25s ease-in-out;
     transition: visibility 0s, opacity .25s ease-in-out;
     position: absolute;
@@ -670,7 +677,8 @@ section#sm {
     background: rgba(255, 255, 255, 0.95);
     text-align: left;
     z-index: 1;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25); }
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer; }
     #timeline > .years > .year > .events > .event > .event-dialog > .datetime {
       display: inline-block;
       margin: 0.25em 6px -0.25em; }
@@ -684,9 +692,6 @@ section#sm {
       width: 100%;
       padding: 8px 42px 8px 4px;
       pointer-events: none; }
-      @media (min-width: 480px) {
-        #timeline > .years > .year > .events > .event > .event-dialog > .url {
-          padding-right: 4px; } }
       #timeline > .years > .year > .events > .event > .event-dialog > .url:not(.disabled):after {
         font-family: "akkurat-mono", monospace;
         font-weight: 400 !important;
@@ -703,26 +708,17 @@ section#sm {
       width: 42px;
       padding: 6px 0 10px;
       margin: 0;
-      box-shadow: none; }
-      @media (min-width: 480px) {
-        #timeline > .years > .year > .events > .event > .event-dialog > .button.close {
-          display: none; } }
+      box-shadow: none;
+      cursor: pointer; }
     #timeline > .years > .year > .events > .event > .event-dialog .url, #timeline > .years > .year > .events > .event > .event-dialog .button.close {
       vertical-align: top;
       line-height: 1.5rem;
       text-align: center; }
-  @media (max-width: 479px) {
-    #timeline > .years > .year > .events > .event.focus > .event-dialog {
-      visibility: visible;
-      opacity: 1; }
-      #timeline > .years > .year > .events > .event.focus > .event-dialog > .url {
-        pointer-events: auto; } }
-  @media (min-width: 480px) {
-    #timeline > .years > .year > .events > .event:hover > .event-dialog {
-      visibility: visible;
-      opacity: 1; }
-      #timeline > .years > .year > .events > .event:hover > .event-dialog > .url {
-        pointer-events: auto; } }
+  #timeline > .years > .year > .events > .event.focus > .event-dialog {
+    visibility: visible;
+    opacity: 1; }
+    #timeline > .years > .year > .events > .event.focus > .event-dialog > .url {
+      pointer-events: auto; }
 
 #one-time-purchases > .purchase-option,
 #group-purchases > .purchase-option {
@@ -749,10 +745,16 @@ section#sm {
       opacity: 0.25;
       border: 2px solid black;
       border-radius: 100%;
+      -webkit-transition: transform .25s, opacity .25s ease-in-out;
+      transition: transform .25s, opacity .25s ease-in-out;
       display: block;
       position: absolute;
-      top: 0;
-      left: -12px; }
+      top: 0.5rem;
+      left: -0.25rem; }
+  #one-time-purchases > .purchase-option:hover > .purchase-icon-wrapper > .purchase-icon:before,
+  #group-purchases > .purchase-option:hover > .purchase-icon-wrapper > .purchase-icon:before {
+    transform: scale(1.25);
+    opacity: 1; }
   #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail,
   #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail {
     display: block;
@@ -819,16 +821,10 @@ section#sm {
         #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li > span.four,
         #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li > span.four {
           padding: 0 4px; }
-  @media (max-width: 479px) {
-    #one-time-purchases > .purchase-option.focus > .purchase-icon-wrapper > .purchase-detail,
-    #group-purchases > .purchase-option.focus > .purchase-icon-wrapper > .purchase-detail {
-      visibility: visible;
-      opacity: 1; } }
-  @media (min-width: 480px) {
-    #one-time-purchases > .purchase-option:hover > .purchase-icon-wrapper > .purchase-detail,
-    #group-purchases > .purchase-option:hover > .purchase-icon-wrapper > .purchase-detail {
-      visibility: visible;
-      opacity: 1; } }
+  #one-time-purchases > .purchase-option.focus > .purchase-icon-wrapper > .purchase-detail,
+  #group-purchases > .purchase-option.focus > .purchase-icon-wrapper > .purchase-detail {
+    visibility: visible;
+    opacity: 1; }
 
 #group-purchases > .purchase-option {
   position: relative;
