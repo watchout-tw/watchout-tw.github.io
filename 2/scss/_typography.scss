@@ -57,7 +57,7 @@ h1 {
 }
 h2 {
 	font-size: 3rem;
-  line-height: 1.1667;
+  line-height: 1.16666667;
 }
 h3 {
 	font-size: 2rem;
@@ -65,7 +65,7 @@ h3 {
 }
 h4 {
 	font-size: 1.125rem;
-  line-height: 1.3333;
+  line-height: 1.33333333;
 }
 h3 + h4 {
   margin-top: 0.25rem;
@@ -148,7 +148,7 @@ span.fixed-width-center {
 
 pgroup {
   display: block;
-  width: 18em;
+  width: 18rem;
   margin: 1rem auto;
   text-align: left;
 
@@ -289,6 +289,7 @@ ul {
 	content: 'i';
   display: block;
 	@include font-grotesque;
+  color: black;
 	font-size: 1rem;
 	line-height: 1;
 	text-align: center;
@@ -305,4 +306,12 @@ ul {
 @mixin info-highlighted {
   transform: scale(1.25);
   opacity: 1;
+}
+
+.warning {
+  font-size: 0.875rem;
+  > .emoji-warning {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
 }

@@ -10,7 +10,6 @@ $(function() {
         $all_items.removeClass(_focus_);
       }
       $item.toggleClass(_focus_);
-      return false;
     });
     $all_items.find('.close').click(function(event) {
       $(this).closest(item_sel).removeClass('focus');

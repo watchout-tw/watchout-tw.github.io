@@ -352,7 +352,6 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 			background: $woc;
 			width: 100%;
 			padding: 8px 42px 8px 4px;
-			pointer-events: none;
 
 			&:not(.disabled):after {
 				@include font-monospace;
@@ -383,9 +382,6 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 	&.focus > .event-dialog {
 		visibility: visible;
 		opacity: 1;
-		> .url {
-			pointer-events: auto;
-		}
 	}
 }
 
@@ -554,4 +550,29 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 #we-need-you {
 	padding: 2rem 0 0;
 	margin: 0;
+}
+
+#engineer-note {
+	max-width: 18rem;
+	margin: 1.75rem auto;
+	padding: 0.5rem 0;
+	background: rgba(black, 0.125);
+	> .warning {
+		margin: 0;
+		> span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	> h4 {
+		color: #555;
+		> span {
+			display: inline-block;
+			&.info:after {
+				@include info;
+				display: inline-block;
+				margin: 0 0.125rem;
+			}
+		}
+	}
 }

@@ -49,7 +49,7 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  line-height: 1.1667; }
+  line-height: 1.16666667; }
 
 h3 {
   font-size: 2rem;
@@ -57,7 +57,7 @@ h3 {
 
 h4 {
   font-size: 1.125rem;
-  line-height: 1.3333; }
+  line-height: 1.33333333; }
 
 h3 + h4 {
   margin-top: 0.25rem; }
@@ -144,7 +144,7 @@ span.fixed-width-center {
 
 pgroup {
   display: block;
-  width: 18em;
+  width: 18rem;
   margin: 1rem auto;
   text-align: left; }
   pgroup > p {
@@ -269,6 +269,12 @@ ul {
   font-family: "century-std", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
   font-weight: 900;
   line-height: 1; }
+
+.warning {
+  font-size: 0.875rem; }
+  .warning > .emoji-warning {
+    font-size: 1.5rem;
+    line-height: 1; }
 
 * {
   box-sizing: border-box; }
@@ -651,6 +657,7 @@ section#sm {
       display: block;
       font-family: "circular-pro", "source-han-sans-tc", sans-serif;
       font-weight: 900;
+      color: black;
       font-size: 1rem;
       line-height: 1;
       text-align: center;
@@ -692,8 +699,7 @@ section#sm {
       display: inline-block;
       background: #50E3C2;
       width: 100%;
-      padding: 8px 42px 8px 4px;
-      pointer-events: none; }
+      padding: 8px 42px 8px 4px; }
       #timeline > .years > .year > .events > .event > .event-dialog > .url:not(.disabled):after {
         font-family: "akkurat-mono", monospace;
         font-weight: 400 !important;
@@ -719,8 +725,6 @@ section#sm {
   #timeline > .years > .year > .events > .event.focus > .event-dialog {
     visibility: visible;
     opacity: 1; }
-    #timeline > .years > .year > .events > .event.focus > .event-dialog > .url {
-      pointer-events: auto; }
 
 #one-time-purchases > .purchase-option,
 #group-purchases > .purchase-option {
@@ -737,6 +741,7 @@ section#sm {
       display: block;
       font-family: "circular-pro", "source-han-sans-tc", sans-serif;
       font-weight: 900;
+      color: black;
       font-size: 1rem;
       line-height: 1;
       text-align: center;
@@ -899,5 +904,41 @@ section#sm {
 #we-need-you {
   padding: 2rem 0 0;
   margin: 0; }
+
+#engineer-note {
+  max-width: 18rem;
+  margin: 1.75rem auto;
+  padding: 0.5rem 0;
+  background: rgba(0, 0, 0, 0.125); }
+  #engineer-note > .warning {
+    margin: 0; }
+    #engineer-note > .warning > span {
+      display: inline-block;
+      vertical-align: middle; }
+  #engineer-note > h4 {
+    color: #555; }
+    #engineer-note > h4 > span {
+      display: inline-block; }
+      #engineer-note > h4 > span.info:after {
+        content: 'i';
+        display: block;
+        font-family: "circular-pro", "source-han-sans-tc", sans-serif;
+        font-weight: 900;
+        color: black;
+        font-size: 1rem;
+        line-height: 1;
+        text-align: center;
+        width: 1rem;
+        height: 1rem;
+        padding: 0;
+        overflow: hidden;
+        opacity: 0.25;
+        border: 2px solid black;
+        border-radius: 100%;
+        -webkit-transition: transform .25s, opacity .25s ease-in-out;
+        transition: transform .25s, opacity .25s ease-in-out;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 0.125rem; }
 
 /*# sourceMappingURL=master.css.map */
