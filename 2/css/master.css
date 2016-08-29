@@ -662,7 +662,8 @@ section#sm {
       border: 2px solid black;
       border-radius: 100%;
       -webkit-transition: transform .25s, opacity .25s ease-in-out;
-      transition: transform .25s, opacity .25s ease-in-out; }
+      transition: transform .25s, opacity .25s ease-in-out;
+      cursor: pointer; }
   #timeline > .years > .year > .events > .event:hover > .tagline:after {
     transform: scale(1.25);
     opacity: 1; }
@@ -748,6 +749,7 @@ section#sm {
       border-radius: 100%;
       -webkit-transition: transform .25s, opacity .25s ease-in-out;
       transition: transform .25s, opacity .25s ease-in-out;
+      cursor: pointer;
       display: block;
       position: absolute;
       top: 0.5rem;

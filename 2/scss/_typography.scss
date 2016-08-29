@@ -300,6 +300,7 @@ ul {
 	border: 2px solid black;
 	border-radius: 100%;
   @include transition-highlight;
+  cursor: pointer;
 }
 @mixin info-highlighted {
   transform: scale(1.25);
