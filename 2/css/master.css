@@ -870,6 +870,8 @@ section#sm {
     opacity: 1;
     -webkit-transition: opacity .25s ease-in-out;
     transition: opacity .25s ease-in-out; }
+  #group-purchases > .purchase-option.focus > .purchase-icon-wrapper > .four {
+    opacity: 0; }
   #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail {
     height: 140px; }
     #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ba {
@@ -880,12 +882,6 @@ section#sm {
     margin-top: -0.25rem;
     margin-bottom: 0.25rem; }
 
-@media (max-width: 479px) {
-  #group-purchases > .purchase-option.focus > .purchase-icon-wrapper > .four {
-    opacity: 0; } }
-@media (min-width: 480px) {
-  #group-purchases > .purchase-option:hover > .purchase-icon-wrapper > .four {
-    opacity: 0; } }
 #stickers > .sticker {
   display: inline-block;
   margin: 0.5rem 1rem; }

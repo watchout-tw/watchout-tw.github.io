@@ -494,6 +494,9 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 		opacity: 1;
 		@include transition-opacity
 	}
+	&.focus > .purchase-icon-wrapper > .four {
+		opacity: 0;
+	}
 	> .purchase-icon-wrapper > .purchase-detail {
 		height: 140px;
 
@@ -509,16 +512,6 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 	> hgroup {
 		margin-top: -0.25rem;
 		margin-bottom: 0.25rem;
-	}
-}
-@include screen-S {
-	#group-purchases > .purchase-option.focus > .purchase-icon-wrapper > .four {
-		opacity: 0;
-	}
-}
-@include screen-gt-M {
-	#group-purchases > .purchase-option:hover > .purchase-icon-wrapper > .four {
-		opacity: 0;
 	}
 }
 
