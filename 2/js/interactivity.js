@@ -1,6 +1,6 @@
 // timeline event and purchase detail
 $(function() {
-  var enable_click_focus = function(list_sel, item_sel) {
+  var enable_click_focus = function(list_sel, item_sel, dialog_sel) {
     var _focus_ = 'focus';
     var $list = $(list_sel);
     var $all_items = $(list_sel + ' ' + item_sel);
@@ -10,13 +10,22 @@ $(function() {
         $all_items.removeClass(_focus_);
       }
       $item.toggleClass(_focus_);
+      if(dialog_sel && $item.hasClass(_focus_)) {
+        // detect if dialog is out of viewport
+        var $dialog = $item.find(dialog_sel);
+        var m = $item.offset().left + $item.outerWidth()/2.0;
+        var r = $dialog.outerWidth()/2.0;
+        var max = $(window).width();
+        var g = 4;
+        $dialog.css('margin-left', (m + r > max ? max - (m + r) - g : (m - r < 0 ? r - m + g : 0)))
+      }
     });
     $all_items.find('.close').click(function(event) {
       $(this).closest(item_sel).removeClass('focus');
       event.stopPropagation();
     });
   }
-  enable_click_focus('#timeline', '.event');
+  enable_click_focus('#timeline', '.event', '.event-dialog');
   enable_click_focus('#one-time-purchases', '.purchase-option');
   enable_click_focus('#group-purchases', '.purchase-option');
 });
