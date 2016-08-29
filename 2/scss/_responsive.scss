@@ -16,6 +16,9 @@ $X: 960px;
 @mixin screen-M-X { // M to X
 	@media (min-width: $M) and (max-width: ($X - 1px)) { @content; }
 }
+@mixin screen-L-X {
+	@media (min-width: $L) and (max-width: ($X - 1px)) { @content; }
+}
 @mixin screen-gt-X { // X and up
 	@media (min-width: $X) { @content; }
 }
