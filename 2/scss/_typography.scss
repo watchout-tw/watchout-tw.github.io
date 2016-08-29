@@ -195,32 +195,44 @@ badge, .line, .support-button {
 }
 
 // custom line break
-.custom-line-break > .line {
+.custom-line-break.M > .line {
   display: block;
   @include screen-gt-M {
     &:not(.always) {
       display: inline;
     }
-    &:not(:last-child) {
-      //margin-right: 0.125em;
+    &.trail {
+      margin-right: 0.125em;
     }
   }
 }
-.custom-line-break > .hide {
+.custom-line-break.M > .hide {
   display: none;
   @include screen-gt-M {
     display: inline;
   }
 }
-.custom-line-break > .line + .hide {
+.custom-line-break.M > .line + .hide {
   margin-left: -0.125em;
 }
 @include screen-gt-L {
-  .custom-line-break-reverse > .line {
+  .custom-line-break.R > .line {
     display: block;
   }
-  .custom-line-break-reverse > .hide {
+  .custom-line-break.R > .hide {
     display: none;
+  }
+}
+.custom-line-break.X > .line {
+  display: block;
+  @include screen-gt-X {
+    display: inline;
+  }
+}
+.custom-line-break.X > .hide {
+  display: none;
+  @include screen-gt-X {
+    display: inline;
   }
 }
 

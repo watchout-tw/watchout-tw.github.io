@@ -34,10 +34,11 @@ body > section {
 	}
 	&#first-section {
 		margin: 1rem 0;
-	}
-	&#first-section > hgroup {
-		padding: 0;
-		background: none;
+
+		> h1 > .dot {
+			font-size: 2rem;
+			margin: 0 1rem;
+		}
 	}
 	&#fertile-land > #stats > .stat {
 		margin-top: 1rem;
