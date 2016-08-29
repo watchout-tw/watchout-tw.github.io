@@ -47,13 +47,12 @@ $susy: (
 		> .tagline:after { // info
 			position: absolute;
 			left: 100%;
-			top: 50%;
-			@include transform(translateY(-50%));
+			@include centering-ver;
 			margin-left: 0.25rem;
 		}
 		> .event-dialog {
 			left: -24px;
-			top: 50%;
+			@include centering-ver;
 			width: 300px + 2*$border-width;
 			> pgroup {
         width: 18em;

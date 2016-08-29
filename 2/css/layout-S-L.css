@@ -64,6 +64,8 @@
     #timeline > .years > .year > .events > .event > .event-dialog {
       left: -24px;
       top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
       width: 308px; }
       #timeline > .years > .year > .events > .event > .event-dialog > pgroup {
         width: 18em; }

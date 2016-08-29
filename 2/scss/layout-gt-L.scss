@@ -20,12 +20,11 @@ $susy: (
   margin: 2rem 0;
 
   &:before {
-		top: 50%;
+		@include centering-ver;
 		left: 0;
 		width: 100%;
 		height: $border-width*4;
 		@include background-gradient(left, rgba($woc, 0.25), rgba($woc, 1));
-    @include transform(translateY(-50%));
   }
   > .years {
     max-width: 75rem;
@@ -62,9 +61,9 @@ $susy: (
     }
     > .event-dialog {
       width: 236px + 2*$border-width;
-      top: 50%;
-      left: 50%;
-      @include transform(translate(-50%, -50%));
+      bottom: 100%;
+      @include centering-hor;
+      margin: 0.5rem 0;
       > pgroup {
         width: 14em;
       }

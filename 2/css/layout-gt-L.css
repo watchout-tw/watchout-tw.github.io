@@ -33,6 +33,8 @@
   margin: 2rem 0; }
   #timeline:before {
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
     left: 0;
     width: 100%;
     height: 16px;
@@ -40,9 +42,7 @@
     background: -moz-linear-gradient(left, rgba(80, 227, 194, 0.25), #50e3c2);
     background: -ms-linear-gradient(left, rgba(80, 227, 194, 0.25), #50e3c2);
     background: -o-linear-gradient(left, rgba(80, 227, 194, 0.25), #50e3c2);
-    background: linear-gradient(from left, rgba(80, 227, 194, 0.25), #50e3c2);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    background: linear-gradient(from left, rgba(80, 227, 194, 0.25), #50e3c2); }
   #timeline > .years {
     max-width: 75rem;
     margin: 0 auto; }
@@ -72,10 +72,11 @@
       margin: 0 auto; }
     #timeline > .years > .year > .events > .event > .event-dialog {
       width: 244px;
-      top: 50%;
+      bottom: 100%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      margin: 0.5rem 0; }
       #timeline > .years > .year > .events > .event > .event-dialog > pgroup {
         width: 14em; }
 
