@@ -1,3 +1,3 @@
-watchout-tw.github.io
+沃草 Watchout
 =====================
-[watchout.tw](http://watchout.tw) official site
+這裡是[沃草 Watchout](http://watchout.tw)的官方網站。
