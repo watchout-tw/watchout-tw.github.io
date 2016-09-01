@@ -1,8 +1,8 @@
 // timeline event and purchase detail
 $(function() {
-  var enable_click_focus = function(list_sel, item_sel, dialog_sel) {
+  var enable_click_focus = function(item_sel, list_sel, dialog_sel) {
+    list_sel = (list_sel === undefined ? '' : list_sel);
     var _focus_ = 'focus';
-    var $list = $(list_sel);
     var $all_items = $(list_sel + ' ' + item_sel);
     $all_items.click(function() {
       var $item = $(this);
@@ -25,9 +25,10 @@ $(function() {
       event.stopPropagation();
     });
   }
-  enable_click_focus('#timeline', '.event', '.event-dialog');
-  enable_click_focus('#one-time-purchases', '.purchase-option');
-  enable_click_focus('#group-purchases', '.purchase-option');
+  enable_click_focus('.event', '#timeline', '.event-dialog');
+  enable_click_focus('.purchase-option', '#one-time-purchases');
+  enable_click_focus('.purchase-option', '#group-purchases');
+  enable_click_focus('#why');
 });
 
 // support button

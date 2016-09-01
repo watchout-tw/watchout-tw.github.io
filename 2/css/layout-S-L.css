@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "taiwan-comma";
+  src: local("PingFang TC");
+  unicode-range: U+FF0C; }
 [screen="gt-M"] {
   display: none !important; }
 
@@ -109,5 +113,14 @@
     margin-right: 3.125%; }
     #stats > .stat.tiny > p {
       min-height: 44px; }
+
+#we-need-you {
+  padding-top: 25%;
+  background-size: 50px, 175%; }
+  #we-need-you > .wrapper {
+    position: relative; }
+  @media (max-width: 479px) {
+    #we-need-you {
+      margin-top: 2rem; } }
 
 /*# sourceMappingURL=layout-S-L.css.map */

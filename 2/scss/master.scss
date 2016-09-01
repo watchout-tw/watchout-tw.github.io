@@ -57,7 +57,7 @@ body > section {
 	&#support {
 		padding-top: $nav-height; // to make space for nav while jumping
 	}
-	&#fertile-land {
+	&#we-need-you {
 		margin-bottom: -$nav-height; // to absorb that space
 	}
 	&#we-are-you {
@@ -551,8 +551,69 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 }
 
 #we-need-you {
-	padding: 2rem 0 0;
+	$kusa-height: 84px;
+	height: 0;
+	padding: 15% 0 $kusa-height;
 	margin: 0;
+	//@include background-gradient(top, rgba($woc, 0), rgba($woc, 0.25));
+	background-image: url('../images/genkidama-kusa.gif'), url('../images/genkidama.png');
+	background-size: 50px, 100%;
+	background-position: center bottom, center top;
+	background-repeat: no-repeat;
+	background-color: rgba($woc, 0.25);
+
+	> .wrapper {
+		position: absolute;
+		width: 100%;
+		bottom: $kusa-height;
+	}
+	> .wrapper > #call {
+		margin: 0;
+	}
+	> .wrapper > #why {
+		margin: 1rem 0;
+		cursor: pointer;
+		&:after {
+			@include info;
+			margin: 0.125rem auto;
+		}
+		&:hover:after {
+			@include info-highlighted;
+		}
+	}
+}
+
+.qa {
+	position: relative;
+	> .answer-wrapper {
+		visibility: none;
+		opacity: 0;
+		@include transition-visibility;
+		position: fixed;
+		top: -2048%;
+		left: 0;
+		margin-top: $nav-height/2;
+		z-index: 1;
+	}
+	&.focus > .answer-wrapper {
+		visibility: visible;
+		opacity: 1;
+		@include centering-both;
+	}
+
+	> .answer-wrapper > .answer-dialog {
+		display: block;
+		width: 300px + 2*$border-width;
+		border: $border-green;
+		border-radius: $border-width;
+		margin: 0 auto;
+		background: rgba(white, 0.95);
+		box-shadow: $shadow-light;
+
+		> pgroup {
+			margin: 0 auto;
+		}
+	}
 }
 
 #engineer-note {

@@ -87,3 +87,15 @@ $susy: (
     }
   }
 }
+
+#we-need-you {
+	padding-top: 25%;
+	background-size: 50px, 175%;
+	> .wrapper {
+		position: relative;
+	}
+
+	@include screen-S {
+		margin-top: 2rem;
+	}
+}
