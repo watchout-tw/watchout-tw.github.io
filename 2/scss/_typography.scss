@@ -261,7 +261,7 @@ ul {
 }
 
 .tagline {
-  @include font-mincho;
+  @include font-strong;
   line-height: $leading-tight;
 }
 .datetime.year {
