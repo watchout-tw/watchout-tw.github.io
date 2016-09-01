@@ -558,23 +558,34 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 #engineer-note {
 	max-width: 18rem;
 	margin: 1.75rem auto;
-	padding: 0.5rem 0;
+	padding-bottom: 0.25rem;
 	background: rgba(black, 0.125);
-	> .warning {
+	> .bar {
 		margin: 0;
+		padding: 0.25rem;
+		background: yellow;
+		> .emoji-warning,
 		> span {
 			display: inline-block;
 			vertical-align: middle;
 		}
+		> .emoji-warning {
+			display: inline-block;
+			width: 1.5rem;
+		}
 	}
-	> h4 {
+	> .content {
 		color: #555;
+		margin: 0.125rem 0;
 		> span {
 			display: inline-block;
-			&.info:after {
-				@include info;
-				display: inline-block;
+			&.info {
 				margin: 0 0.125rem;
+				&:after {
+					@include info;
+					display: inline-block;
+					opacity: 0.5;
+				}
 			}
 		}
 	}
