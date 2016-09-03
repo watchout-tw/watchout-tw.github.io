@@ -623,7 +623,7 @@ section#sm {
     display: block;
     width: 192px;
     height: 128px;
-    background: url("../images/wo-august-2-desktop-bills.svg");
+    background: url("../images/wo-august-2-bills-desktop.svg");
     background-size: 100%;
     margin: 0 auto; }
     .bill-icon[key="voting"] {
@@ -639,7 +639,7 @@ section#sm {
     display: block;
     width: 132px;
     height: 128px;
-    background: url("../images/wo-august-2-mobile-bills.svg");
+    background: url("../images/wo-august-2-bills-mobile.svg");
     background-size: 100%;
     margin: 0 auto; }
     .bill-icon[key="voting"] {
