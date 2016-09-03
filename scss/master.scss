@@ -271,7 +271,7 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 	$bill-keys: (voting callin achievement more);
 	$bill-height: 128px;
 	@include screen-S {
-		@include icon(132px, $bill-height, 'mobile-bills', $bill-height, $bill-keys);
+		@include icon(132px, $bill-height, 'bills-mobile', $bill-height, $bill-keys);
 	}
 	@include screen-gt-M {
 		@include icon(192px, $bill-height, 'bills-desktop', $bill-height, $bill-keys);
