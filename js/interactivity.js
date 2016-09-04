@@ -1,3 +1,18 @@
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
+
 // timeline event and purchase detail
 $(function() {
   var enable_click_focus = function(item_sel, list_sel, dialog_sel) {
@@ -37,13 +52,9 @@ $(function(){
   var redline = $('#about').offset().top - $('nav').outerHeight();
   var $el = $('#support-buttons');
   var _deployed_ = 'deployed';
-  var onScroll = function(){
-    if($window.scrollTop() > redline) {
-      $el.addClass(_deployed_);
-    } else {
-      $el.removeClass(_deployed_);
-    }
-  };
+  var onScroll = debounce(function(){
+    $el.toggleClass(_deployed_, $window.scrollTop() > redline);
+  }, 250);
   $window.scroll(onScroll);
   onScroll();
 
