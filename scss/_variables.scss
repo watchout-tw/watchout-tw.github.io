@@ -11,7 +11,7 @@ $rem: 16px;
 @font-face {
   font-family: "taiwan-comma";
   src: local("PingFang TC");
-  unicode-range: U+FF0C;
+  unicode-range: U+FF0C, U+3002, U+FF1A, U+FF1B;
 }
 
 $font-body: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;

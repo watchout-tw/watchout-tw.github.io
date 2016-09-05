@@ -1,7 +1,7 @@
 @font-face {
   font-family: "taiwan-comma";
   src: local("PingFang TC");
-  unicode-range: U+FF0C; }
+  unicode-range: U+FF0C, U+3002, U+FF1A, U+FF1B; }
 [screen="gt-M"] {
   display: none !important; }
 
