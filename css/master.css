@@ -486,7 +486,7 @@ section#sm {
   display: block;
   width: 192px;
   height: 160px;
-  background: url("../images/wo-august-2-events.svg");
+  background: url("../images/wo-cf-events.svg");
   background-size: 192px;
   margin: 0 auto;
   cursor: pointer; }
@@ -539,7 +539,7 @@ section#sm {
   display: block;
   width: 30px;
   height: 30px;
-  background: url("../images/wo-august-2-project-logo-small.svg");
+  background: url("../images/wo-cf-project-logo-small.svg");
   background-size: 100%;
   margin: 0 auto; }
   .project-icon.small[key="國會無雙"] {
@@ -555,7 +555,7 @@ section#sm {
   display: block;
   width: 128px;
   height: 54px;
-  background: url("../images/wo-august-2-monthly-payments.svg");
+  background: url("../images/wo-cf-monthly-payments.svg");
   background-size: 100%;
   margin: 0 auto; }
   .payment-icon[key="100"] {
@@ -571,7 +571,7 @@ section#sm {
   display: block;
   width: 128px;
   height: 118px;
-  background: url("../images/wo-august-2-gifts.svg");
+  background: url("../images/wo-cf-gifts.svg");
   background-size: 100%;
   margin: 0 auto; }
   .gift-icon[key="certificate"] {
@@ -587,7 +587,7 @@ section#sm {
   display: block;
   width: 284px;
   height: 108px;
-  background: url("../images/wo-august-2-purchases.svg");
+  background: url("../images/wo-cf-purchases.svg");
   background-size: 100%;
   margin: 0 auto;
   cursor: pointer; }
@@ -607,7 +607,7 @@ section#sm {
     display: block;
     width: 132px;
     height: 128px;
-    background: url("../images/wo-august-2-bills-mobile.svg");
+    background: url("../images/wo-cf-bills-mobile.svg");
     background-size: 100%;
     margin: 0 auto; }
     .bill-icon[key="voting"] {
@@ -623,7 +623,7 @@ section#sm {
     display: block;
     width: 192px;
     height: 128px;
-    background: url("../images/wo-august-2-bills-desktop.svg");
+    background: url("../images/wo-cf-bills-desktop.svg");
     background-size: 100%;
     margin: 0 auto; }
     .bill-icon[key="voting"] {
@@ -639,7 +639,7 @@ section#sm {
     display: block;
     width: 132px;
     height: 128px;
-    background: url("../images/wo-august-2-bills-mobile.svg");
+    background: url("../images/wo-cf-bills-mobile.svg");
     background-size: 100%;
     margin: 0 auto; }
     .bill-icon[key="voting"] {
