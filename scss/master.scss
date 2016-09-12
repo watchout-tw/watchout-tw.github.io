@@ -77,12 +77,15 @@ body > section {
 
 .pop {
 	background: $woc;
-	margin: 2rem 0;
+	margin: 3rem 0 2rem;
 	padding: 0.25rem 0;
 
 	> p {
 		margin: 0;
 	}
+}
+.plan-intro {
+	margin-top: 2rem;
 }
 .prompt {
 	box-sizing: content-box;
@@ -91,7 +94,12 @@ body > section {
 	width: 4em;
 	padding: $border-width 1.5em;
 	border-bottom: $border-width solid $grey;
-	margin: 2rem auto 0.25rem;
+	margin: 0.25rem auto;
+}
+#one-time-purchases-intro,
+#one-time-purchases,
+#group-purchases {
+	display: none;
 }
 a.button {
 	box-sizing: content-box;
