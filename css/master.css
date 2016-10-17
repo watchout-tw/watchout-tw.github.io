@@ -46,7 +46,9 @@ h1, h2, h3, h4 {
   font-family: "century-std", "taiwan-comma", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
   font-weight: 900;
   margin: 0;
-  padding-top: 0.36em; }
+  padding-top: 0.36em;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem; }
 
 h1 {
   font-size: 4.8rem;
@@ -61,7 +63,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  line-height: 1; }
+  line-height: 1.25; }
 
 h4 {
   font-size: 1.125rem;
@@ -72,7 +74,7 @@ h3 + h4 {
 
 h5 {
   font-size: 1rem;
-  line-height: 1.75;
+  line-height: 1.375;
   font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;
   font-weight: 400;
   margin: 0; }
@@ -81,7 +83,7 @@ span.italic {
   font-style: italic; }
 
 span.underline {
-  display: inline-block;
+  display: inline;
   line-height: 1.25em;
   border-bottom: 3px solid black; }
 
@@ -90,7 +92,7 @@ span.emphasize {
   font-weight: 900; }
 
 span.fixed-width-center {
-  display: inline-block;
+  display: inline;
   width: 5em;
   text-align: center;
   letter-spacing: 0.25; }
@@ -125,8 +127,10 @@ span.fixed-width-center {
         font-size: 4.5rem; } }
   .number.tiny {
     font-size: 3rem; }
-  .number > .tw {
-    font-size: 0.9em; }
+  .number > .word {
+    font-size: 0.92em; }
+    .number > .word.tw {
+      font-size: 0.88em; }
   .number.unit[unit="篇"]:after {
     content: "篇"; }
   .number.unit[unit="筆"]:after {
@@ -226,7 +230,7 @@ badge, .line, .support-button {
 .custom-line-break.X > .hide {
   display: none; }
   @media (min-width: 960px) {
-    .custom-line-break.X > .hide {
+    .custom-line-break.X > .hide:not(.always) {
       display: inline; } }
 
 ul {
@@ -288,7 +292,7 @@ ul {
   font-size: 1.125rem;
   font-family: "century-std", "taiwan-comma", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
   font-weight: 900;
-  line-height: 1; }
+  line-height: 1.125; }
 
 .system-dialog > .warning {
   font-size: 0.875rem; }
@@ -322,7 +326,7 @@ nav > #home {
 body > section {
   position: relative; }
   body > section > hgroup:first-child {
-    padding: 1rem 0;
+    padding: 1rem;
     background: rgba(80, 227, 194, 0.25); }
   body > section#first-section {
     margin: 1rem 0; }
@@ -334,7 +338,7 @@ body > section {
     margin-bottom: 1rem; }
     body > section#fertile-land > #stats > .stat > .number-wrapper {
       display: block;
-      margin: 0.5rem 0; }
+      margin: 0.125rem 0; }
     body > section#fertile-land > #stats > .stat > .project-icon + .number-wrapper {
       margin-top: 0; }
     body > section#fertile-land > #stats > .stat > p {
@@ -357,9 +361,10 @@ body > section {
 .pop {
   background: #50E3C2;
   margin: 3rem 0 2rem;
-  padding: 0.25rem 0; }
+  padding: 0.5rem 0.25rem; }
   .pop > p {
-    margin: 0; }
+    margin: 0;
+    line-height: 1.375; }
 
 .plan-intro {
   margin-top: 2rem; }
@@ -929,7 +934,9 @@ section#sm {
 
 #stickers > .sticker {
   display: inline-block;
-  margin: 0.5rem 1rem; }
+  vertical-align: top;
+  margin: 0.5rem 1rem;
+  width: 100px; }
   #stickers > .sticker > .sticker-example, #stickers > .sticker > .sticker-name {
     display: block;
     cursor: pointer; }
@@ -1011,7 +1018,9 @@ section#sm {
     background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25); }
     .qa > .answer-wrapper > .answer-dialog > pgroup {
-      margin: 0 auto; }
+      margin: 0.5rem auto; }
+      .qa > .answer-wrapper > .answer-dialog > pgroup > p {
+        line-height: 1.375; }
 
 #engineer-note {
   max-width: 18rem;

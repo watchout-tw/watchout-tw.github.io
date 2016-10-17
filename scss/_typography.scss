@@ -1,30 +1,5 @@
 @import 'variables';
 
-@mixin font-body {
-  font-family: $font-body;
-  font-weight: 400;
-}
-@mixin font-body-bold {
-  font-family: $font-body;
-  font-weight: 700;
-}
-@mixin font-mincho {
-  font-family: $font-mincho;
-  font-weight: 900;
-}
-@mixin font-strong {
-  font-family: $font-strong;
-  font-weight: 700;
-}
-@mixin font-grotesque {
-  font-family: $font-grotesque;
-  font-weight: 900;
-}
-@mixin font-monospace {
-  font-family: $font-monospace;
-  font-weight: 400 !important; // no bold
-}
-
 html, body {
 	font-size: 16px;
 	@include font-body;
@@ -47,6 +22,8 @@ h1, h2, h3, h4 {
 	@include font-mincho;
   margin: 0;
   padding-top: 0.36em; // shift baseline down
+	padding-left: 0.25rem; // leave space when display is narrow
+	padding-right: 0.25rem;
 }
 h1 {
 	font-size: 4.8rem;
@@ -61,7 +38,7 @@ h2 {
 }
 h3 {
 	font-size: 2rem;
-  line-height: 1;
+  line-height: 1.25;
 }
 h4 {
 	font-size: 1.125rem;
@@ -72,7 +49,7 @@ h3 + h4 {
 }
 h5 {
   font-size: 1rem;
-  line-height: $leading-normal;
+  line-height: $leading-tight;
   @include font-body;
   margin: 0;
 }
@@ -80,7 +57,7 @@ span.italic {
 	font-style: italic;
 }
 span.underline {
-	display: inline-block;
+	display: inline;
   line-height: 1.25em;
 	border-bottom: 3px solid black;
 }
@@ -88,7 +65,7 @@ span.emphasize {
   @include font-mincho;
 }
 span.fixed-width-center {
-  display: inline-block;
+  display: inline;
   width: 5em;
   text-align: center;
   letter-spacing: 0.25;
@@ -124,8 +101,12 @@ span.fixed-width-center {
   &.tiny {
     font-size: 3rem;
   }
-  > .tw {
-    font-size: 0.9em;
+  > .word {
+    font-size: 0.92em;
+
+    &.tw {
+      font-size: 0.88em;
+    }
   }
 
   @each $unit in (篇 筆 則 場) {
@@ -234,7 +215,9 @@ badge, .line, .support-button {
 .custom-line-break.X > .hide {
   display: none;
   @include screen-gt-X {
-    display: inline;
+		&:not(.always) {
+      display: inline;
+    }
   }
 }
 
@@ -296,7 +279,7 @@ ul {
   color: $woc;
   font-size: 1.125rem;
   @include font-mincho;
-  line-height: 1;
+  line-height: $leading-really-tight;
 }
 
 @mixin info {

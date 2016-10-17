@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "taiwan-comma";
+  src: local("PingFang TC");
+  unicode-range: U+FF0C, U+3002, U+FF1A, U+FF1B; }
+[screen="gt-M"] {
+  display: none !important; }
+
+@media (min-width: 480px) {
+  [screen="gt-M"] {
+    display: inherit !important; }
+
+  [screen="S"] {
+    display: none !important; } }
+[screen="gt-L"] {
+  display: none !important; }
+
+@media (min-width: 750px) {
+  [screen="gt-L"] {
+    display: inherit !important; }
+
+  [screen="S-L"] {
+    display: none !important; } }
+h1 {
+  font-family: "circular-pro", "source-han-sans-tc", sans-serif;
+  font-weight: 900;
+  font-size: 3.4rem; }
+  @media (min-width: 480px) {
+    h1 {
+      font-size: 5.4rem; } }
+
+h2 {
+  font-size: 2.8rem; }
+
+.larger {
+  line-height: 1.5; }
+
+.option-title {
+  line-height: 1.2; }
+
+.note {
+  margin-top: 0.25rem; }
+
+span.emphasize {
+  font-family: "circular-pro", "source-han-sans-tc", sans-serif;
+  font-weight: 900; }
+
+.url,
+.url.disabled {
+  font-family: "akkurat-mono", monospace; }
+
+.stat .line {
+  line-height: 1.375; }
+
+.prompt {
+  width: 7.5em;
+  padding: 4px 0; }
+
+a.button {
+  font-family: "circular-pro", "source-han-sans-tc", sans-serif;
+  font-weight: 900;
+  width: 6.2em; }
+
+a.support-button {
+  font-size: 1.75rem;
+  line-height: 1.2em;
+  width: 5.4em;
+  height: 2.4em;
+  padding: 1.5em 0; }
+
+/*# sourceMappingURL=master.latin.css.map */

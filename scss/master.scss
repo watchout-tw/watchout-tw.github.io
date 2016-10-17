@@ -29,7 +29,7 @@ nav > #home {
 body > section {
 	position: relative;
 	> hgroup:first-child {
-		padding: 1rem 0;
+		padding: 1rem;
 		background: rgba($woc, 0.25);
 	}
 	&#first-section {
@@ -45,7 +45,7 @@ body > section {
 		margin-bottom: 1rem;
 		> .number-wrapper {
 			display: block;
-			margin: 0.5rem 0;
+			margin: 0.125rem 0;
 		}
 		> .project-icon + .number-wrapper {
 			margin-top: 0;
@@ -78,10 +78,11 @@ body > section {
 .pop {
 	background: $woc;
 	margin: 3rem 0 2rem;
-	padding: 0.25rem 0;
+	padding: 0.5rem 0.25rem;
 
 	> p {
 		margin: 0;
+		line-height: $leading-tight;
 	}
 }
 .plan-intro {
@@ -535,15 +536,18 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 
 #stickers {
 	> .sticker {
+		$width: 100px;
 		display: inline-block;
+		vertical-align: top;
 		margin: 0.5rem 1rem;
+		width: $width;
 
 		> .sticker-example, > .sticker-name {
 			display: block;
 			cursor: pointer;
 		}
 		> .sticker-example {
-			width: 100px;
+			width: $width;
 		}
 		> .sticker-name {
 			padding-top: 0.36em;
@@ -619,7 +623,10 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 		box-shadow: $shadow-light;
 
 		> pgroup {
-			margin: 0 auto;
+			margin: 0.5rem auto;
+			> p {
+				line-height: $leading-tight
+			}
 		}
 	}
 }

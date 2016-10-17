@@ -1,3 +1,29 @@
+// responsive
+$M: 480px;
+$L: 750px;
+$X: 960px;
+@mixin screen-S {
+	@media (max-width: ($M - 1px)) { @content; }
+}
+@mixin screen-gt-M { // M and up
+	@media (min-width: $M) { @content; }
+}
+@mixin screen-M-L { // M to L
+  @media (min-width: $M) and (max-width: ($L - 1px)) { @content; }
+}
+@mixin screen-gt-L { // L and up
+  @media (min-width: $L) { @content; }
+}
+@mixin screen-M-X { // M to X
+	@media (min-width: $M) and (max-width: ($X - 1px)) { @content; }
+}
+@mixin screen-L-X {
+	@media (min-width: $L) and (max-width: ($X - 1px)) { @content; }
+}
+@mixin screen-gt-X { // X and up
+	@media (min-width: $X) { @content; }
+}
+
 // colors
 $woc: #50E3C2;
 $gold: #F8E71C;
@@ -17,11 +43,37 @@ $rem: 16px;
 $font-body: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;
 $leading-normal: 1.75;
 $leading-tight: 1.375;
+$leading-really-tight: 1.125;
 
 $font-mincho: "century-std", "taiwan-comma", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
 $font-monospace: "akkurat-mono", monospace;
 $font-strong: "circular-pro", "xin-gothic-tc", "PingFang TC", sans-serif;
 $font-grotesque: "circular-pro", "source-han-sans-tc", sans-serif;
+
+@mixin font-body {
+  font-family: $font-body;
+  font-weight: 400;
+}
+@mixin font-body-bold {
+  font-family: $font-body;
+  font-weight: 700;
+}
+@mixin font-mincho {
+  font-family: $font-mincho;
+  font-weight: 900;
+}
+@mixin font-strong {
+  font-family: $font-strong;
+  font-weight: 700;
+}
+@mixin font-grotesque {
+  font-family: $font-grotesque;
+  font-weight: 900;
+}
+@mixin font-monospace {
+  font-family: $font-monospace;
+  font-weight: 400 !important; // no bold
+}
 
 // layout & unified style elements
 $max-width: 960px;

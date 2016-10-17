@@ -1,0 +1,56 @@
+@import 'variables';
+@import 'responsive';
+
+// typography
+h1 {
+  @include font-grotesque;
+  font-size: 3.4rem;
+  @include screen-gt-M {
+    font-size: 5.4rem;
+  }
+}
+h2 {
+  font-size: 2.8rem;
+}
+.larger {
+  line-height: 1.5;
+}
+.option-title {
+  line-height: 1.2;
+}
+.note {
+  margin-top: 0.25rem;
+}
+.of-the {
+}
+span.emphasize {
+  @include font-grotesque;
+}
+.url,
+.url.disabled {
+  font-family: $font-monospace;
+}
+
+// master
+.stat {
+  .line {
+    line-height: $leading-tight;
+  }
+}
+.prompt {
+  width: 7.5em;
+  padding: 4px 0;
+}
+a.button {
+  @include font-grotesque;
+  width: 6.2em;
+}
+a.support-button {
+  $l: 1.2em;
+  $d: 5.4em;
+  font-size: 1.75rem;
+  line-height: $l;
+  width: $d;
+  height: $l*2;
+  padding: ($d - $l*2)/2 0;
+}

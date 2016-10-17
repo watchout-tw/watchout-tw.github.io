@@ -69,7 +69,8 @@
   #timeline > .years > .year > .events > .event {
     display: inline-block;
     vertical-align: bottom;
-    text-align: center; }
+    text-align: center;
+    margin: 0 0.25rem; }
     #timeline > .years > .year > .events > .event > .event-icon-wrapper, #timeline > .years > .year > .events > .event > .tagline {
       display: block; }
     #timeline > .years > .year > .events > .event > .tagline:after {
