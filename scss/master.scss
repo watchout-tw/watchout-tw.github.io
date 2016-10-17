@@ -228,23 +228,6 @@ section#sm {
 	@include transform(rotate(3deg));
 }
 
-@mixin icon($width, $height, $background, $step, $keys, $custom-width:(), $full-width: 100%) {
-	display: block;
-	width: $width;
-	height: $height;
-	background: url('../images/wo-cf-' + $background + '.svg');
-	background-size: $full-width;
-	margin: 0 auto;
-
-	@for $i from 0 through length($keys)-1 {
-	  &[key="#{nth($keys, $i+1)}"] {
-			@if length($custom-width) > 0 {
-				width: #{nth($custom-width, $i+1)};
-			}
-	    background-position: center #{-$i*$step}; // shift window along Y
-	  }
-	}
-}
 $event-icon-height: 160px;
 $event-icon-keys: (誕生 國會無雙 無雙第一 無雙改版 市長給問 公民學院 無雙一千 立委出任務 總統給問 總統辯論 開放國會松);
 $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);

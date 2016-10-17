@@ -125,3 +125,21 @@ $border-gold: $border-width solid $gold;
 	left: 50%;
 	@include transform(translate(-50%, -50%));
 }
+
+@mixin icon($width, $height, $background, $step, $keys, $custom-width:(), $full-width: 100%) {
+	display: block;
+	width: $width;
+	height: $height;
+	background: url('../images/wo-cf-' + $background + '.svg');
+	background-size: $full-width;
+	margin: 0 auto;
+
+	@for $i from 0 through length($keys)-1 {
+	  &[key="#{nth($keys, $i+1)}"] {
+			@if length($custom-width) > 0 {
+				width: #{nth($custom-width, $i+1)};
+			}
+	    background-position: center #{-$i*$step}; // shift window along Y
+	  }
+	}
+}

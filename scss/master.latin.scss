@@ -54,3 +54,7 @@ a.support-button {
   height: $l*2;
   padding: ($d - $l*2)/2 0;
 }
+
+.payment-icon {
+	@include icon(128px, 54px, 'monthly-payments-usa', 64px, (30 50 100 custom));
+}

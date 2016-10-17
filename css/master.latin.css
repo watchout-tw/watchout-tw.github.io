@@ -67,4 +67,20 @@ a.support-button {
   height: 2.4em;
   padding: 1.5em 0; }
 
+.payment-icon {
+  display: block;
+  width: 128px;
+  height: 54px;
+  background: url("../images/wo-cf-monthly-payments-usa.svg");
+  background-size: 100%;
+  margin: 0 auto; }
+  .payment-icon[key="30"] {
+    background-position: center 0px; }
+  .payment-icon[key="50"] {
+    background-position: center -64px; }
+  .payment-icon[key="100"] {
+    background-position: center -128px; }
+  .payment-icon[key="custom"] {
+    background-position: center -192px; }
+
 /*# sourceMappingURL=master.latin.css.map */
