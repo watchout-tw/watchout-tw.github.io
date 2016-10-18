@@ -2,6 +2,7 @@
 $M: 480px;
 $L: 750px;
 $X: 960px;
+$A: 1440px;
 @mixin screen-S {
 	@media (max-width: ($M - 1px)) { @content; }
 }
@@ -22,6 +23,9 @@ $X: 960px;
 }
 @mixin screen-gt-X { // X and up
 	@media (min-width: $X) { @content; }
+}
+@mixin screen-gt-A { // A and up
+	@media (min-width: $A) { @content; }
 }
 
 // colors

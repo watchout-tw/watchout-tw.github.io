@@ -146,7 +146,6 @@
     body > section#first-section > h1 {
       margin: 0 0 -1rem; }
       body > section#first-section > h1 > span {
-        display: inline-block;
         vertical-align: -25%; } }
 
 /*# sourceMappingURL=layout-gt-L.css.map */

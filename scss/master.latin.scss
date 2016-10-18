@@ -32,6 +32,11 @@ span.emphasize {
 }
 
 // master
+body > section {
+  &#first-section > h1 > .dot {
+    margin-bottom: -1rem;
+  }
+}
 .stat {
   .line {
     line-height: $leading-tight;

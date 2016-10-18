@@ -177,47 +177,51 @@ badge, .line, .support-button {
 }
 
 // custom line break
-.custom-line-break.M > .line {
-  display: block;
-  @include screen-gt-M {
-    &:not(.always) {
-      display: inline;
-    }
-    &.trail {
-      margin-right: 0.125em;
-    }
-  }
+.custom-line-break > .line {
+	display: block;
 }
-.custom-line-break.M > .hide {
-  display: none;
-  @include screen-gt-M {
-    display: inline;
-  }
+.custom-line-break > .hide {
+	display: none;
 }
-.custom-line-break.M > .line + .hide {
-  margin-left: -0.125em;
+@include screen-gt-M {
+	.custom-line-break.M {
+		> .line:not(.always) {
+	    display: inline;
+		}
+		> .line.trail {
+	    margin-right: 0.125em;
+		}
+		> .hide:not(.always) {
+	    display: inline;
+		}
+		> .line + .hide {
+		  margin-left: -0.125em;
+		}
+	}
 }
 @include screen-gt-L {
-  .custom-line-break.R > .line {
-    display: block;
+  .custom-line-break.L > .line:not(.always) {
+    display: inline;
   }
-  .custom-line-break.R > .hide {
-    display: none;
-  }
-}
-.custom-line-break.X > .line {
-  display: block;
-  @include screen-gt-X {
+  .custom-line-break.L > .hide:not(.always) {
     display: inline;
   }
 }
-.custom-line-break.X > .hide {
-  display: none;
-  @include screen-gt-X {
-		&:not(.always) {
-      display: inline;
-    }
-  }
+@include screen-gt-X {
+	.custom-line-break.X > .line:not(.always) {
+	  display: inline;
+	}
+	.custom-line-break.X > .hide:not(.always) {
+	  display: inline;
+	}
+}
+@include screen-gt-A {
+	.custom-line-break.A > .line:not(.always) {
+	  display: inline;
+	}
+	.custom-line-break.A > .hide:not(.always) {
+	  display: inline;
+	}
 }
 
 ul {
@@ -310,4 +314,10 @@ ul {
   > .content {
     @include font-strong;
   }
+}
+
+a.appendix {
+	display: inline-block;
+	font-size: 0.75em;
+	@include font-strong;
 }

@@ -48,6 +48,9 @@ span.emphasize {
 .url.disabled {
   font-family: "akkurat-mono", monospace; }
 
+body > section#first-section > h1 > .dot {
+  margin-bottom: -1rem; }
+
 .stat .line {
   line-height: 1.375; }
 
