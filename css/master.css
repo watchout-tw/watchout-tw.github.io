@@ -43,7 +43,7 @@ a {
 
 h1, h2, h3, h4 {
   list-style: none;
-  font-family: "century-std", "taiwan-comma", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
+  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
   font-weight: 900;
   margin: 0;
   padding-top: 0.36em;
@@ -100,7 +100,7 @@ span.underline {
   border-bottom: 3px solid black; }
 
 span.emphasize {
-  font-family: "century-std", "taiwan-comma", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
+  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
   font-weight: 900; }
 
 span.fixed-width-center {
@@ -222,7 +222,7 @@ html[lang="en"] .support-button {
 
 #call {
   color: rgba(80, 227, 194, 0.75);
-  font-family: "century-std", "taiwan-comma", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
+  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
   font-weight: 900;
   font-size: 1.375rem;
   line-height: 1; }
@@ -284,7 +284,7 @@ ul {
   margin: 0; }
 
 .datetime {
-  font-family: "century-std", "taiwan-comma", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
+  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
   font-weight: 900; }
 
 .tight {
@@ -296,7 +296,7 @@ ul {
   line-height: 1.375; }
 
 .datetime.year {
-  font-family: "century-std", "taiwan-comma", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
+  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
   font-weight: 900;
   font-size: 1.5rem;
   line-height: 1;
@@ -331,7 +331,7 @@ html[lang="en"] .larger {
 .sticker-name {
   color: #50E3C2;
   font-size: 1.125rem;
-  font-family: "century-std", "taiwan-comma", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
+  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
   font-weight: 900;
   line-height: 1.125; }
 

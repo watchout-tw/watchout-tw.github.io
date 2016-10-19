@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "kozuka-mincho-extension";
+  font-weight: 900;
+  font-style: normal;
+  src: url('KozukaMinchoExtension-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('KozukaMinchoExtension-Heavy.woff') format('woff');
+}
