@@ -52,7 +52,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 4.8rem;
-  line-height: 1; }
+  line-height: 1.125; }
   @media (min-width: 480px) {
     h1 {
       font-size: 6rem; } }
@@ -60,6 +60,19 @@ h1 {
 h2 {
   font-size: 3rem;
   line-height: 1.16666667; }
+
+html[lang="en"] h1 {
+  font-family: "circular-pro", "source-han-sans-tc", sans-serif;
+  font-weight: 900;
+  font-size: 3.4rem; }
+  @media (min-width: 480px) {
+    html[lang="en"] h1 {
+      font-size: 5.4rem; } }
+html[lang="en"] h2 {
+  font-size: 2.8rem; }
+
+h2.datetime {
+  font-size: 1.5rem; }
 
 h3 {
   font-size: 2rem;
@@ -153,6 +166,23 @@ span.fixed-width-center {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
 
+html[lang="en"] span.emphasize {
+  font-family: "circular-pro", "source-han-sans-tc", sans-serif;
+  font-weight: 900; }
+html[lang="en"] .url,
+html[lang="en"] .url.disabled {
+  font-family: "akkurat-mono", monospace; }
+
+span.year, span.month {
+  display: inline-block;
+  text-align: center; }
+
+span.year {
+  width: 3em; }
+
+span.month {
+  width: 1em; }
+
 pgroup {
   display: block;
   width: 18rem;
@@ -180,8 +210,15 @@ pgroup {
   font-size: 2.25rem;
   line-height: 1em; }
 
-badge, .line, .support-button {
+badge, .support-button {
   line-height: 1.22222222em; }
+
+html[lang="en"] .button {
+  font-family: "circular-pro", "source-han-sans-tc", sans-serif;
+  font-weight: 900; }
+html[lang="en"] .support-button {
+  font-size: 1.75rem;
+  line-height: 1.2em; }
 
 #call {
   color: rgba(80, 227, 194, 0.75);
@@ -274,6 +311,13 @@ ul {
 #copyright > .line {
   line-height: 1.375; }
 
+html[lang="en"] .option-title {
+  line-height: 1.2; }
+html[lang="en"] .note {
+  margin-top: 0.25rem; }
+html[lang="en"] .larger {
+  line-height: 1.5; }
+
 .four {
   background: black;
   color: white;
@@ -333,6 +377,8 @@ body > section {
     background: rgba(80, 227, 194, 0.25); }
   body > section#first-section {
     margin: 1rem 0; }
+    body > section#first-section > hgroup {
+      background: none; }
     body > section#first-section > h1 > .dot {
       font-size: 2rem;
       margin: 0 1rem; }
@@ -352,6 +398,13 @@ body > section {
     margin-bottom: -65px; }
   body > section#we-are-you {
     margin-bottom: 1rem; }
+
+html[lang="en"] {
+  /*body > section#fertile-land > #stats > .stat {
+    line-height: $leading-tight;
+  }*/ }
+  html[lang="en"] body > section#first-section > h1 > .dot {
+    margin-bottom: -1rem; }
 
 .full-screen-image {
   width: 100%;
@@ -381,6 +434,10 @@ body > section {
   border-bottom: 4px solid #9B9B9B;
   margin: 0.25rem auto; }
 
+html[lang="en"] .prompt {
+  width: 7.5em;
+  padding: 4px 0; }
+
 #one-time-purchases-intro,
 #one-time-purchases,
 #group-purchases {
@@ -388,21 +445,33 @@ body > section {
 
 a.button {
   box-sizing: content-box;
-  color: #F5A623;
-  background: rgba(248, 231, 28, 0.75);
   display: block;
-  width: 4em;
   padding: 10px 12px;
   margin: 0 auto;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-  cursor: pointer; }
-  a.button:active {
-    color: #F54B23; }
-  a.button.wide {
-    width: 5em; }
+  cursor: pointer;
+  width: 4em; }
   a.button:hover {
-    background: rgba(248, 231, 28, 0.85);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35); }
+  a.button.long {
+    width: 5em; }
+  a.button.longer {
+    width: 6.2em; }
+
+a.button.monetary {
+  background: rgba(248, 231, 28, 0.75);
+  color: #F5A623; }
+  a.button.monetary:hover {
+    background: rgba(248, 231, 28, 0.85); }
+  a.button.monetary:active {
+    color: #F54B23; }
+
+a.button.link {
+  background: rgba(0, 0, 0, 0.1); }
+  a.button.link:hover {
+    background: rgba(0, 0, 0, 0.2); }
+  a.button.link:active {
+    color: red; }
 
 .divider {
   position: relative;
@@ -477,6 +546,11 @@ a.support-button {
   left: auto;
   -webkit-transform: scale(0.8);
   transform: scale(0.8); }
+
+html[lang="en"] .support-button {
+  width: 5.4em;
+  height: 2.4em;
+  padding: 1.5em 0; }
 
 section#sm {
   padding: 4rem 0;
@@ -666,6 +740,22 @@ section#sm {
       background-position: center -256px; }
     .bill-icon[key="more"] {
       background-position: center -384px; } }
+
+html[lang="en"] .payment-icon {
+  display: block;
+  width: 128px;
+  height: 54px;
+  background: url("../images/wo-cf-monthly-payments-usa.svg");
+  background-size: 100%;
+  margin: 0 auto; }
+  html[lang="en"] .payment-icon[key="30"] {
+    background-position: center 0px; }
+  html[lang="en"] .payment-icon[key="50"] {
+    background-position: center -64px; }
+  html[lang="en"] .payment-icon[key="100"] {
+    background-position: center -128px; }
+  html[lang="en"] .payment-icon[key="custom"] {
+    background-position: center -192px; }
 
 #timeline {
   position: relative;

@@ -28,6 +28,11 @@ $A: 1440px;
 	@media (min-width: $A) { @content; }
 }
 
+// internationalization
+@mixin lang-en {
+	html[lang="en"] { @content; }
+}
+
 // colors
 $woc: #50E3C2;
 $gold: #F8E71C;

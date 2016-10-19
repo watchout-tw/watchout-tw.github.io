@@ -27,7 +27,7 @@ h1, h2, h3, h4 {
 }
 h1 {
 	font-size: 4.8rem;
-  line-height: 1;
+  line-height: $leading-really-tight;
   @include screen-gt-M {
     font-size: 6rem;
   }
@@ -35,6 +35,21 @@ h1 {
 h2 {
 	font-size: 3rem;
   line-height: 1.16666667;
+}
+@include lang-en {
+	h1 {
+		@include font-grotesque;
+		font-size: 3.4rem;
+		@include screen-gt-M {
+			font-size: 5.4rem;
+		}
+	}
+	h2 {
+		font-size: 2.8rem;
+	}
+}
+h2.datetime {
+	font-size: 1.5rem;
 }
 h3 {
 	font-size: 2rem;
@@ -125,6 +140,26 @@ span.fixed-width-center {
     @include transform(translateY(-50%));
   }
 }
+@include lang-en {
+	span.emphasize {
+	  @include font-grotesque;
+	}
+	.url,
+	.url.disabled {
+	  font-family: $font-monospace;
+	}
+}
+
+span.year, span.month {
+	display: inline-block;
+	text-align: center;
+}
+span.year {
+	width: 3em;
+}
+span.month {
+	width: 1em;
+}
 
 pgroup {
   display: block;
@@ -156,8 +191,17 @@ pgroup {
   font-size: 2.25rem; // 36px
   line-height: 1em;
 }
-badge, .line, .support-button {
+badge, .support-button { // no .line
   line-height: 1.22222222em;
+}
+@include lang-en {
+	.button {
+	  @include font-grotesque;
+	}
+	.support-button {
+		font-size: 1.75rem;
+		line-height: 1.2em;
+	}
 }
 
 #call {
@@ -263,9 +307,19 @@ ul {
   font-size: 1.5rem;
   margin: 1.75rem 0;
 }
-
 #copyright > .line {
   line-height: $leading-tight;
+}
+@include lang-en {
+	.option-title {
+	  line-height: 1.2;
+	}
+	.note {
+	  margin-top: 0.25rem;
+	}
+	.larger {
+		line-height: 1.5;
+	}
 }
 
 .four {

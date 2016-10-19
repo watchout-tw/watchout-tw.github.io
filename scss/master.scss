@@ -34,7 +34,9 @@ body > section {
 	}
 	&#first-section {
 		margin: 1rem 0;
-
+		> hgroup {
+			background: none;
+		}
 		> h1 > .dot {
 			font-size: 2rem;
 			margin: 0 1rem;
@@ -63,6 +65,14 @@ body > section {
 	&#we-are-you {
 		margin-bottom: 1rem;
 	}
+}
+@include lang-en {
+	body > section#first-section > h1 > .dot {
+	  margin-bottom: -1rem;
+	}
+	/*body > section#fertile-land > #stats > .stat {
+	  line-height: $leading-tight;
+	}*/
 }
 
 .full-screen-image {
@@ -97,6 +107,12 @@ body > section {
 	border-bottom: $border-width solid $grey;
 	margin: 0.25rem auto;
 }
+@include lang-en {
+	.prompt {
+	  width: 7.5em;
+	  padding: 4px 0;
+	}
+}
 #one-time-purchases-intro,
 #one-time-purchases,
 #group-purchases {
@@ -104,26 +120,42 @@ body > section {
 }
 a.button {
 	box-sizing: content-box;
-	color: $orange;
-	&:active {
-		color: $red;
-	}
-	background: $gold-light;
 	display: block;
-	width: 4em;
 	padding: 10px 12px;
 	margin: 0 auto;
 	box-shadow: $shadow-light;
 	cursor: pointer;
 
-	&.wide {
-		width: 5em;
-	}
-
 	&:hover {
-		background: $gold-dark;
 		box-shadow: $shadow-dark;
 	}
+
+	width: 4em;
+	&.long {
+		width: 5em;
+	}
+	&.longer {
+		width: 6.2em;
+	}
+}
+a.button.monetary {
+	background: $gold-light;
+	color: $orange;
+	&:hover {
+		background: $gold-dark;
+	}
+	&:active {
+		color: $red;
+	}
+}
+a.button.link {
+  background: rgba(0, 0, 0, 0.1);
+  &:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  &:active {
+    color: red;
+  }
 }
 
 @mixin divider($border, $background) {
@@ -207,6 +239,13 @@ a.support-button {
 		@include transform(scale(0.8));
 	}
 }
+@include lang-en {
+	.support-button {
+	  width: 5.4em;
+	  height: 2.4em;
+	  padding: 1.5em 0;
+	}
+}
 
 section#sm {
 	padding: 4rem 0;
@@ -270,6 +309,11 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 	}
 	@include screen-L-X {
 		@include icon(132px, $bill-height, 'bills-mobile', $bill-height, $bill-keys);
+	}
+}
+@include lang-en {
+	.payment-icon {
+		@include icon(128px, 54px, 'monthly-payments-usa', 64px, (30 50 100 custom));
 	}
 }
 
