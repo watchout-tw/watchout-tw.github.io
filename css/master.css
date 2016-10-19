@@ -341,7 +341,7 @@ html[lang="en"] .larger {
   font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", sans-serif;
   font-weight: 700; }
 
-a.appendix {
+a.to-appendix {
   display: inline-block;
   font-size: 0.75em;
   font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", sans-serif;
@@ -399,12 +399,8 @@ body > section {
   body > section#we-are-you {
     margin-bottom: 1rem; }
 
-html[lang="en"] {
-  /*body > section#fertile-land > #stats > .stat {
-    line-height: $leading-tight;
-  }*/ }
-  html[lang="en"] body > section#first-section > h1 > .dot {
-    margin-bottom: -1rem; }
+html[lang="en"] body > section#first-section > h1 > .dot {
+  margin-bottom: -1rem; }
 
 .full-screen-image {
   width: 100%;
