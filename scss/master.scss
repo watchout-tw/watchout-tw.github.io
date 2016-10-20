@@ -310,7 +310,7 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 }
 @include lang-en {
 	.payment-icon {
-		@include icon(128px, 54px, 'monthly-payments-usa', 64px, (30 50 100 custom));
+		@include icon(128px, 54px, 'monthly-payments-usa', 64px, (30 50 100 300));
 	}
 }
 
