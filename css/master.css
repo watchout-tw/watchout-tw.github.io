@@ -41,12 +41,14 @@ a {
   a:active {
     color: #F54B23; }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   list-style: none;
   font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
   font-weight: 900;
   margin: 0;
-  padding-top: 0.36em;
+  padding-top: 0.36em; }
+
+h1, h2, h3 {
   padding-left: 0.25rem;
   padding-right: 0.25rem; }
 
@@ -79,18 +81,20 @@ h3 {
   line-height: 1.25; }
 
 h4 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.33333333; }
 
 h3 + h4 {
   margin-top: 0.25rem; }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 1.375;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;
-  font-weight: 400;
   margin: 0; }
+
+h6 {
+  font-size: 2rem;
+  line-height: 1.375; }
 
 span.italic {
   font-style: italic; }

@@ -1,0 +1,30 @@
+$border: 1px solid rgba(0, 0, 0, 0.1);
+
+.appendix {
+  margin: 1rem 0;
+  padding-top: 98px;
+}
+
+.attachment {
+  display: block;
+  margin: 0 auto 1rem;
+  border: $border;
+  width: 100%;
+  max-width: 640px;
+}
+
+.work-items {
+  text-align: left;
+  margin-bottom: 2rem;
+  > li {
+    padding: 0.5rem;
+    border-top: $border;
+    > ul {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+footer {
+  height: 10rem;
+}

@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "taiwan-comma";
+  src: local("PingFang TC");
+  unicode-range: U+FF0C, U+3002, U+FF1A, U+FF1B; }
+[screen="gt-M"] {
+  display: none !important; }
+
+@media (min-width: 480px) {
+  [screen="gt-M"] {
+    display: inherit !important; }
+
+  [screen="S"] {
+    display: none !important; } }
+[screen="gt-L"] {
+  display: none !important; }
+
+@media (min-width: 750px) {
+  [screen="gt-L"] {
+    display: inherit !important; }
+
+  [screen="S-L"] {
+    display: none !important; } }
+.work-items {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+  .work-items:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .work-items > li {
+    width: 31.25%;
+    float: left;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%; }
+
+/*# sourceMappingURL=layout-gt-L.css.map */

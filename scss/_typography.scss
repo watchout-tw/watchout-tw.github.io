@@ -17,11 +17,13 @@ a {
     color: $red;
   }
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
 	list-style: none;
 	@include font-mincho;
   margin: 0;
   padding-top: 0.36em; // shift baseline down
+}
+h1, h2, h3 {
 	padding-left: 0.25rem; // leave space when display is narrow
 	padding-right: 0.25rem;
 }
@@ -56,17 +58,20 @@ h3 {
   line-height: 1.25;
 }
 h4 {
-	font-size: 1.125rem;
+	font-size: 1.25rem;
   line-height: 1.33333333;
 }
 h3 + h4 {
   margin-top: 0.25rem;
 }
 h5 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: $leading-tight;
-  @include font-body;
   margin: 0;
+}
+h6 {
+	font-size: 2rem;
+	line-height: $leading-tight;
 }
 span.italic {
 	font-style: italic;
