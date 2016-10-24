@@ -30,7 +30,7 @@ body > section {
 	position: relative;
 	> hgroup:first-child {
 		padding: 1rem 0;
-		background: rgba($woc, 0.25);
+		background: $woc-light;
 	}
 	&#first-section {
 		margin: 1rem 0;
@@ -246,7 +246,7 @@ a.support-button {
 
 section#sm {
 	padding: 4rem 0;
-	background: rgba($woc, 0.25);
+	background: $woc-light;
 }
 #stickers {
 	margin-top: 2rem;
@@ -591,12 +591,11 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 	height: 0;
 	padding: 15% 0 $kusa-height;
 	margin: 0;
-	//@include background-gradient(top, rgba($woc, 0), rgba($woc, 0.25));
 	background-image: url('../images/genkidama-kusa.gif'), url('../images/genkidama.png');
 	background-size: 50px, 100%;
 	background-position: center bottom, center top;
 	background-repeat: no-repeat;
-	background-color: rgba($woc, 0.25);
+	background-color: $woc-light;
 
 	> .wrapper {
 		position: absolute;
@@ -688,5 +687,18 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 				}
 			}
 		}
+	}
+}
+
+.stamp {
+	width: $nav-height;
+	height: $nav-height;
+	margin: 0 auto;
+
+	&.logo.white {
+		background: url('../images/logo-wo-white.svg');
+	}
+	&.logo.green {
+		background: url('../images/logo-wo-green.svg');
 	}
 }

@@ -1,3 +1,5 @@
+@import 'variables';
+
 $border: 1px solid rgba(0, 0, 0, 0.1);
 
 .appendix {
@@ -26,5 +28,6 @@ $border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 footer {
-  height: 10rem;
+	position: relative;
+	margin: 10rem 0;
 }

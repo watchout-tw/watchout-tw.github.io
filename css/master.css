@@ -1,8 +1,11 @@
 @charset "UTF-8";
+/*
 @font-face {
   font-family: "taiwan-comma";
   src: local("PingFang TC");
-  unicode-range: U+FF0C, U+3002, U+FF1A, U+FF1B; }
+  unicode-range: U+FF0C, U+3002, U+FF1A, U+FF1B;
+}
+*/
 [screen="gt-M"] {
   display: none !important; }
 
@@ -21,10 +24,6 @@
 
   [screen="S-L"] {
     display: none !important; } }
-@font-face {
-  font-family: "taiwan-comma";
-  src: local("PingFang TC");
-  unicode-range: U+FF0C, U+3002, U+FF1A, U+FF1B; }
 html, body {
   font-size: 16px;
   font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;
@@ -1158,5 +1157,14 @@ html[lang="en"] .payment-icon {
           cursor: pointer;
           display: inline-block;
           opacity: 0.5; }
+
+.stamp {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto; }
+  .stamp.logo.white {
+    background: url("../images/logo-wo-white.svg"); }
+  .stamp.logo.green {
+    background: url("../images/logo-wo-green.svg"); }
 
 /*# sourceMappingURL=master.css.map */

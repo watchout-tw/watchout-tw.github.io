@@ -1,3 +1,10 @@
+/*
+@font-face {
+  font-family: "taiwan-comma";
+  src: local("PingFang TC");
+  unicode-range: U+FF0C, U+3002, U+FF1A, U+FF1B;
+}
+*/
 .appendix {
   margin: 1rem 0;
   padding-top: 98px; }
@@ -19,6 +26,7 @@
       margin-bottom: 0.5rem; }
 
 footer {
-  height: 10rem; }
+  position: relative;
+  margin: 10rem 0; }
 
 /*# sourceMappingURL=apprentice.css.map */

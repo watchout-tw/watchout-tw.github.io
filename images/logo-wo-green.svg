@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>logo wo green</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M16.8260928,16 C16.8260928,16 15.5782934,18.6656332 16.8260928,21.2745884 C18.0738923,23.8838372 19.7187322,24.2808776 19.7187322,24.2808776 C19.7187322,24.2808776 16.7843918,28.7167474 15.1812529,32.5617552 C13.6776678,36.1677165 13.536413,39.7648677 15.1812529,43.0545475 C16.8260928,46.3442273 22.3121228,48.0122671 29.1184886,48.4659856 C35.9245606,48.9197042 39.4703197,48.1723166 42.5194847,45.8338306 C45.3610256,43.6548069 46.7166016,39.9351957 47.2272919,36.1917974 C47.7376886,32.448399 46.2062049,28.704707 46.2062049,28.704707 C46.2062049,28.704707 47.6777801,28.0210456 49.5038138,25.559806 C51.7553737,22.5253245 52,20.0778873 52,20.0778873 L42.5194847,24.4509119 C42.5194847,24.4509119 40.6479323,21.8419568 34.238607,20.8208698 C27.8295754,19.8000765 24.70993,21.5015945 24.70993,21.5015945 L16.8260928,16 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-3" y="-3" width="44" height="38.5920162">
+            <rect x="11" y="13" width="44" height="38.5920162" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="logo-wo-green" stroke="#50E3C2" stroke-width="6">
+            <use id="Fill-1" mask="url(#mask-2)" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
