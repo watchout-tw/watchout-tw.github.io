@@ -184,7 +184,7 @@ $border-color-edu: $border-width solid $color-edu;
       &.#{$icon} {
         width: #{$width/$span*100%};
         padding-bottom: #{$height/$span*100%};
-        background-image: url('//watchout.tw/images/products/#{$icon}.png');
+        background-image: url('//watchout.tw/images/products/singles/#{$icon}.png');
         background-size: contain;
       }
     }

@@ -946,27 +946,27 @@ html[lang="en"] .support-button {
     #monthly-payments > .option > .icons > .icon.basics {
       width: 100%;
       padding-bottom: 20%;
-      background-image: url("//watchout.tw/images/products/basics.png");
+      background-image: url("//watchout.tw/images/products/singles/basics.png");
       background-size: contain; }
     #monthly-payments > .option > .icons > .icon.stickers {
       width: 23.75%;
       padding-bottom: 20%;
-      background-image: url("//watchout.tw/images/products/stickers.png");
+      background-image: url("//watchout.tw/images/products/singles/stickers.png");
       background-size: contain; }
     #monthly-payments > .option > .icons > .icon.notebook {
       width: 23.75%;
       padding-bottom: 20%;
-      background-image: url("//watchout.tw/images/products/notebook.png");
+      background-image: url("//watchout.tw/images/products/singles/notebook.png");
       background-size: contain; }
     #monthly-payments > .option > .icons > .icon.gears {
       width: 30.3125%;
       padding-bottom: 20%;
-      background-image: url("//watchout.tw/images/products/gears.png");
+      background-image: url("//watchout.tw/images/products/singles/gears.png");
       background-size: contain; }
     #monthly-payments > .option > .icons > .icon.tickets {
       width: 22.1875%;
       padding-bottom: 20%;
-      background-image: url("//watchout.tw/images/products/tickets.png");
+      background-image: url("//watchout.tw/images/products/singles/tickets.png");
       background-size: contain; }
 
 #one-time-purchases > .option:first-child {
@@ -990,22 +990,22 @@ html[lang="en"] .support-button {
     #one-time-purchases > .option > .icons > .icon.pins {
       width: 17.1875%;
       padding-bottom: 20%;
-      background-image: url("//watchout.tw/images/products/pins.png");
+      background-image: url("//watchout.tw/images/products/singles/pins.png");
       background-size: contain; }
     #one-time-purchases > .option > .icons > .icon.folders {
       width: 46.5625%;
       padding-bottom: 20%;
-      background-image: url("//watchout.tw/images/products/folders.png");
+      background-image: url("//watchout.tw/images/products/singles/folders.png");
       background-size: contain; }
     #one-time-purchases > .option > .icons > .icon.bag {
       width: 19.375%;
       padding-bottom: 20%;
-      background-image: url("//watchout.tw/images/products/bag.png");
+      background-image: url("//watchout.tw/images/products/singles/bag.png");
       background-size: contain; }
     #one-time-purchases > .option > .icons > .icon.pillow {
       width: 16.875%;
       padding-bottom: 20%;
-      background-image: url("//watchout.tw/images/products/pillow.png");
+      background-image: url("//watchout.tw/images/products/singles/pillow.png");
       background-size: contain; }
 #one-time-purchases > .option > h5 > .multiplier {
   display: inline-block;
