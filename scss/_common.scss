@@ -1,12 +1,14 @@
 .theater {
 	width: 100%;
-	background: rgba($woc, 0.5);
 	margin: 0 auto;
 	overflow: hidden;
 	> img {
 		display: block;
 		width: 100%;
 		margin: 0 auto;
+	}
+	&.green {
+		background: rgba($woc, 0.5);
 	}
 	&.portrait > img {
     width: auto;

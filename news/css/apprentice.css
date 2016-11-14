@@ -352,13 +352,14 @@ a.to-appendix {
 
 .theater {
   width: 100%;
-  background: rgba(80, 227, 194, 0.5);
   margin: 0 auto;
   overflow: hidden; }
   .theater > img {
     display: block;
     width: 100%;
     margin: 0 auto; }
+  .theater.green {
+    background: rgba(80, 227, 194, 0.5); }
   .theater.portrait > img {
     width: auto;
     max-width: 100%;
