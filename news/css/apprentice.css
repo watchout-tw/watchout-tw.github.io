@@ -421,85 +421,32 @@ section#title {
     padding: 0; }
 
 .channel > .logo {
+  display: block;
   width: 24px;
   height: 24px;
   margin: 0 auto;
   background-size: cover; }
-.channel > .list {
-  display: table;
-  border-collapse: separate;
-  border-spacing: 0.5rem 1rem;
+.channel > table {
+  display: block;
   max-width: 36rem;
   margin: 0 auto; }
-.channel > .list > .item {
-  display: table-row;
-  text-align: left; }
-  .channel > .list > .item > div {
-    display: table-cell;
-    vertical-align: top; }
-  .channel > .list > .item > .thumbnail {
-    width: 128px;
-    height: 128px;
-    background-size: cover;
-    border-left: none; }
+  .channel > table .thumbnail > img {
+    width: 128px; }
 
-.channel#musou > .logo {
-  background-image: url("../images/logo-musou-small.png"); }
+#monthly-payments > .option > .icons,
+#one-time-purchases > .option > .icons {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto; }
 
-.channel#musou > .list > .item:nth-child(1) > .thumbnail {
-  background-image: url("../0/musou-1.jpg"); }
-.channel#musou > .list > .item:nth-child(2) > .thumbnail {
-  background-image: url("../0/musou-2.jpg"); }
-.channel#musou > .list > .item:nth-child(3) > .thumbnail {
-  background-image: url("../0/musou-3.jpg"); }
-.channel#musou > .list > .item:nth-child(4) > .thumbnail {
-  background-image: url("../0/musou-4.jpg"); }
-
-.channel#not-artist > .logo {
-  background-image: url("../images/logo-not-artist-small.png"); }
-
-.channel#edu > .logo {
-  background-image: url("../images/logo-edu-small.png"); }
-
-.channel#edu > .list > .item:nth-child(1) > .thumbnail {
-  background-image: url("../0/edu-1.jpg"); }
-.channel#edu > .list > .item:nth-child(2) > .thumbnail {
-  background-image: url("../0/edu-2.jpg"); }
+#monthly-payments > .option {
+  margin-bottom: 4rem; }
 
 #one-time-purchases > .option {
   margin-bottom: 2rem; }
-#one-time-purchases > .option > .icons {
-  width: 100%;
-  max-width: 640px;
-  margin: 0.5rem auto; }
-  #one-time-purchases > .option > .icons > .icon {
-    display: inline-block;
-    height: 0%;
-    background-size: cover; }
-    #one-time-purchases > .option > .icons > .icon.pins {
-      width: 17.1875%;
-      padding-bottom: 20%;
-      background-image: url("../images/wo-cf-pins.png");
-      background-size: contain; }
-    #one-time-purchases > .option > .icons > .icon.folders {
-      width: 46.5625%;
-      padding-bottom: 20%;
-      background-image: url("../images/wo-cf-folders.png");
-      background-size: contain; }
-    #one-time-purchases > .option > .icons > .icon.bag {
-      width: 19.375%;
-      padding-bottom: 20%;
-      background-image: url("../images/wo-cf-bag.png");
-      background-size: contain; }
-    #one-time-purchases > .option > .icons > .icon.pillow {
-      width: 16.875%;
-      padding-bottom: 20%;
-      background-image: url("../images/wo-cf-pillow.png");
-      background-size: contain; }
-  #one-time-purchases > .option > .icons > .icon.no {
-    opacity: 0.125;
-    filter: grayscale(1); }
-#one-time-purchases > .option > h5 > .multiplier {
+
+.multiplier {
   display: inline-block;
   margin: 0.125rem;
   padding: 0.25rem;
@@ -509,44 +456,5 @@ section#title {
   line-height: 1;
   background: black;
   color: white; }
-
-#monthly-payments > .option {
-  margin-bottom: 4rem; }
-#monthly-payments > .option > .icons {
-  width: 100%;
-  max-width: 640px;
-  margin: 0.5rem auto; }
-  #monthly-payments > .option > .icons > .icon {
-    display: inline-block;
-    height: 0%;
-    background-size: cover; }
-    #monthly-payments > .option > .icons > .icon.basics {
-      width: 100%;
-      padding-bottom: 20%;
-      background-image: url("../images/wo-cf-basics.png");
-      background-size: contain; }
-    #monthly-payments > .option > .icons > .icon.stickers {
-      width: 23.75%;
-      padding-bottom: 20%;
-      background-image: url("../images/wo-cf-stickers.png");
-      background-size: contain; }
-    #monthly-payments > .option > .icons > .icon.notebook {
-      width: 23.75%;
-      padding-bottom: 20%;
-      background-image: url("../images/wo-cf-notebook.png");
-      background-size: contain; }
-    #monthly-payments > .option > .icons > .icon.gears {
-      width: 30.3125%;
-      padding-bottom: 20%;
-      background-image: url("../images/wo-cf-gears.png");
-      background-size: contain; }
-    #monthly-payments > .option > .icons > .icon.tickets {
-      width: 22.1875%;
-      padding-bottom: 20%;
-      background-image: url("../images/wo-cf-tickets.png");
-      background-size: contain; }
-  #monthly-payments > .option > .icons > .icon.no {
-    opacity: 0.125;
-    filter: grayscale(1); }
 
 /*# sourceMappingURL=apprentice.css.map */
