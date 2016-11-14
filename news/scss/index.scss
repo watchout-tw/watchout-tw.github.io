@@ -6,8 +6,9 @@ $ID: 0;
 @import 'common';
 @import 'typography-index';
 
-section:not(#cover) {
-  margin-bottom: 8rem;
+section > .spacer {
+  width: 100%;
+  height: 6rem;
 }
 section#cover {
 }
