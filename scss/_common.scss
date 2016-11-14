@@ -5,6 +5,17 @@ html, body {
 	overflow-x: hidden;
 }
 
+body > section {
+	position: relative;
+	> hgroup:first-child {
+		padding: 1rem 0;
+		background: $woc-light;
+	}
+	&#first-section {
+		margin: 1rem 0;
+	}
+}
+
 .theater {
 	width: 100%;
 	margin: 0 auto;
@@ -150,9 +161,9 @@ a.support-button {
 	margin: 0 auto;
 
 	&.logo.white {
-		background: url('../images/logo-wo-white.svg');
+		background: url('//watchout.tw/images/logo-wo-white.svg');
 	}
 	&.logo.green {
-		background: url('../images/logo-wo-green.svg');
+		background: url('//watchout.tw/images/logo-wo-green.svg');
 	}
 }

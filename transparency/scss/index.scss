@@ -1,12 +1,19 @@
+// sass -I ../scss --watch scss:css
 @import 'variables';
-
+@import 'responsive';
+@import 'typography';
+@import 'common';
+@import 'nav';
+@import 'typography-index';
 $border: 1px solid rgba(0, 0, 0, 0.1);
 
 .appendix {
   margin: 1rem 0;
   padding-top: 98px;
+  > label.index {
+    display: block;
+  }
 }
-
 .attachment {
   display: block;
   margin: 0 auto 1rem;
@@ -14,7 +21,6 @@ $border: 1px solid rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 640px;
 }
-
 .work-items {
   text-align: left;
   margin-bottom: 2rem;
@@ -26,8 +32,7 @@ $border: 1px solid rgba(0, 0, 0, 0.1);
     }
   }
 }
-
 footer {
 	position: relative;
-	margin: 10rem 0;
+	margin: 10rem 0 4rem;
 }

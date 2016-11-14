@@ -349,6 +349,14 @@ a.to-appendix {
 html, body {
   overflow-x: hidden; }
 
+body > section {
+  position: relative; }
+  body > section > hgroup:first-child {
+    padding: 1rem 0;
+    background: rgba(80, 227, 194, 0.25); }
+  body > section#first-section {
+    margin: 1rem 0; }
+
 .theater {
   width: 100%;
   margin: 0 auto;
@@ -464,9 +472,9 @@ html[lang="en"] .prompt {
   height: 65px;
   margin: 0 auto; }
   .stamp.logo.white {
-    background: url("../images/logo-wo-white.svg"); }
+    background: url("//watchout.tw/images/logo-wo-white.svg"); }
   .stamp.logo.green {
-    background: url("../images/logo-wo-green.svg"); }
+    background: url("//watchout.tw/images/logo-wo-green.svg"); }
 
 nav {
   width: 100%;
@@ -482,7 +490,7 @@ nav {
 nav > #home {
   width: 200px;
   height: 65px;
-  background: url("../images/watchout-tw-first.svg");
+  background: url("//watchout.tw/images/watchout-tw-first.svg");
   margin-left: 24px; }
 
 /*
@@ -764,13 +772,11 @@ body > section {
   body > section > hgroup:first-child {
     padding: 1rem 0;
     background: rgba(80, 227, 194, 0.25); }
-  body > section#first-section {
-    margin: 1rem 0; }
-    body > section#first-section > hgroup {
-      background: none; }
-    body > section#first-section > h1 > .dot {
-      font-size: 2rem;
-      margin: 0 1rem; }
+  body > section#first-section > hgroup {
+    background: none; }
+  body > section#first-section > h1 > .dot {
+    font-size: 2rem;
+    margin: 0 1rem; }
   body > section#fertile-land > #stats > .stat {
     margin-top: 1rem;
     margin-bottom: 1rem; }
