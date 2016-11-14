@@ -869,7 +869,7 @@ html[lang="en"] .payment-icon {
       background-size: contain; }
 
 #one-time-purchases > .option:first-child {
-  margin-top: -0.25rem; }
+  margin-top: 2rem; }
 #one-time-purchases > .option:not(:last-child) {
   margin-bottom: 3rem; }
 #one-time-purchases > .option > .icons {
