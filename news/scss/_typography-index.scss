@@ -3,8 +3,16 @@ table {
     text-align: left;
   }
 }
+header {
+  > p {
+    text-align: center;
+  }
+}
 #title {
-  text-align: center;
+  > ul > li {
+    display: block;
+    text-align: center;
+  }
 }
 h5.regular {
   @include font-body;

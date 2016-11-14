@@ -6,6 +6,11 @@ $ID: 0;
 @import 'common';
 @import 'typography-index';
 
+header {
+  > p {
+    margin: 0;
+  }
+}
 section {
   .spacer {
     width: 100%;

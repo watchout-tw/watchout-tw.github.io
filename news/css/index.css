@@ -485,12 +485,19 @@ html[lang="en"] .prompt {
 table h1, table h2, table h3, table h4, table h5, table h6 {
   text-align: left; }
 
-#title {
+header > p {
+  text-align: center; }
+
+#title > ul > li {
+  display: block;
   text-align: center; }
 
 h5.regular {
   font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;
   font-weight: 400; }
+
+header > p {
+  margin: 0; }
 
 section .spacer {
   width: 100%;
