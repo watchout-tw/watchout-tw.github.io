@@ -4,6 +4,7 @@ $ID: 0;
 @import 'responsive';
 @import 'typography';
 @import 'common';
+@import 'typography-index';
 
 section:not(#cover) {
   margin-bottom: 8rem;
@@ -68,4 +69,16 @@ section#support {
   line-height: 1;
   background: black;
   color: white;
+}
+
+h5.regular {
+  > span.underlined.edu {
+    display: inline-block;
+    padding: 0 6px;
+    border-bottom: 6px solid $color-edu;
+    margin-bottom: 6px;
+  }
+}
+.pop {
+	margin: 0 0 2rem;
 }
