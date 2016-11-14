@@ -93,12 +93,6 @@ body > section {
 	  padding: 4px 0;
 	}
 }
-#one-time-purchases-intro,
-#one-time-purchases,
-#group-purchases {
-	//display: none;
-}
-
 
 @mixin divider($border, $background) {
 	position: relative;
@@ -213,7 +207,7 @@ $event-icon-height: 160px;
 $event-icon-keys: (誕生 國會無雙 無雙第一 無雙改版 市長給問 公民學院 無雙一千 立委出任務 總統給問 總統辯論 開放國會松);
 $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 .event-icon {
-	@include icon(192px, $event-icon-height, 'events', $event-icon-height, $event-icon-keys, $event-icon-width, 192px);
+	@include fixed-width-icon(192px, $event-icon-height, 'events', $event-icon-height, $event-icon-keys, $event-icon-width, 192px);
 	cursor: pointer;
 }
 .event-icon[key="誕生"], .event-icon[key="開放國會松"] {
@@ -228,34 +222,24 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 	background-image: url('../images/congressthon-small.png');
 }
 .project-icon.small {
-	@include icon(30px, 30px, 'project-logo-small', 30px, (國會無雙 給問 公民學院 立委出任務));
-}
-.payment-icon {
-	@include icon(128px, 54px, 'monthly-payments', 64px, (100 250 500 custom));
-}
-.gift-icon {
-	@include icon(128px, 118px, 'gifts', 128px, (certificate card newsletter present));
-}
-.purchase-icon {
-	@include icon(284px, 108px, 'purchases', 108px, (600 1500 3000 3600 10000));
-	cursor: pointer;
+	@include fixed-width-icon(30px, 30px, 'project-logo-small', 30px, (國會無雙 給問 公民學院 立委出任務));
 }
 .bill-icon {
 	$bill-keys: (voting callin achievement more);
 	$bill-height: 128px;
 	@include screen-S {
-		@include icon(132px, $bill-height, 'bills-mobile', $bill-height, $bill-keys);
+		@include fixed-width-icon(132px, $bill-height, 'bills-mobile', $bill-height, $bill-keys);
 	}
 	@include screen-gt-M {
-		@include icon(192px, $bill-height, 'bills-desktop', $bill-height, $bill-keys);
+		@include fixed-width-icon(192px, $bill-height, 'bills-desktop', $bill-height, $bill-keys);
 	}
 	@include screen-L-X {
-		@include icon(132px, $bill-height, 'bills-mobile', $bill-height, $bill-keys);
+		@include fixed-width-icon(132px, $bill-height, 'bills-mobile', $bill-height, $bill-keys);
 	}
 }
 @include lang-en {
 	.payment-icon {
-		@include icon(128px, 54px, 'monthly-payments-usa', 64px, (30 50 100 300));
+		@include fixed-width-icon(128px, 54px, 'monthly-payments-usa', 64px, (30 50 100 300));
 	}
 }
 
@@ -373,134 +357,65 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 	}
 }
 
-#one-time-purchases > .purchase-option,
-#group-purchases > .purchase-option {
-	position: relative;
-	> .purchase-icon-wrapper {
-		position: relative;
-	}
-	> .purchase-icon-wrapper > .purchase-icon {
-		position: relative;
-		&:before {
-			@include info;
-			display: block;
-			position: absolute;
-			top: 0.5rem;
-			left: -0.25rem;
-		}
-	}
-	&:hover > .purchase-icon-wrapper > .purchase-icon {
-		&:before {
-			@include info-highlighted;
-		}
-	}
-	> .purchase-icon-wrapper > .purchase-detail {
-		display: block;
-		visibility: hidden;
-		opacity: 0;
-		@include transition-visibility;
-		position: absolute;
-		@include centering-hor;
-		top: 0;
-		width: 300px + 2*$border-width;
-		height: 108px;
-		border: $border-green;
-		border-radius: $border-width;
-		margin: 0 auto;
-		padding: $border-width*1.5;
-		background: rgba(white, 0.75);
-
-		line-height: $leading-tight;
-		text-align: left;
-
-		> li {
-			position: absolute;
-
-			$gap: 6px;
-			&.ma {
-				bottom: $gap;
-				@include centering-hor;
-			}
-			&.ct {
-				top: 2rem;
-				@include centering-hor;
-			}
-			&.to {
-				right: 3rem;
-				@include centering-ver;
-			}
-			&.fi {
-				right: $gap;
-				bottom: $gap;
-			}
-			&.ba {
-				left: 2.75rem;
-				top: 1.5rem;
-			}
-			&.br {
-				left: $gap;
-				bottom: $gap;
-			}
-			&.ke {
-				right: $gap;
-				top: $gap;
-			}
-
-			> span {
-				display: inline-block;
-				vertical-align: baseline;
-				margin-right: 2px;
-				&.four {
-					padding: 0 4px;
-				}
-			}
-		}
-	}
-	&.focus > .purchase-icon-wrapper > .purchase-detail {
-		visibility: visible;
-		opacity: 1;
-	}
+@mixin product-icons($span, $height, $icons) {
+  width: 100%;
+  max-width: #{$span*1px};
+  margin: 0 auto 0.5rem;
+  > .icon {
+    display: inline-block;
+    height: 0%;
+    background-size: cover;
+    @each $icon, $width in $icons {
+      &.#{$icon} {
+        width: #{$width/$span*100%};
+        padding-bottom: #{$height/$span*100%};
+        background-image: url('../images/products/#{$icon}.svg');
+        background-size: contain;
+      }
+    }
+  }
+  > .icon.no {
+    opacity: 0.3;
+    filter: grayscale(1);
+  }
 }
-#group-purchases > .purchase-option {
-	@include divider($border-gold, $gold-faint);
-	padding: 1rem 0;
 
-	> .purchase-icon-wrapper > .purchase-icon {
-		height: 140px;
+#support > .plan {
+	margin: 2rem 0 4rem;
+}
+#monthly-payments {
+	> .option:first-child {
+		margin-top: 2rem;
 	}
-	> .purchase-icon-wrapper > .four,
-	> .purchase-icon-wrapper > .purchase-detail > li > .four {
-		display: block;
-		text-align: center;
-		width: 2em;
-		margin: 0 auto;
-		line-height: 1.15;
-	}
-	> .purchase-icon-wrapper > .four {
-		position: absolute;
-		@include centering-both;
-		opacity: 1;
-		@include transition-opacity
-	}
-	&.focus > .purchase-icon-wrapper > .four {
-		opacity: 0;
-	}
-	> .purchase-icon-wrapper > .purchase-detail {
-		height: 140px;
-
-		> li {
-			&.ba {
-				top: 1.75rem;
-			}
-			&.ct {
-				top: 2.25rem;
-			}
-		}
-	}
-	> hgroup {
+  > .option:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  > .option > .icons {
+    $icons: (basics 640) (stickers 152) (notebook 152) (gears 194) (tickets 142);
+    @include product-icons(640, 128, $icons);
+  }
+}
+#one-time-purchases {
+	> .option:first-child {
 		margin-top: -0.25rem;
-		margin-bottom: 0.25rem;
 	}
+  > .option:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  > .option > .icons {
+    $icons: (pins 110) (folders 298) (bag 124) (pillow 108);
+    @include product-icons(640, 128, $icons);
+  }
+  > .option > h5 > .multiplier {
+    display: inline-block;
+    margin: 0.125rem;
+    padding: 0.25rem;
+    @include font-grotesque;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: black;
+    color: white;
+  }
 }
 
 #stickers {

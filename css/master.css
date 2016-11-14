@@ -251,9 +251,7 @@ html[lang="en"] .support-button {
   .custom-line-break.M > .line.trail {
     margin-right: 0.125em; }
   .custom-line-break.M > .hide:not(.always) {
-    display: inline; }
-  .custom-line-break.M > .line + .hide {
-    margin-left: -0.125em; } }
+    display: inline; } }
 @media (min-width: 750px) {
   .custom-line-break.L > .line:not(.always) {
     display: inline; }
@@ -643,57 +641,6 @@ section#sm {
   .project-icon.small[key="立委出任務"] {
     background-position: center -90px; }
 
-.payment-icon {
-  display: block;
-  width: 128px;
-  height: 54px;
-  background: url("../images/wo-cf-monthly-payments.svg");
-  background-size: 100%;
-  margin: 0 auto; }
-  .payment-icon[key="100"] {
-    background-position: center 0px; }
-  .payment-icon[key="250"] {
-    background-position: center -64px; }
-  .payment-icon[key="500"] {
-    background-position: center -128px; }
-  .payment-icon[key="custom"] {
-    background-position: center -192px; }
-
-.gift-icon {
-  display: block;
-  width: 128px;
-  height: 118px;
-  background: url("../images/wo-cf-gifts.svg");
-  background-size: 100%;
-  margin: 0 auto; }
-  .gift-icon[key="certificate"] {
-    background-position: center 0px; }
-  .gift-icon[key="card"] {
-    background-position: center -128px; }
-  .gift-icon[key="newsletter"] {
-    background-position: center -256px; }
-  .gift-icon[key="present"] {
-    background-position: center -384px; }
-
-.purchase-icon {
-  display: block;
-  width: 284px;
-  height: 108px;
-  background: url("../images/wo-cf-purchases.svg");
-  background-size: 100%;
-  margin: 0 auto;
-  cursor: pointer; }
-  .purchase-icon[key="600"] {
-    background-position: center 0px; }
-  .purchase-icon[key="1500"] {
-    background-position: center -108px; }
-  .purchase-icon[key="3000"] {
-    background-position: center -216px; }
-  .purchase-icon[key="3600"] {
-    background-position: center -324px; }
-  .purchase-icon[key="10000"] {
-    background-position: center -432px; }
-
 @media (max-width: 479px) {
   .bill-icon {
     display: block;
@@ -872,160 +819,95 @@ html[lang="en"] .payment-icon {
     visibility: visible;
     opacity: 1; }
 
-#one-time-purchases > .purchase-option,
-#group-purchases > .purchase-option {
-  position: relative; }
-  #one-time-purchases > .purchase-option > .purchase-icon-wrapper,
-  #group-purchases > .purchase-option > .purchase-icon-wrapper {
-    position: relative; }
-  #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-icon,
-  #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-icon {
-    position: relative; }
-    #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-icon:before,
-    #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-icon:before {
-      content: 'i';
-      display: block;
-      font-family: "circular-pro", "source-han-sans-tc", sans-serif;
-      font-weight: 900;
-      color: black;
-      font-size: 1rem;
-      line-height: 1;
-      text-align: center;
-      width: 1rem;
-      height: 1rem;
-      padding: 0;
-      opacity: 0.25;
-      border: 2px solid black;
-      border-radius: 100%;
-      -webkit-transition: transform .25s, opacity .25s ease-in-out;
-      transition: transform .25s, opacity .25s ease-in-out;
-      cursor: pointer;
-      display: block;
-      position: absolute;
-      top: 0.5rem;
-      left: -0.25rem; }
-  #one-time-purchases > .purchase-option:hover > .purchase-icon-wrapper > .purchase-icon:before,
-  #group-purchases > .purchase-option:hover > .purchase-icon-wrapper > .purchase-icon:before {
-    transform: scale(1.25);
-    opacity: 1; }
-  #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail,
-  #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail {
-    display: block;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: visibility 0s, opacity .25s ease-in-out;
-    transition: visibility 0s, opacity .25s ease-in-out;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    top: 0;
-    width: 308px;
-    height: 108px;
-    border: 4px solid #50E3C2;
-    border-radius: 4px;
-    margin: 0 auto;
-    padding: 6px;
-    background: rgba(255, 255, 255, 0.75);
-    line-height: 1.375;
-    text-align: left; }
-    #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li,
-    #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li {
-      position: absolute; }
-      #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ma,
-      #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ma {
-        bottom: 6px;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%); }
-      #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ct,
-      #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ct {
-        top: 2rem;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%); }
-      #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.to,
-      #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.to {
-        right: 3rem;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%); }
-      #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.fi,
-      #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.fi {
-        right: 6px;
-        bottom: 6px; }
-      #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ba,
-      #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ba {
-        left: 2.75rem;
-        top: 1.5rem; }
-      #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.br,
-      #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.br {
-        left: 6px;
-        bottom: 6px; }
-      #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ke,
-      #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ke {
-        right: 6px;
-        top: 6px; }
-      #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li > span,
-      #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li > span {
-        display: inline-block;
-        vertical-align: baseline;
-        margin-right: 2px; }
-        #one-time-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li > span.four,
-        #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li > span.four {
-          padding: 0 4px; }
-  #one-time-purchases > .purchase-option.focus > .purchase-icon-wrapper > .purchase-detail,
-  #group-purchases > .purchase-option.focus > .purchase-icon-wrapper > .purchase-detail {
-    visibility: visible;
-    opacity: 1; }
+#support > .plan {
+  margin: 2rem 0 4rem; }
 
-#group-purchases > .purchase-option {
-  position: relative;
-  background: rgba(248, 231, 28, 0.25);
-  border-top: 4px solid #F8E71C;
-  border-bottom: 4px solid #F8E71C;
-  margin: 2rem auto;
-  max-width: 960px;
-  padding: 1rem 0; }
-  @media (min-width: 480px) {
-    #group-purchases > .purchase-option {
-      border: 4px solid #F8E71C;
-      border-radius: 4px; } }
-  @media (min-width: 480px) and (max-width: 959px) {
-    #group-purchases > .purchase-option {
-      margin: 2rem; } }
-  @media (min-width: 960px) {
-    #group-purchases > .purchase-option {
-      margin: 2rem auto; } }
-  #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-icon {
-    height: 140px; }
-  #group-purchases > .purchase-option > .purchase-icon-wrapper > .four,
-  #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li > .four {
-    display: block;
-    text-align: center;
-    width: 2em;
-    margin: 0 auto;
-    line-height: 1.15; }
-  #group-purchases > .purchase-option > .purchase-icon-wrapper > .four {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    -webkit-transition: opacity .25s ease-in-out;
-    transition: opacity .25s ease-in-out; }
-  #group-purchases > .purchase-option.focus > .purchase-icon-wrapper > .four {
-    opacity: 0; }
-  #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail {
-    height: 140px; }
-    #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ba {
-      top: 1.75rem; }
-    #group-purchases > .purchase-option > .purchase-icon-wrapper > .purchase-detail > li.ct {
-      top: 2.25rem; }
-  #group-purchases > .purchase-option > hgroup {
-    margin-top: -0.25rem;
-    margin-bottom: 0.25rem; }
+#monthly-payments > .option:first-child {
+  margin-top: 2rem; }
+#monthly-payments > .option:not(:last-child) {
+  margin-bottom: 4rem; }
+#monthly-payments > .option > .icons {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto 0.5rem; }
+  #monthly-payments > .option > .icons > .icon {
+    display: inline-block;
+    height: 0%;
+    background-size: cover; }
+    #monthly-payments > .option > .icons > .icon.basics {
+      width: 100%;
+      padding-bottom: 20%;
+      background-image: url("../images/products/basics.svg");
+      background-size: contain; }
+    #monthly-payments > .option > .icons > .icon.stickers {
+      width: 23.75%;
+      padding-bottom: 20%;
+      background-image: url("../images/products/stickers.svg");
+      background-size: contain; }
+    #monthly-payments > .option > .icons > .icon.notebook {
+      width: 23.75%;
+      padding-bottom: 20%;
+      background-image: url("../images/products/notebook.svg");
+      background-size: contain; }
+    #monthly-payments > .option > .icons > .icon.gears {
+      width: 30.3125%;
+      padding-bottom: 20%;
+      background-image: url("../images/products/gears.svg");
+      background-size: contain; }
+    #monthly-payments > .option > .icons > .icon.tickets {
+      width: 22.1875%;
+      padding-bottom: 20%;
+      background-image: url("../images/products/tickets.svg");
+      background-size: contain; }
+  #monthly-payments > .option > .icons > .icon.no {
+    opacity: 0.3;
+    filter: grayscale(1); }
+
+#one-time-purchases > .option:first-child {
+  margin-top: -0.25rem; }
+#one-time-purchases > .option:not(:last-child) {
+  margin-bottom: 3rem; }
+#one-time-purchases > .option > .icons {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto 0.5rem; }
+  #one-time-purchases > .option > .icons > .icon {
+    display: inline-block;
+    height: 0%;
+    background-size: cover; }
+    #one-time-purchases > .option > .icons > .icon.pins {
+      width: 17.1875%;
+      padding-bottom: 20%;
+      background-image: url("../images/products/pins.svg");
+      background-size: contain; }
+    #one-time-purchases > .option > .icons > .icon.folders {
+      width: 46.5625%;
+      padding-bottom: 20%;
+      background-image: url("../images/products/folders.svg");
+      background-size: contain; }
+    #one-time-purchases > .option > .icons > .icon.bag {
+      width: 19.375%;
+      padding-bottom: 20%;
+      background-image: url("../images/products/bag.svg");
+      background-size: contain; }
+    #one-time-purchases > .option > .icons > .icon.pillow {
+      width: 16.875%;
+      padding-bottom: 20%;
+      background-image: url("../images/products/pillow.svg");
+      background-size: contain; }
+  #one-time-purchases > .option > .icons > .icon.no {
+    opacity: 0.3;
+    filter: grayscale(1); }
+#one-time-purchases > .option > h5 > .multiplier {
+  display: inline-block;
+  margin: 0.125rem;
+  padding: 0.25rem;
+  font-family: "circular-pro", "source-han-sans-tc", sans-serif;
+  font-weight: 900;
+  font-size: 1.25rem;
+  line-height: 1;
+  background: black;
+  color: white; }
 
 #stickers > .sticker {
   display: inline-block;

@@ -139,7 +139,7 @@ $border-gold: $border-width solid $gold;
 	@include transform(translate(-50%, -50%));
 }
 
-@mixin icon($width, $height, $background, $step, $keys, $custom-width:(), $full-width: 100%) {
+@mixin fixed-width-icon($width, $height, $background, $step, $keys, $custom-width:(), $full-width: 100%) {
 	display: block;
 	width: $width;
 	height: $height;
