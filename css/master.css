@@ -350,19 +350,23 @@ a.to-appendix {
   font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", sans-serif;
   font-weight: 700; }
 
-.full-screen-image {
+.theater {
   width: 100%;
-  max-width: 1200px;
+  background: rgba(80, 227, 194, 0.5);
   margin: 0 auto;
   overflow: hidden; }
-  .full-screen-image > img {
+  .theater > img {
     display: block;
     width: 100%;
     margin: 0 auto; }
-  .full-screen-image.portrait > img {
+  .theater.portrait > img {
     width: auto;
     max-width: 100%;
     max-height: 960px; }
+  .theater.X > img {
+    max-width: 960px; }
+  .theater.L > img {
+    max-width: 750px; }
 
 a.button {
   box-sizing: content-box;

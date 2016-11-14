@@ -1,18 +1,24 @@
-.full-screen-image {
+.theater {
 	width: 100%;
-	max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
+	background: rgba($woc, 0.5);
+	margin: 0 auto;
+	overflow: hidden;
 	> img {
 		display: block;
 		width: 100%;
-    margin: 0 auto;
+		margin: 0 auto;
 	}
-  &.portrait > img {
+	&.portrait > img {
     width: auto;
     max-width: 100%;
     max-height: 960px;
   }
+	&.X > img {
+		max-width: $X;
+	}
+	&.L > img {
+		max-width: $L;
+	}
 }
 
 a.button {

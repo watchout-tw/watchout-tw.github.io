@@ -135,9 +135,9 @@
     margin-left: 1.04167%;
     margin-right: 1.04167%; }
 
-#first-section > .full-screen-image {
+#first-section > .theater {
   position: relative; }
-  #first-section > .full-screen-image > .floating {
+  #first-section > .theater > .floating {
     position: absolute;
     top: 0;
     left: 0;
