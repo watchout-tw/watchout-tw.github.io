@@ -504,7 +504,7 @@ nav > #home {
   display: block;
   width: 192px;
   height: 160px;
-  background: url("../images/wo-cf-events.svg");
+  background-image: url("//watchout.tw/images/wo-cf-events.svg");
   background-size: 192px;
   margin: 0 auto;
   cursor: pointer; }
@@ -548,16 +548,16 @@ nav > #home {
   background-repeat: no-repeat; }
 
 .event-icon[key="誕生"] {
-  background-image: url("../images/goodfriend.png"); }
+  background-image: url("//watchout.tw/images/goodfriend.png"); }
 
 .event-icon[key="開放國會松"] {
-  background-image: url("../images/congressthon-small.png"); }
+  background-image: url("//watchout.tw/images/congressthon-small.png"); }
 
 .project-icon.small {
   display: block;
   width: 30px;
   height: 30px;
-  background: url("../images/wo-cf-project-logo-small.svg");
+  background-image: url("//watchout.tw/images/wo-cf-project-logo-small.svg");
   background-size: 100%;
   margin: 0 auto; }
   .project-icon.small[key="國會無雙"] {
@@ -574,7 +574,7 @@ nav > #home {
     display: block;
     width: 132px;
     height: 128px;
-    background: url("../images/wo-cf-bills-mobile.svg");
+    background-image: url("//watchout.tw/images/wo-cf-bills-mobile.svg");
     background-size: 100%;
     margin: 0 auto; }
     .bill-icon[key="voting"] {
@@ -590,7 +590,7 @@ nav > #home {
     display: block;
     width: 192px;
     height: 128px;
-    background: url("../images/wo-cf-bills-desktop.svg");
+    background-image: url("//watchout.tw/images/wo-cf-bills-desktop.svg");
     background-size: 100%;
     margin: 0 auto; }
     .bill-icon[key="voting"] {
@@ -606,7 +606,7 @@ nav > #home {
     display: block;
     width: 132px;
     height: 128px;
-    background: url("../images/wo-cf-bills-mobile.svg");
+    background-image: url("//watchout.tw/images/wo-cf-bills-mobile.svg");
     background-size: 100%;
     margin: 0 auto; }
     .bill-icon[key="voting"] {
@@ -622,7 +622,7 @@ html[lang="en"] .payment-icon {
   display: block;
   width: 128px;
   height: 54px;
-  background: url("../images/wo-cf-monthly-payments-usa.svg");
+  background-image: url("//watchout.tw/images/wo-cf-monthly-payments-usa.svg");
   background-size: 100%;
   margin: 0 auto; }
   html[lang="en"] .payment-icon[key="30"] {
@@ -940,27 +940,27 @@ html[lang="en"] .support-button {
     #monthly-payments > .option > .icons > .icon.basics {
       width: 100%;
       padding-bottom: 20%;
-      background-image: url("../images/products/basics.png");
+      background-image: url("//watchout.tw/images/products/basics.png");
       background-size: contain; }
     #monthly-payments > .option > .icons > .icon.stickers {
       width: 23.75%;
       padding-bottom: 20%;
-      background-image: url("../images/products/stickers.png");
+      background-image: url("//watchout.tw/images/products/stickers.png");
       background-size: contain; }
     #monthly-payments > .option > .icons > .icon.notebook {
       width: 23.75%;
       padding-bottom: 20%;
-      background-image: url("../images/products/notebook.png");
+      background-image: url("//watchout.tw/images/products/notebook.png");
       background-size: contain; }
     #monthly-payments > .option > .icons > .icon.gears {
       width: 30.3125%;
       padding-bottom: 20%;
-      background-image: url("../images/products/gears.png");
+      background-image: url("//watchout.tw/images/products/gears.png");
       background-size: contain; }
     #monthly-payments > .option > .icons > .icon.tickets {
       width: 22.1875%;
       padding-bottom: 20%;
-      background-image: url("../images/products/tickets.png");
+      background-image: url("//watchout.tw/images/products/tickets.png");
       background-size: contain; }
 
 #one-time-purchases > .option:first-child {
@@ -984,22 +984,22 @@ html[lang="en"] .support-button {
     #one-time-purchases > .option > .icons > .icon.pins {
       width: 17.1875%;
       padding-bottom: 20%;
-      background-image: url("../images/products/pins.png");
+      background-image: url("//watchout.tw/images/products/pins.png");
       background-size: contain; }
     #one-time-purchases > .option > .icons > .icon.folders {
       width: 46.5625%;
       padding-bottom: 20%;
-      background-image: url("../images/products/folders.png");
+      background-image: url("//watchout.tw/images/products/folders.png");
       background-size: contain; }
     #one-time-purchases > .option > .icons > .icon.bag {
       width: 19.375%;
       padding-bottom: 20%;
-      background-image: url("../images/products/bag.png");
+      background-image: url("//watchout.tw/images/products/bag.png");
       background-size: contain; }
     #one-time-purchases > .option > .icons > .icon.pillow {
       width: 16.875%;
       padding-bottom: 20%;
-      background-image: url("../images/products/pillow.png");
+      background-image: url("//watchout.tw/images/products/pillow.png");
       background-size: contain; }
 #one-time-purchases > .option > h5 > .multiplier {
   display: inline-block;

@@ -13,10 +13,10 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 	background-repeat: no-repeat;
 }
 .event-icon[key="誕生"] {
-	background-image: url('../images/goodfriend.png');
+	background-image: url('//watchout.tw/images/goodfriend.png');
 }
 .event-icon[key="開放國會松"] {
-	background-image: url('../images/congressthon-small.png');
+	background-image: url('//watchout.tw/images/congressthon-small.png');
 }
 .project-icon.small {
 	@include fixed-width-icon(30px, 30px, 'project-logo-small', 30px, (國會無雙 給問 公民學院 立委出任務));
