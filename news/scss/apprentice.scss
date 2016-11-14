@@ -1,0 +1,128 @@
+// sass -I ../scss --watch scss:css
+$ID: 0;
+@import 'variables';
+@import 'responsive';
+@import 'typography';
+@import 'common';
+
+section:not(#cover) {
+  margin-bottom: 8rem;
+}
+section#cover {
+}
+section#title {
+  margin: 4rem 0 2rem;
+  > .title-image {
+    width: 286px;
+    height: 160px;
+    margin: 0 auto;
+    padding: 0;
+    background-image: url('../images/title.png');
+    background-size: cover;
+  }
+}
+.channel {
+  > .logo {
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    background-size: cover;
+  }
+  $thumbnail-size: 128px;
+  > .list {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0.5rem 1rem;
+    max-width: 36rem;
+    margin: 0 auto;
+  }
+  > .list > .item {
+    display: table-row;
+    text-align: left;
+    > div {
+      display: table-cell;
+      vertical-align: top;
+    }
+    > .thumbnail {
+      width: $thumbnail-size;
+      height: $thumbnail-size;
+      background-size: cover;
+      border-left: none;
+    }
+  }
+}
+$channels: (musou 4) (not-artist 0) (edu 2);
+@mixin list($channel, $n) {
+  @for $i from 1 to $n + 1 {
+    &:nth-child(#{$i}) > .thumbnail {
+      background-image: url('../#{$ID}/#{$channel}-#{$i}.jpg');
+    }
+  }
+}
+@mixin logo($channel) {
+  background-image: url('../images/logo-#{$channel}-small.png');
+}
+@each $channel, $list-size in $channels {
+  .channel##{$channel} > .logo {
+    @include logo($channel);
+  }
+  .channel##{$channel} > .list > .item {
+    @include list($channel, $list-size);
+  }
+}
+
+
+section#support-watchout {
+}
+
+@mixin icons($span, $height, $icons) {
+  width: 100%;
+  max-width: #{$span*1px};
+  margin: 0.5rem auto;
+  > .icon {
+    display: inline-block;
+    height: 0%;
+    background-size: cover;
+    @each $icon, $width in $icons {
+      &.#{$icon} {
+        width: #{$width/$span*100%};
+        padding-bottom: #{$height/$span*100%};
+        background-image: url('../images/wo-cf-#{$icon}.png');
+        background-size: contain;
+      }
+    }
+  }
+  > .icon.no {
+    opacity: 0.125;
+    filter: grayscale(1);
+  }
+}
+
+#one-time-purchases {
+  > .option {
+    margin-bottom: 2rem;
+  }
+  > .option > .icons {
+    $icons: (pins 110) (folders 298) (bag 124) (pillow 108);
+    @include icons(640, 128, $icons);
+  }
+  > .option > h5 > .multiplier {
+    display: inline-block;
+    margin: 0.125rem;
+    padding: 0.25rem;
+    @include font-grotesque;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: black;
+    color: white;
+  }
+}
+#monthly-payments {
+  > .option {
+    margin-bottom: 4rem;
+  }
+  > .option > .icons {
+    $icons: (basics 640) (stickers 152) (notebook 152) (gears 194) (tickets 142);
+    @include icons(640, 128, $icons);
+  }
+}
