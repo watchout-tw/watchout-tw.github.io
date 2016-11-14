@@ -837,27 +837,27 @@ html[lang="en"] .payment-icon {
     #monthly-payments > .option > .icons > .icon.basics {
       width: 100%;
       padding-bottom: 20%;
-      background-image: url("../images/products/basics.svg");
+      background-image: url("../images/products/basics.png");
       background-size: contain; }
     #monthly-payments > .option > .icons > .icon.stickers {
       width: 23.75%;
       padding-bottom: 20%;
-      background-image: url("../images/products/stickers.svg");
+      background-image: url("../images/products/stickers.png");
       background-size: contain; }
     #monthly-payments > .option > .icons > .icon.notebook {
       width: 23.75%;
       padding-bottom: 20%;
-      background-image: url("../images/products/notebook.svg");
+      background-image: url("../images/products/notebook.png");
       background-size: contain; }
     #monthly-payments > .option > .icons > .icon.gears {
       width: 30.3125%;
       padding-bottom: 20%;
-      background-image: url("../images/products/gears.svg");
+      background-image: url("../images/products/gears.png");
       background-size: contain; }
     #monthly-payments > .option > .icons > .icon.tickets {
       width: 22.1875%;
       padding-bottom: 20%;
-      background-image: url("../images/products/tickets.svg");
+      background-image: url("../images/products/tickets.png");
       background-size: contain; }
   #monthly-payments > .option > .icons > .icon.no {
     opacity: 0.3;
@@ -878,22 +878,22 @@ html[lang="en"] .payment-icon {
     #one-time-purchases > .option > .icons > .icon.pins {
       width: 17.1875%;
       padding-bottom: 20%;
-      background-image: url("../images/products/pins.svg");
+      background-image: url("../images/products/pins.png");
       background-size: contain; }
     #one-time-purchases > .option > .icons > .icon.folders {
       width: 46.5625%;
       padding-bottom: 20%;
-      background-image: url("../images/products/folders.svg");
+      background-image: url("../images/products/folders.png");
       background-size: contain; }
     #one-time-purchases > .option > .icons > .icon.bag {
       width: 19.375%;
       padding-bottom: 20%;
-      background-image: url("../images/products/bag.svg");
+      background-image: url("../images/products/bag.png");
       background-size: contain; }
     #one-time-purchases > .option > .icons > .icon.pillow {
       width: 16.875%;
       padding-bottom: 20%;
-      background-image: url("../images/products/pillow.svg");
+      background-image: url("../images/products/pillow.png");
       background-size: contain; }
   #one-time-purchases > .option > .icons > .icon.no {
     opacity: 0.3;
