@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="110px" height="128px" viewBox="0 0 110 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>wo-cf-pins</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="74" height="50"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4" y="-4" width="82" height="58">
+            <rect x="-4" y="-4" width="82" height="58" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+        <ellipse id="path-3" cx="17" cy="14" rx="6" ry="6"></ellipse>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4" y="-4" width="20" height="20">
+            <rect x="7" y="4" width="20" height="20" fill="white"></rect>
+            <use xlink:href="#path-3" fill="black"></use>
+        </mask>
+        <ellipse id="path-5" cx="31" cy="36" rx="6" ry="6"></ellipse>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4" y="-4" width="20" height="20">
+            <rect x="21" y="26" width="20" height="20" fill="white"></rect>
+            <use xlink:href="#path-5" fill="black"></use>
+        </mask>
+        <circle id="path-7" cx="43" cy="14" r="6"></circle>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4" y="-4" width="20" height="20">
+            <rect x="33" y="4" width="20" height="20" fill="white"></rect>
+            <use xlink:href="#path-7" fill="black"></use>
+        </mask>
+        <ellipse id="path-9" cx="57" cy="36" rx="6" ry="6"></ellipse>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4" y="-4" width="20" height="20">
+            <rect x="47" y="26" width="20" height="20" fill="white"></rect>
+            <use xlink:href="#path-9" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wo-cf-pins">
+            <g id="Group-3" transform="translate(14.000000, 73.000000)">
+                <g id="Rectangle-43">
+                    <use fill="#F5F5F5" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use stroke="#EAEAEA" mask="url(#mask-2)" stroke-width="8" stroke-linejoin="round" xlink:href="#path-1"></use>
+                </g>
+                <g id="Oval-20">
+                    <use fill="#FFB55D" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use stroke="#4A4A4A" mask="url(#mask-4)" stroke-width="8" stroke-linejoin="round" xlink:href="#path-3"></use>
+                </g>
+                <g id="Oval-20">
+                    <use fill="#B7F661" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    <use stroke="#4A4A4A" mask="url(#mask-6)" stroke-width="8" stroke-linejoin="round" xlink:href="#path-5"></use>
+                </g>
+                <g id="Oval-20">
+                    <use fill="#50E3C2" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    <use stroke="#4A4A4A" mask="url(#mask-8)" stroke-width="8" stroke-linejoin="round" xlink:href="#path-7"></use>
+                </g>
+                <g id="Oval-20">
+                    <use fill="#FF5368" fill-rule="evenodd" xlink:href="#path-9"></use>
+                    <use stroke="#4A4A4A" mask="url(#mask-10)" stroke-width="8" stroke-linejoin="round" xlink:href="#path-9"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

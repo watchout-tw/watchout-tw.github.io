@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="124px" height="128px" viewBox="0 0 124 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>wo-cf-bag</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="-1.49213975e-13" y="41" width="4" height="12"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="8" height="16">
+            <rect x="-2" y="39" width="8" height="16" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+        <rect id="path-3" x="7" y="36" width="66" height="85"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-4" y="-4" width="74" height="93">
+            <rect x="3" y="32" width="74" height="93" fill="white"></rect>
+            <use xlink:href="#path-3" fill="black"></use>
+        </mask>
+        <path d="M30.7849007,91 C30.7849007,91 29.9968169,92.6835578 30.7849007,94.331319 C31.5729846,95.9792656 32.6118308,96.230028 32.6118308,96.230028 C32.6118308,96.230028 30.7585633,99.0316299 29.7460545,101.460056 C28.7964218,103.737505 28.7072082,106.00939 29.7460545,108.087083 C30.7849007,110.164775 34.2497618,111.218274 38.5485191,111.504833 C42.8470909,111.791392 45.0865177,111.319358 47.0123061,109.842419 C48.8069635,108.466194 49.6631168,106.116966 49.985658,103.752714 C50.3080138,101.388463 49.340761,99.0240255 49.340761,99.0240255 C49.340761,99.0240255 50.2701769,98.5922393 51.4234613,97.0377722 C52.8454992,95.1212576 53,93.5755078 53,93.5755078 L47.0123061,96.3374181 C47.0123061,96.3374181 45.830273,94.6896569 41.7822781,94.0447599 C37.7344687,93.4000483 35.7641663,94.4746912 35.7641663,94.4746912 L30.7849007,91 Z" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-3" y="-3" width="30" height="26.5844313">
+            <rect x="26" y="88" width="30" height="26.5844313" fill="white"></rect>
+            <use xlink:href="#path-5" fill="black"></use>
+        </mask>
+        <rect id="path-7" x="15" y="36" width="8" height="8"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="12" height="12">
+            <rect x="13" y="34" width="12" height="12" fill="white"></rect>
+            <use xlink:href="#path-7" fill="black"></use>
+        </mask>
+        <rect id="path-9" x="57" y="36" width="8" height="8"></rect>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="12" height="12">
+            <rect x="55" y="34" width="12" height="12" fill="white"></rect>
+            <use xlink:href="#path-9" fill="black"></use>
+        </mask>
+        <rect id="path-11" x="0.142857143" y="0" width="53.3333333" height="34.2857143"></rect>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wo-cf-bag">
+            <g id="Group-9" transform="translate(24.000000, 2.000000)">
+                <g id="Rectangle-48">
+                    <use fill-opacity="0.25" fill="#FF5368" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use stroke="#FF5368" mask="url(#mask-2)" stroke-width="4" stroke-linejoin="round" xlink:href="#path-1"></use>
+                </g>
+                <g id="Rectangle-46">
+                    <use fill-opacity="0.25" fill="#F8E81C" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use stroke="#F8E81C" mask="url(#mask-4)" stroke-width="8" stroke-linejoin="round" xlink:href="#path-3"></use>
+                </g>
+                <use id="Fill-1" stroke="#F8E81C" mask="url(#mask-6)" stroke-width="6" stroke-linejoin="round" xlink:href="#path-5"></use>
+                <use id="Rectangle-47" stroke="#F8E81C" mask="url(#mask-8)" stroke-width="4" stroke-linejoin="round" xlink:href="#path-7"></use>
+                <use id="Rectangle-47" stroke="#F8E81C" mask="url(#mask-10)" stroke-width="4" stroke-linejoin="round" xlink:href="#path-9"></use>
+                <g id="Group-2" transform="translate(13.000000, 0.000000)">
+                    <mask id="mask-12" fill="white">
+                        <use xlink:href="#path-11"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <path d="M1.66666667,26.6696312 C1.66666667,12.7819774 12.9204541,1.52380952 26.8095238,1.52380952 C40.6955404,1.52380952 51.952381,12.7877539 51.952381,26.6696312 L51.952381,41.9017973 C51.952381,55.7894512 40.6985935,67.047619 26.8095238,67.047619 C12.9235072,67.047619 1.66666667,55.7836746 1.66666667,41.9017973 L1.66666667,26.6696312 Z M9.28571429,27.4216723 C9.28571429,17.7473498 17.1292631,9.9047619 26.8095238,9.9047619 C36.4876566,9.9047619 44.3333333,17.7480979 44.3333333,27.4216723 L44.3333333,42.6735657 C44.3333333,52.3478882 36.4897845,60.1904762 26.8095238,60.1904762 C17.1313911,60.1904762 9.28571429,52.3471402 9.28571429,42.6735657 L9.28571429,27.4216723 Z" id="Combined-Shape" stroke="#F8E81C" stroke-width="3" stroke-linejoin="round" fill-opacity="0.5" fill="#F8E81C" mask="url(#mask-12)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
