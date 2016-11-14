@@ -368,13 +368,13 @@ body > section {
     margin: 0 auto; }
   .theater.green {
     background: rgba(80, 227, 194, 0.5); }
-  .theater.portrait > img {
-    width: auto;
-    max-width: 100%;
-    max-height: 960px; }
   .theater.comics > img {
     border: 4px solid #4A4A4A;
     border-radius: 4px; }
+  .theater.P > img {
+    width: auto;
+    max-width: 100%;
+    max-height: 960px; }
   .theater.X > img {
     max-width: 960px; }
   .theater.L > img {
@@ -492,18 +492,18 @@ h5.regular {
   font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;
   font-weight: 400; }
 
-section > .spacer {
+section .spacer {
   width: 100%;
-  height: 6rem; }
+  height: 4rem; }
+  section .spacer.short {
+    height: 2rem; }
 
-section#title {
-  margin: 4rem 0 2rem; }
-  section#title > #title-image {
-    display: block;
-    width: 286px;
-    height: 160px;
-    margin: 0 auto;
-    padding: 0; }
+section#title > #title-image {
+  display: block;
+  width: 286px;
+  height: 160px;
+  margin: 0 auto;
+  padding: 0; }
 
 .channel > .logo {
   display: block;
