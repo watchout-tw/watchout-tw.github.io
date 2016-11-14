@@ -12,13 +12,12 @@ section#cover {
 }
 section#title {
   margin: 4rem 0 2rem;
-  > .title-image {
+  > #title-image {
+    display: block;
     width: 286px;
     height: 160px;
     margin: 0 auto;
     padding: 0;
-    background-image: url('../images/title.png');
-    background-size: cover;
   }
 }
 .channel {
