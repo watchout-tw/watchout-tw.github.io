@@ -156,3 +156,26 @@ $border-gold: $border-width solid $gold;
 	  }
 	}
 }
+@mixin product-icons($span, $height, $icons) {
+  width: 100%;
+  max-width: #{$span*1px};
+  margin: 0 auto 0.5rem;
+  > .icon {
+    display: inline-block;
+    height: 0%;
+    background-size: cover;
+		&.na {
+			opacity: 0.3;
+	    filter: grayscale(1);
+		}
+
+    @each $icon, $width in $icons {
+      &.#{$icon} {
+        width: #{$width/$span*100%};
+        padding-bottom: #{$height/$span*100%};
+        background-image: url('../images/products/#{$icon}.png');
+        background-size: contain;
+      }
+    }
+  }
+}

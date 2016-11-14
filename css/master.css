@@ -834,6 +834,9 @@ html[lang="en"] .payment-icon {
     display: inline-block;
     height: 0%;
     background-size: cover; }
+    #monthly-payments > .option > .icons > .icon.na {
+      opacity: 0.3;
+      filter: grayscale(1); }
     #monthly-payments > .option > .icons > .icon.basics {
       width: 100%;
       padding-bottom: 20%;
@@ -859,9 +862,6 @@ html[lang="en"] .payment-icon {
       padding-bottom: 20%;
       background-image: url("../images/products/tickets.png");
       background-size: contain; }
-  #monthly-payments > .option > .icons > .icon.no {
-    opacity: 0.3;
-    filter: grayscale(1); }
 
 #one-time-purchases > .option:first-child {
   margin-top: -0.25rem; }
@@ -875,6 +875,9 @@ html[lang="en"] .payment-icon {
     display: inline-block;
     height: 0%;
     background-size: cover; }
+    #one-time-purchases > .option > .icons > .icon.na {
+      opacity: 0.3;
+      filter: grayscale(1); }
     #one-time-purchases > .option > .icons > .icon.pins {
       width: 17.1875%;
       padding-bottom: 20%;
@@ -895,9 +898,6 @@ html[lang="en"] .payment-icon {
       padding-bottom: 20%;
       background-image: url("../images/products/pillow.png");
       background-size: contain; }
-  #one-time-purchases > .option > .icons > .icon.no {
-    opacity: 0.3;
-    filter: grayscale(1); }
 #one-time-purchases > .option > h5 > .multiplier {
   display: inline-block;
   margin: 0.125rem;
