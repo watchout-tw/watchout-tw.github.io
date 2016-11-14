@@ -39,6 +39,8 @@ a {
     color: blue; }
   a:active {
     color: #F54B23; }
+  a.block {
+    color: black; }
 
 h1, h2, h3, h4, h5, h6 {
   list-style: none;
@@ -80,7 +82,7 @@ h3 {
   line-height: 1.25; }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 1.33333333; }
 
 h3 + h4 {
@@ -350,6 +352,59 @@ a.to-appendix {
   font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", sans-serif;
   font-weight: 700; }
 
+.full-screen-image {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden; }
+  .full-screen-image > img {
+    display: block;
+    width: 100%;
+    margin: 0 auto; }
+  .full-screen-image.portrait > img {
+    width: auto;
+    max-width: 100%;
+    max-height: 960px; }
+
+a.button {
+  box-sizing: content-box;
+  display: block;
+  padding: 10px 12px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  width: 4em; }
+  a.button:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35); }
+  a.button.long {
+    width: 5em; }
+  a.button.longer {
+    width: 6.2em; }
+
+a.button.monetary {
+  background: rgba(248, 231, 28, 0.75);
+  color: #F5A623; }
+  a.button.monetary:hover {
+    background: rgba(248, 231, 28, 0.85); }
+  a.button.monetary:active {
+    color: #F54B23; }
+
+a.button.link {
+  background: rgba(0, 0, 0, 0.1); }
+  a.button.link:hover {
+    background: rgba(0, 0, 0, 0.2); }
+  a.button.link:active {
+    color: red; }
+
+.prompt {
+  box-sizing: content-box;
+  display: block;
+  color: #9B9B9B;
+  width: 4em;
+  padding: 4px 0.5em;
+  border-bottom: 4px solid #9B9B9B;
+  margin: 0.25rem auto; }
+
 * {
   box-sizing: border-box; }
 
@@ -405,14 +460,6 @@ body > section {
 html[lang="en"] body > section#first-section > h1 > .dot {
   margin-bottom: -1rem; }
 
-.full-screen-image {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto; }
-  .full-screen-image > img {
-    display: block;
-    width: 100%; }
-
 .pop {
   background: #50E3C2;
   margin: 3rem 0 2rem;
@@ -424,53 +471,9 @@ html[lang="en"] body > section#first-section > h1 > .dot {
 .plan-intro {
   margin-top: 2rem; }
 
-.prompt {
-  box-sizing: content-box;
-  display: block;
-  color: #9B9B9B;
-  width: 4em;
-  padding: 4px 1.5em;
-  border-bottom: 4px solid #9B9B9B;
-  margin: 0.25rem auto; }
-
 html[lang="en"] .prompt {
   width: 7.5em;
   padding: 4px 0; }
-
-#one-time-purchases-intro,
-#one-time-purchases,
-#group-purchases {
-  display: none; }
-
-a.button {
-  box-sizing: content-box;
-  display: block;
-  padding: 10px 12px;
-  margin: 0 auto;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  width: 4em; }
-  a.button:hover {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35); }
-  a.button.long {
-    width: 5em; }
-  a.button.longer {
-    width: 6.2em; }
-
-a.button.monetary {
-  background: rgba(248, 231, 28, 0.75);
-  color: #F5A623; }
-  a.button.monetary:hover {
-    background: rgba(248, 231, 28, 0.85); }
-  a.button.monetary:active {
-    color: #F54B23; }
-
-a.button.link {
-  background: rgba(0, 0, 0, 0.1); }
-  a.button.link:hover {
-    background: rgba(0, 0, 0, 0.2); }
-  a.button.link:active {
-    color: red; }
 
 .divider {
   position: relative;

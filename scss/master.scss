@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'responsive';
 @import 'typography';
+@import 'common';
 
 * {
 	box-sizing: border-box;
@@ -72,16 +73,6 @@ body > section {
 	}
 }
 
-.full-screen-image {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-	> img {
-		display: block;
-		width: 100%;
-	}
-}
-
 .pop {
 	background: $woc;
 	margin: 3rem 0 2rem;
@@ -95,15 +86,7 @@ body > section {
 .plan-intro {
 	margin-top: 2rem;
 }
-.prompt {
-	box-sizing: content-box;
-	display: block;
-	color: $grey;
-	width: 4em;
-	padding: $border-width 1.5em;
-	border-bottom: $border-width solid $grey;
-	margin: 0.25rem auto;
-}
+
 @include lang-en {
 	.prompt {
 	  width: 7.5em;
@@ -113,47 +96,9 @@ body > section {
 #one-time-purchases-intro,
 #one-time-purchases,
 #group-purchases {
-	display: none;
+	//display: none;
 }
-a.button {
-	box-sizing: content-box;
-	display: block;
-	padding: 10px 12px;
-	margin: 0 auto;
-	box-shadow: $shadow-light;
-	cursor: pointer;
 
-	&:hover {
-		box-shadow: $shadow-dark;
-	}
-
-	width: 4em;
-	&.long {
-		width: 5em;
-	}
-	&.longer {
-		width: 6.2em;
-	}
-}
-a.button.monetary {
-	background: $gold-light;
-	color: $orange;
-	&:hover {
-		background: $gold-dark;
-	}
-	&:active {
-		color: $red;
-	}
-}
-a.button.link {
-  background: rgba(0, 0, 0, 0.1);
-  &:hover {
-    background: rgba(0, 0, 0, 0.2);
-  }
-  &:active {
-    color: red;
-  }
-}
 
 @mixin divider($border, $background) {
 	position: relative;

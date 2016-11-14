@@ -1,3 +1,5 @@
+// sass -I ../scss --watch scss:css
+
 @import 'variables';
 @import 'responsive';
 @import 'susy';
@@ -7,8 +9,6 @@ $susy: (
   gutter-position: split,
   container: $max-width,
 );
-
-// sass -I ../scss --watch scss:css
 
 .work-items {
 	@include container();
