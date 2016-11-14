@@ -9,7 +9,9 @@ body > section {
 	position: relative;
 	> hgroup:first-child {
 		padding: 1rem 0;
-		background: $woc-light;
+		&:not(.clean) {
+			background: $woc-light;
+		}
 	}
 	&#first-section {
 		margin: 1rem 0;
@@ -33,6 +35,10 @@ body > section {
     max-width: 100%;
     max-height: 960px;
   }
+	&.comics > img {
+		border: $border-black;
+		border-radius: $border-width;
+	}
 	&.X > img {
 		max-width: $X;
 	}
@@ -122,8 +128,13 @@ a.support-button {
 	color: $grey;
 	width: 4em;
 	padding: $border-width 0.5em;
-	border-bottom: $border-width solid $grey;
+	border-bottom: $border-grey;
 	margin: 0.25rem auto;
+
+	&.color-edu {
+		color: black;
+		border-bottom: $border-color-edu;
+	}
 }
 @include lang-en {
 	.prompt {
@@ -146,7 +157,6 @@ a.support-button {
 // band of green with words
 .pop {
 	background: $woc;
-	margin: 3rem 0 2rem;
 	padding: 0.5rem 0.25rem;
 
 	> p {

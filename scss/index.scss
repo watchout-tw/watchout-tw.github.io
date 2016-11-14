@@ -160,7 +160,6 @@ body > footer {
 .plan-intro {
 	margin-top: 2rem;
 }
-
 #support-buttons.deployed {
 	> .support-button.light {
 		position: fixed;
@@ -182,7 +181,6 @@ body > footer {
 	  padding: 1.5em 0;
 	}
 }
-
 #support > .plan {
 	margin: 2rem 0 4rem;
 }
@@ -229,7 +227,9 @@ $span: 640;
     color: white;
   }
 }
-
+.pop {
+	margin: 3rem 0 2rem;
+}
 #engineer-note {
 	max-width: 18rem;
 	margin: 1.75rem auto;

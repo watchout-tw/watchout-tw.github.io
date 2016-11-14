@@ -40,6 +40,13 @@ $gold: #F8E71C;
 $orange: #F5A623;
 $red: #F54B23;
 $grey: #9B9B9B;
+$black: #4A4A4A;
+
+$color-park: #FFB55D;
+$color-musou: #FF5368;
+$color-lab: #50E3C2;
+$color-ask: #4DEBDF;
+$color-edu: #B7F661;
 
 // typography
 $rem: 16px;
@@ -101,6 +108,10 @@ $shadow-dark: 0 2px 4px 0 rgba(black, 0.35);
 $border-width: 4px;
 $border-green: $border-width solid $woc;
 $border-gold: $border-width solid $gold;
+$border-grey: $border-width solid $grey;
+$border-black: $border-width solid $black;
+
+$border-color-edu: $border-width solid $color-edu;
 
 @mixin transform($attr) {
 	-webkit-transform: $attr;

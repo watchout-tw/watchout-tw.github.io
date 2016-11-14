@@ -352,8 +352,9 @@ html, body {
 body > section {
   position: relative; }
   body > section > hgroup:first-child {
-    padding: 1rem 0;
-    background: rgba(80, 227, 194, 0.25); }
+    padding: 1rem 0; }
+    body > section > hgroup:first-child:not(.clean) {
+      background: rgba(80, 227, 194, 0.25); }
   body > section#first-section {
     margin: 1rem 0; }
 
@@ -371,6 +372,9 @@ body > section {
     width: auto;
     max-width: 100%;
     max-height: 960px; }
+  .theater.comics > img {
+    border: 4px solid #4A4A4A;
+    border-radius: 4px; }
   .theater.X > img {
     max-width: 960px; }
   .theater.L > img {
@@ -442,6 +446,9 @@ a.support-button {
   padding: 4px 0.5em;
   border-bottom: 4px solid #9B9B9B;
   margin: 0.25rem auto; }
+  .prompt.color-edu {
+    color: black;
+    border-bottom: 4px solid #B7F661; }
 
 html[lang="en"] .prompt {
   width: 7.5em;
@@ -461,7 +468,6 @@ html[lang="en"] .prompt {
 
 .pop {
   background: #50E3C2;
-  margin: 3rem 0 2rem;
   padding: 0.5rem 0.25rem; }
   .pop > p {
     margin: 0;
@@ -1011,6 +1017,9 @@ html[lang="en"] .support-button {
   line-height: 1;
   background: black;
   color: white; }
+
+.pop {
+  margin: 3rem 0 2rem; }
 
 #engineer-note {
   max-width: 18rem;
