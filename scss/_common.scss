@@ -1,3 +1,10 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	overflow-x: hidden;
+}
+
 .theater {
 	width: 100%;
 	margin: 0 auto;
@@ -63,6 +70,41 @@ a.button.link {
   }
 }
 
+// switching between phrases
+.split-flap {
+	> span:not(.focus) {
+		display: none;
+	}
+}
+// big yellow support button
+a.support-button {
+	box-sizing: content-box;
+	display: block;
+	color: $orange;
+	&:active {
+		color: $red;
+	}
+	width: 2.05555555em; // 74px
+	background: $gold-light;
+	padding: 15px 24px;
+	border-radius: 100%;
+	margin: 0 auto;
+	@include transform(scale(0.8));
+	box-shadow: $shadow-light;
+	cursor: pointer;
+
+	&:hover {
+		background: $gold-dark;
+		box-shadow: $shadow-dark;
+	}
+	&.shadow {
+		opacity: 0.1;
+		position: absolute;
+		left: 50%;
+		@include transform(translateX(-50%) scale(0.8));
+	}
+}
+// words with grey underline
 .prompt {
 	box-sizing: content-box;
 	display: block;
@@ -71,4 +113,46 @@ a.button.link {
 	padding: $border-width 0.5em;
 	border-bottom: $border-width solid $grey;
 	margin: 0.25rem auto;
+}
+@include lang-en {
+	.prompt {
+	  width: 7.5em;
+	  padding: 4px 0;
+	}
+}
+// green circle with words
+.badge {
+	box-sizing: content-box;
+	display: block;
+	color: $woc;
+	width: 2em;
+	padding: 8px 11px;
+	border: $border-green;
+	border-radius: 100%;
+	margin: 0 auto;
+	@include transform(rotate(-15deg));
+}
+// band of green with words
+.pop {
+	background: $woc;
+	margin: 3rem 0 2rem;
+	padding: 0.5rem 0.25rem;
+
+	> p {
+		margin: 0;
+		line-height: $leading-tight;
+	}
+}
+// watchout stamp
+.stamp {
+	width: $nav-height;
+	height: $nav-height;
+	margin: 0 auto;
+
+	&.logo.white {
+		background: url('../images/logo-wo-white.svg');
+	}
+	&.logo.green {
+		background: url('../images/logo-wo-green.svg');
+	}
 }

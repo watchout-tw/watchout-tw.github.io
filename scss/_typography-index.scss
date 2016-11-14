@@ -1,0 +1,28 @@
+// sections
+section {
+  &#we-need-you {
+    text-align: center;
+  }
+  &#sm {
+    text-align: center;
+  }
+  &#citizenship {
+    #bill-of-rights > .bill {
+      text-align: center;
+    }
+  }
+}
+footer {
+  text-align: center;
+}
+
+// elements
+.stat {
+  text-align: center;
+}
+.sticker-name {
+  color: $woc;
+  font-size: 1.125rem;
+  @include font-mincho;
+  line-height: $leading-really-tight;
+}

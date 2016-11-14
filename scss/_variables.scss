@@ -179,3 +179,50 @@ $border-gold: $border-width solid $gold;
     }
   }
 }
+// box with circular label
+@mixin divider($border, $background) {
+	position: relative;
+	background: $background;
+	border-top: $border;
+	border-bottom: $border;
+	margin: 2rem auto;
+	max-width: 960px;
+	@include screen-gt-M {
+		border: $border;
+		border-radius: $border-width;
+	}
+	@include screen-M-X {
+		margin: 2rem;
+	}
+	@include screen-gt-X {
+		margin: 2rem auto;
+	}
+	> .badge {
+		position: absolute;
+		left: 50%;
+		@include transform(translate(-50%, -50%) rotate(-15deg));
+		background: white;
+	}
+}
+// info icon
+@mixin info {
+	content: 'i';
+  display: block;
+	@include font-grotesque;
+  color: black;
+	font-size: 1rem;
+	line-height: 1;
+	text-align: center;
+	width: 1rem;
+	height: 1rem;
+	padding: 0;
+	opacity: 0.25;
+	border: 2px solid black;
+	border-radius: 100%;
+  @include transition-highlight;
+  cursor: pointer;
+}
+@mixin info-highlighted {
+  transform: scale(1.25);
+  opacity: 1;
+}

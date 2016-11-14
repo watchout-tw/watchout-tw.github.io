@@ -1,0 +1,17 @@
+nav {
+	width: 100%;
+	height: $nav-height;
+	position: fixed;
+	top: 0;
+	background: $woc;
+	z-index: 2;
+}
+#nav-space {
+	height: $nav-height;
+}
+nav > #home {
+	width: 200px;
+	height: $nav-height;
+	background: url('../images/watchout-tw-first.svg');
+	margin-left: 24px;
+}

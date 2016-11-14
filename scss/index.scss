@@ -1,0 +1,268 @@
+@import 'variables';
+@import 'responsive';
+@import 'typography';
+@import 'common';
+@import 'nav';
+@import 'timeline';
+@import 'typography-index';
+
+// sections
+body > section {
+	position: relative;
+	> hgroup:first-child {
+		padding: 1rem 0;
+		background: $woc-light;
+	}
+	&#first-section {
+		margin: 1rem 0;
+		> hgroup {
+			background: none;
+		}
+		> h1 > .dot {
+			font-size: 2rem;
+			margin: 0 1rem;
+		}
+	}
+	&#fertile-land > #stats > .stat {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		> .number-wrapper {
+			display: block;
+			margin: 0.125rem 0;
+		}
+		> .project-icon + .number-wrapper {
+			margin-top: 0;
+		}
+		> p {
+			margin: 0;
+		}
+	}
+	&#support {
+		padding-top: $nav-height; // to make space for nav while jumping
+	}
+	&#we-need-you {
+  	$kusa-height: 84px;
+  	height: 0;
+  	padding: 15% 0 $kusa-height;
+  	margin: 6rem 0 $nav-height*-1; // negative bottom margin to absorb that space created with top padding of #support
+  	background-image: url('../images/genkidama-kusa.gif'), url('../images/genkidama.png');
+  	background-size: 50px, 100%;
+  	background-position: center bottom, center top;
+  	background-repeat: no-repeat;
+  	background-color: $woc-light;
+
+  	> .wrapper {
+  		position: absolute;
+  		width: 100%;
+  		bottom: $kusa-height;
+  	}
+  	> .wrapper > #call {
+  		margin: 0;
+  	}
+  	> .wrapper > #why {
+  		margin: 1rem 0;
+  		cursor: pointer;
+  		&:after {
+  			@include info;
+  			margin: 0.125rem auto;
+  		}
+  		&:hover:after {
+  			@include info-highlighted;
+  		}
+  	}
+    .qa { // same as #why
+    	position: relative;
+    	> .answer-wrapper {
+    		visibility: none;
+    		opacity: 0;
+    		@include transition-visibility;
+    		position: fixed;
+    		top: -2048%;
+    		left: 0;
+    		margin-top: $nav-height/2;
+    		z-index: 1;
+    	}
+    	&.focus > .answer-wrapper {
+    		visibility: visible;
+    		opacity: 1;
+    		@include centering-both;
+    	}
+
+    	> .answer-wrapper > .answer-dialog {
+    		display: block;
+    		width: 300px + 2*$border-width;
+    		border: $border-green;
+    		border-radius: $border-width;
+    		margin: 0 auto;
+    		background: rgba(white, 0.95);
+    		box-shadow: $shadow-light;
+
+    		> .pgroup {
+    			margin: 0.5rem auto;
+    			> p {
+    				line-height: $leading-tight
+    			}
+    		}
+    	}
+    }
+  }
+	&#we-are-you {
+		margin-bottom: 1rem;
+	}
+  &#sm {
+  	padding: 4rem 0;
+  	background: $woc-light;
+  	> #stickers {
+  		margin-top: 2rem;
+
+    	> .sticker {
+    		$width: 100px;
+    		display: inline-block;
+    		vertical-align: top;
+    		margin: 0.5rem 1rem;
+    		width: $width;
+
+    		> .sticker-example, > .sticker-name {
+    			display: block;
+    			cursor: pointer;
+    		}
+    		> .sticker-example {
+    			width: $width;
+    		}
+    		> .sticker-name {
+    			padding-top: 0.36em;
+    			margin-top: 0.25em;
+    		}
+    	}
+    }
+  }
+}
+@include lang-en {
+	body > section#first-section > h1 > .dot {
+	  margin-bottom: -1rem;
+	}
+}
+body > footer {
+  > #email {
+  	margin: 3em 0 2em;
+  	@include transform(rotate(-5deg));
+  	> label {
+  		padding: 0.25em 0.375em;
+  		background: $woc;
+  	}
+  }
+  > #copyright {
+  	margin: 2em 0 6em;
+  	@include transform(rotate(3deg));
+  }
+}
+
+// elements
+.plan-intro {
+	margin-top: 2rem;
+}
+
+#support-buttons.deployed {
+	> .support-button.light {
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 3;
+		background: $gold-almost;
+	}
+	> .support-button.shadow {
+		position: relative;
+		left: auto;
+		@include transform(scale(0.8));
+	}
+}
+@include lang-en {
+	.support-button {
+	  width: 5.4em;
+	  height: 2.4em;
+	  padding: 1.5em 0;
+	}
+}
+
+#support > .plan {
+	margin: 2rem 0 4rem;
+}
+$span: 640;
+#monthly-payments {
+	> .option:first-child {
+		margin-top: 2rem;
+	}
+  > .option:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  > .option {
+    max-width: $span*1px;
+    margin: 0 auto;
+  }
+  > .option > .icons {
+    $icons: (basics $span) (stickers 152) (notebook 152) (gears 194) (tickets 142);
+    @include product-icons($span, 128, $icons);
+  }
+}
+#one-time-purchases {
+	> .option:first-child {
+		margin-top: 2rem;
+	}
+  > .option:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  > .option {
+    max-width: $span*1px;
+    margin: 0 auto;
+  }
+  > .option > .icons {
+    $icons: (pins 110) (folders 298) (bag 124) (pillow 108);
+    @include product-icons($span, 128, $icons);
+  }
+  > .option > h5 > .multiplier {
+    display: inline-block;
+    margin: 0.125rem;
+    padding: 0.25rem;
+    @include font-grotesque;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: black;
+    color: white;
+  }
+}
+
+#engineer-note {
+	max-width: 18rem;
+	margin: 1.75rem auto;
+	padding-bottom: 0.25rem;
+	background: rgba(black, 0.125);
+	> .bar {
+		margin: 0;
+		padding: 0.25rem;
+		background: yellow;
+		> .emoji-warning,
+		> span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		> .emoji-warning {
+			display: inline-block;
+			width: 1.5rem;
+		}
+	}
+	> .content {
+		color: #555;
+		margin: 0.125rem 0;
+		> span {
+			display: inline-block;
+			&.info {
+				margin: 0 0.125rem;
+				&:after {
+					@include info;
+					display: inline-block;
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+}

@@ -71,7 +71,7 @@
       top: 50%;
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%); }
-      #timeline > .years > .year > .events > .event > .event-dialog > pgroup {
+      #timeline > .years > .year > .events > .event > .event-dialog > .pgroup {
         width: 18em; }
 
 #monthly-payments > .payment-option {

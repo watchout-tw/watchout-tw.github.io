@@ -4,7 +4,6 @@ html, body {
 	margin: 0;
 	padding: 0;
   line-height: $leading-normal;
-  text-align: center;
 }
 a {
 	text-decoration: none;
@@ -23,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 	@include font-mincho;
   margin: 0;
   padding-top: 0.36em; // shift baseline down
+	text-align: center;
 }
 h1, h2, h3 {
 	padding-left: 0.25rem; // leave space when display is narrow
@@ -167,7 +167,7 @@ span.month {
 	width: 1em;
 }
 
-pgroup {
+.pgroup {
   display: block;
   width: 18rem;
   margin: 1rem auto;
@@ -187,17 +187,19 @@ pgroup {
 .single {
   line-height: 1em;
 }
-.button, .prompt, badge {
+.button, .prompt, .badge {
   @include font-body-bold;
   font-size: 1.125rem; // 18px
   line-height: 1em;
+	text-align: center;
 }
 .support-button {
   @include font-strong;
   font-size: 2.25rem; // 36px
   line-height: 1em;
+	text-align: center;
 }
-badge, .support-button { // no .line
+.badge, .support-button { // no .line
   line-height: 1.22222222em;
 }
 @include lang-en {
@@ -325,46 +327,8 @@ ul {
 	}
 }
 
-.four {
-  background: black;
-  color: white;
-  font-size: 0.8125rem;
-  @include font-grotesque;
-}
-.four.big {
-  font-size: 3rem;
-}
-
-.sticker-name {
-  color: $woc;
-  font-size: 1.125rem;
-  @include font-mincho;
-  line-height: $leading-really-tight;
-}
-
-@mixin info {
-	content: 'i';
-  display: block;
-	@include font-grotesque;
-  color: black;
-	font-size: 1rem;
-	line-height: 1;
-	text-align: center;
-	width: 1rem;
-	height: 1rem;
-	padding: 0;
-	opacity: 0.25;
-	border: 2px solid black;
-	border-radius: 100%;
-  @include transition-highlight;
-  cursor: pointer;
-}
-@mixin info-highlighted {
-  transform: scale(1.25);
-  opacity: 1;
-}
-
 .system-dialog {
+	text-align: center;
   > .warning {
     font-size: 0.875rem;
   }
@@ -377,4 +341,11 @@ a.to-appendix {
 	display: inline-block;
 	font-size: 0.75em;
 	@include font-strong;
+}
+
+.support-options > .option {
+	text-align: center;
+}
+.pop {
+	text-align: center;
 }
