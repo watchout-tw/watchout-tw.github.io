@@ -272,7 +272,7 @@ html[lang="en"] .support-button {
 
   .custom-line-break.A > .hide:not(.always) {
     display: inline; } }
-ul, ol {
+ul, ol, li {
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -343,7 +343,19 @@ a.to-appendix {
 .pop {
   text-align: center; }
 
-footer {
+.sticker-name {
+  color: #50E3C2;
+  font-size: 1.125rem;
+  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
+  font-weight: 900;
+  line-height: 1.125; }
+
+body > section#sm > #facebook {
+  text-align: center; }
+body > section#sm > #stickers {
+  text-align: center; }
+
+body > footer {
   text-align: center; }
 
 * {
@@ -365,6 +377,21 @@ body > section {
   body > section#sm {
     padding: 4rem 0;
     background: rgba(80, 227, 194, 0.25); }
+    body > section#sm > #stickers {
+      margin-top: 2rem; }
+      body > section#sm > #stickers > .sticker {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0.5rem 1rem;
+        width: 100px; }
+        body > section#sm > #stickers > .sticker > .sticker-example, body > section#sm > #stickers > .sticker > .sticker-name {
+          display: block;
+          cursor: pointer; }
+        body > section#sm > #stickers > .sticker > .sticker-example {
+          width: 100px; }
+        body > section#sm > #stickers > .sticker > .sticker-name {
+          padding-top: 0.36em;
+          margin-top: 0.25em; }
 
 body > footer {
   margin: 10rem 0 2rem; }
@@ -395,6 +422,8 @@ body > section#sm + footer {
     margin: 0 auto; }
   .theater.green {
     background: rgba(80, 227, 194, 0.5); }
+  .theater.light-green {
+    background: rgba(80, 227, 194, 0.25); }
   .theater.comics > img {
     border: 4px solid #4A4A4A;
     border-radius: 4px; }
@@ -790,13 +819,6 @@ section#citizenship #bill-of-rights > .bill {
 .stat {
   text-align: center; }
 
-.sticker-name {
-  color: #50E3C2;
-  font-size: 1.125rem;
-  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", sans-serif;
-  font-weight: 900;
-  line-height: 1.125; }
-
 body > section {
   position: relative; }
   body > section > hgroup:first-child {
@@ -890,21 +912,6 @@ body > section {
           margin: 0.5rem auto; }
           body > section#we-need-you .qa > .answer-wrapper > .answer-dialog > .pgroup > p {
             line-height: 1.375; }
-  body > section#sm > #stickers {
-    margin-top: 2rem; }
-    body > section#sm > #stickers > .sticker {
-      display: inline-block;
-      vertical-align: top;
-      margin: 0.5rem 1rem;
-      width: 100px; }
-      body > section#sm > #stickers > .sticker > .sticker-example, body > section#sm > #stickers > .sticker > .sticker-name {
-        display: block;
-        cursor: pointer; }
-      body > section#sm > #stickers > .sticker > .sticker-example {
-        width: 100px; }
-      body > section#sm > #stickers > .sticker > .sticker-name {
-        padding-top: 0.36em;
-        margin-top: 0.25em; }
 
 html[lang="en"] body > section#first-section > h1 > .dot {
   margin-bottom: -1rem; }

@@ -273,7 +273,7 @@ span.month {
 	}
 }
 
-ul, ol {
+ul, ol, li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -349,7 +349,23 @@ a.to-appendix {
 .pop {
 	text-align: center;
 }
+.sticker-name {
+  color: $woc;
+  font-size: 1.125rem;
+  @include font-mincho;
+  line-height: $leading-really-tight;
+}
 
-footer {
+body > section {
+	&#sm {
+		> #facebook {
+			text-align: center;
+		}
+		> #stickers {
+			text-align: center;
+		}
+	}
+}
+body > footer {
 	text-align: center;
 }

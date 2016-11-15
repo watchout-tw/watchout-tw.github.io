@@ -105,30 +105,6 @@ body > section {
     	}
     }
   }
-  &#sm {
-  	> #stickers {
-  		margin-top: 2rem;
-    	> .sticker {
-    		$width: 100px;
-    		display: inline-block;
-    		vertical-align: top;
-    		margin: 0.5rem 1rem;
-    		width: $width;
-
-    		> .sticker-example, > .sticker-name {
-    			display: block;
-    			cursor: pointer;
-    		}
-    		> .sticker-example {
-    			width: $width;
-    		}
-    		> .sticker-name {
-    			padding-top: 0.36em;
-    			margin-top: 0.25em;
-    		}
-    	}
-    }
-  }
 }
 @include lang-en {
 	body > section#first-section > h1 > .dot {

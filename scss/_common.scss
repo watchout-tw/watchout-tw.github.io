@@ -22,7 +22,30 @@ body > section {
 	&#sm {
 		padding: 4rem 0;
 		background: $woc-light;
+		> #stickers {
+			margin-top: 2rem;
+			> .sticker {
+				$width: 100px;
+				display: inline-block;
+				vertical-align: top;
+				margin: 0.5rem 1rem;
+				width: $width;
+
+				> .sticker-example, > .sticker-name {
+					display: block;
+					cursor: pointer;
+				}
+				> .sticker-example {
+					width: $width;
+				}
+				> .sticker-name {
+					padding-top: 0.36em;
+					margin-top: 0.25em;
+				}
+			}
+		}
 	}
+
 }
 body > footer {
 	margin: 10rem 0 2rem;
@@ -58,6 +81,9 @@ body > section#sm + footer {
 	}
 	&.green {
 		background: rgba($woc, 0.5);
+	}
+	&.light-green {
+		background: rgba($woc, 0.25);
 	}
 	&.comics > img {
 		border: $border-black;

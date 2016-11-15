@@ -17,9 +17,3 @@ section {
 .stat {
   text-align: center;
 }
-.sticker-name {
-  color: $woc;
-  font-size: 1.125rem;
-  @include font-mincho;
-  line-height: $leading-really-tight;
-}
