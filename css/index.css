@@ -26,7 +26,7 @@
     display: none !important; } }
 html, body {
   font-size: 16px;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -43,7 +43,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   list-style: none;
-  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 900;
   margin: 0;
   padding-top: 0.36em;
@@ -65,7 +65,7 @@ h2 {
   line-height: 1.16666667; }
 
 html[lang="en"] h1 {
-  font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 900;
   font-size: 3.4rem; }
   @media (min-width: 480px) {
@@ -105,7 +105,7 @@ span.underline {
   border-bottom: 3px solid black; }
 
 span.emphasize {
-  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 900; }
 
 span.fixed-width-center {
@@ -125,11 +125,11 @@ span.fixed-width-center {
   font-weight: 400 !important; }
 
 .url.disabled {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif; }
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif; }
 
 .number {
   position: relative;
-  font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 900;
   font-size: 5.25rem;
   line-height: 1em;
@@ -162,7 +162,7 @@ span.fixed-width-center {
     left: 100%;
     top: 56%;
     font-size: 0.8125rem;
-    font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
     font-weight: 400;
     line-height: 1;
     margin: 0;
@@ -172,7 +172,7 @@ span.fixed-width-center {
     transform: translateY(-50%); }
 
 html[lang="en"] span.emphasize {
-  font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 900; }
 html[lang="en"] .url,
 html[lang="en"] .url.disabled {
@@ -204,14 +204,14 @@ span.month {
   line-height: 1em; }
 
 .button, .prompt, .badge {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1em;
   text-align: center; }
 
 .support-button {
-  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 700;
   font-size: 2.25rem;
   line-height: 1em;
@@ -221,7 +221,7 @@ span.month {
   line-height: 1.22222222em; }
 
 html[lang="en"] .button {
-  font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 900; }
 html[lang="en"] .support-button {
   font-size: 1.75rem;
@@ -229,7 +229,7 @@ html[lang="en"] .support-button {
 
 #call {
   color: rgba(80, 227, 194, 0.75);
-  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 900;
   font-size: 1.375rem;
   line-height: 1; }
@@ -278,7 +278,7 @@ ul, ol, li {
   padding: 0; }
 
 .option-title {
-  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-size: 1.5rem;
   font-weight: 700; }
 
@@ -289,26 +289,26 @@ ul, ol, li {
   margin: 0; }
 
 .datetime {
-  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 900; }
 
 .tight {
   line-height: 1.375; }
 
 .tagline {
-  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 700;
   line-height: 1.375; }
 
 .datetime.year {
-  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 900;
   font-size: 1.5rem;
   line-height: 1;
   color: #50E3C2; }
 
 .larger {
-  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   margin: 1.75rem 0; }
@@ -328,13 +328,13 @@ html[lang="en"] .larger {
   .system-dialog > .warning {
     font-size: 0.875rem; }
   .system-dialog > .content {
-    font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "微軟正黑體", sans-serif;
+    font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
     font-weight: 700; }
 
 a.to-appendix {
   display: inline-block;
   font-size: 0.75em;
-  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 700; }
 
 .support-options > .option {
@@ -346,7 +346,7 @@ a.to-appendix {
 .sticker-name {
   color: #50E3C2;
   font-size: 1.125rem;
-  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 900;
   line-height: 1.125; }
 
@@ -737,7 +737,7 @@ html[lang="en"] .payment-icon {
     #timeline > .years > .year > .events > .event > .tagline:after {
       content: 'i';
       display: block;
-      font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "微軟正黑體", sans-serif;
+      font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
       font-weight: 900;
       color: black;
       font-size: 1rem;
@@ -861,7 +861,7 @@ body > section {
       body > section#we-need-you > .wrapper > #why:after {
         content: 'i';
         display: block;
-        font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "微軟正黑體", sans-serif;
+        font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
         font-weight: 900;
         color: black;
         font-size: 1rem;
@@ -1024,7 +1024,7 @@ html[lang="en"] .support-button {
   display: inline-block;
   margin: 0.125rem;
   padding: 0.25rem;
-  font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 900;
   font-size: 1.25rem;
   line-height: 1;
@@ -1060,7 +1060,7 @@ html[lang="en"] .support-button {
         #engineer-note > .content > span.info:after {
           content: 'i';
           display: block;
-          font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "微軟正黑體", sans-serif;
+          font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
           font-weight: 900;
           color: black;
           font-size: 1rem;
