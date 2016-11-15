@@ -372,8 +372,6 @@ body > section {
       background: rgba(80, 227, 194, 0.25); }
   body > section#first-section {
     margin: 1rem 0; }
-  body > section#we-are-you {
-    margin-bottom: 1rem; }
   body > section#sm {
     background: rgba(80, 227, 194, 0.25); }
     body > section#sm:not(.tight) {
