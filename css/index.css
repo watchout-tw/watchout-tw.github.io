@@ -121,7 +121,7 @@ span.fixed-width-center {
 .code,
 .close,
 .url {
-  font-family: "akkurat-mono", monospace;
+  font-family: "akkurat-mono", "Menlo", monospace;
   font-weight: 400 !important; }
 
 .url.disabled {
@@ -176,7 +176,7 @@ html[lang="en"] span.emphasize {
   font-weight: 900; }
 html[lang="en"] .url,
 html[lang="en"] .url.disabled {
-  font-family: "akkurat-mono", monospace; }
+  font-family: "akkurat-mono", "Menlo", monospace; }
 
 span.year, span.month {
   display: inline-block;
@@ -783,7 +783,7 @@ html[lang="en"] .payment-icon {
       width: 100%;
       padding: 8px 42px 8px 4px; }
       #timeline > .years > .year > .events > .event > .event-dialog > .url:not(.disabled):after {
-        font-family: "akkurat-mono", monospace;
+        font-family: "akkurat-mono", "Menlo", monospace;
         font-weight: 400 !important;
         content: '→';
         display: inline-block;
