@@ -273,7 +273,7 @@ span.month {
 	}
 }
 
-ul {
+ul, ol {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -347,5 +347,9 @@ a.to-appendix {
 	text-align: center;
 }
 .pop {
+	text-align: center;
+}
+
+footer {
 	text-align: center;
 }

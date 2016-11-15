@@ -16,6 +16,35 @@ body > section {
 	&#first-section {
 		margin: 1rem 0;
 	}
+	&#we-are-you {
+		margin-bottom: 1rem;
+	}
+	&#sm {
+		padding: 4rem 0;
+		background: $woc-light;
+	}
+}
+body > footer {
+	margin: 10rem 0 2rem;
+	> *:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+  > #email {
+  	@include transform(rotate(-5deg));
+  	> label {
+  		padding: 0.25em 0.375em;
+  		background: $woc;
+  	}
+  }
+  > #copyright {
+  	@include transform(rotate(3deg));
+		> ul > li {
+			line-height: $leading-tight;
+		}
+  }
+}
+body > section#sm + footer {
+	margin-top: 4rem;
 }
 
 .theater {
@@ -168,7 +197,7 @@ a.support-button {
 .stamp {
 	width: $nav-height;
 	height: $nav-height;
-	margin: 0 auto;
+	margin: -1rem auto;
 
 	&.logo.white {
 		background: url('//watchout.tw/images/logo-wo-white.svg');

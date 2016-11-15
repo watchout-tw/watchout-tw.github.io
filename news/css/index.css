@@ -272,7 +272,7 @@ html[lang="en"] .support-button {
 
   .custom-line-break.A > .hide:not(.always) {
     display: inline; } }
-ul {
+ul, ol {
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -343,6 +343,9 @@ a.to-appendix {
 .pop {
   text-align: center; }
 
+footer {
+  text-align: center; }
+
 * {
   box-sizing: border-box; }
 
@@ -357,6 +360,30 @@ body > section {
       background: rgba(80, 227, 194, 0.25); }
   body > section#first-section {
     margin: 1rem 0; }
+  body > section#we-are-you {
+    margin-bottom: 1rem; }
+  body > section#sm {
+    padding: 4rem 0;
+    background: rgba(80, 227, 194, 0.25); }
+
+body > footer {
+  margin: 10rem 0 2rem; }
+  body > footer > *:not(:last-child) {
+    margin-bottom: 2rem; }
+  body > footer > #email {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg); }
+    body > footer > #email > label {
+      padding: 0.25em 0.375em;
+      background: #50E3C2; }
+  body > footer > #copyright {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg); }
+    body > footer > #copyright > ul > li {
+      line-height: 1.375; }
+
+body > section#sm + footer {
+  margin-top: 4rem; }
 
 .theater {
   width: 100%;
@@ -476,7 +503,7 @@ html[lang="en"] .prompt {
 .stamp {
   width: 65px;
   height: 65px;
-  margin: 0 auto; }
+  margin: -1rem auto; }
   .stamp.logo.white {
     background: url("//watchout.tw/images/logo-wo-white.svg"); }
   .stamp.logo.green {
