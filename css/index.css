@@ -355,7 +355,8 @@ body > section#sm > #facebook {
 body > section#sm > #stickers {
   text-align: center; }
 
-body > footer {
+body > footer > #email,
+body > footer > #copyright {
   text-align: center; }
 
 * {

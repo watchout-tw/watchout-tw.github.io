@@ -367,5 +367,8 @@ body > section {
 	}
 }
 body > footer {
-	text-align: center;
+	> #email,
+	> #copyright {
+		text-align: center;
+	}
 }
