@@ -19,10 +19,8 @@ body > section {
 	&#we-are-you {
 	}
 	&#sm {
+		padding: 4rem 0;
 		background: $woc-light;
-		&:not(.tight) { // newsletters use tight layout
-			padding: 4rem 0;
-		}
 		> #stickers {
 			margin-top: 2rem;
 			> .sticker {
@@ -49,9 +47,7 @@ body > section {
 
 }
 body > footer {
-	&:not(.tight) { // newsletters use tight layout
-		margin: 10rem 0 2rem;
-	}
+	margin: 10rem 0 2rem;
 	> *:not(:last-child) {
 		margin-bottom: 2rem;
 	}
@@ -69,7 +65,7 @@ body > footer {
 		}
   }
 }
-body > section#sm + footer:not(.tight) { // newsletters use tight layout
+body > section#sm + footer {
 	margin-top: 4rem;
 }
 

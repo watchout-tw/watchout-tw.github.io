@@ -17,3 +17,6 @@ header {
 h5.regular {
   @include font-body;
 }
+.pgroup {
+  width: 18*$rem;
+}
