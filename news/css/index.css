@@ -580,7 +580,7 @@ body > section#sm + footer {
   display: block;
   max-width: 576px;
   margin: 0 auto; }
-  .channel > table .thumbnail > img {
+  .channel > table .thumbnail img {
     width: 128px; }
   .channel > table td {
     vertical-align: top; }

@@ -47,7 +47,7 @@ body > section#sm + footer {
     max-width: 36*$rem;
     margin: 0 auto;
     .thumbnail {
-      > img {
+      img {
         width: $thumbnail-size;
       }
     }
