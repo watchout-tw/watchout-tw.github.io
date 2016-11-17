@@ -1,4 +1,3 @@
 沃草 Watchout
 =====================
-
-阿草與他的快樂夥伴
+這裡是[沃草 Watchout](http://watchout.tw)的官方網站。
