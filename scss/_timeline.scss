@@ -73,6 +73,10 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 	}
 	> .event-icon-wrapper {
 		overflow: hidden;
+
+		@include screen-S {
+			zoom: 0.65;
+		}
 	}
 	> .event-icon-wrapper, > .tagline {
 		position: relative;

@@ -47,11 +47,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   margin: 0;
   padding-top: 0.36em;
-  text-align: center; }
-
-h1, h2, h3 {
   padding-left: 0.25rem;
-  padding-right: 0.25rem; }
+  padding-right: 0.25rem;
+  text-align: center; }
 
 h1 {
   font-size: 4.8rem;
@@ -727,6 +725,9 @@ html[lang="en"] .payment-icon {
       margin-top: -57px; }
   #timeline > .years > .year > .events > .event > .event-icon-wrapper {
     overflow: hidden; }
+    @media (max-width: 479px) {
+      #timeline > .years > .year > .events > .event > .event-icon-wrapper {
+        zoom: 0.65; } }
   #timeline > .years > .year > .events > .event > .event-icon-wrapper, #timeline > .years > .year > .events > .event > .tagline {
     position: relative;
     display: inline-block;
