@@ -47,11 +47,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   margin: 0;
   padding-top: 0.36em;
-  text-align: center; }
-
-h1, h2, h3 {
   padding-left: 0.25rem;
-  padding-right: 0.25rem; }
+  padding-right: 0.25rem;
+  text-align: center; }
 
 h1 {
   font-size: 4.8rem;
@@ -547,12 +545,22 @@ header > p {
   display: block;
   text-align: center; }
 
+h1, h2 {
+  font-size: 2.25rem; }
+
+h4 {
+  font-size: 1.375rem;
+  padding-left: 0; }
+
 h5.regular {
   font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 400; }
 
 .pgroup {
   width: 288px; }
+
+.authors {
+  line-height: 1.375; }
 
 header > p {
   margin: 0; }
@@ -576,6 +584,22 @@ body > section#sm + footer {
   height: 24px;
   margin: 0 auto;
   background-size: cover; }
+.channel > .divider {
+  position: relative;
+  width: 100%;
+  height: 24px; }
+  .channel > .divider > .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px; }
+  .channel > .divider > label {
+    display: block;
+    text-align: center;
+    line-height: 24px; }
+.channel > h2 {
+  margin-top: 0.5rem; }
 .channel > table {
   display: block;
   max-width: 576px;
@@ -584,12 +608,47 @@ body > section#sm + footer {
     width: 128px; }
   .channel > table td {
     vertical-align: top; }
+.channel#musou > .divider {
+  background: rgba(255, 83, 104, 0.25); }
+.channel#not-artist > .divider {
+  background: whitesmoke; }
+.channel#edu > .divider {
+  background: rgba(183, 246, 97, 0.25); }
+.channel#vendor > .divider {
+  background: rgba(248, 231, 28, 0.25); }
 
 .spacer {
   width: 100%;
-  height: 4rem; }
+  height: 3rem; }
   .spacer.short {
     height: 2rem; }
+
+.pgroup {
+  margin: 0.5rem auto; }
+
+#catalogue > h1 {
+  margin: 0.5rem 0; }
+#catalogue > ul {
+  width: 156px;
+  margin: 0 auto; }
+  #catalogue > ul > li > .logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.25rem; }
+  #catalogue > ul > li > .logo, #catalogue > ul > li > span {
+    display: inline-block;
+    vertical-align: middle; }
+
+#volume {
+  width: 100%;
+  padding: 0.25rem;
+  background: rgba(80, 227, 194, 0.25);
+  line-height: 1.375; }
+  #volume .info {
+    text-align: right; }
+
+#caobao {
+  width: 109px; }
 
 #monthly-payments > .option > .icons,
 #one-time-purchases > .option > .icons {
