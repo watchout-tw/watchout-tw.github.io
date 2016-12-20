@@ -1,5 +1,4 @@
 // sass -I ../scss --watch scss:css
-$ID: 0;
 @import 'variables';
 @import 'responsive';
 @import 'typography';
@@ -33,6 +32,12 @@ body > section#sm + footer {
   padding: 0;
 }
 
+.span {
+  width: 100%;
+  max-width: $X;
+  margin: 0 auto;
+}
+
 $logo-size: 24px;
 .channel {
   > .logo {
@@ -44,7 +49,6 @@ $logo-size: 24px;
   } // 0
   > .divider {
     position: relative;
-    width: 100%;
     height: $logo-size;
     > .logo {
       position: absolute;
