@@ -191,6 +191,9 @@ span.month {
   line-height: 1em;
 	text-align: center;
 }
+.button.code {
+	@include font-monospace;
+}
 .support-button {
   @include font-strong;
   font-size: 2.25rem; // 36px
