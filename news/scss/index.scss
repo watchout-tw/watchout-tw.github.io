@@ -119,21 +119,22 @@ $logo-size: 24px;
   > h1 {
     margin: 0.5rem 0;
   }
-  
-  > ul {
-    width: $logo-size + $rem*8.25;
+  > table {
+    //width: $logo-size + $rem*8.25;
     margin: 0 auto;
-
-    > li {
-      > .logo {
-        width: 24px;
-        height: 24px;
-        margin-right: 0.25rem;
-      } // 1
-      > .logo, > span {
-        display: inline-block;
-        vertical-align: middle;
-      }
+    border-spacing: 0.25rem;
+    td {
+      padding: 0;
+    }
+    .logo > img {
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin-right: 0.25rem;
+    } // 1
+    .text {
+      width: 8rem;
+      line-height: 24px;
     }
   }
 }

@@ -28,6 +28,7 @@ h4 {
 }
 h5.regular {
   @include font-body;
+  padding: 0.5rem 0;
 }
 .pgroup {
   width: 18*$rem;

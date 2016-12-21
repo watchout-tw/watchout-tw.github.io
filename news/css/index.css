@@ -557,7 +557,8 @@ h4 {
 
 h5.regular {
   font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  padding: 0.5rem 0; }
 
 .pgroup {
   width: 288px; }
@@ -635,16 +636,19 @@ body > section#sm + footer {
 
 #catalogue > h1 {
   margin: 0.5rem 0; }
-#catalogue > ul {
-  width: 156px;
-  margin: 0 auto; }
-  #catalogue > ul > li > .logo {
+#catalogue > table {
+  margin: 0 auto;
+  border-spacing: 0.25rem; }
+  #catalogue > table td {
+    padding: 0; }
+  #catalogue > table .logo > img {
+    display: block;
     width: 24px;
     height: 24px;
     margin-right: 0.25rem; }
-  #catalogue > ul > li > .logo, #catalogue > ul > li > span {
-    display: inline-block;
-    vertical-align: middle; }
+  #catalogue > table .text {
+    width: 8rem;
+    line-height: 24px; }
 
 #volume {
   width: 100%;
