@@ -8,7 +8,7 @@
 -- Check `Remove classes`, `Remove unused IDs`, `Remove comments`, `Try the alternative Nokogiri HTML parser`
 -- Copy source to `inline.html`
 -- Remove empty lines
--- Replace `<style>` with `<style>` from `/0/inline.html`
+-- Replace `<style>` with code in `styles.html`
 
 ## Tips
 

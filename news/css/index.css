@@ -367,6 +367,12 @@ body > footer > #copyright {
 html, body {
   overflow-x: hidden; }
 
+table {
+  margin: 0;
+  border-spacing: 0; }
+  table td {
+    padding: 0; }
+
 body > section {
   position: relative; }
   body > section > hgroup:first-child {
@@ -600,30 +606,30 @@ body > section#sm + footer {
 .channel > .divider {
   position: relative;
   height: 24px; }
-  .channel > .divider > .logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 24px;
-    height: 24px; }
-  .channel > .divider > label {
-    display: block;
+  .channel > .divider .logo {
+    width: 24px; }
+    .channel > .divider .logo > img {
+      display: block;
+      width: 24px;
+      height: 24px; }
+  .channel > .divider .text {
     text-align: center;
     line-height: 24px; }
 .channel > h2 {
   margin-top: 0.5rem; }
 .channel > table {
-  display: block;
   max-width: 576px;
   margin: 0 auto; }
-  .channel > table .thumbnail img {
-    width: 128px; }
+  .channel > table .thumbnail {
+    padding-right: 0.5rem; }
+    .channel > table .thumbnail img {
+      width: 128px; }
   .channel > table td {
     vertical-align: top; }
 .channel#musou > .divider {
   background: rgba(255, 83, 104, 0.25); }
 .channel#not-artist > .divider {
-  background: whitesmoke; }
+  background: #F5F5F5; }
 .channel#edu > .divider {
   background: rgba(183, 246, 97, 0.25); }
 .channel#vendor > .divider {

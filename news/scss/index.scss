@@ -50,15 +50,15 @@ $logo-size: 24px;
   > .divider {
     position: relative;
     height: $logo-size;
-    > .logo {
-      position: absolute;
-      top: 0;
-      left: 0;
+    .logo {
       width: $logo-size;
-      height: $logo-size;
+      > img {
+        display: block;
+        width: $logo-size;
+        height: $logo-size;
+      }
     }
-    > label {
-      display: block;
+    .text {
       text-align: center;
       line-height: $logo-size;
     }
@@ -68,10 +68,10 @@ $logo-size: 24px;
   }
   $thumbnail-size: 128px;
   > table {
-    display: block;
     max-width: 36*$rem;
     margin: 0 auto;
     .thumbnail {
+      padding-right: 0.5rem;
       img {
         width: $thumbnail-size;
       }
@@ -88,7 +88,7 @@ $logo-size: 24px;
   }
   &#not-artist {
     > .divider {
-      background: rgba($color-not-artist, 1);
+      background: $color-not-artist;
     }
   }
   &#edu {
