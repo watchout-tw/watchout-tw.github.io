@@ -617,14 +617,15 @@ body > section#sm + footer {
     line-height: 24px; }
 .channel > h2 {
   margin-top: 0.5rem; }
-.channel > table {
+.channel > .list {
+  display: block;
   max-width: 576px;
   margin: 0 auto; }
-  .channel > table .thumbnail {
+  .channel > .list .thumbnail {
     padding-right: 0.5rem; }
-    .channel > table .thumbnail img {
+    .channel > .list .thumbnail img {
       width: 128px; }
-  .channel > table td {
+  .channel > .list td {
     vertical-align: top; }
 .channel#musou > .divider {
   background: rgba(255, 83, 104, 0.25); }

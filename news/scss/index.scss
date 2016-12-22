@@ -67,7 +67,8 @@ $logo-size: 24px;
     margin-top: 0.5rem;
   }
   $thumbnail-size: 128px;
-  > table {
+  > .list {
+    display: block;
     max-width: 36*$rem;
     margin: 0 auto;
     .thumbnail {
