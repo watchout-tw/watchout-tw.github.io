@@ -4,6 +4,13 @@
 html, body {
 	overflow-x: hidden;
 }
+table {
+	margin: 0;
+	border-spacing: 0;
+	td {
+		padding: 0;
+	}
+}
 
 body > section {
 	position: relative;
