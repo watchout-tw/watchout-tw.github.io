@@ -208,6 +208,10 @@ span.month {
   line-height: 1em;
   text-align: center; }
 
+.button.code {
+  font-family: "akkurat-mono", "Menlo", monospace;
+  font-weight: 400 !important; }
+
 .support-button {
   font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
   font-weight: 700;
@@ -362,6 +366,12 @@ body > footer > #copyright {
 
 html, body {
   overflow-x: hidden; }
+
+table {
+  margin: 0;
+  border-spacing: 0; }
+  table td {
+    padding: 0; }
 
 body > section {
   position: relative; }
