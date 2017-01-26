@@ -80,7 +80,8 @@ body > section#sm + footer {
 	width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
-	> img {
+	> img,
+	> a > img {
 		display: block;
 		width: 100%;
 		margin: 0 auto;
@@ -91,16 +92,19 @@ body > section#sm + footer {
 	&.light-green {
 		background: rgba($woc, 0.25);
 	}
-	&.comics > img {
+	&.comics > img,
+	&.comics > a > img {
 		border: $border-black;
 		border-radius: $border-width;
 	}
-	&.P > img {
+	&.P > img,
+	&.P > a > img {
 		width: auto;
 		max-width: 100%;
 		max-height: $X;
 	}
-	&.X > img {
+	&.X > img,
+	&.X > a > img {
 		max-width: $X;
 	}
 	&.L > img {
