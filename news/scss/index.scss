@@ -50,6 +50,9 @@ $logo-size: 24px;
   > .divider {
     position: relative;
     height: $logo-size;
+    tr, td {
+      height: 24px;
+    }
     .logo {
       width: $logo-size;
       > img {
@@ -151,6 +154,7 @@ $logo-size: 24px;
   }
 }
 #caobao {
+  display: block;
   width: 109px;
 }
 

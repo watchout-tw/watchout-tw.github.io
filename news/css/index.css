@@ -607,6 +607,8 @@ body > section#sm + footer {
 .channel > .divider {
   position: relative;
   height: 24px; }
+  .channel > .divider tr, .channel > .divider td {
+    height: 24px; }
   .channel > .divider .logo {
     width: 24px; }
     .channel > .divider .logo > img {
@@ -671,6 +673,7 @@ body > section#sm + footer {
     text-align: right; }
 
 #caobao {
+  display: block;
   width: 109px; }
 
 #monthly-payments > .option > .icons,
