@@ -53,54 +53,50 @@ $color-vendor: $gold;
 // typography
 $rem: 16px;
 
-/*
-@font-face {
-  font-family: "taiwan-comma";
-  src: local("PingFang TC");
-  unicode-range: U+FF0C, U+3002, U+FF1A, U+FF1B;
-}
-*/// deprecated
-//// use kozuka-mincho-extension
+// import fonts
+@import url("../fonts/century-std/styles.css");
+@import url("../fonts/circular-pro/styles.css");
+@import url("../fonts/kozuka-mincho-extension/styles.css");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i");
 
-$font-body: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+$font-body: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
 $leading-normal: 1.75;
 $leading-tight: 1.375;
 $leading-really-tight: 1.125;
 
-$font-mincho: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
-$font-monospace: "akkurat-mono", "Menlo", monospace;
-$font-strong: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
-$font-grotesque: "circular-pro", "source-han-sans-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+$font-mincho: "century-std", "kozuka-mincho-extension", "source-han-serif-tc", "Noto Serif CJK TC", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
+$font-monospace: "Space Mono", "Menlo", monospace;
+$font-strong: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
+$font-grotesque: "circular-pro", "source-han-sans-tc", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
 
 @mixin font-body {
   font-family: $font-body;
-  font-weight: 400;
+  font-weight: normal;
 }
 @mixin font-body-bold {
   font-family: $font-body;
-  font-weight: 700;
+  font-weight: bold;
 }
 @mixin font-mincho {
   font-family: $font-mincho;
-  font-weight: 900;
+  font-weight: bold;
 }
 @mixin font-strong {
   font-family: $font-strong;
-  font-weight: 700;
+  font-weight: bold;
 }
 @mixin font-grotesque {
   font-family: $font-grotesque;
-  font-weight: 900;
+  font-weight: bolder;
 }
 @mixin font-monospace {
   font-family: $font-monospace;
-  font-weight: 400 !important; // no bold
 }
 
 // layout & unified style elements
 $max-width: 960px;
 
-$nav-height: 65px;
+$nav-height: 64px;
 $gold-faint: rgba($gold, 0.25);
 $gold-light: rgba($gold, 0.75);
 $gold-dark: rgba($gold, 0.85);
