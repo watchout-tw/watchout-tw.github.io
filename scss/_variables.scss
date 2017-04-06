@@ -56,38 +56,40 @@ $rem: 16px;
 // import fonts
 @import url("../fonts/century-std/styles.css");
 @import url("../fonts/circular-pro/styles.css");
-@import url("../fonts/kozuka-mincho-extension/styles.css");
+@import url("../fonts/noto-serif-patch/styles.css");
 @import url("https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i");
 
-$font-body: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
+$font-latin: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+$font-tw: "PingFang TC", "Noto Sans CJK TC", "微軟正黑體";
+$font-body: $font-latin, $font-tw, "xin-gothic-tc", sans-serif;
 $leading-normal: 1.75;
 $leading-tight: 1.375;
 $leading-really-tight: 1.125;
 
-$font-mincho: "century-std", "kozuka-mincho-extension", "source-han-serif-tc", "Noto Serif CJK TC", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
+$font-mincho: "century-std", "noto-serif-patch", "source-han-serif-tc", "Noto Serif CJK TC", "Kozuka Mincho Pr6N", $font-tw, sans-serif;
 $font-monospace: "Space Mono", "Menlo", monospace;
-$font-strong: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
-$font-grotesque: "circular-pro", "source-han-sans-tc", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
+$font-strong: "circular-pro", "xin-gothic-tc", $font-tw, sans-serif;
+$font-grotesque: "circular-pro", $font-latin, sans-serif;  // latin only
 
 @mixin font-body {
   font-family: $font-body;
-  font-weight: normal;
+  font-weight: 400;
 }
 @mixin font-body-bold {
   font-family: $font-body;
-  font-weight: bold;
+  font-weight: 700;
 }
 @mixin font-mincho {
   font-family: $font-mincho;
-  font-weight: bold;
+  font-weight: 700;
 }
 @mixin font-strong {
   font-family: $font-strong;
-  font-weight: bold;
+  font-weight: 700;
 }
 @mixin font-grotesque {
   font-family: $font-grotesque;
-  font-weight: bolder;
+  font-weight: 900;
 }
 @mixin font-monospace {
   font-family: $font-monospace;

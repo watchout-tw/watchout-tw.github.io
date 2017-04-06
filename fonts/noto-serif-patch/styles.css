@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "noto-serif-patch";
+  font-weight: 700;
+  font-style: normal;
+  src: url('NotoSerifPatch-Bold.eot?#iefix') format('embedded-opentype'),
+    url('NotoSerifPatch-Bold.woff') format('woff');
+}
