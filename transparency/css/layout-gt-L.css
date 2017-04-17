@@ -1,10 +1,7 @@
-/*
-@font-face {
-  font-family: "taiwan-comma";
-  src: local("PingFang TC");
-  unicode-range: U+FF0C, U+3002, U+FF1A, U+FF1B;
-}
-*/
+@import url("../fonts/century-std/styles.css");
+@import url("../fonts/circular-pro/styles.css");
+@import url("../fonts/noto-serif-patch/styles.css");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i");
 [screen="gt-M"] {
   display: none !important; }
 

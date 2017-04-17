@@ -13,6 +13,25 @@ body > section {
 		padding: 1rem 0;
 		background: $woc-light;
 	}
+	&#watchout-banner-section {
+		max-width: 960px;
+		margin: 0 auto;
+		> #watchout-banner {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 0;
+			padding-bottom: 30%;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-image: url('../banners/impact-report-compact.png');
+			@include screen-gt-M {
+				padding-bottom: 15%;
+				background-image: url('../banners/impact-report-wide.png');
+			}
+		}
+	}
 	&#first-section {
 		> hgroup {
 			background: none;

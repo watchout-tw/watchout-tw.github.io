@@ -1,9 +1,8 @@
-// sass -I ../scss --watch scss:css
-@import 'variables';
-@import 'responsive';
-@import 'typography';
-@import 'common';
-@import 'nav';
+@import '../../scss/variables.scss';
+@import '../../scss/responsive';
+@import '../../scss/typography';
+@import '../../scss/common';
+@import '../../scss/nav';
 @import 'typography-index';
 $border: 1px solid rgba(0, 0, 0, 0.1);
 

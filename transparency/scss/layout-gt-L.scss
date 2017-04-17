@@ -1,7 +1,6 @@
-// sass -I ../scss --watch scss:css
-@import 'variables';
-@import 'responsive';
-@import 'susy';
+@import '../../scss/variables';
+@import '../../scss/responsive';
+@import '../../scss/susy';
 $susy: (
   columns: 12,
   gutters: 1/3,

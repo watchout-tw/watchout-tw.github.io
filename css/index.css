@@ -822,6 +822,23 @@ body > section {
   body > section > hgroup:first-child {
     padding: 1rem 0;
     background: rgba(80, 227, 194, 0.25); }
+  body > section#watchout-banner-section {
+    max-width: 960px;
+    margin: 0 auto; }
+    body > section#watchout-banner-section > #watchout-banner {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 0;
+      padding-bottom: 30%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url("../banners/impact-report-compact.png"); }
+      @media (min-width: 480px) {
+        body > section#watchout-banner-section > #watchout-banner {
+          padding-bottom: 15%;
+          background-image: url("../banners/impact-report-wide.png"); } }
   body > section#first-section > hgroup {
     background: none; }
   body > section#first-section > h1 > .dot {
