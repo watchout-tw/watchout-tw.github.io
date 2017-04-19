@@ -54,9 +54,9 @@ $color-vendor: $gold;
 $rem: 16px;
 
 // import fonts
-@import url("../fonts/century-std/styles.css");
-@import url("../fonts/circular-pro/styles.css");
-@import url("../fonts/noto-serif-patch/styles.css");
+@import url("http://watchout.tw/fonts/century-std/styles.css");
+@import url("http://watchout.tw/fonts/circular-pro/styles.css");
+@import url("http://watchout.tw/fonts/noto-serif-patch/styles.css");
 @import url("https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i");
 
 $font-latin: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
