@@ -4,7 +4,7 @@
 
 - Use [Premailer by dialect.ca](http://premailer.dialect.ca/) to convert webpage to newsletter
  - Push web page to GitHub
- - Go to website with browser & make sure the page is updated to the newest version (e.g. `http://watchout.tw/news/2`);
+ - Go to website with browser & make sure the page is updated to the newest version (e.g. `https://watchout.tw/news/2`);
  - Paste page URL into Premailer
  - Check `Remove classes`, `Remove unused IDs`, `Remove comments`, `Try the alternative Nokogiri HTML parser`
  - Convert!

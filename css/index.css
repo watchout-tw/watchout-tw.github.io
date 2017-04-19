@@ -1,8 +1,4 @@
 @charset "UTF-8";
-@import url("http://watchout.tw/fonts/century-std/styles.css");
-@import url("http://watchout.tw/fonts/circular-pro/styles.css");
-@import url("http://watchout.tw/fonts/noto-serif-patch/styles.css");
-@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i");
 [screen="gt-M"] {
   display: none !important; }
 
@@ -834,11 +830,11 @@ body > section {
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
-      background-image: url("../banners/impact-report-compact.png"); }
+      background-image: url("../asset/banners/impact-report-compact.png"); }
       @media (min-width: 480px) {
         body > section#watchout-banner-section > #watchout-banner {
           padding-bottom: 15%;
-          background-image: url("../banners/impact-report-wide.png"); } }
+          background-image: url("../asset/banners/impact-report-wide.png"); } }
   body > section#first-section > hgroup {
     background: none; }
   body > section#first-section > h1 > .dot {
