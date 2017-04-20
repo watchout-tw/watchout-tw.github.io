@@ -15,7 +15,7 @@
 	<!-- page-specific tags -->
 	<meta property="og:description" content="沃草影響力報告" />
 	<meta property="og:image" content="https://watchout.tw/images/forward-compact.gif" />
-	<!--<link rel="stylesheet" href="./css/index.css"/>-->
+	<link rel="stylesheet" href="./css/style.css"/>
 	<!--<link rel="stylesheet" href="./css/layout-gt-L.css" media="(min-width: 750px)"/>-->
 	<link rel="icon" href="https://watchout.tw/asset/favicon.png">
 </head>
@@ -24,6 +24,8 @@
     <nav class="navbar sticky-top navbar-light bg-ask">
       <a class="navbar-brand" href="https://watchout.tw/"><img src="https://watchout.tw/asset/logo+type.png" class="logo-type" /></a>
     </nav>
+    <w-support :common="common"></w-support>
+    <w-footer :common="common"></w-footer>
   </div><!-- end of app -->
 	<script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -41,6 +43,7 @@ ga('send', 'pageview');
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <!-- common scripts -->
   <!-- page-specific scripts -->
+  <script src="https://ask.watchout.tw/src/common.js"></script>
   <script src="./src/app.js"></script>
 </body>
 </html>
