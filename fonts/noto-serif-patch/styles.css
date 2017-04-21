@@ -2,6 +2,6 @@
   font-family: "noto-serif-patch";
   font-weight: 700;
   font-style: normal;
-  src: url('https://watchout.tw/fonts/noto-serif-patch/Bold.eot?#iefix') format('embedded-opentype'),
-    url('https://watchout.tw/fonts/noto-serif-patch/Bold.woff') format('woff');
+  src: url('Bold.eot?#iefix') format('embedded-opentype'),
+    url('Bold.woff') format('woff');
 }
