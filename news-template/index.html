@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="icon" href="https://watchout.tw/asset/favicon.png">
+  <title>沃草→草報←第四期↑</title>
+</head>
+<body>
+  <div id="app">
+    <section id="web-link">在沃草網站上閱讀這封email</section>
+    <section id="cover"></section>
+    <nav></nav>
+    <section v-for="section in sections" :id="section.id">{{ section.name }}</section>
+    <footer></footer>
+  </div><!-- end of app -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.4/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/vue.resource/1.2.1/vue-resource.min.js"></script>
+  <script src="https://ask.watchout.tw/src/common.js"></script>
+  <script src="./src/app.js"></script>
+</body>
+</html>
