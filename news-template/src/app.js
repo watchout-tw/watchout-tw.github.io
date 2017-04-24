@@ -14,16 +14,19 @@ var app = new Vue({
       issue: '第四期',
       date: '2017年4月28日',
     },
-    nav: [
-      {
-        channel: 'musou',
-        title: '促轉條例修法回顧',
-      },
-      {
-        channel: 'edu',
-        title: '哲學人看轉型正義',
-      },
-    ],
+    nav: {
+      title: '說好的轉型正義呢',
+      toc: [
+        {
+          channel: 'musou',
+          title: '促轉條例修法回顧',
+        },
+        {
+          channel: 'edu',
+          title: '哲學人看轉型正義',
+        },
+      ],
+    },
     sections: [ // 這個陣列包含這一期草報的每個區塊
       {
         id: 'musou',

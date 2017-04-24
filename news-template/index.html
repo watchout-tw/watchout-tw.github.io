@@ -11,27 +11,31 @@
   <div id="app">
     <section id="web-link">在沃草網站上閱讀這封email</section>
     <section id="cover">
-      <img :src="getAssetURL(cover.image)" />
+      <div class="theater">
+        <img :src="getAssetURL(cover.image)" />
+      </div>
+      <img id="caobao" src="https://watchout.tw/news/images/logo.png" />
       <div>
         <label>{{ cover.issue }}</label>
         <time>{{ cover.date }}</time>
       </div>
     </section>
     <nav>
-      <div v-for="item in nav">
-        <img :src="getLogoURL(item.channel)" /><label>{{ item.title }}</label>
+      <h1>{{ nav.title }}</h1>
+      <div v-for="item in nav.toc">
+        <img class="logo" :src="getLogoURL(item.channel)" /><label>{{ item.title }}</label>
       </div>
     </nav>
     <section v-for="section in sections" :id="section.id">
       <div>
-        <img :src="getLogoURL(section.id)" /><label>{{ section.name }}</label>
+        <img class="logo" :src="getLogoURL(section.id)" /><label>{{ section.name }}</label>
       </div>
       <h2>{{ section.title }}</h2>
       <p v-if="section.description">{{ section.description }}</p>
       <div v-if="section.articles">
         <div v-for="article in section.articles">
           <div class="thumbnail"><img :src="getAssetURL(article.thumbnail)" /></div>
-          <h3>{{ article.title }}</h3>
+          <h4>{{ article.title }}</h4>
           <ul>
             <li v-for="line in article.text">{{ line }}</li>
           </ul>
@@ -41,8 +45,10 @@
         <div v-for="image in section.images">
           <h3 v-if="image.title">{{ image.title }}</h3>
           <p v-if="image.description">{{ image.description }}</p>
-          <a v-if="image.link" :href="image.link" target="image"><img :src="getAssetURL(image.url)" /></a>
-          <img v-else :src="getAssetURL(image.url)" />
+          <div class="theater">
+            <a v-if="image.link" :href="image.link" target="image"><img :src="getAssetURL(image.url)" /></a>
+            <img v-else :src="getAssetURL(image.url)" />
+          </div>
         </div>
       </div>
       <div v-if="section.products">
