@@ -10,9 +10,49 @@
 <body>
   <div id="app">
     <section id="web-link">在沃草網站上閱讀這封email</section>
-    <section id="cover"></section>
-    <nav></nav>
-    <section v-for="section in sections" :id="section.id">{{ section.name }}</section>
+    <section id="cover">
+      <img :src="getAssetURL(cover.image)" />
+      <div>
+        <label>{{ cover.issue }}</label>
+        <time>{{ cover.date }}</time>
+      </div>
+    </section>
+    <nav>
+      <div v-for="item in nav">
+        <img :src="getLogoURL(item.channel)" /><label>{{ item.title }}</label>
+      </div>
+    </nav>
+    <section v-for="section in sections" :id="section.id">
+      <div>
+        <img :src="getLogoURL(section.id)" /><label>{{ section.name }}</label>
+      </div>
+      <h2>{{ section.title }}</h2>
+      <p v-if="section.description">{{ section.description }}</p>
+      <div v-if="section.articles">
+        <div v-for="article in section.articles">
+          <div class="thumbnail"><img :src="getAssetURL(article.thumbnail)" /></div>
+          <h3>{{ article.title }}</h3>
+          <ul>
+            <li v-for="line in article.text">{{ line }}</li>
+          </ul>
+        </div>
+      </div>
+      <div v-if="section.images">
+        <div v-for="image in section.images">
+          <h3 v-if="image.title">{{ image.title }}</h3>
+          <p v-if="image.description">{{ image.description }}</p>
+          <a v-if="image.link" :href="image.link" target="image"><img :src="getAssetURL(image.url)" /></a>
+          <img v-else :src="getAssetURL(image.url)" />
+        </div>
+      </div>
+      <div v-if="section.products">
+        <div v-for="product in section.products">
+          <img :src="getAssetURL(product.image)" />
+          <label>{{ product.name }}</label>
+          <a :href="product.link" target="product"/>{{ '$' + product.price }}</a>
+        </div>
+      </div>
+    </section>
     <footer></footer>
   </div><!-- end of app -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.4/vue.js"></script>
