@@ -66,6 +66,7 @@ td.image-before-text {
   .theater > img,
   .theater > a > img {
     width: 100%;
+    max-width: 60rem;
     margin: 0 auto; }
   .theater[orientation="portrait"] > img,
   .theater[orientation="portrait"] > a > img {
