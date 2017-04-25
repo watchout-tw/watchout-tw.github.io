@@ -3,7 +3,8 @@
   box-sizing: border-box; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 html, body {
   margin: 0;
@@ -57,10 +58,8 @@ table {
   width: 8rem;
   height: 8rem; }
 
-td {
-  vertical-align: top; }
-  td.image-before-text {
-    padding-right: 0.25rem; }
+td.image-before-text {
+  padding-right: 0.25rem; }
 
 .theater {
   width: 100%; }
@@ -88,6 +87,7 @@ td {
   margin: 0 auto; }
 
 #web-link {
+  margin: 0.25rem auto;
   text-align: center; }
 
 section > .header {
@@ -98,6 +98,8 @@ section#edu > .header {
   background-color: rgba(183, 246, 97, 0.25); }
 section#maa > .header {
   background-color: #F5F5F5; }
+section#maa > .images {
+  margin-top: 1rem; }
 section#vendor, section#vendor > .header {
   background-color: rgba(248, 232, 28, 0.25); }
 
@@ -108,15 +110,39 @@ section#vendor, section#vendor > .header {
   width: 100%;
   max-width: 30.25rem;
   margin: 0 auto; }
+  .articles td {
+    vertical-align: top; }
+    .articles td.text {
+      padding-bottom: 0.5rem; }
 
-.images img {
-  border: 0.25rem black solid;
-  border-radius: 0.125rem; }
+.images {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem; }
+  .images img {
+    border: 0.25rem black solid;
+    border-radius: 0.125rem; }
 
 .product {
   max-width: 30rem;
   margin: 0 auto; }
   .product > img {
     width: 100%; }
+  .product > .name {
+    display: block;
+    margin: 0.25rem 0;
+    text-align: center; }
+
+.button {
+  box-sizing: content-box;
+  display: block;
+  padding: 10px 12px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  width: 4em;
+  text-align: center; }
+  .button.purchase {
+    background: rgba(248, 232, 28, 0.75);
+    color: #F5A623; }
 
 /*# sourceMappingURL=style.css.map */

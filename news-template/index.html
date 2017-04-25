@@ -43,7 +43,7 @@
       <table v-if="section.articles" class="articles">
         <tr v-for="article in section.articles">
           <td class="thumbnail image-before-text"><a :href="article.link" target="article"><img class="thumbnail" :src="getAssetURL(article.thumbnail)" /></a></td>
-          <td>
+          <td class="text">
             <h3><a :href="article.link" target="article">{{ article.title }}</a></h3>
             <ul>
               <li v-for="line in article.text">{{ line }}</li>
@@ -64,8 +64,8 @@
       <div v-if="section.products">
         <div v-for="product in section.products" class="product">
           <img :src="getAssetURL(product.image)" />
-          <label>{{ product.name }}</label>
-          <a :href="product.link" target="product"/>{{ '$' + product.price }}</a>
+          <label class="name">{{ product.name }}</label>
+          <a :href="product.link" target="product" class="button purchase" />{{ '$' + product.price }}</a>
         </div>
       </div>
       <div class="spacer">
