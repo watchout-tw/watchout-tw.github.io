@@ -91,7 +91,7 @@ var app = new Vue({
             ],
           },
           {
-            link: 'https://musou.tw/ffsdfs', // 連結網址
+            link: 'http://citizenedu.tw/t/topic/2003', // 連結網址
             thumbnail: 'edu-2.jpg',
             title: '保守主義有道理嗎',
             text: [
