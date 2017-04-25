@@ -28,9 +28,6 @@ h1, h2, h3, h4, p, ul, li, table, tr, td {
 // td { padding: 0 } instead of <table border="0" cellpadding="0" cellspacing="0">
 h1 {
   font-size: 4.5rem;
-  line-height: 1.1;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 h2 {
   font-size: 2.25rem;
@@ -39,11 +36,19 @@ h3 {
   font-size: 1.375rem;
 }
 h1, h2 {
+  line-height: 1.1;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 h1, h2, p {
   max-width: 18rem;
   margin-left: auto;
   margin-right: auto;
+}
+p {
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 img {
   display: block;
@@ -65,19 +70,22 @@ table {
 }
 td {
   vertical-align: top;
-  &.thumbnail {
+  &.image-before-text {
     padding-right: 0.25rem;
   }
 }
 .theater {
   width: 100%;
-  margin: 0 auto;
   > img,
   > a > img {
     width: 100%;
+    margin: 0 auto;
   }
   &[orientation="portrait"] {
-    max-width: 40rem;
+    > img,
+    > a > img {
+      max-width: 40rem;
+    }
   }
 }
 #header {
@@ -112,6 +120,7 @@ section {
   &#maa > .header {
     background-color: $color-maa;
   }
+  &#vendor,
   &#vendor > .header {
     background-color: rgba($color-vendor, 0.25);
   }
@@ -123,6 +132,10 @@ section {
   width: 100%;
   max-width: 30.25rem;
   margin: 0 auto;
+}
+.images img {
+  border: 0.25rem black solid;
+  border-radius: 0.125rem;
 }
 .product {
   max-width: 30rem;

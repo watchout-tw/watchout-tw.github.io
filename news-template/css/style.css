@@ -16,10 +16,7 @@ h1, h2, h3, h4, p, ul, li, table, tr, td {
   padding: 0; }
 
 h1 {
-  font-size: 4.5rem;
-  line-height: 1.1;
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
+  font-size: 4.5rem; }
 
 h2 {
   font-size: 2.25rem; }
@@ -27,10 +24,20 @@ h2 {
 h3 {
   font-size: 1.375rem; }
 
+h1, h2 {
+  line-height: 1.1;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
 h1, h2, p {
   max-width: 18rem;
   margin-left: auto;
   margin-right: auto; }
+
+p {
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 img {
   display: block; }
@@ -52,16 +59,17 @@ table {
 
 td {
   vertical-align: top; }
-  td.thumbnail {
+  td.image-before-text {
     padding-right: 0.25rem; }
 
 .theater {
-  width: 100%;
-  margin: 0 auto; }
+  width: 100%; }
   .theater > img,
   .theater > a > img {
-    width: 100%; }
-  .theater[orientation="portrait"] {
+    width: 100%;
+    margin: 0 auto; }
+  .theater[orientation="portrait"] > img,
+  .theater[orientation="portrait"] > a > img {
     max-width: 40rem; }
 
 #header {
@@ -90,7 +98,7 @@ section#edu > .header {
   background-color: rgba(183, 246, 97, 0.25); }
 section#maa > .header {
   background-color: #F5F5F5; }
-section#vendor > .header {
+section#vendor, section#vendor > .header {
   background-color: rgba(248, 232, 28, 0.25); }
 
 .spacer {
@@ -100,6 +108,10 @@ section#vendor > .header {
   width: 100%;
   max-width: 30.25rem;
   margin: 0 auto; }
+
+.images img {
+  border: 0.25rem black solid;
+  border-radius: 0.125rem; }
 
 .product {
   max-width: 30rem;

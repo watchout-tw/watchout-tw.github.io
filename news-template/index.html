@@ -27,7 +27,7 @@
       <h1>{{ nav.title }}</h1>
       <table id="toc">
         <tr v-for="item in nav.toc">
-          <td><img class="logo" :src="getLogoURL(item.channel)" /></td><td><label>{{ item.title }}</label></td>
+          <td class="image-before-text"><img class="logo" :src="getLogoURL(item.channel)" /></td><td><label>{{ item.title }}</label></td>
         </tr>
       </table>
       <div class="spacer"></div>
@@ -35,14 +35,14 @@
     <section v-for="section in sections" :id="section.id">
       <table class="header">
         <tr>
-          <td class="logo"><img class="logo" :src="getLogoURL(section.id)" /></td><td><label>{{ section.name }}</label></td>
+          <td class="logo image-before-text"><img class="logo" :src="getLogoURL(section.id)" /></td><td><label>{{ section.name }}</label></td>
         </tr>
       </table>
-      <h2>{{ section.title }}</h2>
+      <h2 v-if="section.title">{{ section.title }}</h2>
       <p v-if="section.description">{{ section.description }}</p>
       <table v-if="section.articles" class="articles">
         <tr v-for="article in section.articles">
-          <td class="thumbnail"><a :href="article.link" target="article"><img class="thumbnail" :src="getAssetURL(article.thumbnail)" /></a></td>
+          <td class="thumbnail image-before-text"><a :href="article.link" target="article"><img class="thumbnail" :src="getAssetURL(article.thumbnail)" /></a></td>
           <td>
             <h3><a :href="article.link" target="article">{{ article.title }}</a></h3>
             <ul>
@@ -51,8 +51,8 @@
           </td>
         </tr>
       </table>
-      <div v-if="section.images">
-        <div v-for="image in section.images">
+      <div v-if="section.images" class="images">
+        <div v-for="image in section.images" class="image">
           <h2 v-if="image.title">{{ image.title }}</h2>
           <p v-if="image.description">{{ image.description }}</p>
           <div class="theater" :orientation="image.orientation">
