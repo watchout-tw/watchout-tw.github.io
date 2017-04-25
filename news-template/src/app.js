@@ -104,7 +104,7 @@ var app = new Vue({
             title: '康德散步',
             description: '4月11日，立法院三讀通過了⟪動物保護法⟫修正案，明定禁止食用貓狗。台灣成為亞洲第一個禁止貓肉、狗肉的國家。',
             url: 'walk-1.png',
-            link: 'https://www.facebook.com/citizenedu/photos/a.861134307356973.1073741836.501740576629683/938758312927905/',
+            link: 'https://www.facebook.com/citizenedu/photos/a.861134307356973.1073741836.501740576629683/967025033434566/?type=3&theater',
           },
         ],
       },
