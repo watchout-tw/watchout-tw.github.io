@@ -11,7 +11,7 @@ var app = new Vue({
   data: {
     permalink: 'https://watchout.tw/news/4',
     cover: {
-      image: null,
+      image: 'cover.png',
       issue: '第四期',
       date: '2017年4月28日',
     },
@@ -113,13 +113,13 @@ var app = new Vue({
       {
         id: 'vendor',
         name: '草地攤販',
-        title: '限量商品',
-        description: '草民加贈開放國會紀念徽章',
+        title: '限量復刻',
+        description: '還記得2014年服貿爭議時的台北國際拒馬展盛況嗎？2017年在反年改團體抗議下，國際拒馬展全新開張！立刻收藏「國際拒馬展」紙膠帶，重溫拒馬帶給你的感動！',
         products: [
           {
-            link: 'https://watchout.backme.tw/checkout/332/1571',
-            image: 'vendor-1.png',
-            name: '《警告：行為違法違憲》紙膠帶（三入）',
+            link: 'https://watchout.backme.tw/checkout/332/1572',
+            image: 'vendor-1.jpg',
+            name: '台北國際拒馬展紙膠帶（一式三入）',
             price: '300',
           },
         ]
