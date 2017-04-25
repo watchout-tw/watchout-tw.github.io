@@ -9,6 +9,7 @@ var app = new Vue({
     },
   },
   data: {
+    permalink: 'https://watchout.tw/news/4',
     cover: {
       image: 'cover.png',
       issue: '第四期',
@@ -71,6 +72,7 @@ var app = new Vue({
         images: [
           {
             url: 'maa-1.jpg',
+            link: 'https://www.facebook.com/WatchoutTW',
           },
         ],
       },
