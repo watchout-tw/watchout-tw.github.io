@@ -15,15 +15,19 @@ var app = new Vue({
       date: '2017年4月28日',
     },
     nav: {
-      title: '說好的轉型正義呢',
+      title: '好山好水好好挖？',
       toc: [
         {
           channel: 'musou',
-          title: '促轉條例修法回顧',
+          title: '好山，不挖嗎？',
         },
         {
           channel: 'edu',
-          title: '哲學人看轉型正義',
+          title: '人與環境的倫理學',
+        },
+        {
+          channel: 'vendor',
+          title: '警告行為違法違憲',
         },
       ],
     },
@@ -31,36 +35,31 @@ var app = new Vue({
       {
         id: 'musou',
         name: '國會無雙',
-        title: 'lalalaal', // 區塊標題
-        description: 'sdfjhaslkfjhaslkjahwrlkaesjhrlaskjrhsealkrjh', // 區塊文字
+        title: '財團原民兩樣情', // 區塊標題
+        description: '現行礦業法讓財團不需地主同意就可在私有地採礦，但政府在劃設原民土地時，又以憲法保障私有財產為由提出「袋住先」的辦法，這公平嗎？', // 區塊文字
         articles: [ // 連結們
           {
-            link: 'https://musou.tw/ffsdfs', // 連結網址
+            link: 'https://musou.tw/focuses/1343', // 連結網址
             thumbnail: 'musou-1.jpg', // 連結縮圖
-            title: 'sdfskljflskdf', // 連結標題
+            title: '經濟部：無法撤銷亞泥礦權延期許可；學者：當然可以', // 連結標題
             text: [ // 連結附加文字，分行
-              '製作：沃草團隊',
-              'Powered by PlotDB',
+              '文字：薛翰駿',
             ],
           },
           {
-            link: 'https://musou.tw/ffsdfs', // 連結網址
-            thumbnail: 'musou-1.jpg',
-            title: 'sdfskljflskdf',
+            link: 'https://musou.tw/focuses/1350', // 連結網址
+            thumbnail: 'musou-2.jpg',
+            title: '觀點/憑什麼要原住民「袋住先」？',
             text: [
-              'sdlfkjl',
-              'sdflkjd',
-              'werlkj',
+              '文字：薛翰駿',
             ],
           },
           {
-            link: 'https://musou.tw/ffsdfs', // 連結網址
-            thumbnail: 'musou-1.jpg',
-            title: 'sdfskljflskdf',
+            link: 'https://musou.tw/focuses/1334', // 連結網址
+            thumbnail: 'musou-3.jpg',
+            title: '原民會堅持私有地開發不需部落同意；林昶佐聽不下去',
             text: [
-              'sdlfkjl',
-              'sdflkjd',
-              'werlkj',
+              '文字：薛翰駿',
             ],
           },
         ]
@@ -70,7 +69,7 @@ var app = new Vue({
         name: '草漫',
         images: [
           {
-            url: 'maa-1.jpg',
+            url: 'maa-1.png',
           },
         ],
       },
@@ -78,34 +77,32 @@ var app = new Vue({
         id: 'edu',
         name: '公民學院',
         title: '烙哲學本月精選',
-        description: '性愛機器人，帶來的究竟是進步，還是全新的道德危機？',
+        description: '這次我們為大家精選了兩篇哲學思辨文章。賴天恆的「21世紀新倫理議題」談了彼得˙辛格最近的一次著名演講；張正昕說明了一種哲學理論，試圖讓我們釐清保守主義是一種怎樣的主張。歡迎一起烙哲學！',
         articles: [
           {
-            link: 'https://musou.tw/ffsdfs', // 連結網址
+            link: 'http://citizenedu.tw/t/peter-singer/2007', // 連結網址
             thumbnail: 'edu-1.jpg',
-            title: 'sdfskljflskdf',
+            title: '21世紀新倫理議題',
             text: [
-              'sdlfkjl',
-              'sdflkjd',
-              'werlkj',
+              '作者：賴天恆',
+              '主編：朱家安',
             ],
           },
           {
             link: 'https://musou.tw/ffsdfs', // 連結網址
-            thumbnail: 'edu-1.jpg',
-            title: 'sdfskljflskdf',
+            thumbnail: 'edu-2.jpg',
+            title: '保守主義有道理嗎',
             text: [
-              'sdlfkjl',
-              'sdflkjd',
-              'werlkj',
+              '作者：張正昕',
+              '主編：朱家安',
             ],
           },
         ],
         images: [ // 大圖
           {
-            title: 'Kant',
-            description: 'sdflksjdflkdsjf',
-            url: 'walk-1.jpg',
+            title: '康德散步',
+            description: '4月11日，立法院三讀通過了⟪動物保護法⟫修正案，明定禁止食用貓狗。台灣成為亞洲第一個禁止貓肉、狗肉的國家。',
+            url: 'walk-1.png',
             link: 'https://www.facebook.com/citizenedu/photos/a.861134307356973.1073741836.501740576629683/938758312927905/',
           },
         ],
@@ -114,12 +111,12 @@ var app = new Vue({
         id: 'vendor',
         name: '草地攤販',
         title: '限量商品',
-        description: '',
+        description: '草民加贈開放國會紀念徽章',
         products: [
           {
-            link: 'https://watchout.backme.tw/cashflow/confirm/f37cf1ce-e969-4b37-9327-db3c407fc8dd?locale=zh-TW',
+            link: 'https://watchout.backme.tw/checkout/332/1571',
             image: 'vendor-1.png',
-            name: 'sdflsdkjf',
+            name: '警告行為違法違憲紙膠帶（一式三入）',
             price: '300',
           },
         ]
