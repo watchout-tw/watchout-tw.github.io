@@ -11,7 +11,7 @@ var app = new Vue({
   data: {
     permalink: 'https://watchout.tw/news/4',
     cover: {
-      image: 'cover.png',
+      image: null,
       issue: '第四期',
       date: '2017年4月28日',
     },
@@ -50,7 +50,7 @@ var app = new Vue({
           {
             link: 'https://musou.tw/focuses/1350', // 連結網址
             thumbnail: 'musou-2.jpg',
-            title: '觀點/憑什麼要原住民「袋住先」？',
+            title: '觀點／憑什麼要原住民「袋住先」？',
             text: [
               '文字：薛翰駿',
             ],
@@ -71,6 +71,7 @@ var app = new Vue({
         images: [
           {
             url: 'maa-1.png',
+            orientation: 'landscape',
           },
         ],
       },
@@ -102,8 +103,9 @@ var app = new Vue({
         images: [ // 大圖
           {
             title: '康德散步',
-            description: '4月11日，立法院三讀通過了⟪動物保護法⟫修正案，明定禁止食用貓狗。台灣成為亞洲第一個禁止貓肉、狗肉的國家。',
+            description: '4月11日，立法院三讀通過了《動物保護法》修正案，明定禁止食用貓狗。台灣成為亞洲第一個禁止貓肉、狗肉的國家。',
             url: 'walk-1.png',
+            orientation: 'portrait',
             link: 'https://www.facebook.com/citizenedu/photos/a.861134307356973.1073741836.501740576629683/967025033434566/?type=3&theater',
           },
         ],
@@ -117,7 +119,7 @@ var app = new Vue({
           {
             link: 'https://watchout.backme.tw/checkout/332/1571',
             image: 'vendor-1.png',
-            name: '警告行為違法違憲紙膠帶（一式三入）',
+            name: '《警告：行為違法違憲》紙膠帶（三入）',
             price: '300',
           },
         ]
