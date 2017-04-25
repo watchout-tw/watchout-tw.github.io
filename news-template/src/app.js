@@ -71,7 +71,6 @@ var app = new Vue({
         images: [
           {
             url: 'maa-1.png',
-            link: 'https://www.facebook.com/WatchoutTW',
           },
         ],
       },
