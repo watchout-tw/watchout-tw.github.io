@@ -88,11 +88,14 @@ td.image-before-text {
   margin: 0 auto; }
 
 #web-link {
-  margin: 0.25rem auto;
-  text-align: center; }
+  padding: 0.25rem 0;
+  text-align: center;
+  background-color: rgba(80, 227, 194, 0.25); }
 
 section > .header {
   width: 100%; }
+section#cover {
+  background-color: rgba(80, 227, 194, 0.25); }
 section#musou > .header {
   background-color: rgba(255, 83, 104, 0.25); }
 section#edu > .header {

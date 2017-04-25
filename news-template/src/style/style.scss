@@ -106,12 +106,16 @@ td {
   margin: 0 auto;
 }
 #web-link {
-  margin: 0.25rem auto;
+  padding: 0.25rem 0;
   text-align: center;
+  background-color: rgba($color-watchout, 0.25);
 }
 section {
   > .header {
     width: 100%;
+  }
+  &#cover {
+    background-color: rgba($color-watchout, 0.25);
   }
   &#musou {
     > .header {
