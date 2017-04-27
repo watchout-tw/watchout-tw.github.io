@@ -104,8 +104,12 @@ section#maa > .header {
   background-color: #F5F5F5; }
 section#maa > .images {
   margin-top: 1rem; }
-section#vendor, section#vendor > .header {
-  background-color: rgba(248, 232, 28, 0.25); }
+section#vendor {
+  background-image: url(../asset/vendor/bg.png);
+  background-size: 1rem 100%;
+  background-repeat: repeat-x; }
+  section#vendor > .header {
+    background-color: rgba(248, 232, 28, 0.25); }
 
 .spacer {
   height: 4rem; }
@@ -148,5 +152,16 @@ section#vendor, section#vendor > .header {
   .button.purchase {
     background: rgba(248, 232, 28, 0.75);
     color: #F5A623; }
+
+footer img {
+  margin: 0 auto; }
+footer > .grass {
+  background-image: url(../asset/footer/grass/bg.png);
+  background-size: 1rem 100%;
+  background-repeat: repeat-x; }
+footer > .soil > .light {
+  background: #bd7260; }
+footer > .soil > .dark {
+  background: #8c4533; }
 
 /*# sourceMappingURL=style.css.map */

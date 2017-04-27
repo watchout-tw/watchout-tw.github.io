@@ -136,7 +136,11 @@ section {
     }
   }
   &#vendor {
-    &, > .header {
+    background-image: url(../asset/vendor/bg.png);
+    background-size: 1rem 100%;
+    background-repeat: repeat-x;
+
+    > .header {
       background-color: rgba($color-vendor, 0.25);
     }
   }
@@ -188,5 +192,23 @@ section {
   &.purchase {
     background: rgba($color-vendor, 0.75);
     color: #F5A623;
+  }
+}
+footer {
+  img {
+    margin: 0 auto;
+  }
+  > .grass {
+    background-image: url(../asset/footer/grass/bg.png);
+    background-size: 1rem 100%;
+    background-repeat: repeat-x;
+  }
+  > .soil {
+    > .light {
+      background: #bd7260;
+    }
+    > .dark {
+      background: #8c4533;
+    }
   }
 }
