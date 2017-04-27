@@ -130,4 +130,138 @@ section {
 .pgroup-center {
   margin: 0 auto; }
 
+#pitcher {
+  position: fixed;
+  bottom: 0.25rem;
+  right: 0.25rem;
+  z-index: 2; }
+  #pitcher > .button {
+    display: block;
+    width: 5.625rem;
+    height: 5.625rem;
+    border-radius: 50%;
+    background-size: contain;
+    background-image: url(../asset/pitcher.png); }
+  #pitcher > .close {
+    top: auto;
+    bottom: -0.25rem;
+    color: #50E3C2;
+    opacity: 0.75; }
+
+footer {
+  margin-top: 8rem;
+  padding-bottom: 2rem;
+  background: #434343; }
+  footer > .land, footer > .social, footer > .other {
+    display: block;
+    margin: 0 auto;
+    width: 100%; }
+  footer > .land {
+    position: relative;
+    background-color: white; }
+    footer > .land > .grass, footer > .land > .soil > .light, footer > .land > .soil > .dark {
+      background-position: center;
+      background-size: contain; }
+    footer > .land > .grass {
+      height: 14rem;
+      background-image: url(../asset/footer/land/grass.png);
+      background-repeat: repeat-x; }
+    footer > .land > .soil > .light, footer > .land > .soil > .dark {
+      height: 2rem;
+      background-repeat: no-repeat; }
+    footer > .land > .soil > .light {
+      background-color: #bd7260;
+      background-image: url(../asset/footer/land/soil/light.png); }
+    footer > .land > .soil > .dark {
+      background-color: #8c4533;
+      background-image: url(../asset/footer/land/soil/dark.png); }
+    footer > .land > .patches {
+      position: absolute;
+      bottom: 6rem;
+      width: 100%;
+      overflow: hidden; }
+      footer > .land > .patches > .patch {
+        background-size: contain; }
+        footer > .land > .patches > .patch.big {
+          width: 1.75rem;
+          height: 0.875rem;
+          background-image: url(../asset/footer/grass/big.png); }
+        footer > .land > .patches > .patch.small {
+          width: 0.75rem;
+          height: 0.5rem;
+          background-image: url(../asset/footer/grass/small.png); }
+    footer > .land > .tree {
+      position: absolute; }
+      footer > .land > .tree.tree-deliberate {
+        bottom: 5.25rem;
+        left: 10%;
+        width: 11.25rem; }
+      footer > .land > .tree.tree-discover {
+        bottom: 5rem;
+        left: 10%;
+        transform: translateX(6rem);
+        width: 8.5rem; }
+      footer > .land > .tree.tree-investigate {
+        display: none;
+        bottom: 5.5rem;
+        right: 10%;
+        width: 11.875rem; }
+        @media (min-width: 576px) {
+          footer > .land > .tree.tree-investigate {
+            display: block; } }
+      footer > .land > .tree.tree-sprout {
+        bottom: 4rem;
+        right: 8%;
+        width: 1.25rem; }
+    footer > .land > .farmer {
+      position: absolute; }
+      footer > .land > .farmer.farmer-tangerine {
+        bottom: 1.5rem;
+        left: 12%;
+        width: 4.625rem; }
+      footer > .land > .farmer.farmer-green {
+        bottom: -0.5rem;
+        right: 8%;
+        width: 5rem; }
+      footer > .land > .farmer.farmer-brown {
+        bottom: 4.5rem;
+        left: 10%;
+        transform: translateX(14rem);
+        width: 2rem; }
+  footer > .social {
+    padding: 6rem 0;
+    max-width: 20rem; }
+    footer > .social > .group {
+      margin: 2rem; }
+      footer > .social > .group > .link > .image {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 5.625rem; }
+        footer > .social > .group > .link > .image > img {
+          width: 100%; }
+        footer > .social > .group > .link > .image > .type {
+          position: absolute;
+          top: -0.5rem;
+          left: -0.5rem;
+          width: 1.625rem;
+          height: 1.625rem;
+          background-size: contain; }
+      footer > .social > .group > .link > .message {
+        font-family: "noto-serif-patch", "source-han-serif-tc", serif;
+        font-weight: bold;
+        font-size: 1.125rem;
+        color: rgba(255, 255, 255, 0.75); }
+      footer > .social > .group[type="facebook"] > .link > .image > .type {
+        background-image: url(../asset/social/facebook/round.png); }
+      footer > .social > .group[type="LINE"] > .link > .image > .type {
+        background-image: url(../asset/social/LINE/round.png); }
+  footer > .cluster {
+    color: white; }
+    footer > .cluster > .group {
+      margin: 0 2rem; }
+      footer > .cluster > .group > .item {
+        color: rgba(255, 255, 255, 0.75);
+        text-align: left; }
+
 /*# sourceMappingURL=common.css.map */

@@ -155,3 +155,190 @@ section {
 .pgroup-center {
   margin: 0 auto;
 }
+
+// Pitcher
+#pitcher {
+  position: fixed;
+  bottom: 0.25rem;
+  right: 0.25rem;
+  z-index: 2;
+
+  > .button {
+    display: block;
+    width: 5.625rem;
+    height: 5.625rem;
+    border-radius: 50%;
+    background-size: contain;
+    background-image: url(../asset/pitcher.png);
+  }
+  > .close {
+    top: auto;
+    bottom: -0.25rem;
+    color: $color-watchout;
+    opacity: 0.75;
+  }
+}
+
+// Footer
+footer {
+  margin-top: 8rem;
+  padding-bottom: 2rem;
+  background: #434343;
+
+  > .land, > .social, > .other {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  > .land {
+    position: relative;
+    background-color: white;
+    > .grass, > .soil > .light, > .soil > .dark {
+      background-position: center;
+      background-size: contain;
+    }
+    > .grass {
+      height: 14rem;
+      background-image: url(../asset/footer/land/grass.png);
+      background-repeat: repeat-x;
+    }
+    > .soil {
+      > .light, > .dark {
+        height: 2rem;
+        background-repeat: no-repeat;
+      }
+      > .light {
+        background-color: #bd7260;
+        background-image: url(../asset/footer/land/soil/light.png);
+      }
+      > .dark {
+        background-color: #8c4533;
+        background-image: url(../asset/footer/land/soil/dark.png);
+      }
+    }
+    > .patches {
+      position: absolute;
+      bottom: 6rem;
+      width: 100%;
+      overflow: hidden;
+
+      > .patch {
+        background-size: contain;
+
+        &.big {
+          width: 1.75rem;
+          height: 0.875rem;
+          background-image: url(../asset/footer/grass/big.png);
+        }
+        &.small {
+          width: 0.75rem;
+          height: 0.5rem;
+          background-image: url(../asset/footer/grass/small.png);
+        }
+      }
+    }
+    > .tree {
+      position: absolute;
+
+      &.tree-deliberate {
+        bottom: 5.25rem;
+        left: 10%;
+        width: 11.25rem;
+      }
+      &.tree-discover {
+        bottom: 5rem;
+        left: 10%;
+        transform: translateX(6rem);
+        width: 8.5rem;
+      }
+      &.tree-investigate {
+        display: none;
+        bottom: 5.5rem;
+        right: 10%;
+        width: 11.875rem;
+
+        @include bp-sm-up {
+          display: block;
+        }
+      }
+      &.tree-sprout {
+        bottom: 4rem;
+        right: 8%;
+        width: 1.25rem;
+      }
+    }
+    > .farmer {
+      position: absolute;
+
+      &.farmer-tangerine {
+        bottom: 1.5rem;
+        left: 12%;
+        width: 4.625rem;
+      }
+      &.farmer-green {
+        bottom: -0.5rem;
+        right: 8%;
+        width: 5rem;
+      }
+      &.farmer-brown {
+        bottom: 4.5rem;
+        left: 10%;
+        transform: translateX(14rem);
+        width: 2rem;
+      }
+    }
+  }
+  > .social {
+    padding: 6rem 0;
+    max-width: 20rem;
+
+    > .group {
+      margin: 2rem;
+      > .link {
+        > .image {
+          display: block;
+          position: relative;
+          margin: 0 auto;
+          width: 5.625rem;
+
+          > img {
+            width: 100%;
+          }
+          > .type {
+            position: absolute;
+            top: -0.5rem;
+            left: -0.5rem;
+            width: 1.625rem;
+            height: 1.625rem;
+            background-size: contain;
+          }
+        }
+        > .message {
+          @include font-serif;
+          font-weight: bold;
+          font-size: 1.125rem;
+          color: rgba(white, 0.75); //color-nice-grey;
+          //ransform: translate(2rem, -0.5rem) rotate(-15deg);
+        }
+      }
+
+      &[type="facebook"] > .link > .image > .type {
+        background-image: url(../asset/social/facebook/round.png);
+      }
+      &[type="LINE"] > .link > .image > .type {
+        background-image: url(../asset/social/LINE/round.png);
+      }
+    }
+  }
+
+  > .cluster {
+    color: white;
+    > .group {
+      margin: 0 2rem;
+      > .item {
+        color: rgba(white, 0.75); //$color-nice-grey;
+        text-align: left;
+      }
+    }
+  }
+}

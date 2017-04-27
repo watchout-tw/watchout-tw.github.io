@@ -4,7 +4,7 @@ var pitcher = new Vue({
     common: CommonData,
   },
   template: `
-  <div class="support">
+  <div id="pitcher">
     <a class="button" :href="common.links.support" target="support"></a>
     <a class="close" href="#" @click.stop.prevent="close">×</a>
   </div>
