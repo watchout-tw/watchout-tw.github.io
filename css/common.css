@@ -14,6 +14,13 @@ h1 {
   font-size: 3rem; }
   h1.super {
     font-size: 6rem; }
+  h1.small {
+    font-weight: bold;
+    font-size: 2rem; }
+  h1.sit {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 0.5rem; }
 
 h2 {
   font-size: 2.25rem; }
