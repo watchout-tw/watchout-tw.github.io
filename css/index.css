@@ -830,11 +830,11 @@ body > section {
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
-      background-image: url("../asset/banners/impact-report-compact.png"); }
+      background-image: url("../asset/banners/impact-report-2016-compact.png"); }
       @media (min-width: 480px) {
         body > section#watchout-banner-section > #watchout-banner {
           padding-bottom: 15%;
-          background-image: url("../asset/banners/impact-report-wide.png"); } }
+          background-image: url("../asset/banners/impact-report-2016-wide.png"); } }
   body > section#first-section > hgroup {
     background: none; }
   body > section#first-section > h1 > .dot {

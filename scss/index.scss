@@ -25,10 +25,10 @@ body > section {
 			background-size: cover;
 			background-position: center center;
 			background-repeat: no-repeat;
-			background-image: url('../asset/banners/impact-report-compact.png');
+			background-image: url('../asset/banners/impact-report-2016-compact.png');
 			@include screen-gt-M {
 				padding-bottom: 15%;
-				background-image: url('../asset/banners/impact-report-wide.png');
+				background-image: url('../asset/banners/impact-report-2016-wide.png');
 			}
 		}
 	}
