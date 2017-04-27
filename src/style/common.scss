@@ -199,7 +199,7 @@ footer {
     }
     > .grass {
       height: 14rem;
-      background-image: url(http://watchout.tw/asset/footer/land/grass.png);
+      background-image: url(https://watchout.tw/asset/footer/land/grass.png);
       background-repeat: repeat-x;
     }
     > .soil {
@@ -209,11 +209,11 @@ footer {
       }
       > .light {
         background-color: #bd7260;
-        background-image: url(http://watchout.tw/asset/footer/land/soil/light.png);
+        background-image: url(https://watchout.tw/asset/footer/land/soil/light.png);
       }
       > .dark {
         background-color: #8c4533;
-        background-image: url(http://watchout.tw/asset/footer/land/soil/dark.png);
+        background-image: url(https://watchout.tw/asset/footer/land/soil/dark.png);
       }
     }
     > .patches {
@@ -228,12 +228,12 @@ footer {
         &.big {
           width: 1.75rem;
           height: 0.875rem;
-          background-image: url(http://watchout.tw/asset/footer/grass/big.png);
+          background-image: url(https://watchout.tw/asset/footer/grass/big.png);
         }
         &.small {
           width: 0.75rem;
           height: 0.5rem;
-          background-image: url(http://watchout.tw/asset/footer/grass/small.png);
+          background-image: url(https://watchout.tw/asset/footer/grass/small.png);
         }
       }
     }
@@ -323,10 +323,10 @@ footer {
       }
 
       &[type="facebook"] > .link > .image > .type {
-        background-image: url(http://watchout.tw/asset/social/facebook/round.png);
+        background-image: url(https://watchout.tw/asset/social/facebook/round.png);
       }
       &[type="LINE"] > .link > .image > .type {
-        background-image: url(http://watchout.tw/asset/social/LINE/round.png);
+        background-image: url(https://watchout.tw/asset/social/LINE/round.png);
       }
     }
   }
