@@ -18,12 +18,11 @@
 	<meta property="og:image" content="https://watchout.tw/images/forward-compact.gif" />
   <link rel="stylesheet" href="https://watchout.tw/css/common.css"/>
 	<link rel="stylesheet" href="./css/style.css"/>
-	<!--<link rel="stylesheet" href="./css/layout-gt-L.css" media="(min-width: 750px)"/>-->
 </head>
 <body>
   <div id="app">
     <nav-bar-simple :channel="common.channels.watchout"></nav-bar-simple>
-    <h1 class="small sit">歷年影響力報告<h1>
+    <h1 class="small sit">歷年影響力報告</h1>
     <div class="banners">
       <a v-for="report in reports" class="banner" :href="report.link" target="report">
         <img class="compact ":src="paths(report.banner).compact" />
