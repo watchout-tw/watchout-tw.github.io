@@ -67,6 +67,9 @@ a.a-block {
   z-index: 1; }
 
 /* Watchout Commons-specific additional styles */
+.bg-watchout {
+  background-color: #50E3C2; }
+
 .bg-ask {
   background-color: #4DEBDF; }
 
