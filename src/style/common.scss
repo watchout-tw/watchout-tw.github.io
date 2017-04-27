@@ -1,0 +1,157 @@
+@import 'variables';
+
+/* General override */
+html, body {
+  font-size: 16px;
+}
+
+// Small element
+h1, h2, h3, h4 {
+  @include font-serif;
+  font-weight: bold;
+}
+h4 {
+  font-size: 1.125rem;
+}
+label {
+  margin: 0;
+}
+img {
+  display: block;
+}
+a {
+  &, &:hover, &:focus, &:active, &:visited {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  &.a-text {
+    display: inline;
+    &:hover, &:focus, &:active {
+      @include underline;
+    }
+  }
+  &.a-block {
+    display: block;
+    &:hover, &:focus, &:active {
+      .a-target {
+        @include underline;
+      }
+    }
+  }
+}
+.close {
+  float: none;
+  display: block;
+  position: absolute;
+  top: -0.5rem;
+  right: -2px;
+  font-size: 2rem;
+  line-height: 1;
+  border-bottom-width: 4px;
+  font-weight: normal;
+  text-shadow: none;
+  cursor: pointer;
+
+  &, &:hover, &:focus {
+    color: inherit;
+    opacity: 1;
+  }
+}
+
+// List
+.list-unstyled {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+// Navbar
+.navbar, .navbar-brand {
+  padding: 0;
+  z-index: 1;
+}
+
+/* Watchout Commons-specific additional styles */
+// following Bootstrap convention
+
+// Background color
+.bg-ask {
+  background-color: $color-ask;
+}
+.bg-ask-light {
+  background-color: rgba($color-ask, 0.25);
+}
+.bg-ask-gradient-to-transparent {
+  background: linear-gradient(to bottom, rgba($color-ask, 0.25), rgba($color-ask, 0));
+}
+.bg-musou {
+  background-color: $color-musou;
+}
+.bg-musou-light {
+  background-color: rgba($color-musou, 0.25);
+}
+
+// Header
+.header-center {
+  text-align: center;
+}
+.header-block {
+  margin: 0;
+  padding: 0.333333em 0;
+}
+.header-block-tall {
+  padding: 1em 0;
+}
+
+// Layout
+section {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.container-960 {
+  max-width: 960px + 15px*2;
+  margin-left: auto;
+  margin-right: auto;
+}
+.max-width-960 {
+  max-width: 960px;
+}
+
+// Navbar
+.logo-type {
+  display: block;
+  width: 212px;
+  height: auto;
+}
+
+// Logo & icon
+.logo-small, .icon-small {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-position: center center;
+}
+.logo-small {
+  &.musou {
+    background-image: url(https://watchout.tw/asset/logo/musou/small.png);
+  }
+  &.woo {
+    background-image: url(https://watchout.tw/asset/logo/woo/small.png);
+  }
+}
+.icon-small {
+  &.transcript {
+    background-image: url(https://watchout.tw/asset/icon/transcript/small.png);
+  }
+}
+
+/* Watchout Commons-specific additional styles */
+
+.pgroup {
+  width: 18rem;
+}
+.pgroup-center {
+  margin: 0 auto;
+}
