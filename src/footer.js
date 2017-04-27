@@ -121,7 +121,7 @@ var footer = new Vue({
     </div>
     <div class="cluster d-flex flex-row justify-content-center">
       <div v-for="group in cluster" class="group">
-        <h4>{{ group.title }}</h4>
+        <h5>{{ group.title }}</h5>
         <div v-for="item in group.links" class="item"><a :href="item.link" class="a-text">{{ item.title }}</a></div>
       </div>
     </div>
