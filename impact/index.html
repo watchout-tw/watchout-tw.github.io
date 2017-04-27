@@ -23,7 +23,13 @@
 <body>
   <div id="app">
     <nav-bar-simple :channel="common.channels.watchout"></nav-bar-simple>
-    <h1>影響力報告</h1>
+    <h1 class="small sit">歷年影響力報告<h1>
+    <div class="banners">
+      <a v-for="report in reports" class="banner" :href="report.link" target="report">
+        <img class="compact ":src="paths(report.banner).compact" />
+        <img class="wide" :src="paths(report.banner).wide" />
+      </a>
+    </div>
   </div><!-- end of app -->
   <footer></footer>
   <div id="pitcher"></div>

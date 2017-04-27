@@ -1,0 +1,43 @@
+@import '../../../src/style/_variables.scss';
+
+h1.small {
+  font-weight: bold;
+  font-size: 2rem;
+}
+h1.sit {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.banners {
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+
+  > .banner {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 30%;
+
+    > .wide, > .compact {
+      display: block;
+      width: 100%;
+    }
+    > .wide {
+      display: none;
+    }
+
+    @include bp-sm-up {
+      padding-bottom: 15%;
+      > .wide {
+        display: block;
+      }
+      > .compact {
+        display: none;
+      }
+    }
+  }
+}
