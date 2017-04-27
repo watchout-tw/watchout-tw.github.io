@@ -20,8 +20,11 @@ var Channel = function(id, name, width, home) {
       small: window.CommonData.links.home + 'asset/logo/' + this.id + '/small.png',
     },
     logoWithType: {
-      regular: window.CommonData.links.home + 'asset/logo+type/' + this.id + '/regular.png',
-      width: width,
+      regular: {
+        src: window.CommonData.links.home + 'asset/logo+type/' + this.id + '/regular.png',
+        width: width,
+        style: { width: width + 'px' },
+      },
     },
   };
 };
@@ -49,7 +52,7 @@ Vue.component('nav-bar-simple', {
   },
   template: `
   <nav class="navbar sticky-top navbar-light" :class="channel.classes.bg">
-    <a class="navbar-brand" :href="channel.links.home"><img :src="channel.asset.logoWithType.regular" class="logo-type"/></a>
+    <a class="navbar-brand" :href="channel.links.home"><img :src="channel.asset.logoWithType.regular.src" class="logo-type" :style="channel.asset.logoWithType.regular.style"/></a>
   </nav>
   `,
 });
