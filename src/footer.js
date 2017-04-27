@@ -100,13 +100,13 @@ var footer = new Vue({
       <div class="patches d-flex align-items-end justify-content-between">
         <div v-for="i in patchCount()" class="patch" :class="patchSize()" :style="patchStyles(i)"></div>
       </div>
-      <img src="asset/footer/tree/deliberate.png" class="tree tree-deliberate" />
-      <img src="asset/footer/tree/discover.png" class="tree tree-discover" />
-      <img src="asset/footer/tree/investigate.png" class="tree tree-investigate" />
-      <img src="asset/footer/farmer/tangerine.png" class="farmer farmer-tangerine" />
-      <img src="asset/footer/farmer/green.png" class="farmer farmer-green" />
-      <img src="asset/footer/farmer/brown.png" class="farmer farmer-brown" />
-      <img src="asset/footer/tree/sprout.png" class="tree tree-sprout" />
+      <img src="https://watchout.tw/asset/footer/tree/deliberate.png" class="tree tree-deliberate" />
+      <img src="https://watchout.tw/asset/footer/tree/discover.png" class="tree tree-discover" />
+      <img src="https://watchout.tw/asset/footer/tree/investigate.png" class="tree tree-investigate" />
+      <img src="https://watchout.tw/asset/footer/farmer/tangerine.png" class="farmer farmer-tangerine" />
+      <img src="https://watchout.tw/asset/footer/farmer/green.png" class="farmer farmer-green" />
+      <img src="https://watchout.tw/asset/footer/farmer/brown.png" class="farmer farmer-brown" />
+      <img src="https://watchout.tw/asset/footer/tree/sprout.png" class="tree tree-sprout" />
     </div>
     <div class="social">
       <div v-for="group in cptSocialGroups" class="group d-flex flex-row justify-content-around" :type="group.type">
