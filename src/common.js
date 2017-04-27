@@ -38,7 +38,7 @@ CommonData.channels = {
   watchout: new Channel('watchout', '沃草', 274, CommonData.links.home),
 };
 
-Vue.component('nav-simple', {
+Vue.component('nav-bar-simple', {
   props: {
     channel: {
       type: Object,
