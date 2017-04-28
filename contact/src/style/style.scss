@@ -1,0 +1,12 @@
+@import 'wormhole/variables';
+
+.card {
+  display: block;
+  width: 18rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: rgba($color-watchout, 0.25);
+  border: none;
+  border-radius: 0;
+  @include shadow;
+}
