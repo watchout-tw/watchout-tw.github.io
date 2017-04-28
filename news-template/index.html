@@ -9,7 +9,7 @@
 </head>
 <body>
   <div id="app">
-    <section id="web-link"><a :href="permalink">在沃草網站上閱讀這封email</a></section>
+    <section id="permalink"><a :href="permalink">在沃草網站上閱讀這封email</a></section>
     <section id="cover">
       <div v-if="cover.image" class="theater">
         <img :src="getAssetURL(cover.image)" />
