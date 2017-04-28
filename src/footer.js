@@ -49,7 +49,7 @@ var footer = new Vue({
           },
           {
             title: '歷年影響力報告',
-            link: 'https://watchout.tw/impact/',
+            link: 'https://watchout.tw/impact',
           },
           {
             title: '聯絡我們',
