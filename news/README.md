@@ -1,9 +1,20 @@
-- Upload issue-specific asset to issue folder like `/news/4`
-- Update issue-specific content in `/news-template/app.js`
-- Generate static html page
-- Paste static html into `index.html` in issue folder
+SOP
+===
+
+## Images
+- Create issue folder using issue number like `4`
+- Add issue-specific asset to issue folder
+- Push to GitHub
+
+## Text
+- Write in this issue’s content to `/news-template/app.js`
+- Open up a browser
+- Select `<html>` from the *Elements* panel & copy
+- Paste code (static HTML) into `index.html` in issue folder
   - Remove all `<script>` tags other than Google Analytics
   - Fix indentation
+
+## Code
 - Use [Premailer by dialect.ca](http://premailer.dialect.ca/) to generate html with inline style
 - Paste code into `inline.html` in issue folder
   - Remove Google Analytics
