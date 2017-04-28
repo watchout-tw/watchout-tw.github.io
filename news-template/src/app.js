@@ -1,5 +1,8 @@
 var app = new Vue({
   el: '#app',
+  created: function() {
+    document.title = '沃草→草報←' + this.cover.issue + '↑';
+  },
   methods: {
     getLogoURL: function(id) {
       return 'https://watchout.tw/asset/logo/' + id + '/small.png';
