@@ -35,6 +35,9 @@ $font-size-small: 0.875rem;
   background-size: 0.5em 0.5em;
   background-blend-mode: multiply;
 }
+@mixin shadow {
+  box-shadow: 0 2px 8px 0 $color-shadow;
+}
 
 /* Bootstrap breakpoint */
 $bp-sm: 576px;
