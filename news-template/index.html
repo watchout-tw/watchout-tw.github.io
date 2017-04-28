@@ -23,8 +23,8 @@
         </table>
       </div>
     </section>
-    <nav>
-      <h1>{{ nav.title }}</h1>
+    <nav v-if="nav">
+      <h1 v-if="nav.title">{{ nav.title }}</h1>
       <table id="toc">
         <tr v-for="item in nav.toc">
           <td class="image-before-text"><img class="logo" :src="getLogoURL(item.channel)" /></td><td><label>{{ item.title }}</label></td>
