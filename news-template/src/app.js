@@ -59,7 +59,7 @@ var app = new Vue({
           {
             link: 'https://musou.tw/focuses/1334', // 連結網址
             thumbnail: 'musou-3.jpg',
-            title: '原民會堅持私有地開發不需部落同意；林昶佐聽不下去',
+            title: '原民會堅持私有地開發不需部落同意；林昶佐：聽不下去',
             text: [
               '文字：薛翰駿',
             ],
