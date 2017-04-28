@@ -5,7 +5,7 @@ var app = new Vue({
       return 'https://watchout.tw/asset/logo/' + id + '/small.png';
     },
     getAssetURL: function(filename) {
-      return 'asset/' + filename;
+      return this.permalink + '/asset/' + filename;
     },
   },
   data: {

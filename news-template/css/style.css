@@ -110,7 +110,7 @@ section#maa > .header {
 section#maa > .images {
   margin-top: 1rem; }
 section#vendor {
-  background-image: url(../asset/vendor/bg.png);
+  background-image: url(https://watchout.tw/news-template/asset/vendor/bg.png);
   background-size: 1rem 100%;
   background-repeat: repeat-x; }
   section#vendor > .header {
@@ -163,7 +163,7 @@ section#vendor {
 footer img {
   margin: 0 auto; }
 footer > .green {
-  background-image: url(../asset/footer/grass/bg.png);
+  background-image: url(https://watchout.tw/news-template/asset/footer/grass/bg.png);
   background-size: 1rem 100%;
   background-repeat: repeat-x; }
 footer > .soil > .light {
@@ -171,8 +171,7 @@ footer > .soil > .light {
 footer > .soil > .dark {
   background: #8c4533; }
 footer > .soil > .deep {
-  background: #434343;
-  color: white; }
+  background: #434343; }
   footer > .soil > .deep > .social {
     margin: 0 auto;
     text-align: center; }
@@ -192,5 +191,7 @@ footer > .soil > .deep {
       padding: 1rem; }
     footer > .soil > .deep > .cluster li {
       opacity: 0.75; }
+  footer > .soil > .deep h5, footer > .soil > .deep a {
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */

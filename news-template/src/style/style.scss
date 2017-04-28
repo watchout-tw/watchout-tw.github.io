@@ -145,7 +145,7 @@ section {
     }
   }
   &#vendor {
-    background-image: url(../asset/vendor/bg.png);
+    background-image: url(https://watchout.tw/news-template/asset/vendor/bg.png);
     background-size: 1rem 100%;
     background-repeat: repeat-x;
 
@@ -211,7 +211,7 @@ footer {
     margin: 0 auto;
   }
   > .green {
-    background-image: url(../asset/footer/grass/bg.png);
+    background-image: url(https://watchout.tw/news-template/asset/footer/grass/bg.png);
     background-size: 1rem 100%;
     background-repeat: repeat-x;
   }
@@ -224,7 +224,6 @@ footer {
     }
     > .deep {
       background: $color-soil-deep;
-      color: white;
       > .social {
         margin: 0 auto;
         text-align: center;
@@ -250,6 +249,9 @@ footer {
         li {
           opacity: 0.75;
         }
+      }
+      h5, a {
+        color: white;
       }
     }
   }
