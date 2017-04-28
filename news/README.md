@@ -1,0 +1,4 @@
+- Upload issue-specific asset to issue folder like `/news/4`
+- Update issue-specific content in `/news-template/app.js`
+- Generate static html page
+- Use inline mailer
