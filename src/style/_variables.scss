@@ -28,8 +28,8 @@ $font-size-small: 0.875rem;
 @mixin font-serif {
   font-family: "noto-serif-patch", "source-han-serif-tc", serif;
 }
-@mixin underline {
-  background-image: linear-gradient(to right, $color-ask 0%, $color-ask 100%);
+@mixin underline($opacity) {
+  background-image: linear-gradient(to right, rgba($color-watchout, $opacity) 0%, rgba($color-watchout, $opacity) 100%);
   background-position: center;
   background-repeat: repeat-x;
   background-size: 0.5em 0.5em;

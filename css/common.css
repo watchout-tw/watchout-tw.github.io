@@ -45,9 +45,14 @@ a, a:hover, a:focus, a:active, a:visited {
   text-decoration: none;
   cursor: pointer; }
 a.a-text {
-  display: inline; }
+  display: inline;
+  background-image: linear-gradient(to right, rgba(80, 227, 194, 0.25) 0%, rgba(80, 227, 194, 0.25) 100%);
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: 0.5em 0.5em;
+  background-blend-mode: multiply; }
   a.a-text:hover, a.a-text:focus, a.a-text:active {
-    background-image: linear-gradient(to right, #4DEBDF 0%, #4DEBDF 100%);
+    background-image: linear-gradient(to right, #50e3c2 0%, #50e3c2 100%);
     background-position: center;
     background-repeat: repeat-x;
     background-size: 0.5em 0.5em;
@@ -55,7 +60,7 @@ a.a-text {
 a.a-block {
   display: block; }
   a.a-block:hover .a-target, a.a-block:focus .a-target, a.a-block:active .a-target {
-    background-image: linear-gradient(to right, #4DEBDF 0%, #4DEBDF 100%);
+    background-image: linear-gradient(to right, #50e3c2 0%, #50e3c2 100%);
     background-position: center;
     background-repeat: repeat-x;
     background-size: 0.5em 0.5em;

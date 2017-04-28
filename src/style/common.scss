@@ -51,15 +51,17 @@ a {
   }
   &.a-text {
     display: inline;
+    @include underline(0.25);
+
     &:hover, &:focus, &:active {
-      @include underline;
+      @include underline(1.0);
     }
   }
   &.a-block {
     display: block;
     &:hover, &:focus, &:active {
       .a-target {
-        @include underline;
+        @include underline(1.0);
       }
     }
   }
