@@ -11,13 +11,13 @@ var footer = new Vue({
       },
       {
         type: 'LINE',
-        image: 'https://watchout.tw/asset/goodfriend.png',
+        image: 'https://watchout.tw/asset/social/LINE/goodfriend.png',
         message: '阿草好朋友',
         link: 'https://store.line.me/stickershop/product/1024870/zh-Hant',
       },
       {
         type: 'LINE',
-        image: 'https://watchout.tw/asset/goodcitizen.png',
+        image: 'https://watchout.tw/asset/social/LINE/goodcitizen.png',
         message: '阿草督督好',
         link: 'https://store.line.me/stickershop/product/1224270/zh-Hant',
       },
@@ -62,6 +62,43 @@ var footer = new Vue({
         ],
       },
     ],
+    trees: [
+      {
+        type: 'tree',
+        name: 'deliberate',
+        filetype: 'png',
+      },
+      {
+        type: 'tree',
+        name: 'discover',
+        filetype: 'png',
+      },
+      {
+        type: 'tree',
+        name: 'investigate',
+        filetype: 'png',
+      },
+      {
+        type: 'farmer',
+        name: 'tangerine',
+        filetype: 'png',
+      },
+      {
+        type: 'farmer',
+        name: 'green',
+        filetype: 'png',
+      },
+      {
+        type: 'farmer',
+        name: 'brown',
+        filetype: 'png',
+      },
+      {
+        type: 'tree',
+        name: 'sprout',
+        filetype: 'png',
+      },
+    ]
   },
   methods: {
     patchCount: function() {
@@ -75,6 +112,12 @@ var footer = new Vue({
         transform: 'translateX(' + (Math.round(Math.random())*2 - 1)*Math.round(Math.random()*16) + 'rem)',
       };
     },
+    getTreeAssetURL: function(tree) {
+      return this.common.links.home + 'asset/footer/' + tree.type + '/' + tree.name + '.' + tree.filetype;
+    },
+    getTreeClasses: function(tree) {
+      return [tree.type, tree.type + '-' + tree.name];
+    }
   },
   computed: {
     cptSocialGroups: function() {
@@ -95,34 +138,35 @@ var footer = new Vue({
   template: `
   <footer>
     <div class="land">
-      <div class="grass"></div>
-      <div class="soil"><div class="light"></div><div class="dark"></div></div>
-      <div class="patches d-flex align-items-end justify-content-between">
-        <div v-for="i in patchCount()" class="patch" :class="patchSize()" :style="patchStyles(i)"></div>
-      </div>
-      <img src="https://watchout.tw/asset/footer/tree/deliberate.png" class="tree tree-deliberate" />
-      <img src="https://watchout.tw/asset/footer/tree/discover.png" class="tree tree-discover" />
-      <img src="https://watchout.tw/asset/footer/tree/investigate.png" class="tree tree-investigate" />
-      <img src="https://watchout.tw/asset/footer/farmer/tangerine.png" class="farmer farmer-tangerine" />
-      <img src="https://watchout.tw/asset/footer/farmer/green.png" class="farmer farmer-green" />
-      <img src="https://watchout.tw/asset/footer/farmer/brown.png" class="farmer farmer-brown" />
-      <img src="https://watchout.tw/asset/footer/tree/sprout.png" class="tree tree-sprout" />
-    </div>
-    <div class="social">
-      <div v-for="group in cptSocialGroups" class="group d-flex flex-row justify-content-around" :type="group.type">
-        <a v-for="item in group.items" :href="item.link" class="link a-block" target="social">
-          <div class="image">
-            <img :src="item.image" />
-            <div class="type"></div>
+      <div class="green"></div>
+      <div class="soil">
+        <div class="light"></div>
+        <div class="dark"></div>
+        <div class="deep">
+          <div class="social">
+            <div v-for="group in cptSocialGroups" class="group d-flex flex-row justify-content-around" :type="group.type">
+              <a v-for="item in group.items" :href="item.link" class="link a-block" target="social">
+                <div class="image">
+                  <img :src="item.image" />
+                  <div class="type"></div>
+                </div>
+                <div class="message">{{ item.message }}</div>
+              </a>
+            </div>
           </div>
-          <div class="message">{{ item.message }}</div>
-        </a>
+          <div class="cluster d-flex flex-row justify-content-center">
+            <div v-for="group in cluster" class="group">
+              <h5>{{ group.title }}</h5>
+              <div v-for="item in group.links" class="item"><a :href="item.link" class="a-text">{{ item.title }}</a></div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="cluster d-flex flex-row justify-content-center">
-      <div v-for="group in cluster" class="group">
-        <h5>{{ group.title }}</h5>
-        <div v-for="item in group.links" class="item"><a :href="item.link" class="a-text">{{ item.title }}</a></div>
+      <div class="elements">
+        <div class="grass d-flex align-items-end justify-content-between">
+          <div v-for="i in patchCount()" class="patch" :class="patchSize()" :style="patchStyles(i)"></div>
+        </div>
+        <img v-for="tree in trees" :src="getTreeAssetURL(tree)" :class="getTreeClasses(tree)" />
       </div>
     </div>
   </footer>
