@@ -1,4 +1,7 @@
 - Upload issue-specific asset to issue folder like `/news/4`
 - Update issue-specific content in `/news-template/app.js`
 - Generate static html page
+- Paste static html into `index.html` in issue folder
+  - Remove all `<script>` tags
+  - Fix indentation
 - Use inline mailer
