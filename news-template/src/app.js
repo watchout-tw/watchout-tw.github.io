@@ -120,7 +120,7 @@ var app = new Vue({
             link: 'https://watchout.backme.tw/checkout/332/1572',
             image: 'vendor-1.jpg',
             name: '《台北國際拒馬展》紙膠帶（三入）',
-            price: '300',
+            price: '250',
           },
         ]
       },
