@@ -12,7 +12,7 @@ html, body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
   font-size: 16px; }
 
-h1, h2, h3, h4, p, ul, li, table, tr, td {
+h1, h2, h3, h4, h5, p, ul, li, table, tr, td {
   margin: 0;
   padding: 0; }
 
@@ -34,6 +34,11 @@ h1, h2, p {
   max-width: 18rem;
   margin-left: auto;
   margin-right: auto; }
+
+h5 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0.25rem 0; }
 
 p {
   line-height: 1.5;
@@ -113,6 +118,8 @@ section#vendor {
 
 .spacer {
   height: 4rem; }
+  .spacer.half {
+    height: 2rem; }
 
 .articles {
   width: 100%;
@@ -155,7 +162,7 @@ section#vendor {
 
 footer img {
   margin: 0 auto; }
-footer > .grass {
+footer > .green {
   background-image: url(../asset/footer/grass/bg.png);
   background-size: 1rem 100%;
   background-repeat: repeat-x; }
@@ -163,5 +170,27 @@ footer > .soil > .light {
   background: #bd7260; }
 footer > .soil > .dark {
   background: #8c4533; }
+footer > .soil > .deep {
+  background: #434343;
+  color: white; }
+  footer > .soil > .deep > .social {
+    margin: 0 auto;
+    text-align: center; }
+    footer > .soil > .deep > .social td {
+      vertical-align: top;
+      padding: 0.25rem; }
+    footer > .soil > .deep > .social .type {
+      width: 1.625rem;
+      margin-bottom: 0.25rem; }
+    footer > .soil > .deep > .social .thumbnail {
+      width: 5.625rem;
+      height: auto; }
+  footer > .soil > .deep > .cluster {
+    margin: 0 auto; }
+    footer > .soil > .deep > .cluster td {
+      vertical-align: top;
+      padding: 1rem; }
+    footer > .soil > .deep > .cluster li {
+      opacity: 0.75; }
 
 /*# sourceMappingURL=style.css.map */

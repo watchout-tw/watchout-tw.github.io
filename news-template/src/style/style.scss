@@ -5,6 +5,10 @@ $color-edu: #B7F661;
 $color-vendor: #F8E81C;
 $color-maa: #F5F5F5;
 
+$color-soil-light: #bd7260;
+$color-soil-dark: #8c4533;
+$color-soil-deep: #434343;
+
 $font-latin: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 $font-tw: "PingFang TC", "Noto Sans CJK TC", "微軟正黑體";
 $font: $font-latin, $font-tw, sans-serif;
@@ -22,7 +26,7 @@ html, body {
   font-family: $font;
   font-size: 16px;
 }
-h1, h2, h3, h4, p, ul, li, table, tr, td {
+h1, h2, h3, h4, h5, p, ul, li, table, tr, td {
   margin: 0;
   padding: 0;
 }
@@ -45,6 +49,11 @@ h1, h2, p {
   max-width: 18rem;
   margin-left: auto;
   margin-right: auto;
+}
+h5 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0.25rem 0;
 }
 p {
   line-height: 1.5;
@@ -147,6 +156,9 @@ section {
 }
 .spacer {
   height: 4rem;
+  &.half {
+    height: 2rem;
+  }
 }
 .articles {
   width: 100%;
@@ -198,17 +210,47 @@ footer {
   img {
     margin: 0 auto;
   }
-  > .grass {
+  > .green {
     background-image: url(../asset/footer/grass/bg.png);
     background-size: 1rem 100%;
     background-repeat: repeat-x;
   }
   > .soil {
     > .light {
-      background: #bd7260;
+      background: $color-soil-light;
     }
     > .dark {
-      background: #8c4533;
+      background: $color-soil-dark;
+    }
+    > .deep {
+      background: $color-soil-deep;
+      color: white;
+      > .social {
+        margin: 0 auto;
+        text-align: center;
+        td {
+          vertical-align: top;
+          padding: 0.25rem;
+        }
+        .type {
+          width: 1.625rem;
+          margin-bottom: 0.25rem;
+        }
+        .thumbnail {
+          width: 5.625rem;
+          height: auto;
+        }
+      }
+      > .cluster {
+        margin: 0 auto;
+        td {
+          vertical-align: top;
+          padding: 1rem;
+        }
+        li {
+          opacity: 0.75;
+        }
+      }
     }
   }
 }

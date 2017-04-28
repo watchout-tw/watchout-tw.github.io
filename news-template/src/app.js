@@ -124,6 +124,6 @@ var app = new Vue({
           },
         ]
       },
-    ],
+    ], // end of sections
   },
 });
