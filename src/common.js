@@ -2,6 +2,7 @@ var CommonData = {
   links: {
     home: 'https://watchout.tw/',
     support: 'https://watchout.tw/#support',
+    contact: 'https://watchout.tw/contact',
   },
 };
 
