@@ -1,11 +1,4 @@
 @charset "UTF-8";
-/*
-@font-face {
-  font-family: "taiwan-comma";
-  src: local("PingFang TC");
-  unicode-range: U+FF0C, U+3002, U+FF1A, U+FF1B;
-}
-*/
 [screen="gt-M"] {
   display: none !important; }
 
@@ -26,7 +19,7 @@
     display: none !important; } }
 html, body {
   font-size: 16px;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", "xin-gothic-tc", sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -43,8 +36,8 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   list-style: none;
-  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
-  font-weight: 900;
+  font-family: "century-std", "noto-serif-patch", "source-han-serif-tc", "Noto Serif CJK TC", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
+  font-weight: 700;
   margin: 0;
   padding-top: 0.36em;
   padding-left: 0.25rem;
@@ -63,7 +56,7 @@ h2 {
   line-height: 1.16666667; }
 
 html[lang="en"] h1 {
-  font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 900;
   font-size: 3.4rem; }
   @media (min-width: 480px) {
@@ -103,8 +96,8 @@ span.underline {
   border-bottom: 3px solid black; }
 
 span.emphasize {
-  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
-  font-weight: 900; }
+  font-family: "century-std", "noto-serif-patch", "source-han-serif-tc", "Noto Serif CJK TC", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
+  font-weight: 700; }
 
 span.fixed-width-center {
   display: inline;
@@ -119,15 +112,14 @@ span.fixed-width-center {
 .code,
 .close,
 .url {
-  font-family: "akkurat-mono", "Menlo", monospace;
-  font-weight: 400 !important; }
+  font-family: "Space Mono", "Menlo", monospace; }
 
 .url.disabled {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif; }
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", "xin-gothic-tc", sans-serif; }
 
 .number {
   position: relative;
-  font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 900;
   font-size: 5.25rem;
   line-height: 1em;
@@ -160,7 +152,7 @@ span.fixed-width-center {
     left: 100%;
     top: 56%;
     font-size: 0.8125rem;
-    font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", "xin-gothic-tc", sans-serif;
     font-weight: 400;
     line-height: 1;
     margin: 0;
@@ -170,11 +162,11 @@ span.fixed-width-center {
     transform: translateY(-50%); }
 
 html[lang="en"] span.emphasize {
-  font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 900; }
 html[lang="en"] .url,
 html[lang="en"] .url.disabled {
-  font-family: "akkurat-mono", "Menlo", monospace; }
+  font-family: "Space Mono", "Menlo", monospace; }
 
 span.year, span.month {
   display: inline-block;
@@ -202,18 +194,17 @@ span.month {
   line-height: 1em; }
 
 .button, .prompt, .badge {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", "xin-gothic-tc", sans-serif;
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1em;
   text-align: center; }
 
 .button.code {
-  font-family: "akkurat-mono", "Menlo", monospace;
-  font-weight: 400 !important; }
+  font-family: "Space Mono", "Menlo", monospace; }
 
 .support-button {
-  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
   font-weight: 700;
   font-size: 2.25rem;
   line-height: 1em;
@@ -223,7 +214,7 @@ span.month {
   line-height: 1.22222222em; }
 
 html[lang="en"] .button {
-  font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 900; }
 html[lang="en"] .support-button {
   font-size: 1.75rem;
@@ -231,8 +222,8 @@ html[lang="en"] .support-button {
 
 #call {
   color: rgba(80, 227, 194, 0.75);
-  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
-  font-weight: 900;
+  font-family: "century-std", "noto-serif-patch", "source-han-serif-tc", "Noto Serif CJK TC", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
+  font-weight: 700;
   font-size: 1.375rem;
   line-height: 1; }
   @media (min-width: 480px) {
@@ -280,7 +271,7 @@ ul, ol, li {
   padding: 0; }
 
 .option-title {
-  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
   font-size: 1.5rem;
   font-weight: 700; }
 
@@ -291,26 +282,26 @@ ul, ol, li {
   margin: 0; }
 
 .datetime {
-  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
-  font-weight: 900; }
+  font-family: "century-std", "noto-serif-patch", "source-han-serif-tc", "Noto Serif CJK TC", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
+  font-weight: 700; }
 
 .tight {
   line-height: 1.375; }
 
 .tagline {
-  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
   font-weight: 700;
   line-height: 1.375; }
 
 .datetime.year {
-  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
-  font-weight: 900;
+  font-family: "century-std", "noto-serif-patch", "source-han-serif-tc", "Noto Serif CJK TC", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
+  font-weight: 700;
   font-size: 1.5rem;
   line-height: 1;
   color: #50E3C2; }
 
 .larger {
-  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   margin: 1.75rem 0; }
@@ -330,13 +321,13 @@ html[lang="en"] .larger {
   .system-dialog > .warning {
     font-size: 0.875rem; }
   .system-dialog > .content {
-    font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+    font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
     font-weight: 700; }
 
 a.to-appendix {
   display: inline-block;
   font-size: 0.75em;
-  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
   font-weight: 700; }
 
 .support-options > .option {
@@ -348,8 +339,8 @@ a.to-appendix {
 .sticker-name {
   color: #50E3C2;
   font-size: 1.125rem;
-  font-family: "century-std", "kozuka-mincho-extension", "kozuka-mincho-pr6n", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
-  font-weight: 900;
+  font-family: "century-std", "noto-serif-patch", "source-han-serif-tc", "Noto Serif CJK TC", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
+  font-weight: 700;
   line-height: 1.125; }
 
 body > section#sm > #facebook {
@@ -538,8 +529,8 @@ html[lang="en"] .prompt {
     line-height: 1.375; }
 
 .stamp {
-  width: 65px;
-  height: 65px;
+  width: 64px;
+  height: 64px;
   margin: -1rem auto; }
   .stamp.logo.white {
     background: url("//watchout.tw/images/logo-wo-white.svg"); }
@@ -567,9 +558,14 @@ h4 {
   padding-left: 0; }
 
 h5.regular {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", "xin-gothic-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", "xin-gothic-tc", sans-serif;
   font-weight: 400;
   padding: 0.5rem 0; }
+  h5.regular > span.underlined.edu {
+    display: inline-block;
+    padding: 0 6px;
+    border-bottom: 6px solid #B7F661;
+    margin-bottom: 6px; }
 
 .pgroup {
   width: 288px; }
@@ -693,20 +689,14 @@ body > section#sm + footer {
   display: inline-block;
   margin: 0.125rem;
   padding: 0.25rem;
-  font-family: "circular-pro", "source-han-sans-tc", "PingFang TC", "Noto Sans CJK", "微軟正黑體", sans-serif;
+  font-family: "circular-pro", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 900;
   font-size: 1.25rem;
   line-height: 1;
   background: black;
   color: white; }
 
-h5.regular > span.underlined.edu {
-  display: inline-block;
-  padding: 0 6px;
-  border-bottom: 6px solid #B7F661;
-  margin-bottom: 6px; }
-
 .pop {
   margin: 0 0 2rem; }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=style.css.map */
