@@ -2,6 +2,9 @@
 - Update issue-specific content in `/news-template/app.js`
 - Generate static html page
 - Paste static html into `index.html` in issue folder
-  - Remove all `<script>` tags
+  - Remove all `<script>` tags other than Google Analytics
   - Fix indentation
-- Use inline mailer
+- Use [Premailer by dialect.ca](http://premailer.dialect.ca/) to generate html with inline style
+- Paste code into `inline.html` in issue folder
+  - Remove Google Analytics
+- Paste code into newsletter editor (using Source Code Mode)
