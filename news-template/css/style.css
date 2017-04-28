@@ -139,7 +139,7 @@ section#vendor {
 
 .product {
   max-width: 30rem;
-  margin: 0 auto; }
+  margin: 1rem auto; }
   .product > img {
     width: 100%; }
   .product > .name {
