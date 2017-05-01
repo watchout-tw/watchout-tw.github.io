@@ -6,4 +6,6 @@ This is the source code of the official website of [Watchout](https://watchout.t
 
 ## 警告
 
-這個repo中散佈著數個連到`/src/style`的蟲洞。
+這個repo中散佈著數個連到`/src/style`的隧道。
+
+其他的repo也可能會利用蟲洞連結到`/src/style`裡面。
