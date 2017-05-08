@@ -95,6 +95,18 @@ a.a-block {
 .bg-watchout {
   background-color: #50E3C2; }
 
+.bg-park {
+  background-color: #FFB55D; }
+
+.bg-park-light {
+  background-color: rgba(255, 181, 93, 0.25); }
+
+.bg-lab {
+  background-color: #50E3C2; }
+
+.bg-lab-light {
+  background-color: rgba(80, 227, 194, 0.25); }
+
 .bg-ask {
   background-color: #4DEBDF; }
 
@@ -109,6 +121,12 @@ a.a-block {
 
 .bg-musou-light {
   background-color: rgba(255, 83, 104, 0.25); }
+
+.bg-edu {
+  background-color: #B7F661; }
+
+.bg-edu-light {
+  background-color: rgba(183, 246, 97, 0.25); }
 
 .header-center {
   text-align: center; }

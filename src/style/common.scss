@@ -105,6 +105,18 @@ a {
 .bg-watchout {
   background-color: $color-watchout;
 }
+.bg-park {
+  background-color: $color-park;
+}
+.bg-park-light {
+  background-color: rgba($color-park, 0.25);
+}
+.bg-lab {
+  background-color: $color-lab;
+}
+.bg-lab-light {
+  background-color: rgba($color-lab, 0.25);
+}
 .bg-ask {
   background-color: $color-ask;
 }
@@ -120,6 +132,13 @@ a {
 .bg-musou-light {
   background-color: rgba($color-musou, 0.25);
 }
+.bg-edu {
+  background-color: $color-edu;
+}
+.bg-edu-light {
+  background-color: rgba($color-edu, 0.25);
+}
+
 
 // Header
 .header-center {
