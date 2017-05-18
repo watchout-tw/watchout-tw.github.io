@@ -53,7 +53,7 @@ a, a:hover, a:focus, a:active, a:visited {
   cursor: pointer;
 }
 a.a-text,
-.a-text-only > a {
+.a-text-only a {
   display: inline;
   @include underline(0.25);
 
