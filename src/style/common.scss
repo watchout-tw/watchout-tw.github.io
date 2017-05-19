@@ -311,6 +311,7 @@ footer {
           bottom: 5rem;
           left: 10%;
           transform: translateX(6rem);
+          -webkit-transform: translateX(6rem);
           width: 8.5rem;
         }
         &.tree-investigate {
@@ -327,6 +328,7 @@ footer {
           bottom: 4rem;
           left: 50%;
           transform: translateX(4rem);
+          -webkit-transform: translateX(4rem);
           width: 1.25rem;
         }
       }
@@ -347,6 +349,7 @@ footer {
           bottom: 4.5rem;
           left: 10%;
           transform: translateX(14rem);
+          -webkit-transform: translateX(14rem);
           width: 2rem;
         }
       }
