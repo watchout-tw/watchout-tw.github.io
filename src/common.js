@@ -2,246 +2,179 @@ var CommonData = {
   links: {
     home: 'https://watchout.tw/',
     support: 'https://watchout.tw/#support',
-    contact: 'https://watchout.tw/contact',
-  },
+    contact: 'https://watchout.tw/contact'
+  }
 };
 
-var Channel = function(id, width, home, name) {
+var Channel = function (id, width, home, name) {
   this.id = id;
   this.name = name;
   this.classes = {
-    bg: 'bg-' + this.id,
+    bg: 'bg-' + this.id
   };
   this.links = {
-    home: home,
+    home: home
   };
   this.asset = {
     logo: {
       large: window.CommonData.links.home + 'asset/logo/' + this.id + '/large.png',
-      small: window.CommonData.links.home + 'asset/logo/' + this.id + '/small.png',
+      small: window.CommonData.links.home + 'asset/logo/' + this.id + '/small.png'
     },
     logoWithType: {
       regular: {
         src: window.CommonData.links.home + 'asset/logo+type/' + this.id + '/regular.png',
         width: width,
-        style: { width: width + 'px' },
-      },
-    },
+        style: { width: width + 'px' }
+      }
+    }
   };
 };
 
 CommonData.channels = {
-  park:  new Channel('park', 212, 'https://park.watchout.tw/', '中央公園'),
-  lab:   new Channel('lab', 232, 'https://lab.watchout.tw/', '議題實驗室'),
+  park: new Channel('park', 212, 'https://park.watchout.tw/', '中央公園'),
+  lab: new Channel('lab', 232, 'https://lab.watchout.tw/', '議題實驗室'),
   musou: new Channel('musou', 212, 'https://musou.watchout.tw/', '國會無雙'),
-  ask:   new Channel('ask', 232, 'https://ask.watchout.tw/', '給問擂台'),
-  edu:   new Channel('edu', 212, 'https://edu.watchout.tw/', '公民學院'),
-  maa:   new Channel('maa', 132, 'https://maa.watchout.tw/', '草漫'),
-  woo:   new Channel('woo', 154, 'https://woo.watchout.tw/', '沃影音'),
-  ly:    new Channel('ly', 212, 'https://ly.watchout.tw/', '立委履歷'),
-  watchout: new Channel('watchout', 274, CommonData.links.home, '沃草'),
+  ask: new Channel('ask', 232, 'https://ask.watchout.tw/', '給問擂台'),
+  edu: new Channel('edu', 212, 'https://edu.watchout.tw/', '公民學院'),
+  maa: new Channel('maa', 132, 'https://maa.watchout.tw/', '草漫'),
+  woo: new Channel('woo', 154, 'https://woo.watchout.tw/', '沃影音'),
+  ly: new Channel('ly', 212, 'https://ly.watchout.tw/', '立委履歷'),
+  watchout: new Channel('watchout', 274, CommonData.links.home, '沃草')
 };
 
 Vue.component('nav-bar-simple', {
   props: {
-    channel: Object,
+    channel: Object
   },
-  template: `
-  <nav class="navbar sticky-top navbar-light" :class="channel.classes.bg">
-    <a class="navbar-brand" :href="channel.links.home"><img :src="channel.asset.logoWithType.regular.src" class="logo-type" :style="channel.asset.logoWithType.regular.style"/></a>
-  </nav>
-  `,
+  template: '\n  <nav class="navbar sticky-top navbar-light" :class="channel.classes.bg">\n    <a class="navbar-brand" :href="channel.links.home"><img :src="channel.asset.logoWithType.regular.src" class="logo-type" :style="channel.asset.logoWithType.regular.style"/></a>\n  </nav>\n  '
 });
 
 var footer = new Vue({
   el: 'footer',
   data: {
     common: CommonData,
-    social: [
-      {
-        type: 'facebook',
-        image: 'https://graph.facebook.com/watchout.tw/picture?type=large',
-        message: '追蹤我們的最新動態！',
-        link: 'https://facebook.com/watchout.tw/',
-      },
-      {
-        type: 'LINE',
-        image: 'https://watchout.tw/asset/social/LINE/goodfriend.png',
-        message: '阿草好朋友',
-        link: 'https://store.line.me/stickershop/product/1024870/zh-Hant',
-      },
-      {
-        type: 'LINE',
-        image: 'https://watchout.tw/asset/social/LINE/goodcitizen.png',
-        message: '阿草督督好',
-        link: 'https://store.line.me/stickershop/product/1224270/zh-Hant',
-      },
-    ],
-    cluster: [
-      {
-        title: '沃草產品',
-        links: [
-          {
-            title: '國會無雙',
-            link: 'https://musou.tw/',
-          },
-          {
-            title: '給問擂台',
-            link: 'https://ask.watchout.tw/',
-          },
-          {
-            title: '公民學院',
-            link: 'https://citizenedu.tw/',
-          },
-        ],
-      },
-      {
-        title: '關於沃草',
-        links: [
-          {
-            title: '2014 透明報告',
-            link: 'https://watchout.tw/transparency/2014',
-          },
-          {
-            title: '歷年影響力報告',
-            link: 'https://watchout.tw/impact',
-          },
-          {
-            title: '聯絡我們',
-            link: 'https://watchout.tw/contact',
-          },
-          {
-            title: '授權條款',
-            link: 'https://watchout.tw/license',
-          },
-        ],
-      },
-    ],
-    trees: [
-      {
-        type: 'tree',
-        name: 'deliberate',
-        filetype: 'png',
-      },
-      {
-        type: 'tree',
-        name: 'discover',
-        filetype: 'png',
-      },
-      {
-        type: 'tree',
-        name: 'investigate',
-        filetype: 'png',
-      },
-      {
-        type: 'farmer',
-        name: 'tangerine',
-        filetype: 'png',
-      },
-      {
-        type: 'farmer',
-        name: 'green',
-        filetype: 'png',
-      },
-      {
-        type: 'farmer',
-        name: 'brown',
-        filetype: 'png',
-      },
-      {
-        type: 'tree',
-        name: 'sprout',
-        filetype: 'png',
-      },
-    ]
+    social: [{
+      type: 'facebook',
+      image: 'https://graph.facebook.com/watchout.tw/picture?type=large',
+      message: '追蹤我們的最新動態！',
+      link: 'https://facebook.com/watchout.tw/'
+    }, {
+      type: 'LINE',
+      image: 'https://watchout.tw/asset/social/LINE/goodfriend.png',
+      message: '阿草好朋友',
+      link: 'https://store.line.me/stickershop/product/1024870/zh-Hant'
+    }, {
+      type: 'LINE',
+      image: 'https://watchout.tw/asset/social/LINE/goodcitizen.png',
+      message: '阿草督督好',
+      link: 'https://store.line.me/stickershop/product/1224270/zh-Hant'
+    }],
+    cluster: [{
+      title: '沃草產品',
+      links: [{
+        title: '國會無雙',
+        link: 'https://musou.tw/'
+      }, {
+        title: '給問擂台',
+        link: 'https://ask.watchout.tw/'
+      }, {
+        title: '公民學院',
+        link: 'https://citizenedu.tw/'
+      }]
+    }, {
+      title: '關於沃草',
+      links: [{
+        title: '2014 透明報告',
+        link: 'https://watchout.tw/transparency/2014'
+      }, {
+        title: '歷年影響力報告',
+        link: 'https://watchout.tw/impact'
+      }, {
+        title: '聯絡我們',
+        link: 'https://watchout.tw/contact'
+      }, {
+        title: '授權條款',
+        link: 'https://watchout.tw/license'
+      }]
+    }],
+    trees: [{
+      type: 'tree',
+      name: 'deliberate',
+      filetype: 'png'
+    }, {
+      type: 'tree',
+      name: 'discover',
+      filetype: 'png'
+    }, {
+      type: 'tree',
+      name: 'investigate',
+      filetype: 'png'
+    }, {
+      type: 'farmer',
+      name: 'tangerine',
+      filetype: 'png'
+    }, {
+      type: 'farmer',
+      name: 'green',
+      filetype: 'png'
+    }, {
+      type: 'farmer',
+      name: 'brown',
+      filetype: 'png'
+    }, {
+      type: 'tree',
+      name: 'sprout',
+      filetype: 'png'
+    }]
   },
   methods: {
-    patchCount: function() {
-      return 4 + Math.round(Math.random()*2);
+    patchCount: function () {
+      return 4 + Math.round(Math.random() * 2);
     },
-    patchSize: function() {
+    patchSize: function () {
       return Math.random() > 0.5 ? 'big' : 'small';
     },
-    patchStyles: function(i) {
+    patchStyles: function (i) {
       return {
-        transform: 'translateX(' + (Math.round(Math.random())*2 - 1)*Math.round(Math.random()*16) + 'rem)',
+        transform: 'translateX(' + (Math.round(Math.random()) * 2 - 1) * Math.round(Math.random() * 16) + 'rem)'
       };
     },
-    getTreeAssetURL: function(tree) {
+    getTreeAssetURL: function (tree) {
       return this.common.links.home + 'asset/footer/' + tree.type + '/' + tree.name + '.' + tree.filetype;
     },
-    getTreeClasses: function(tree) {
+    getTreeClasses: function (tree) {
       return [tree.type, tree.type + '-' + tree.name];
     }
   },
   computed: {
-    cptSocialGroups: function() {
+    cptSocialGroups: function () {
       var arr = this.social;
       var result = [];
       var types = {};
-      for(var i = 0; i < arr.length; i++) {
+      for (var i = 0; i < arr.length; i++) {
         var cur = arr[i];
-        if(!(cur.type in types)) {
-          types[cur.type] = {type: cur.type, items: []};
+        if (!(cur.type in types)) {
+          types[cur.type] = { type: cur.type, items: [] };
           result.push(types[cur.type]);
         }
         types[cur.type].items.push(cur);
       }
       return result;
-    },
+    }
   },
-  template: `
-  <footer>
-    <div class="land">
-      <div class="green"></div>
-      <div class="soil">
-        <div class="light"></div>
-        <div class="dark"></div>
-        <div class="deep">
-          <div class="social">
-            <div v-for="group in cptSocialGroups" class="group d-flex flex-row justify-content-around" :type="group.type">
-              <a v-for="item in group.items" :href="item.link" class="link a-block" target="social">
-                <div class="image">
-                  <img :src="item.image" />
-                  <div class="type"></div>
-                </div>
-                <div class="message">{{ item.message }}</div>
-              </a>
-            </div>
-          </div>
-          <div class="cluster d-flex flex-row justify-content-center">
-            <div v-for="group in cluster" class="group">
-              <h5>{{ group.title }}</h5>
-              <div v-for="item in group.links" class="item"><a :href="item.link" class="a-text">{{ item.title }}</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="elements">
-        <div class="grass d-flex align-items-end justify-content-between">
-          <div v-for="i in patchCount()" class="patch" :class="patchSize()" :style="patchStyles(i)"></div>
-        </div>
-        <img v-for="tree in trees" :src="getTreeAssetURL(tree)" :class="getTreeClasses(tree)" />
-      </div>
-    </div>
-  </footer>
-  `
+  template: '\n  <footer>\n    <div class="land">\n      <div class="green"></div>\n      <div class="soil">\n        <div class="light"></div>\n        <div class="dark"></div>\n        <div class="deep">\n          <div class="social">\n            <div v-for="group in cptSocialGroups" class="group d-flex flex-row justify-content-around" :type="group.type">\n              <a v-for="item in group.items" :href="item.link" class="link a-block" target="social">\n                <div class="image">\n                  <img :src="item.image" />\n                  <div class="type"></div>\n                </div>\n                <div class="message">{{ item.message }}</div>\n              </a>\n            </div>\n          </div>\n          <div class="cluster d-flex flex-row justify-content-center">\n            <div v-for="group in cluster" class="group">\n              <h5>{{ group.title }}</h5>\n              <div v-for="item in group.links" class="item"><a :href="item.link" class="a-text">{{ item.title }}</a></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class="elements">\n        <div class="grass d-flex align-items-end justify-content-between">\n          <div v-for="i in patchCount()" class="patch" :class="patchSize()" :style="patchStyles(i)"></div>\n        </div>\n        <img v-for="tree in trees" :src="getTreeAssetURL(tree)" :class="getTreeClasses(tree)" />\n      </div>\n    </div>\n  </footer>\n  '
 });
 
 var pitcher = new Vue({
   el: '#pitcher',
   data: {
-    common: CommonData,
+    common: CommonData
   },
-  template: `
-  <div id="pitcher">
-    <a class="button" :href="common.links.support" target="support"></a>
-    <a class="close" href="#" @click.stop.prevent="close">×</a>
-  </div>
-  `,
+  template: '\n  <div id="pitcher">\n    <a class="button" :href="common.links.support" target="support"></a>\n    <a class="close" href="#" @click.stop.prevent="close">\xD7</a>\n  </div>\n  ',
   methods: {
-    close: function(event) {
+    close: function (event) {
       $(this.$el).hide();
     }
   }
 });
+
