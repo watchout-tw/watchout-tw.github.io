@@ -55,7 +55,7 @@ a, a:hover, a:focus, a:active, a:visited {
 a.a-text,
 .a-text-only a {
   display: inline;
-  @include underline(0.25);
+  @include underline(0.5);
 
   &:hover, &:focus, &:active {
     @include underline(1.0);
@@ -63,6 +63,9 @@ a.a-text,
 }
 a.a-block {
   display: block;
+  & .a-target {
+    @include underline(0.5);
+  }
   &:hover, &:focus, &:active {
     .a-target {
       @include underline(1.0);

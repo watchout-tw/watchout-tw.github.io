@@ -36,11 +36,7 @@ $font-size-small: 0.875rem;
   font-family: "noto-serif-patch", "source-han-serif-tc", serif;
 }
 @mixin underline($opacity) {
-  background-image: linear-gradient(to right, rgba($color-watchout, $opacity) 0%, rgba($color-watchout, $opacity) 100%);
-  background-position: center;
-  background-repeat: repeat-x;
-  background-size: 0.5em 0.5em;
-  background-blend-mode: multiply;
+  border-bottom: 2px rgba($color-watchout, $opacity) solid;
 }
 @mixin shadow {
   box-shadow: 0 2px 8px 0 $color-shadow;

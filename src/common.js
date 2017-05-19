@@ -60,9 +60,9 @@ var footer = new Vue({
     social: [
       {
         type: 'facebook',
-        image: 'https://graph.facebook.com/WatchoutTW/picture?type=large',
+        image: 'https://graph.facebook.com/watchout.tw/picture?type=large',
         message: '追蹤我們的最新動態！',
-        link: 'https://facebook.com/WatchoutTW/',
+        link: 'https://facebook.com/watchout.tw/',
       },
       {
         type: 'LINE',

@@ -51,29 +51,19 @@ a, a:hover, a:focus, a:active, a:visited {
 a.a-text,
 .a-text-only a {
   display: inline;
-  background-image: linear-gradient(to right, rgba(80, 227, 194, 0.25) 0%, rgba(80, 227, 194, 0.25) 100%);
-  background-position: center;
-  background-repeat: repeat-x;
-  background-size: 0.5em 0.5em;
-  background-blend-mode: multiply; }
+  border-bottom: 2px rgba(80, 227, 194, 0.5) solid; }
   a.a-text:hover, a.a-text:focus, a.a-text:active,
   .a-text-only a:hover,
   .a-text-only a:focus,
   .a-text-only a:active {
-    background-image: linear-gradient(to right, #50e3c2 0%, #50e3c2 100%);
-    background-position: center;
-    background-repeat: repeat-x;
-    background-size: 0.5em 0.5em;
-    background-blend-mode: multiply; }
+    border-bottom: 2px #50e3c2 solid; }
 
 a.a-block {
   display: block; }
+  a.a-block .a-target {
+    border-bottom: 2px rgba(80, 227, 194, 0.5) solid; }
   a.a-block:hover .a-target, a.a-block:focus .a-target, a.a-block:active .a-target {
-    background-image: linear-gradient(to right, #50e3c2 0%, #50e3c2 100%);
-    background-position: center;
-    background-repeat: repeat-x;
-    background-size: 0.5em 0.5em;
-    background-blend-mode: multiply; }
+    border-bottom: 2px #50e3c2 solid; }
 
 .close {
   float: none;
