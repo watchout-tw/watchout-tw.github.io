@@ -41,6 +41,14 @@ $font-size-small: 0.875rem;
 @mixin shadow {
   box-shadow: 0 2px 8px 0 $color-shadow;
 }
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  transform: $transform;
+}
+@mixin transform-origin($transform-origin) {
+  -webkit-transform-origin: $transform-origin;
+  transform-origin: $transform-origin;
+}
 
 /* Bootstrap breakpoint */
 $bp-sm: 576px;
