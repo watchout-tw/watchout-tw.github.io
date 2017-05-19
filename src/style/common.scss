@@ -325,7 +325,8 @@ footer {
         }
         &.tree-sprout {
           bottom: 4rem;
-          right: 8%;
+          left: 50%;
+          transform: translateX(4rem);
           width: 1.25rem;
         }
       }
