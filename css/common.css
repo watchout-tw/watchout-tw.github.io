@@ -6,9 +6,16 @@
 html, body {
   font-size: 16px; }
 
+button, input, optgroup, select, textarea {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  button:focus, input:focus, optgroup:focus, select:focus, textarea:focus {
+    outline: none; }
+
 h1, h2, h3, h4, h5 {
   font-family: "noto-serif-patch", "source-han-serif-tc", serif;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: 0;
+  margin: 0; }
 
 h1 {
   font-size: 3rem; }
@@ -91,6 +98,9 @@ a.a-block {
   padding: 0; }
 
 /* Watchout Commons-specific additional styles */
+.text-color-park {
+  color: #FFB55D; }
+
 .bg-watchout {
   background-color: #50E3C2; }
 

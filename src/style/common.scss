@@ -5,10 +5,19 @@ html, body {
   font-size: 16px;
 }
 
+button, input, optgroup, select, textarea {
+  font-family: $font-sans-serif;
+  &:focus {
+    outline: none;
+  }
+}
+
 // Small element
 h1, h2, h3, h4, h5 {
   @include font-serif;
   font-weight: bold;
+  padding: 0;
+  margin: 0;
 }
 h1 {
   font-size: 3rem;
@@ -107,6 +116,10 @@ a.a-block {
 
 /* Watchout Commons-specific additional styles */
 // following Bootstrap convention
+
+.text-color-park {
+  color: $color-park;
+}
 
 // Background color
 .bg-watchout {
