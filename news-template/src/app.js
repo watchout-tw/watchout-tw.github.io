@@ -12,7 +12,6 @@ var app = new Vue({
     },
   },
   data: {
-    common: CommonData,
     permalink: 'https://watchout.tw/news/4',
     cover: {
       image: 'cover.png',
