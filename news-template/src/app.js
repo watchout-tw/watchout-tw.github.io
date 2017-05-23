@@ -166,7 +166,7 @@ var app = new Vue({
         products: [
           {
             link: 'https://goo.gl/82PRcc',
-            image: 'vendor-1.jpg',
+            image: 'vendor-1.png',
             name: '《現代草民哲學讀本》預購價',
             price: '284',
           },
