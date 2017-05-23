@@ -12,58 +12,139 @@ var app = new Vue({
     },
   },
   data: {
-    permalink: 'https://watchout.tw/news/4',
+    permalink: 'https://watchout.tw/news/5',
     cover: {
       image: 'cover.png',
-      issue: '第四期',
-      date: '2017年4月28日',
+      issue: '第五期',
+      date: '2017年5月26日',
     },
     nav: {
-      title: '好山好水好好挖？',
+      title: '8千8百億去哪裡',
       toc: [
         {
-          channel: 'musou',
-          title: '好山，不挖嗎？',
+          channel: 'edu',
+          title: '本月精選草民讀物',
         },
         {
-          channel: 'edu',
-          title: '人與環境的倫理學',
+          channel: 'ask',
+          title: '沃草年度活動',
+        },
+        {
+          channel: 'musou',
+          title: '8千8百億，是前瞻，還是錢沾？',
         },
         {
           channel: 'vendor',
-          title: '台北國際拒馬展',
+          title: '現代草民哲學讀本',
         },
       ],
     },
     sections: [ // 這個陣列包含這一期草報的每個區塊
       {
-        id: 'musou',
-        name: '國會無雙',
-        title: '財團原民兩樣情', // 區塊標題
-        description: '現行礦業法讓財團不需地主同意就可在私有地採礦，但政府在劃設原民土地時，又以憲法保障私有財產為由提出「袋住先」的辦法，這公平嗎？', // 區塊文字
+        id: 'edu',
+        name: '公民學院',
+        title: '本月精選草民讀物',
+        description: '本月我們精選了三篇最熱門的烙哲學文章，包括海德格的精彩理論介紹、谷阿莫與著作權問題、以及一篇反同的保守主義解析！',
+        articles: [
+          {
+            link: 'http://citizenedu.tw/t/topic/2039', // 連結網址
+            thumbnail: 'edu-1.jpg',
+            title: '語言如何召喚存在',
+            text: [
+              '作者：紀金慶',
+              '主編：朱家安',
+            ],
+          },
+          {
+            link: 'http://citizenedu.tw/t/topic/2036', // 連結網址
+            thumbnail: 'edu-2.jpg',
+            title: '一分鐘看完谷阿莫（？',
+            text: [
+              '作者：洪偉',
+              '主編：朱家安',
+            ],
+          },
+          {
+            link: 'http://citizenedu.tw/t/topic/2014', // 連結網址
+            thumbnail: 'edu-3.jpg',
+            title: '保守主義如何反同',
+            text: [
+              '作者：張正昕',
+              '主編：朱家安',
+            ],
+          },
+        ],
+        images: [ // 大圖
+          {
+            title: '康德散步',
+            description: '同性性行為會上癮？應該戒斷？其實至今沒有實證研究證明這樣有效，甚至它們再次傷害「患者」。我們應該做的，是「矯正」社會中的歧視。',
+            url: 'walk-1.png',
+            orientation: 'portrait',
+            link: 'https://www.facebook.com/citizenedu/photos/a.861134307356973.1073741836.501740576629683/967025033434566/?type=3&theater',
+          },
+        ],
+      },
+      {
+        id: 'ask',
+        name: '給問擂台',
+        title: '2017給問擂台', // 區塊標題
+        description: '以「直接、公開、對話」等原則，嘗試建構出政治人物與公民直接溝通的平台。透過分組討論的互動方式，也能讓公民理解代議政治的內涵。', // 區塊文字
         articles: [ // 連結們
           {
-            link: 'https://musou.tw/focuses/1343', // 連結網址
-            thumbnail: 'musou-1.jpg', // 連結縮圖
-            title: '經濟部：無法撤銷亞泥礦權延期許可；學者：當然可以', // 連結標題
+            link: 'https://ask.watchout.tw/', // 連結網址
+            thumbnail: 'ask-1.jpg', // 連結縮圖
+            title: '什麼是給問', // 連結標題
             text: [ // 連結附加文字，分行
-              '文字：薛翰駿',
+              '',
             ],
           },
           {
-            link: 'https://musou.tw/focuses/1350', // 連結網址
+            link: 'https://youtu.be/9TniPc0D0r4', // 連結網址
+            thumbnail: 'ask-2.jpg',
+            title: '最新給問影音',
+            text: [
+              '',
+            ],
+          },
+        ]
+      },
+      {
+        id: 'musou',
+        name: '國會無雙',
+        title: '是前瞻，還是錢沾', // 區塊標題
+        description: '前瞻條例在立法院審議期間不斷發生衝突，原應好好逐條討論的內容直接送黨團協商處理，在這樣粗糙立法的情況下，前瞻會不會變成「錢沾」呢...', // 區塊文字
+        articles: [ // 連結們
+          {
+            link: 'https://musou.tw/focuses/1371', // 連結網址
+            thumbnail: 'musou-1.jpg', // 連結縮圖
+            title: '藍委潑水叫囂 「前瞻」過關全案保留送出委員會交付協商', // 連結標題
+            text: [ // 連結附加文字，分行
+              '記者/蕭長展',
+            ],
+          },
+          {
+            link: 'https://musou.tw/focuses/1366', // 連結網址
             thumbnail: 'musou-2.jpg',
-            title: '觀點／憑什麼要原住民「袋住先」？',
+            title: '前瞻條例民進黨應闖過關 學者痛批如「獨裁再現」',
             text: [
-              '文字：薛翰駿',
+              '記者/蕭長展',
             ],
           },
           {
-            link: 'https://musou.tw/focuses/1334', // 連結網址
+            link: 'https://musou.tw/focuses/1363', // 連結網址
             thumbnail: 'musou-3.jpg',
-            title: '原民會堅持私有地開發不需部落同意；林昶佐：聽不下去',
+            title: '黃國昌痛批馬政府激增國債 蔡政府「前瞻」未記取教訓',
             text: [
-              '文字：薛翰駿',
+              '記者/蕭長展',
+            ],
+          },
+          {
+            link: 'https://musou.watchout.tw/draw/tsai-first-year/', // 連結網址
+            thumbnail: 'musou-4.jpg',
+            title: '【互動式圖表】蔡總統的第一年',
+            text: [
+              '編輯/蕭長展、洪國鈞',
+              '設計開發/游知澔',
             ],
           },
         ]
@@ -79,50 +160,15 @@ var app = new Vue({
         ],
       },
       {
-        id: 'edu',
-        name: '公民學院',
-        title: '烙哲學本月精選',
-        description: '這次，我們為大家精選了兩篇哲學思辨文章。賴天恆的《21世紀新倫理議題》談了彼得・辛格最近的一次著名演講；張正昕說明了一種哲學理論，試圖讓我們釐清保守主義是一種怎樣的主張。歡迎一起烙哲學！',
-        articles: [
-          {
-            link: 'http://citizenedu.tw/t/peter-singer/2007', // 連結網址
-            thumbnail: 'edu-1.jpg',
-            title: '21世紀新倫理議題',
-            text: [
-              '作者：賴天恆',
-              '主編：朱家安',
-            ],
-          },
-          {
-            link: 'http://citizenedu.tw/t/topic/2003', // 連結網址
-            thumbnail: 'edu-2.jpg',
-            title: '保守主義有道理嗎',
-            text: [
-              '作者：張正昕',
-              '主編：朱家安',
-            ],
-          },
-        ],
-        images: [ // 大圖
-          {
-            title: '康德散步',
-            description: '4月11日，立法院三讀通過了《動物保護法》修正案，明定禁止食用貓狗。台灣成為亞洲第一個禁止貓肉、狗肉的國家。',
-            url: 'walk-1.png',
-            orientation: 'portrait',
-            link: 'https://www.facebook.com/citizenedu/photos/a.861134307356973.1073741836.501740576629683/967025033434566/?type=3&theater',
-          },
-        ],
-      },
-      {
         id: 'vendor',
         name: '草地攤販',
-        description: '還記得2014年服貿爭議時，台北國際拒馬展的盛況嗎？2017年，在反年改團體抗議下，國際拒馬展全新開張！立刻收藏限量復刻《台北國際拒馬展》紙膠帶，重溫拒馬帶給你的感動！',
+        description: '沃草烙哲學，推出第一本哲學書囉！《現代草民哲學讀本：跟沃草一起，用思考通樂人生》全面預購中！',
         products: [
           {
-            link: 'https://watchout.backme.tw/checkout/332/1572',
+            link: 'https://goo.gl/82PRcc',
             image: 'vendor-1.jpg',
-            name: '《台北國際拒馬展》紙膠帶（三入）',
-            price: '250',
+            name: '《現代草民哲學讀本》',
+            price: '360',
           },
         ]
       },
