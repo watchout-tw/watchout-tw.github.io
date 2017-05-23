@@ -58,7 +58,7 @@ var app = new Vue({
           {
             link: 'http://citizenedu.tw/t/topic/2036', // 連結網址
             thumbnail: 'edu-2.jpg',
-            title: '一分鐘看完谷阿莫（？',
+            title: '一分鐘看完谷阿莫？',
             text: [
               '作者：洪偉',
               '主編：朱家安',
@@ -112,14 +112,14 @@ var app = new Vue({
         id: 'musou',
         name: '國會無雙',
         title: '是前瞻，還是錢沾', // 區塊標題
-        description: '前瞻條例在立法院審議期間不斷發生衝突，原應好好逐條討論的內容直接送黨團協商處理，在這樣粗糙立法的情況下，前瞻會不會變成「錢沾」呢...', // 區塊文字
+        description: '前瞻條例在立法院審議期間不斷發生衝突，原應好好逐條討論的內容直接送黨團協商處理，在這樣粗糙立法的情況下，前瞻會不會變成「錢沾」呢？', // 區塊文字
         articles: [ // 連結們
           {
             link: 'https://musou.tw/focuses/1371', // 連結網址
             thumbnail: 'musou-1.jpg', // 連結縮圖
             title: '藍委潑水叫囂 「前瞻」過關全案保留送出委員會交付協商', // 連結標題
             text: [ // 連結附加文字，分行
-              '記者/蕭長展',
+              '記者：蕭長展',
             ],
           },
           {
@@ -127,7 +127,7 @@ var app = new Vue({
             thumbnail: 'musou-2.jpg',
             title: '前瞻條例民進黨應闖過關 學者痛批如「獨裁再現」',
             text: [
-              '記者/蕭長展',
+              '記者：蕭長展',
             ],
           },
           {
@@ -135,7 +135,7 @@ var app = new Vue({
             thumbnail: 'musou-3.jpg',
             title: '黃國昌痛批馬政府激增國債 蔡政府「前瞻」未記取教訓',
             text: [
-              '記者/蕭長展',
+              '記者：蕭長展',
             ],
           },
           {
@@ -143,8 +143,8 @@ var app = new Vue({
             thumbnail: 'musou-4.jpg',
             title: '【互動式圖表】蔡總統的第一年',
             text: [
-              '編輯/蕭長展、洪國鈞',
-              '設計開發/游知澔',
+              '編輯：蕭長展、洪國鈞',
+              '設計開發：游知澔',
             ],
           },
         ]
@@ -167,8 +167,8 @@ var app = new Vue({
           {
             link: 'https://goo.gl/82PRcc',
             image: 'vendor-1.jpg',
-            name: '《現代草民哲學讀本》',
-            price: '360',
+            name: '《現代草民哲學讀本》預購價',
+            price: '284',
           },
         ]
       },
