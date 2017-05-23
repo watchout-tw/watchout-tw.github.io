@@ -105,6 +105,8 @@ section#musou > .header {
   background-color: rgba(255, 83, 104, 0.25); }
 section#edu > .header {
   background-color: rgba(183, 246, 97, 0.25); }
+section#ask > .header {
+  background-color: rgba(77, 235, 223, 0.25); }
 section#maa > .header {
   background-color: #F5F5F5; }
 section#maa > .images {

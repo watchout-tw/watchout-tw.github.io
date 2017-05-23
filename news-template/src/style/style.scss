@@ -136,6 +136,11 @@ section {
       background-color: rgba($color-edu, 0.25);
     }
   }
+  &#ask {
+    > .header {
+      background-color: rgba($color-ask, 0.25);
+    }
+  }
   &#maa {
     > .header {
       background-color: $color-maa;
