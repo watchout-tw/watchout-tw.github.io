@@ -9,7 +9,7 @@ SOP
 ## Text
 - Write in this issue’s content to `/news-template/app.js`
 - Open up a browser
-- Select `<html>` from the *Elements* panel & copy
+- Select `<html>` 右鍵 > Copy > Copy elements 
 - Paste code (static HTML) into `index.html` in issue folder
   - Remove all `<script>` tags other than Google Analytics
   - Fix indentation
