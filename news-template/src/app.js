@@ -27,7 +27,7 @@ var app = new Vue({
         },
         {
           channel: 'ask',
-          title: '沃草年度活動',
+          title: '沃草2017年度活動',
         },
         {
           channel: 'musou',
@@ -95,7 +95,7 @@ var app = new Vue({
             thumbnail: 'ask-1.jpg', // 連結縮圖
             title: '什麼是給問', // 連結標題
             text: [ // 連結附加文字，分行
-              '',
+              '看更多的完整給問紀錄',
             ],
           },
           {
@@ -103,7 +103,7 @@ var app = new Vue({
             thumbnail: 'ask-2.jpg',
             title: '最新給問影音',
             text: [
-              '',
+              '5/18年金改革：段宜康給問',
             ],
           },
         ]
