@@ -12,7 +12,7 @@ var app = new Vue({
     },
   },
   data: {
-    permalink: 'https://watchout.tw/news/5',
+    permalink: 'https://watchout.tw/news/5-8824',
     cover: {
       image: 'cover.png',
       issue: '第五期',
