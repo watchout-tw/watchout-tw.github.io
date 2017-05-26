@@ -1,7 +1,8 @@
 var app = new Vue({
   el: '#app',
   created: function() {
-    document.title = '沃草→草報←' + this.cover.issue + '↑';
+    document.title = '沃草→草報←' + this.cover.issue + '↑' + this.nav.title;
+    document.getElementsByTagName('meta').namedItem('description').content = document.title;
   },
   methods: {
     getLogoURL: function(id) {
