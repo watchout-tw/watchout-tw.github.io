@@ -44,6 +44,9 @@ h4 {
 h5 {
   font-size: 1.125rem; }
 
+hgroup > h1:not(:last-child), hgroup > h2:not(:last-child), hgroup > h3:not(:last-child), hgroup > h4:not(:last-child), hgroup > h5:not(:last-child) {
+  margin-bottom: 0.5rem; }
+
 label {
   margin: 0; }
 

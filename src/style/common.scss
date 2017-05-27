@@ -49,6 +49,13 @@ h4 {
 h5 {
   font-size: 1.125rem;
 }
+hgroup {
+  > h1, > h2, > h3, > h4, > h5 {
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
 label {
   margin: 0;
 }
