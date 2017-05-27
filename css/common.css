@@ -321,7 +321,8 @@ footer {
         font-family: "century-std", "noto-serif-patch", "source-han-serif-tc", serif;
         font-weight: bold;
         font-size: 1.125rem;
-        color: rgba(255, 255, 255, 0.75); }
+        color: rgba(255, 255, 255, 0.75);
+        margin: 0.5rem 0; }
       footer > .land > .soil > .deep > .social > .group[type="facebook"] > .link > .image > .type {
         background-image: url(https://watchout.tw/asset/social/facebook/round.png); }
       footer > .land > .soil > .deep > .social > .group[type="LINE"] > .link > .image > .type {
