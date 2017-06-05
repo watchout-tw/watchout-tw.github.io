@@ -1,4 +1,4 @@
-/* Colors */
+// Colors
 
 $color-watchout: #50E3C2;
 $color-park: #FFB55D;
@@ -16,12 +16,12 @@ $color-soil-light: #bd7260;
 $color-soil-dark: #8c4533;
 $color-soil-deep: #434343;
 
-/* Typography */
+// Typography
 
 $font-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-size-small: 0.875rem;
 
-/* Mixin */
+// Mixin
 
 @mixin placeholder {
   background-color: $color-placeholder;
