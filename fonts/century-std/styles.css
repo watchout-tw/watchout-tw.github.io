@@ -5,6 +5,16 @@
     url('CenturyStd-Bold.woff') format('woff'),
     url('CenturyStd-Bold.ttf')  format('truetype'),
     url('CenturyStd-Bold.svg#CenturyStd-Bold') format('svg');
-  font-weight: 900;
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'century-std';
+  src: url('CenturyStd-Book.eot?#iefix') format('embedded-opentype'),
+    url('CenturyStd-Book.otf')  format('opentype'),
+    url('CenturyStd-Book.woff') format('woff'),
+    url('CenturyStd-Book.ttf')  format('truetype'),
+    url('CenturyStd-Book.svg#CenturyStd-Bold') format('svg');
+  font-weight: normal;
   font-style: normal;
 }
