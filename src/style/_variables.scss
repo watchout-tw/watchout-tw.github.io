@@ -67,6 +67,11 @@ $bp-xl: 1200px;
     @content;
   }
 }
+@mixin bp-md-up {
+  @media (min-width: #{$bp-md}) {
+    @content;
+  }
+}
 @mixin bp-lg-up {
   @media (min-width: #{$bp-lg}) {
     @content;
