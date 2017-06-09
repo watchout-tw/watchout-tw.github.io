@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'century-std';
+  src:
+    url('Bold.eot') format('embedded-opentype'),
+    url('Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'century-std';
+  src:
+    url('BoldItalic.eot') format('embedded-opentype'),
+    url('BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'century-std';
+  src:
+    url('Book.eot') format('embedded-opentype'),
+    url('Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'century-std';
+  src:
+    url('BookItalic.eot') format('embedded-opentype'),
+    url('BookItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
