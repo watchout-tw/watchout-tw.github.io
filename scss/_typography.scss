@@ -21,7 +21,6 @@ h1, h2, h3, h4, h5, h6 {
 	list-style: none;
 	@include font-mincho;
   margin: 0;
-  padding-top: 0.36em; // shift baseline down
 	padding-left: 0.25rem; // leave space when display is narrow
 	padding-right: 0.25rem;
 	text-align: center;
