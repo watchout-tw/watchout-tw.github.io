@@ -51,10 +51,15 @@ $font-size-small: 0.875rem;
   -webkit-transform-origin: $transform-origin;
   transform-origin: $transform-origin;
 }
+@mixin sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
 
 // Bootstrap breakpoint
 $bp-sm: 576px;
 $bp-md: 768px;
+$bp-lg-alt: 960px;
 $bp-lg: 992px;
 $bp-xl: 1200px;
 @mixin bp-sm-only {
@@ -72,6 +77,11 @@ $bp-xl: 1200px;
     @content;
   }
 }
+@mixin bp-lg-alt-down {
+  @media (max-width: #{$bp-lg-alt}) {
+    @content;
+  }
+}
 @mixin bp-lg-up {
   @media (min-width: #{$bp-lg}) {
     @content;
@@ -81,3 +91,14 @@ $bp-xl: 1200px;
 @mixin bg-park-light {
   background: rgba($color-park, 0.25);
 }
+
+// z-index
+$z-below-nav: 990;
+$z-nav: 1000;
+$z-dropdown: 1000;
+$z-fixed: 1030;
+$z-sticky: 1030;
+$z-modal-backdrop: 1040;
+$z-modal: 1050;
+$z-popover: 1060;
+$z-tooltip: 1070;
