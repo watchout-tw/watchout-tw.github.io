@@ -39,9 +39,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "century-std", "noto-serif-patch", "source-han-serif-tc", "Noto Serif CJK TC", "Kozuka Mincho Pr6N", "PingFang TC", "Noto Sans CJK TC", "微軟正黑體", sans-serif;
   font-weight: 700;
   margin: 0;
-  padding-top: 0.36em;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  padding: 0.3125rem 0.25rem;
   text-align: center; }
 
 h1 {
