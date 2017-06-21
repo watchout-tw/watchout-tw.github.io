@@ -1,0 +1,22 @@
+@mixin item($name) {
+  background-image: url('//watchout.tw/asset/monthly-production/#{$name}.png')
+}
+$size: 104px;
+$overseas: live-streaming news-article congressional-comic-strip philosophical-comic-strip investigative-report philosophical-essay video-news-report interactive-news-report infographic-news-report ask;
+.items {
+  > .item {
+    display: inline-block;
+    width: $size;
+    height: $size;
+    background-size: contain;
+    &.na {
+      opacity: 0.15;
+	    filter: grayscale(1);
+    }
+    @each $item in $overseas {
+      &.#{$item} {
+        @include item($item);
+      }
+    }
+  }
+}
