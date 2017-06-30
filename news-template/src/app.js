@@ -13,30 +13,32 @@ var app = new Vue({
     },
   },
   data: {
-    permalink: 'https://watchout.tw/news/5-8824',
+    permalink: 'https://watchout.tw/news/6-ask',
     cover: {
       image: 'cover.png',
-      issue: '第五期',
-      date: '2017年5月26日',
+      issue: '第六期',
+      date: '2017年6月30日',
     },
     nav: {
-      title: '8千8百億去哪裡',
+      title: '沃草給問擂台',
       toc: [
         {
           channel: 'edu',
-          title: '本月精選草民讀物',
+          title: '豪雨是上帝發怒？',
         },
         {
           channel: 'ask',
-          title: '沃草2017年度活動',
+          title: '沃草年度活動',
+          channel: 'ask',
+          title: '六都立委給問',
         },
         {
           channel: 'musou',
-          title: '8千8百億，是前瞻，還是錢沾？',
+          title: '走上街頭聆聽基層',
         },
         {
           channel: 'vendor',
-          title: '現代草民哲學讀本',
+          title: '沃草吉祥物Ｌ夾',
         },
       ],
     },
@@ -45,32 +47,32 @@ var app = new Vue({
         id: 'edu',
         name: '公民學院',
         title: '本月精選草民讀物',
-        description: '本月我們精選了三篇最熱門的烙哲學文章，包括海德格的精彩理論介紹、谷阿莫與著作權問題、以及一篇反同的保守主義解析！',
+        description: '本月為各位精選三篇烙哲學文章。最熱門的文章是朱家安的〈該如何回答「哲學到底能幹嘛」的沒禮貌問題？〉，歡迎一起來烙哲學。',
         articles: [
           {
-            link: 'http://citizenedu.tw/t/topic/2039', // 連結網址
+            link: 'http://citizenedu.tw/t/topic/2072', // 連結網址
             thumbnail: 'edu-1.jpg',
-            title: '語言如何召喚存在',
-            text: [
-              '作者：紀金慶',
-              '主編：朱家安',
-            ],
-          },
-          {
-            link: 'http://citizenedu.tw/t/topic/2036', // 連結網址
-            thumbnail: 'edu-2.jpg',
-            title: '一分鐘看完谷阿莫？',
+            title: '克蘇魯神話形上學',
             text: [
               '作者：洪偉',
               '主編：朱家安',
             ],
           },
           {
-            link: 'http://citizenedu.tw/t/topic/2014', // 連結網址
-            thumbnail: 'edu-3.jpg',
-            title: '保守主義如何反同',
+            link: 'http://citizenedu.tw/t/topic/2085', // 連結網址
+            thumbnail: 'edu-2.jpg',
+            title: '哲學是能幹嘛？',
             text: [
-              '作者：張正昕',
+              '作者：朱家安',
+              '主編：洪偉',
+            ],
+          },
+          {
+            link: 'http://citizenedu.tw/t/topic/2094', // 連結網址
+            thumbnail: 'edu-3.jpg',
+            title: '性侵防治哲學問題',
+            text: [
+              '作者：賴天恆',
               '主編：朱家安',
             ],
           },
@@ -78,33 +80,25 @@ var app = new Vue({
         images: [ // 大圖
           {
             title: '康德散步',
-            description: '同性性行為會上癮？應該戒斷？其實至今沒有實證研究證明這樣有效，甚至它們再次傷害「患者」。我們應該做的，是「矯正」社會中的歧視。',
+            description: '天下起了豪大雨，氣象局指出是因為鋒面滯留使得雨量過度集中造成的，但有些人認為是上帝發怒造成的，這該怎麼說明？請點圖片。',
             url: 'walk-1.png',
             orientation: 'portrait',
-            link: 'https://www.facebook.com/citizenedu/photos/a.861134307356973.1073741836.501740576629683/967025033434566/?type=3&theater',
+            link: 'http://citizenedu.tw/t/topic/2080',
           },
         ],
       },
       {
         id: 'ask',
         name: '給問擂台',
-        title: '2017給問擂台', // 區塊標題
-        description: '以「直接、公開、對話」等原則，嘗試建構出政治人物與公民直接溝通的平台。透過分組討論的互動方式，也能讓公民理解代議政治的內涵。', // 區塊文字
+        title: '2017年 年度計畫', // 區塊標題
+        description: '第一站-台南！五位區域立委全部報到！', // 區塊文字
         articles: [ // 連結們
           {
-            link: 'https://ask.watchout.tw/', // 連結網址
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfIznEw7Wd1ZvS1phhpdJnYR6EmLWkTIJywxsNnv1-EHdt7Dw/viewform', // 連結網址
             thumbnail: 'ask-1.jpg', // 連結縮圖
-            title: '什麼是給問', // 連結標題
+            title: '7/8台南立委給問嗎？快來報名', // 連結標題
             text: [ // 連結附加文字，分行
-              '看更多的完整給問紀錄',
-            ],
-          },
-          {
-            link: 'https://youtu.be/9TniPc0D0r4', // 連結網址
-            thumbnail: 'ask-2.jpg',
-            title: '最新給問影音',
-            text: [
-              '5/18年金改革：段宜康給問',
+              '',
             ],
           },
         ]
@@ -112,40 +106,31 @@ var app = new Vue({
       {
         id: 'musou',
         name: '國會無雙',
-        title: '是前瞻，還是錢沾', // 區塊標題
-        description: '前瞻條例在立法院審議期間不斷發生衝突，原應好好逐條討論的內容直接送黨團協商處理，在這樣粗糙立法的情況下，前瞻會不會變成「錢沾」呢？', // 區塊文字
+        title: '沃草街訪', // 區塊標題
+        description: '公教人員年金改革法案即將於第一次立法院臨時會通過，而這一年來他們多次走上街頭向政府嗆聲，到底他們的心聲為何？沃草帶大家一起來聽聽看。', // 區塊文字
         articles: [ // 連結們
           {
-            link: 'https://musou.tw/focuses/1371', // 連結網址
+            link: 'https://musou.tw/videos/1380', // 連結網址
             thumbnail: 'musou-1.jpg', // 連結縮圖
-            title: '藍委潑水叫囂 「前瞻」過關全案保留送出委員會交付協商', // 連結標題
+            title: '沃草街訪》「警察節」反年改團體再戰街頭 退休學長怎麼說', // 連結標題
             text: [ // 連結附加文字，分行
-              '記者：蕭長展',
+              '記者：洪國鈞 陳東 蕭長展',
             ],
           },
           {
             link: 'https://musou.tw/focuses/1366', // 連結網址
             thumbnail: 'musou-2.jpg',
-            title: '前瞻條例民進黨應闖過關 學者痛批如「獨裁再現」',
+            title: '沃草接訪》329現場直擊 反年金改革團體衝撞街頭',
             text: [
-              '記者：蕭長展',
+              '記者：陳東 王希 洪國鈞 蕭長展',
             ],
           },
           {
             link: 'https://musou.tw/focuses/1363', // 連結網址
             thumbnail: 'musou-3.jpg',
-            title: '黃國昌痛批馬政府激增國債 蔡政府「前瞻」未記取教訓',
+            title: '沃草街訪》凱道上抗爭的軍公教怎麼看年金改革？',
             text: [
-              '記者：蕭長展',
-            ],
-          },
-          {
-            link: 'https://musou.watchout.tw/draw/tsai-first-year/', // 連結網址
-            thumbnail: 'musou-4.jpg',
-            title: '【互動式圖表】蔡總統的第一年',
-            text: [
-              '編輯：蕭長展、洪國鈞',
-              '設計開發：游知澔',
+              '記者：薛翰駿 陳東',
             ],
           },
         ]
@@ -155,6 +140,7 @@ var app = new Vue({
         name: '草漫',
         images: [
           {
+            link: 'https://www.facebook.com/pg/watchout.tw/photos/?tab=album&album_id=795478310610384'
             url: 'maa-1.png',
             orientation: 'landscape',
           },
@@ -163,13 +149,14 @@ var app = new Vue({
       {
         id: 'vendor',
         name: '草地攤販',
-        description: '沃草烙哲學，推出第一本哲學書囉！《現代草民哲學讀本：跟沃草一起，用思考通樂人生》全面預購中！',
+        description: '有些資料，值得用阿草文件夾細．心．收．藏。那年他寫給你的情書，那封來自遠方的明信片，或是你跟他去過海邊的照片，這些充滿回憶、無法抹去的文件資料，你都收在哪呢？',
         products: [
           {
-            link: 'https://goo.gl/82PRcc',
-            image: 'vendor-1.png',
-            name: '《現代草民哲學讀本》預購價',
-            price: '284',
+            link: 'https://watchout.backme.tw/checkout/332/2962',
+            image: 'vendor-1.jpg',
+              image: 'vendor-2.jpg',
+            name: '沃草吉祥物Ｌ夾（一式兩入）',
+            price: '110',
           },
         ]
       },
