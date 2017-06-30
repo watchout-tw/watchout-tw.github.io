@@ -98,7 +98,7 @@ var app = new Vue({
             thumbnail: 'ask-1.jpg', // 連結縮圖
             title: '7/8台南立委給問嗎？快來報名', // 連結標題
             text: [ // 連結附加文字，分行
-              '',
+              '14:00 ＠成功大學'
             ],
           },
         ]
@@ -118,7 +118,7 @@ var app = new Vue({
             ],
           },
           {
-            link: 'https://musou.tw/focuses/1366', // 連結網址
+            link: 'https://musou.tw/videos/1345', // 連結網址
             thumbnail: 'musou-2.jpg',
             title: '沃草接訪》329現場直擊 反年金改革團體衝撞街頭',
             text: [
@@ -126,7 +126,7 @@ var app = new Vue({
             ],
           },
           {
-            link: 'https://musou.tw/focuses/1363', // 連結網址
+            link: 'https://musou.tw/videos/1314', // 連結網址
             thumbnail: 'musou-3.jpg',
             title: '沃草街訪》凱道上抗爭的軍公教怎麼看年金改革？',
             text: [
