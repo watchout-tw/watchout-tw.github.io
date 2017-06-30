@@ -140,7 +140,7 @@ var app = new Vue({
         name: '草漫',
         images: [
           {
-            link: 'https://www.facebook.com/pg/watchout.tw/photos/?tab=album&album_id=795478310610384'
+            link: 'https://www.facebook.com/pg/watchout.tw/photos/?tab=album&album_id=795478310610384',
             url: 'maa-1.png',
             orientation: 'landscape',
           },
@@ -154,7 +154,12 @@ var app = new Vue({
           {
             link: 'https://watchout.backme.tw/checkout/332/2962',
             image: 'vendor-1.jpg',
-              image: 'vendor-2.jpg',
+            name: '沃草吉祥物Ｌ夾（一式兩入）',
+            price: '110',
+          },
+          {
+            link: 'https://watchout.backme.tw/checkout/332/2962',
+            image: 'vendor-2.jpg',
             name: '沃草吉祥物Ｌ夾（一式兩入）',
             price: '110',
           },
