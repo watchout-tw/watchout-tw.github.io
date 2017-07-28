@@ -148,7 +148,7 @@ var app = new Vue({
         name: '草漫',
         images: [
           {
-            link: 'https://www.facebook.com/pg/watchout.tw/photos/?tab=album&album_id=795478310610384',
+            link: '',
             url: 'maa-1.png',
             orientation: 'landscape',
           },
