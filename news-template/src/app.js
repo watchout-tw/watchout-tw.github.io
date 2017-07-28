@@ -20,11 +20,11 @@ var app = new Vue({
       date: '2017年7月28日',
     },
     nav: {
-      title: '解嚴30年',
+      title: '解嚴30',
       toc: [
         {
           channel: 'edu',
-          title: '解嚴哲學思考',
+          title: '解嚴30哲學思考',
         },
         {
           channel: 'ask',
