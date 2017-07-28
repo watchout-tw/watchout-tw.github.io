@@ -78,7 +78,7 @@ var app = new Vue({
         images: [ // 大圖
           {
             title: '康德散步',
-            description: '有人拿船難畫問哲學家：「這麼多人被神救出，還不信神？哲學家回：「是喔？那些被神拋下的人的畫像在哪？」這故事涉及了一個邏輯謬誤。',
+            description: '有人拿船難畫問哲學家：「這麼多人被神救出，還不信神？」哲學家回：「是喔？那些被神拋下的人的畫像在哪？」這故事涉及了一個邏輯謬誤。',
             url: 'walk-1.png',
             orientation: 'portrait',
             link: 'https://www.facebook.com/citizenedu/photos/a.861134307356973.1073741836.501740576629683/1020425458094523/?type=3&theater',
