@@ -13,32 +13,30 @@ var app = new Vue({
     },
   },
   data: {
-    permalink: 'https://watchout.tw/news/6-ask',
+    permalink: 'https://watchout.tw/news/7-terror30',
     cover: {
       image: 'cover.png',
-      issue: '第六期',
-      date: '2017年6月30日',
+      issue: '第七期',
+      date: '2017年7月28日',
     },
     nav: {
-      title: '沃草給問擂台',
+      title: '解嚴30',
       toc: [
         {
           channel: 'edu',
-          title: '豪雨是上帝發怒？',
+          title: '解嚴30哲學思考',
         },
         {
           channel: 'ask',
-          title: '沃草年度活動',
-          channel: 'ask',
-          title: '六都立委給問',
+          title: '2017年度專案',
         },
         {
           channel: 'musou',
-          title: '走上街頭聆聽基層',
+          title: '你是戒嚴時期的誰',
         },
         {
           channel: 'vendor',
-          title: '沃草吉祥物Ｌ夾',
+          title: '暖心療癒組合',
         },
       ],
     },
@@ -47,32 +45,32 @@ var app = new Vue({
         id: 'edu',
         name: '公民學院',
         title: '本月精選草民讀物',
-        description: '本月為各位精選三篇烙哲學文章。最熱門的文章是朱家安的〈該如何回答「哲學到底能幹嘛」的沒禮貌問題？〉，歡迎一起來烙哲學。',
+        description: '本月為各位精選三篇與解嚴、轉型正義相關的烙哲學文章：服從權威是怎麼回事？服從有什麼後果？有沒有「不合法」的法律？',
         articles: [
           {
-            link: 'http://citizenedu.tw/t/topic/2072', // 連結網址
+            link: 'http://citizenedu.tw/t/topic/1982', // 連結網址
             thumbnail: 'edu-1.jpg',
-            title: '克蘇魯神話形上學',
+            title: '不配是法律的法律',
             text: [
-              '作者：洪偉',
+              '作者：陳冠廷',
               '主編：朱家安',
             ],
           },
           {
-            link: 'http://citizenedu.tw/t/topic/2085', // 連結網址
+            link: 'http://citizenedu.tw/t/topic/1566', // 連結網址
             thumbnail: 'edu-2.jpg',
-            title: '哲學是能幹嘛？',
+            title: '理性地服從權威？',
             text: [
-              '作者：朱家安',
-              '主編：洪偉',
+              '作者：陳冠廷',
+              '主編：朱家安',
             ],
           },
           {
-            link: 'http://citizenedu.tw/t/topic/2094', // 連結網址
+            link: 'http://citizenedu.tw/t/topic/1663', // 連結網址
             thumbnail: 'edu-3.jpg',
-            title: '性侵防治哲學問題',
+            title: '服從權威的後果',
             text: [
-              '作者：賴天恆',
+              '作者：邱怡嘉',
               '主編：朱家安',
             ],
           },
@@ -80,25 +78,41 @@ var app = new Vue({
         images: [ // 大圖
           {
             title: '康德散步',
-            description: '天下起了豪大雨，氣象局指出是因為鋒面滯留使得雨量過度集中造成的，但有些人認為是上帝發怒造成的，這該怎麼說明？請點圖片。',
+            description: '有人拿船難畫問哲學家：「這麼多人被神救出，還不信神？」哲學家回：「是喔？那些被神拋下的人的畫像在哪？」這故事涉及了一個邏輯謬誤。',
             url: 'walk-1.png',
             orientation: 'portrait',
-            link: 'http://citizenedu.tw/t/topic/2080',
+            link: 'https://www.facebook.com/citizenedu/photos/a.861134307356973.1073741836.501740576629683/1020425458094523/?type=3&theater',
           },
         ],
       },
       {
         id: 'ask',
         name: '給問擂台',
-        title: '2017年 年度計畫', // 區塊標題
-        description: '第一站-台南！五位區域立委全部報到！', // 區塊文字
+        title: '六都立委給問嗎', // 區塊標題
+        description: '給問擂台下半年度大計畫「六都立委給問嗎」，第一站-台南，圓滿成功！', // 區塊文字
         articles: [ // 連結們
           {
-            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfIznEw7Wd1ZvS1phhpdJnYR6EmLWkTIJywxsNnv1-EHdt7Dw/viewform', // 連結網址
+            link: 'https://musou.tw/focuses/1386', // 連結網址
             thumbnail: 'ask-1.jpg', // 連結縮圖
-            title: '7/8台南立委給問嗎？快來報名', // 連結標題
+            title: '台南立委如何談一例一休', // 連結標題
             text: [ // 連結附加文字，分行
-              '14:00 ＠成功大學'
+              '記者：薛翰駿'
+            ],
+          },
+          {
+            link: 'https://youtu.be/7R-Ul0gMvTg', // 連結網址
+            thumbnail: 'ask-2.jpg', // 連結縮圖
+            title: '台南立委給問嗎', // 連結標題
+            text: [ // 連結附加文字，分行
+              '活動當日完整直播影音'
+            ],
+          },
+          {
+            link: 'https://ask.watchout.tw/', // 連結網址
+            thumbnail: 'ask-3.jpg', // 連結縮圖
+            title: '了解更多六都立委給問', // 連結標題
+            text: [ // 連結附加文字，分行
+              '桃園台中高雄雙北Coming soon'
             ],
           },
         ]
@@ -106,31 +120,25 @@ var app = new Vue({
       {
         id: 'musou',
         name: '國會無雙',
-        title: '沃草街訪', // 區塊標題
-        description: '公教人員年金改革法案即將於第一次立法院臨時會通過，而這一年來他們多次走上街頭向政府嗆聲，到底他們的心聲為何？沃草帶大家一起來聽聽看。', // 區塊文字
+        title: '解嚴三十', // 區塊標題
+        description: '執政黨把「促進轉型正義條例」擱置在立法院，而用音樂節來紀念解嚴30週年。在徹底遺忘轉型正義前，先來看看「你是戒嚴時代的誰」吧。', // 區塊文字
         articles: [ // 連結們
           {
-            link: 'https://musou.tw/videos/1380', // 連結網址
+            link: 'https://musou.watchout.tw/role-play/terror-30/', // 連結網址
             thumbnail: 'musou-1.jpg', // 連結縮圖
-            title: '沃草街訪》「警察節」反年改團體再戰街頭 退休學長怎麼說', // 連結標題
+            title: '你是戒嚴時代的誰呢？', // 連結標題
             text: [ // 連結附加文字，分行
-              '記者：洪國鈞 陳東 蕭長展',
+              '編輯：洪國鈞、薛翰駿、蕭長展',
+              '設計：游知澔',
             ],
           },
           {
-            link: 'https://musou.tw/videos/1345', // 連結網址
+            link: 'https://musou.tw/focuses/1326', // 連結網址
             thumbnail: 'musou-2.jpg',
-            title: '沃草接訪》329現場直擊 反年金改革團體衝撞街頭',
+            title: '【互動地圖】重返二二八起點',
             text: [
-              '記者：陳東 王希 洪國鈞 蕭長展',
-            ],
-          },
-          {
-            link: 'https://musou.tw/videos/1314', // 連結網址
-            thumbnail: 'musou-3.jpg',
-            title: '沃草街訪》凱道上抗爭的軍公教怎麼看年金改革？',
-            text: [
-              '記者：薛翰駿 陳東',
+              '編輯：洪國鈞、薛翰駿、蕭長展',
+              '設計：林家偉',
             ],
           },
         ]
@@ -140,7 +148,7 @@ var app = new Vue({
         name: '草漫',
         images: [
           {
-            link: 'https://www.facebook.com/pg/watchout.tw/photos/?tab=album&album_id=795478310610384',
+            link: '',
             url: 'maa-1.png',
             orientation: 'landscape',
           },
@@ -149,19 +157,13 @@ var app = new Vue({
       {
         id: 'vendor',
         name: '草地攤販',
-        description: '有些資料，值得用阿草文件夾細．心．收．藏。那年他寫給你的情書，那封來自遠方的明信片，或是你跟他去過海邊的照片，這些充滿回憶、無法抹去的文件資料，你都收在哪呢？',
+        description: '一次擁有！黑熊・阿草雙面設計款抱枕，可以水洗不怕髒、枕心無拉鏈不割手😘 沃草首款米白系帆布袋，與台南府城近六十載的帆布老舖「合成帆布行」合作😊',
         products: [
           {
-            link: 'https://watchout.backme.tw/checkout/332/2962',
+            link: 'https://watchout.backme.tw/checkout/332/1888',
             image: 'vendor-1.jpg',
-            name: '沃草吉祥物Ｌ夾（一式兩入）',
-            price: '110',
-          },
-          {
-            link: 'https://watchout.backme.tw/checkout/332/2962',
-            image: 'vendor-2.jpg',
-            name: '沃草吉祥物Ｌ夾（一式兩入）',
-            price: '110',
+            name: '暖心療癒組（抱枕、帆布袋）',
+            price: '900',
           },
         ]
       },
