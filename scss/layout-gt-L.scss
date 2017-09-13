@@ -37,7 +37,7 @@ $susy: (
       text-align: left;
     }
     &#Y2013 {
-      @include span(1.5 wide no-gutters);
+      @include span(1.25 wide no-gutters);
     }
     &#Y2014 {
       @include span(4 wide no-gutters);
@@ -46,7 +46,10 @@ $susy: (
       @include span(3.5 wide no-gutters);
     }
     &#Y2016 {
-      @include span(3 wide no-gutters);
+      @include span(2 wide no-gutters);
+    }
+    &#Y2017 {
+      @include span(1.25 wide no-gutters);
     }
   }
   > .years > .year > .events > .event {

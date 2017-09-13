@@ -1,6 +1,6 @@
 $event-icon-height: 160px;
-$event-icon-keys: (誕生 國會無雙 無雙第一 無雙改版 市長給問 公民學院 無雙一千 立委出任務 總統給問 總統辯論 開放國會松);
-$event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
+$event-icon-keys: (誕生 國會無雙 無雙第一 無雙改版 市長給問 公民學院 無雙一千 立委出任務 總統給問 總統辯論 開放國會松 給問擂台);
+$event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height 80);
 .event-icon {
 	@include fixed-width-icon(192px, $event-icon-height, 'events', $event-icon-height, $event-icon-keys, $event-icon-width, 192px);
 	cursor: pointer;
@@ -15,6 +15,11 @@ $event-icon-width: (72 48 48 48 48 48 48 48 186 128 $event-icon-height);
 }
 .event-icon[key="開放國會松"] {
 	background-image: url('//watchout.tw/images/congressthon-small.png');
+}
+.event-icon[key="給問擂台"] {
+	background-image: url('//watchout.tw/asset/logo/ask/large.png');
+	background-size: contain;
+	background-position: center;
 }
 .project-icon.small {
 	@include fixed-width-icon(30px, 30px, 'project-logo-small', 30px, (國會無雙 給問 公民學院 立委出任務));

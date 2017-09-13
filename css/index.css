@@ -592,6 +592,9 @@ nav > #home {
   .event-icon[key="開放國會松"] {
     width: 160px;
     background-position: center -1600px; }
+  .event-icon[key="給問擂台"] {
+    width: 80;
+    background-position: center -1760px; }
 
 .event-icon[key="誕生"], .event-icon[key="開放國會松"] {
   background-position: center center;
@@ -603,6 +606,11 @@ nav > #home {
 
 .event-icon[key="開放國會松"] {
   background-image: url("//watchout.tw/images/congressthon-small.png"); }
+
+.event-icon[key="給問擂台"] {
+  background-image: url("//watchout.tw/asset/logo/ask/large.png");
+  background-size: contain;
+  background-position: center; }
 
 .project-icon.small {
   display: block;
