@@ -170,11 +170,33 @@ $span: 640;
   > .option {
     max-width: $span*1px;
     margin: 0 auto;
+		@mixin item($name) {
+		  background-image: url('//watchout.tw/asset/monthly-production/#{$name}.png')
+		}
+		$size: 104px;
+		$overseas: live-streaming news-article congressional-comic-strip philosophical-comic-strip investigative-report philosophical-essay video-news-report interactive-news-report infographic-news-report ask;
+		> .items {
+		  > .item {
+		    display: inline-block;
+		    width: $size;
+		    height: $size;
+		    background-size: contain;
+		    &.na {
+		      opacity: 0.15;
+			    filter: grayscale(1);
+		    }
+		    @each $item in $overseas {
+		      &.#{$item} {
+		        @include item($item);
+		      }
+		    }
+		  }
+		}
   }
-  > .option > .icons {
-    $icons: (basics $span) (stickers 152) (notebook 152) (gears 194) (tickets 142);
-    @include product-icons($span, 128, $icons);
-  }
+	> .option > h5 {
+		max-width: 24rem;
+		margin: 0.5rem auto;
+	}
 }
 #one-time-purchases {
 	> .option:first-child {

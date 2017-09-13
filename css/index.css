@@ -955,42 +955,37 @@ html[lang="en"] .support-button {
 #monthly-payments > .option {
   max-width: 640px;
   margin: 0 auto; }
-#monthly-payments > .option > .icons {
-  width: 100%;
-  max-width: 640px;
-  margin: 0 auto 0.5rem; }
-  #monthly-payments > .option > .icons > .icon {
+  #monthly-payments > .option > .items > .item {
     display: inline-block;
-    height: 0%;
-    background-size: cover; }
-    #monthly-payments > .option > .icons > .icon.na {
-      opacity: 0.3;
+    width: 104px;
+    height: 104px;
+    background-size: contain; }
+    #monthly-payments > .option > .items > .item.na {
+      opacity: 0.15;
       filter: grayscale(1); }
-    #monthly-payments > .option > .icons > .icon.basics {
-      width: 100%;
-      padding-bottom: 20%;
-      background-image: url("//watchout.tw/images/products/singles/basics.png");
-      background-size: contain; }
-    #monthly-payments > .option > .icons > .icon.stickers {
-      width: 23.75%;
-      padding-bottom: 20%;
-      background-image: url("//watchout.tw/images/products/singles/stickers.png");
-      background-size: contain; }
-    #monthly-payments > .option > .icons > .icon.notebook {
-      width: 23.75%;
-      padding-bottom: 20%;
-      background-image: url("//watchout.tw/images/products/singles/notebook.png");
-      background-size: contain; }
-    #monthly-payments > .option > .icons > .icon.gears {
-      width: 30.3125%;
-      padding-bottom: 20%;
-      background-image: url("//watchout.tw/images/products/singles/gears.png");
-      background-size: contain; }
-    #monthly-payments > .option > .icons > .icon.tickets {
-      width: 22.1875%;
-      padding-bottom: 20%;
-      background-image: url("//watchout.tw/images/products/singles/tickets.png");
-      background-size: contain; }
+    #monthly-payments > .option > .items > .item.live-streaming {
+      background-image: url("//watchout.tw/asset/monthly-production/live-streaming.png"); }
+    #monthly-payments > .option > .items > .item.news-article {
+      background-image: url("//watchout.tw/asset/monthly-production/news-article.png"); }
+    #monthly-payments > .option > .items > .item.congressional-comic-strip {
+      background-image: url("//watchout.tw/asset/monthly-production/congressional-comic-strip.png"); }
+    #monthly-payments > .option > .items > .item.philosophical-comic-strip {
+      background-image: url("//watchout.tw/asset/monthly-production/philosophical-comic-strip.png"); }
+    #monthly-payments > .option > .items > .item.investigative-report {
+      background-image: url("//watchout.tw/asset/monthly-production/investigative-report.png"); }
+    #monthly-payments > .option > .items > .item.philosophical-essay {
+      background-image: url("//watchout.tw/asset/monthly-production/philosophical-essay.png"); }
+    #monthly-payments > .option > .items > .item.video-news-report {
+      background-image: url("//watchout.tw/asset/monthly-production/video-news-report.png"); }
+    #monthly-payments > .option > .items > .item.interactive-news-report {
+      background-image: url("//watchout.tw/asset/monthly-production/interactive-news-report.png"); }
+    #monthly-payments > .option > .items > .item.infographic-news-report {
+      background-image: url("//watchout.tw/asset/monthly-production/infographic-news-report.png"); }
+    #monthly-payments > .option > .items > .item.ask {
+      background-image: url("//watchout.tw/asset/monthly-production/ask.png"); }
+#monthly-payments > .option > h5 {
+  max-width: 24rem;
+  margin: 0.5rem auto; }
 
 #one-time-purchases > .option:first-child {
   margin-top: 2rem; }
