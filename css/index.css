@@ -229,7 +229,6 @@ html[lang="en"] .support-button {
       font-size: 1.625rem; } }
   #call > #you {
     color: #50E3C2;
-    display: inline-block;
     border-bottom: 4px solid #50E3C2; }
 
 .custom-line-break > .line {
