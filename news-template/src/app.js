@@ -80,6 +80,15 @@ var app = new Vue({
             ],
           }
         ],
+        images: [ // 大圖
+       {
+         title: '康德散步',
+         description: '',
+         url: 'walk-1.png',
+         orientation: 'portrait',
+         link: '',
+       },
+     ],
       },
       {
         id: 'musou',
