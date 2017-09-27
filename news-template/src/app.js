@@ -105,7 +105,7 @@ var app = new Vue({
           },
           {
             link: 'https://musou.tw/focuses/1197', // 連結網址
-            thumbnail: 'musou-2.jpg',
+            thumbnail: 'musou-3.jpg',
             title: '林淑芬：勞保給付對石綿職災「間皮細胞瘤」不公 勞動部承諾修改放寬',
             text: [
               '編輯：蕭長展',
