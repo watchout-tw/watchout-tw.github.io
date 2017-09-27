@@ -76,7 +76,7 @@ var app = new Vue({
             thumbnail: 'edu-1.jpg',
             title: '百人華山論哲學 沃草年會大成功',
             text: [
-              '作者：廖昱涵',
+              '編輯：廖昱涵',
             ],
           }
         ],
