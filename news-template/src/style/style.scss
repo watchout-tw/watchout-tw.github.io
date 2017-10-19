@@ -141,6 +141,11 @@ section {
       background-color: rgba($color-ask, 0.25);
     }
   }
+  &#lab {
+    > .header {
+      background-color: rgba($color-watchout, 0.25);
+    }
+  }
   &#maa {
     > .header {
       background-color: $color-maa;

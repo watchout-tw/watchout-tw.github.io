@@ -23,6 +23,10 @@ var app = new Vue({
       title: '立委給問公民推噓',
       toc: [
         {
+          channel: 'lab',
+          title: '議題實驗室上線',
+        },
+        {
           channel: 'ask',
           title: '桃園立委給問登場',
         },
@@ -41,6 +45,30 @@ var app = new Vue({
       ],
     },
     sections: [ // 這個陣列包含這一期草報的每個區塊
+      {
+        id: 'lab',
+        name: '議題實驗室',
+        title: '議題實驗室上線',
+        description: 'Lorem ipsum.',
+        articles: [
+          {
+            link: 'https://lab.watchout.tw/',
+            thumbnail: 'lab-1.jpg',
+            title: 'lab-1',
+            text: [
+              'Lorem ipsum.'
+            ],
+          },
+          {
+            link: 'https://lab.watchout.tw/',
+            thumbnail: 'lab-2.jpg',
+            title: 'lab-1',
+            text: [
+              'Lorem ipsum.'
+            ],
+          },
+        ]
+      },
       {
         id: 'ask',
         name: '給問擂台',
@@ -81,14 +109,14 @@ var app = new Vue({
           }
         ],
         images: [ // 大圖
-       {
-         title: '康德散步',
-         description: '',
-         url: 'walk-1.png',
-         orientation: 'portrait',
-         link: '',
-       },
-     ],
+          {
+           title: '康德散步',
+           description: '',
+           url: 'walk-1.png',
+           orientation: 'portrait',
+           link: '',
+          },
+        ],
       },
       {
         id: 'musou',
