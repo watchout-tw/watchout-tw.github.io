@@ -13,34 +13,34 @@ var app = new Vue({
     },
   },
   data: {
-    permalink: 'https://watchout.tw/news/9-ask',
+    permalink: 'https://watchout.tw/news/10-lab',
     cover: {
       image: 'cover.png',
-      issue: '第九期',
-      date: '2017年9月28日',
+      issue: '第十期',
+      date: '2017年10月26日',
     },
     nav: {
-      title: '立委給問公民推噓',
+      title: '議題實驗室',
       toc: [
         {
           channel: 'lab',
-          title: '議題實驗室上線',
+          title: '你罷免黃國昌了嗎',
         },
         {
           channel: 'ask',
-          title: '桃園立委給問登場',
+          title: '桃園立委給問回顧',
         },
         {
           channel: 'edu',
-          title: '全台最大哲普年會',
+          title: '烙哲學本月選文',
         },
         {
           channel: 'musou',
-          title: '工傷。勞權 桃園立委回答嗎',
+          title: '光輝十月（？）',
         },
         {
           channel: 'vendor',
-          title: '現代草民哲學讀本',
+          title: '歲末出清驚喜包',
         },
       ],
     },
@@ -48,23 +48,23 @@ var app = new Vue({
       {
         id: 'lab',
         name: '議題實驗室',
-        title: '議題實驗室上線',
-        description: 'Lorem ipsum.',
+        title: '你罷免黃國昌了嗎',
+        description: '台灣歷史上曾經發起數次的公民罷免，目前只有鄉鎮市民代表的層級曾經成功過，罷免是否能成為有效的公民監督工具，尚待觀察。',
         articles: [
           {
-            link: 'https://lab.watchout.tw/',
+            link: 'https://lab.watchout.tw/data-reports/1',
             thumbnail: 'lab-1.jpg',
-            title: 'lab-1',
+            title: '針對選罷法修法，誰提的罷免門檻最低？',
             text: [
-              'Lorem ipsum.'
+              '立委提案戰力分析'
             ],
           },
           {
-            link: 'https://lab.watchout.tw/',
+            link: 'https://lab.watchout.tw/data-reports/3',
             thumbnail: 'lab-2.jpg',
-            title: 'lab-1',
+            title: '針對下修罷免門檻，哪些委員有提案或連署？',
             text: [
-              'Lorem ipsum.'
+              '解析立委人際網路'
             ],
           },
         ]
@@ -72,8 +72,8 @@ var app = new Vue({
       {
         id: 'ask',
         name: '給問擂台',
-        title: '桃園立委給問登場', // 區塊標題
-        description: '「六都立委給問嗎」第二站：桃園 9/23登場，超過百人質詢立委。針對各種在地議題，陳學聖、鄭運鵬兩位立委，現場承諾與表態，公民直接以推噓扇回應立委。', // 區塊文字
+        title: '桃園立委給問回顧', // 區塊標題
+        description: '桃園立委給問9/23百人質詢結束，陳學聖、鄭運鵬立委回應公民提問，快來看完整影音及報導，了解立委如何回應犀利問題？', // 區塊文字
         articles: [ // 連結們
           {
             link: 'https://youtu.be/PAC8Cz3Kkxk', // 連結網址
@@ -84,11 +84,11 @@ var app = new Vue({
             ],
           },
           {
-            link: 'https://ask.watchout.tw/', // 連結網址
+            link: 'https://musou.tw/focuses/1397', // 連結網址
             thumbnail: 'ask-2.jpg', // 連結縮圖
-            title: '了解更多立委給問', // 連結標題
+            title: '現場報導：外籍工遭襲胸，勞動部稱「友善碰觸」，立委怎麼回？', // 連結標題
             text: [ // 連結附加文字，分行
-              '台中高雄雙北，立委給問Coming soon'
+              '作者：蕭長展'
             ],
           },
         ]
@@ -96,15 +96,31 @@ var app = new Vue({
       {
         id: 'edu',
         name: '公民學院',
-        title: '百人華山論哲學',
-        description: '沃草公民學院日前在華山舉辦全台最大的哲學普及年會，台港共九個哲普團體與會主講，在場與會聽眾超過百人。',
+        title: '烙哲學本月選文',
+        description: '本月選出三篇烙哲學精彩文章：要受害者保護自己，算是在譴責他嗎？我們為何無法對歷史不義道歉？政府為什麼應該補助PrEP？',
         articles: [
           {
-            link: 'https://goo.gl/rhTei2', // 連結網址
+            link: 'http://citizenedu.tw/t/topic/2327', // 連結網址
             thumbnail: 'edu-1.jpg',
-            title: '百人華山論哲學 沃草年會大成功',
+            title: '誰在譴責受害者？',
             text: [
-              '編輯：廖昱涵',
+              '作者：黃韻竹',
+            ],
+          }
+          {
+            link: 'http://citizenedu.tw/t/topic/2343', // 連結網址
+            thumbnail: 'edu-2.jpg',
+            title: '對歷史的不義道歉',
+            text: [
+              '作者：賴天恆',
+            ],
+          }
+          {
+            link: 'http://citizenedu.tw/t/prep/2330', // 連結網址
+            thumbnail: 'edu-3.jpg',
+            title: '政府該補助PrEP',
+            text: [
+              '作者：馮一凡',
             ],
           }
         ],
@@ -121,31 +137,24 @@ var app = new Vue({
       {
         id: 'musou',
         name: '國會無雙',
-        title: '桃園立委會答嗎？', // 區塊標題
-        description: '桃園立委給問活動順利結束，但對答如流的立委碰上公民團體詢問勞動議題就安靜了下來。台灣勞工權益還有哪些問題，沃草帶您一同回顧。', // 區塊文字
+        title: '誰的光輝十月', // 區塊標題
+        description: '過去「中華民國」政府常說「光輝十月」，強調「雙十節」、「光復節」跟台灣的關聯。現實真的如此嗎？讓沃草來告訴你「中華民國」有多荒謬吧！', // 區塊文字
         articles: [ // 連結們
           {
-            link: 'https://musou.tw/focuses/1308', // 連結網址
+            link: 'https://musou.tw/focuses/1401', // 連結網址
             thumbnail: 'musou-1.jpg', // 連結縮圖
-            title: '工程會：聘違法勞工是包商責任 林淑芬痛批罔顧工安事故', // 連結標題
+            title: '【小測驗】測測看！你是中華民國人嗎？', // 連結標題
             text: [ // 連結附加文字，分行
-              '記者：蕭長展',
+              '內容編輯：洪國鈞、王希',
             ],
           },
           {
-            link: 'https://musou.tw/focuses/1331', // 連結網址
+            link: 'https://musou.tw/videos/1406', // 連結網址
             thumbnail: 'musou-2.jpg',
-            title: '教育部漠視學生權益？林淑芬揭馬政府曾發文勞動部「別管建教生」',
+            title: '【好球】「中華民國領土在哪裡？」王育敏犀利質詢驚呆四座！',
             text: [
-              '編輯：蕭長展',
-            ],
-          },
-          {
-            link: 'https://musou.tw/focuses/1197', // 連結網址
-            thumbnail: 'musou-3.jpg',
-            title: '林淑芬：勞保給付對石綿職災「間皮細胞瘤」不公 勞動部承諾修改放寬',
-            text: [
-              '編輯：蕭長展',
+              '文字：洪國鈞',
+              '影音：陳東',
             ],
           },
         ]
@@ -164,13 +173,13 @@ var app = new Vue({
       {
         id: 'vendor',
         name: '草地攤販',
-        description: '沃草出品的第一本哲學書《現代草民哲學讀本：跟沃草一起，用思考通樂人生》入選博客來 22 周年慶活動： 2017 年的22個熱門話題！',
+        description: '',
         products: [
           {
-            link: 'https://goo.gl/82PRcc',
+            link: 'https://watchout.backme.tw/checkout/332/2032',
             image: 'vendor-1.png',
-            name: '《現代草民哲學讀本》',
-            price: '360',
+            name: '《歲末出清驚喜包》',
+            price: '799元',
           },
         ]
       },
