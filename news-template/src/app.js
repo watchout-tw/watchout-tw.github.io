@@ -17,7 +17,7 @@ var app = new Vue({
     cover: {
       image: 'cover.png',
       issue: '第十期',
-      date: '2017年10月25日',
+      date: '2017年10月26日',
     },
     nav: {
       title: '議題實驗室',
