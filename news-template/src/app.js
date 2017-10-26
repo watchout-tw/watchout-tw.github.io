@@ -56,7 +56,7 @@ var app = new Vue({
             thumbnail: 'lab-1.jpg',
             title: '針對選罷法修法，誰提的罷免門檻最低？',
             text: [
-              '立委提案戰力分析'
+              '立委提案戰力分析',
             ],
           },
           {
@@ -64,7 +64,7 @@ var app = new Vue({
             thumbnail: 'lab-2.jpg',
             title: '針對下修罷免門檻，哪些委員有提案或連署？',
             text: [
-              '解析立委人際網路'
+              '解析立委人際網路',
             ],
           },
         ]
@@ -80,7 +80,7 @@ var app = new Vue({
             thumbnail: 'ask-1.jpg', // 連結縮圖
             title: '桃園立委給問直播', // 連結標題
             text: [ // 連結附加文字，分行
-              '當日活動完整影音'
+              '當日活動完整影音',
             ],
           },
           {
@@ -88,7 +88,7 @@ var app = new Vue({
             thumbnail: 'ask-2.jpg', // 連結縮圖
             title: '現場報導：外籍工遭襲胸，勞動部稱「友善碰觸」，立委怎麼回？', // 連結標題
             text: [ // 連結附加文字，分行
-              '作者：蕭長展'
+              '作者：蕭長展',
             ],
           },
         ]
@@ -106,7 +106,7 @@ var app = new Vue({
             text: [
               '作者：黃韻竹',
             ],
-          }
+          },
           {
             link: 'http://citizenedu.tw/t/topic/2343', // 連結網址
             thumbnail: 'edu-2.jpg',
@@ -114,7 +114,7 @@ var app = new Vue({
             text: [
               '作者：賴天恆',
             ],
-          }
+          },
           {
             link: 'http://citizenedu.tw/t/prep/2330', // 連結網址
             thumbnail: 'edu-3.jpg',
@@ -122,7 +122,7 @@ var app = new Vue({
             text: [
               '作者：馮一凡',
             ],
-          }
+          },
         ],
         images: [ // 大圖
           {
@@ -179,7 +179,7 @@ var app = new Vue({
             link: 'https://watchout.backme.tw/checkout/332/2032',
             image: 'vendor-1.png',
             name: '《歲末出清驚喜包》',
-            price: '799元',
+            price: '799',
           },
         ]
       },
