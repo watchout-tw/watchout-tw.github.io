@@ -16,19 +16,19 @@ var app = new Vue({
     permalink: 'https://watchout.tw/news/10-lab',
     cover: {
       image: 'cover.png',
-      issue: '第十期',
-      date: '2017年10月26日',
+      issue: '第十ㄧ期',
+      date: '2017年12月8日',
     },
     nav: {
-      title: '議題實驗室',
+      title: '沃草四歲生日',
       toc: [
         {
           channel: 'lab',
-          title: '你罷免黃國昌了嗎',
+          title: '重返一例一休現場',
         },
         {
           channel: 'ask',
-          title: '桃園立委給問回顧',
+          title: '罷免給問嗎',
         },
         {
           channel: 'edu',
@@ -36,11 +36,11 @@ var app = new Vue({
         },
         {
           channel: 'musou',
-          title: '光輝十月（？）',
+          title: '⟪勞基法⟫再修',
         },
         {
           channel: 'vendor',
-          title: '歲末出清驚喜包',
+          title: '暖心療癒組合',
         },
       ],
     },
@@ -48,21 +48,21 @@ var app = new Vue({
       {
         id: 'lab',
         name: '議題實驗室',
-        title: '黃國昌該罷免嗎',
-        description: '台灣歷史上曾經發起數次的公民罷免，目前只有鄉鎮市民代表的層級曾經成功過，罷免是否能成為有效的公民監督工具，尚待觀察。',
+        title: '重返一例一休現場',
+        description: '近日勞基法再掀修法討論，在本次勞基法正式進入立法院委員會討論前，讓我們先重返2016年底一例一休修法現場，回顧當時的修法重點。',
         articles: [
           {
-            link: 'https://lab.watchout.tw/data-reports/1',
+            link: 'https://lab.watchout.tw/data-reports/5',
             thumbnail: 'lab-1.jpg',
-            title: '針對選罷法修法，誰提的罷免門檻最低？',
+            title: '一例一休勞基法修法，誰給勞工最多假？',
             text: [
               '立委提案戰力分析',
             ],
           },
           {
-            link: 'https://lab.watchout.tw/data-reports/3',
+            link: 'https://lab.watchout.tw/data-reports/6',
             thumbnail: 'lab-2.jpg',
-            title: '針對下修罷免門檻，哪些委員有提案或連署？',
+            title: '2016勞基法修法，哪些委員有提案或連署？',
             text: [
               '解析立委人際網路',
             ],
@@ -72,23 +72,23 @@ var app = new Vue({
       {
         id: 'ask',
         name: '給問擂台',
-        title: '桃園立委給問回顧', // 區塊標題
-        description: '桃園立委給問9/23百人質詢結束，陳學聖、鄭運鵬立委回應公民提問，快來看完整影音及報導，了解立委如何回應犀利問題？', // 區塊文字
+        title: '黃國昌，罷免給問嗎', // 區塊標題
+        description: '這將是《選罷法》於去年底三讀修正通過後，第一次有立委適用罷免新制，也是在罷免案成立後，黃國昌首次在網路上接受網友們的提問！', // 區塊文字
         articles: [ // 連結們
           {
-            link: 'https://youtu.be/PAC8Cz3Kkxk', // 連結網址
+            link: 'https://youtu.be/JGtaStX7Jnk', // 連結網址
             thumbnail: 'ask-1.jpg', // 連結縮圖
-            title: '桃園立委給問直播', // 連結標題
+            title: '黃國昌罷免給問嗎', // 連結標題
             text: [ // 連結附加文字，分行
               '當日活動完整影音',
             ],
           },
           {
-            link: 'https://musou.tw/focuses/1397', // 連結網址
+            link: 'https://musou.tw/focuses/1438', // 連結網址
             thumbnail: 'ask-2.jpg', // 連結縮圖
-            title: '現場報導：外籍工遭襲胸，勞動部稱「友善碰觸」，立委怎麼回？', // 連結標題
+            title: '平常心面對罷免 黃國昌：安定力量別再騙', // 連結標題
             text: [ // 連結附加文字，分行
-              '作者：蕭長展',
+              '作者：廖昱涵',
             ],
           },
         ]
@@ -97,61 +97,61 @@ var app = new Vue({
         id: 'edu',
         name: '公民學院',
         title: '烙哲學本月選文',
-        description: '本月選出三篇烙哲學精彩文章：要受害者保護自己，算是在譴責他嗎？我們為何無法對歷史不義道歉？政府為什麼應該補助PrEP？',
+        description: '本月選出三篇烙哲學精彩文章：《斜門歪道》這本哲學漫畫書為什麼值得推薦？「有病」究竟該讓誰來定義？如何定義？你知道什麼是「無條件基本收入」嗎？為什麼值得支持？',
         articles: [
           {
-            link: 'http://citizenedu.tw/t/topic/2327', // 連結網址
+            link: 'http://citizenedu.tw/t/topic/2431', // 連結網址
             thumbnail: 'edu-1.jpg',
-            title: '誰在譴責受害者？',
+            title: '《斜門歪道》書評',
             text: [
-              '作者：黃韻竹',
+              '作者：周詠盛',
             ],
           },
           {
-            link: 'http://citizenedu.tw/t/topic/2343', // 連結網址
+            link: 'http://citizenedu.tw/t/topic/2408', // 連結網址
             thumbnail: 'edu-2.jpg',
-            title: '對歷史的不義道歉',
+            title: '「疾病」由誰來定義',
             text: [
-              '作者：賴天恆',
+              '作者：邢懷安',
             ],
           },
           {
-            link: 'http://citizenedu.tw/t/prep/2330', // 連結網址
+            link: 'http://citizenedu.tw/t/topic/2446', // 連結網址
             thumbnail: 'edu-3.jpg',
-            title: '政府該補助PrEP',
+            title: '天下有白吃的午餐？',
             text: [
-              '作者：馮一凡',
+              '作者：朱家安',
             ],
           },
         ],
         images: [ // 大圖
           {
            title: '康德散步',
-           description: '',
+           description: '對於酒駕者處以鞭刑，是個好主意嗎？',
            url: 'walk-1.png',
            orientation: 'portrait',
-           link: '',
+           link: 'http://citizenedu.tw/t/topic/2434 ',
           },
         ],
       },
       {
         id: 'musou',
         name: '國會無雙',
-        title: '誰的光輝十月', // 區塊標題
-        description: '過去「中華民國」政府常說「光輝十月」，強調「雙十節」、「光復節」跟台灣的關聯。現實真的如此嗎？讓沃草來告訴你「中華民國」有多荒謬吧！', // 區塊文字
+        title: '《勞基法》再修', // 區塊標題
+        description: '施行還未滿一年的「一例一休」在新閣揆賴清德上任後，就啟動「彈性化」修法，但這次修法方向能真的解決勞資雙方困境嗎？', // 區塊文字
         articles: [ // 連結們
           {
-            link: 'https://musou.tw/focuses/1401', // 連結網址
+            link: 'https://musou.tw/focuses/1416', // 連結網址
             thumbnail: 'musou-1.jpg', // 連結縮圖
-            title: '【小測驗】測測看！你是中華民國人嗎？', // 連結標題
+            title: '勞基法「預告版本」被朝野立委罵翻 林淑芬：資方要五毛勞動部給全部', // 連結標題
             text: [ // 連結附加文字，分行
-              '內容編輯：洪國鈞、王希',
+              '記者：蕭長展',
             ],
           },
           {
-            link: 'https://musou.tw/videos/1406', // 連結網址
+            link: 'https://musou.tw/videos/1432', // 連結網址
             thumbnail: 'musou-2.jpg',
-            title: '【好球】「中華民國領土在哪裡？」王育敏犀利質詢驚呆四座！',
+            title: '台灣勞工沒有過勞死？「地方的老闆」公聽會發言惹議',
             text: [
               '文字：洪國鈞',
               '影音：陳東',
@@ -173,13 +173,13 @@ var app = new Vue({
       {
         id: 'vendor',
         name: '草地攤販',
-        description: '',
+        description: '一次擁有！黑熊．阿草雙面設計款抱枕，可以水洗不怕髒、枕心無拉鍊不割手；沃草首款米白系帆布袋，與台南府城近六十載的帆布老舖「合成帆布行」合作！',
         products: [
           {
-            link: 'https://watchout.backme.tw/checkout/332/2032',
+            link: 'https://watchout.backme.tw/checkout/332/1888',
             image: 'vendor-1.png',
-            name: '《歲末出清驚喜包》',
-            price: '799',
+            name: '暖心療癒組（抱枕、帆布袋）',
+            price: '900',
           },
         ]
       },
