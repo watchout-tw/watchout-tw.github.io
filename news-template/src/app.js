@@ -17,7 +17,7 @@ var app = new Vue({
     cover: {
       image: 'cover.png',
       issue: '第十一期',
-      date: '2017年12月8日',
+      date: '2017年12月12日',
     },
     nav: {
       title: '沃草四歲生日',
