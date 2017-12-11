@@ -13,7 +13,7 @@ var app = new Vue({
     },
   },
   data: {
-    permalink: 'https://watchout.tw/news/10-lab',
+    permalink: 'https://watchout.tw/news/11-hb',
     cover: {
       image: 'cover.png',
       issue: '第十ㄧ期',
