@@ -16,7 +16,7 @@ var app = new Vue({
     permalink: 'https://watchout.tw/news/11-hb',
     cover: {
       image: 'cover.png',
-      issue: '第十ㄧ期',
+      issue: '第十一期',
       date: '2017年12月8日',
     },
     nav: {
