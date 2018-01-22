@@ -52,7 +52,7 @@ var app = new Vue({
         name: '公民學院',
         images: [ // 大圖
           {
-           title: '康德散步',
+           title: '國會草知識',
            description: '中正紀念堂的爭議',
            url: 'walk-1.png',
            orientation: 'portrait',
