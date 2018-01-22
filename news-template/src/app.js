@@ -74,13 +74,13 @@ var app = new Vue({
       {
         id: 'vendor',
         name: '草地攤販',
-        description: '一次擁有！黑熊．阿草雙面設計款抱枕，可以水洗不怕髒、枕心無拉鍊不割手；沃草首款米白系帆布袋，與台南府城近六十載的帆布老舖「合成帆布行」合作！',
+        description: '中正紀念堂轉型討論工作坊加開3場！第一場：2018/2/3（六）9:30-17:30;第二場：2018/2/4（日）9:30-17:30;第三場：2018/3/10（六）9:30-17:30',
         products: [
           {
-            link: 'https://watchout.backme.tw/checkout/332/1888',
+            link: 'https://goo.gl/8U9UPZ',
             image: 'vendor-1.png',
-            name: '暖心療癒組（抱枕、帆布袋）',
-            price: '900',
+            name: '中正紀念堂轉型討論',
+            price: '我要報名',
           },
         ],
       },
