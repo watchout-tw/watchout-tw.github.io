@@ -21,8 +21,54 @@ var app = new Vue({
     },
     nav: {
       title: '轉型正義',
+      toc: [
+      {
+        channel: 'lab',
+        title: '重返一例一休現場',
+      },
+      {
+        channel: 'ask',
+        title: '罷免給問嗎',
+      },
+      {
+        channel: 'edu',
+        title: '烙哲學本月選文',
+      },
+      {
+        channel: 'musou',
+        title: '⟪勞基法⟫再修',
+      },
+      {
+        channel: 'vendor',
+        title: '暖心療癒組合',
+      },
+    ],
     },
     sections: [ // 這個陣列包含這一期草報的每個區塊
+      {
+        id: 'lab',
+        name: '議題實驗室',
+        title: '重返一例一休現場',
+        description: '近日勞基法再掀修法討論，在本次勞基法正式進入立法院委員會討論前，讓我們先重返2016年底一例一休修法現場，回顧當時的修法重點。',
+        articles: [
+          {
+            link: 'https://lab.watchout.tw/data-reports/5',
+            thumbnail: 'lab-1.jpg',
+            title: '一例一休勞基法修法，誰給勞工最多假？',
+            text: [
+              '立委提案戰力分析',
+            ],
+            },
+            {
+              link: 'https://lab.watchout.tw/data-reports/6',
+              thumbnail: 'lab-2.jpg',
+              title: '2016勞基法修法，哪些委員有提案或連署？',
+              text: [
+                '解析立委人際網路',
+              ],
+            },
+          ]
+        },
       {
         id: 'ask',
         name: '中正紀念堂轉型給問嗎',
@@ -50,9 +96,37 @@ var app = new Vue({
       {
         id: 'edu',
         name: '公民學院',
+        title: '烙哲學本月選文',
+        description: '本月選出三篇烙哲學精彩文章：《斜門歪道》這本哲學漫畫書為什麼值得推薦？「有病」究竟該讓誰來定義？如何定義？你知道什麼是「無條件基本收入」嗎？為什麼值得支持？',
+        articles: [
+          {
+            link: 'http://citizenedu.tw/t/topic/2431', // 連結網址
+            thumbnail: 'edu-1.jpg',
+            title: '《斜門歪道》書評',
+            text: [
+              '作者：周詠盛',
+            ],
+          },
+          {
+            link: 'http://citizenedu.tw/t/topic/2408', // 連結網址
+            thumbnail: 'edu-2.jpg',
+            title: '「疾病」由誰來定義',
+            text: [
+              '作者：邢懷安',
+            ],
+          },
+          {
+            link: 'http://citizenedu.tw/t/topic/2446', // 連結網址
+            thumbnail: 'edu-3.jpg',
+            title: '天下有白吃的午餐？',
+            text: [
+              '作者：朱家安',
+            ],
+          },
+        ],
         images: [ // 大圖
           {
-           title: '國會草知識',
+           title: '康德散步',
            description: '中正紀念堂的爭議',
            url: 'walk-1.png',
            orientation: 'portrait',
@@ -71,6 +145,31 @@ var app = new Vue({
           },
         ],
       },
+      {
+       id: 'musou',
+       name: '國會無雙',
+       title: '《勞基法》再修', // 區塊標題
+       description: '施行還未滿一年的「一例一休」在新閣揆賴清德上任後，就啟動「彈性化」修法，但這次修法方向能真的解決勞資雙方困境嗎？', // 區塊文字
+       articles: [ // 連結們
+         {
+           link: 'https://musou.tw/focuses/1416', // 連結網址
+           thumbnail: 'musou-1.jpg', // 連結縮圖
+           title: '勞基法「預告版本」被朝野立委罵翻 林淑芬：資方要五毛勞動部給全部', // 連結標題
+           text: [ // 連結附加文字，分行
+             '記者：蕭長展',
+           ],
+         },
+         {
+           link: 'https://musou.tw/videos/1432', // 連結網址
+           thumbnail: 'musou-2.jpg',
+           title: '台灣勞工沒有過勞死？「地方的老闆」公聽會發言惹議',
+           text: [
+             '文字：洪國鈞',
+             '影音：陳東',
+           ],
+         },
+       ]
+     },
       {
         id: 'vendor',
         name: '草地攤販',
