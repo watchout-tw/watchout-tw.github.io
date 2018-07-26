@@ -13,30 +13,26 @@ var app = new Vue({
     },
   },
   data: {
-    permalink: 'https://watchout.tw/news/12-ask',
+    permalink: 'https://watchout.tw/news/15-annual',
     cover: {
       image: 'cover.png',
-      issue: '第十二期',
-      date: '2018年01月22日',
+      issue: '第十五期',
+      date: '2018年07月27日',
     },
     nav: {
-      title: '轉型正義',
+      title: '沃草年會 公民出任務',
       toc: [
       {
-        channel: 'lab',
-        title: '重返一例一休現場',
-      },
-      {
         channel: 'ask',
-        title: '罷免給問嗎',
+        title: '六都均有市長候選人參戰，等你來問',
       },
       {
         channel: 'edu',
-        title: '烙哲學本月選文',
+        title: '？？？',
       },
       {
         channel: 'musou',
-        title: '⟪勞基法⟫再修',
+        title: '塑膠王國不塑島',
       },
       {
         channel: 'vendor',
@@ -47,48 +43,48 @@ var app = new Vue({
     sections: [ // 這個陣列包含這一期草報的每個區塊
       {
         id: 'lab',
-        name: '議題實驗室',
-        title: '重返一例一休現場',
-        description: '近日勞基法再掀修法討論，在本次勞基法正式進入立法院委員會討論前，讓我們先重返2016年底一例一休修法現場，回顧當時的修法重點。',
+        name: '活動快訊',
+        title: '公民出任務 草民獨享',
+        description: '《公民出任務》現正報名中！凡是具有草民身份，即可享草民專屬活動票價1,500元/人。本次活動不僅邀來新媒體與人社科普團體，分享如何找出好內容，更獨家傳授破解假資訊、解構時事議題的祕技。《給問擂台》還邀請到各黨派政治人物，讓你直接挑戰問政，實踐直接民權！絕對不能錯過！',
         articles: [
           {
-            link: 'https://lab.watchout.tw/data-reports/5',
+            link: 'https://watchout.tw/events/180818/',
             thumbnail: 'lab-1.jpg',
-            title: '一例一休勞基法修法，誰給勞工最多假？',
+            title: '沃草年會《公民出任務》',
             text: [
-              '立委提案戰力分析',
+              '史上最強公民戰隊！沃草邀你組隊對抗混沌媒體時代！',
             ],
             },
             {
-              link: 'https://lab.watchout.tw/data-reports/6',
+              link: 'https://www.accupass.com/go/watchoutmission',
               thumbnail: 'lab-2.jpg',
-              title: '2016勞基法修法，哪些委員有提案或連署？',
+              title: '沃草年會《公民出任務》草民獨享優惠',
               text: [
-                '解析立委人際網路',
+                '只有草民專屬優惠，快來跟沃草一起出任務！',
               ],
             },
           ]
         },
       {
         id: 'ask',
-        name: '中正紀念堂轉型給問嗎',
-        title: '中正紀念堂轉型', // 區塊標題
-        description: '為擴大民意蒐集，加開3場願景工作坊！文化部於2017年7月啟動中正紀念堂轉型的社會討論計畫，將以「審議式民主公民討論」的方式進行，委託「沃草」團隊籌辦。透過充分的資訊提供，建構多元的討論方式，蒐集民眾對於中正紀念堂轉型的反思與發想，從中凝聚社會共識。', // 區塊文字
+        name: '給問擂台',
+        title: '六都候選人參戰給問', // 區塊標題
+        description: '蘇貞昌、陳學聖、吳益政、姚文智、林義豐、林佳龍、許忠信、蘇煥智等市長候選人陸續宣布加入「六都市長給問嗎」網站，承諾將會回應網站上公民的提問。好公民，不問嗎？', // 區塊文字
         articles: [ // 連結們
           {
-            link: 'https://goo.gl/8U9UPZ', // 連結網址
+            link: 'https://ask.watchout.tw/', // 連結網址
             thumbnail: 'ask-1.jpg', // 連結縮圖
-            title: '中正紀念堂的未來討論', // 連結標題
+            title: '候選人等你來問', // 連結標題
             text: [ // 連結附加文字，分行
-              '你對中正紀念堂的未來有什麼想像？馬上報名願景工作坊！',
+              '候選人陸續加入網站給問，快來看有哪些熱門問題？',
             ],
           },
           {
-            link: 'http://cks.moc.gov.tw/', // 連結網址
+            link: 'https://www.facebook.com/watchout.tw/videos/987581368066743/', // 連結網址
             thumbnail: 'ask-2.jpg', // 連結縮圖
-            title: '中正紀念堂轉型給問嗎資訊平台', // 連結標題
+            title: '「六都市長給問嗎」首支宣傳影片上線啦', // 連結標題
             text: [ // 連結附加文字，分行
-              '本站由沃草團隊執行、製作，網站的資訊包含過去威權統治時期的制度與事件、國家不當暴力的受害者、中正紀念堂的介紹，以及其他國家如何進行轉型正義、處理獨裁者象徵等案例。',
+              '快來跟呱吉、苗博雅、視網膜一起問市長們問題',
             ],
           },
         ],
@@ -96,41 +92,33 @@ var app = new Vue({
       {
         id: 'edu',
         name: '公民學院',
-        title: '烙哲學本月選文',
-        description: '本月選出三篇烙哲學精彩文章：《斜門歪道》這本哲學漫畫書為什麼值得推薦？「有病」究竟該讓誰來定義？如何定義？你知道什麼是「無條件基本收入」嗎？為什麼值得支持？',
+        title: '人有「生命自主權」嗎？',
+        description: '隨著人權觀念進步，個人選擇病痛時醫療處置方式的「自主權」與獲得「善終」等生命權利，逐漸受到社會重視。不過，無論是已三讀的《病人自主權利法》中「預立醫療決定」的條文，或者是「安樂死」合法化，都仍有爭議。在社會邁向高齡化的今天，一起思辨這個重要議題。',
         articles: [
           {
-            link: 'http://citizenedu.tw/t/topic/2431', // 連結網址
+            link: 'https://bit.ly/2L6jqDD', // 連結網址
             thumbnail: 'edu-1.jpg',
-            title: '《斜門歪道》書評',
+            title: '安樂死：我們可以決定自己的死亡嗎？',
             text: [
-              '作者：周詠盛',
+              '作者：張智皓',
             ],
           },
           {
-            link: 'http://citizenedu.tw/t/topic/2408', // 連結網址
+            link: ' https://bit.ly/2LkSOym', // 連結網址
             thumbnail: 'edu-2.jpg',
-            title: '「疾病」由誰來定義',
+            title: '瞭解受苦才能減緩受苦：建構醫學理論的新樞紐',
             text: [
               '作者：邢懷安',
-            ],
-          },
-          {
-            link: 'http://citizenedu.tw/t/topic/2446', // 連結網址
-            thumbnail: 'edu-3.jpg',
-            title: '天下有白吃的午餐？',
-            text: [
-              '作者：朱家安',
             ],
           },
         ],
         images: [ // 大圖
           {
            title: '康德散步',
-           description: '中正紀念堂的爭議',
+           description: '「安樂死」會上天堂還是下地獄？',
            url: 'walk-1.png',
            orientation: 'portrait',
-           link: 'http://cks.moc.gov.tw/article/73992',
+           link: ' https://bit.ly/2mrLHWA',
           },
         ],
       },
@@ -148,24 +136,31 @@ var app = new Vue({
       {
        id: 'musou',
        name: '國會無雙',
-       title: '《勞基法》再修', // 區塊標題
-       description: '施行還未滿一年的「一例一休」在新閣揆賴清德上任後，就啟動「彈性化」修法，但這次修法方向能真的解決勞資雙方困境嗎？', // 區塊文字
+       title: '塑膠王國不塑島', // 區塊標題
+       description: '台灣曾經被稱為「塑膠王國」，但這樣的稱號未來將不復存在。民間團體和環保署共同成立的「海廢治理平台」，加速推動了限塑政策，未來除了吸管，購物用塑膠袋、免洗餐具、外帶飲料杯等也將逐步禁用，面對「無塑生活」，你準備好了嗎？', // 區塊文字
        articles: [ // 連結們
          {
-           link: 'https://musou.tw/focuses/1416', // 連結網址
+           link: 'https://musou.tw/focuses/1502', // 連結網址
            thumbnail: 'musou-1.jpg', // 連結縮圖
-           title: '勞基法「預告版本」被朝野立委罵翻 林淑芬：資方要五毛勞動部給全部', // 連結標題
+           title: '還在煩惱未來不能用吸管？你最想問的限塑政策七問！', // 連結標題
            text: [ // 連結附加文字，分行
-             '記者：蕭長展',
+             '作者：廖昱涵',
            ],
          },
          {
-           link: 'https://musou.tw/videos/1432', // 連結網址
+           link: 'https://musou.tw/focuses/1503', // 連結網址
            thumbnail: 'musou-2.jpg',
-           title: '台灣勞工沒有過勞死？「地方的老闆」公聽會發言惹議',
+           title: '詹順貴：限塑「不便」是必然 別讓下一代抱怨我們太隨便',
            text: [
-             '文字：洪國鈞',
-             '影音：陳東',
+             '作者：廖昱涵',
+           ],
+         },
+         {
+           link: 'https://musou.tw/focuses/1504', // 連結網址
+           thumbnail: 'musou-3.jpg',
+           title: '半年就加速限塑政策 幕後的「海廢治理平台」是何方神聖？',
+           text: [
+             '作者：廖昱涵',
            ],
          },
        ]
@@ -173,13 +168,13 @@ var app = new Vue({
       {
         id: 'vendor',
         name: '草地攤販',
-        description: '中正紀念堂轉型討論工作坊再加開3場！第一場：2018/2/3（六）9:30-17:30。第二場：2018/2/4（日）9:30-17:30。第三場：2018/3/10（六）9:30-17:30。',
+        description: '一次擁有！黑熊･阿草雙面設計款抱枕，可以水洗不怕髒、枕心無拉鍊不割手；沃草首款米白系帆布袋，與台南府城近六十載的帆布老舖「合成帆布行」合作！',
         products: [
           {
-            link: 'https://goo.gl/8U9UPZ',
+            link: 'https://watchout.backme.tw/checkout/332/1888',
             image: 'vendor-1.png',
-            name: '中正紀念堂轉型討論',
-            price: '我要報名',
+            name: '暖心療癒組（抱枕、帆布袋）',
+            price: '$900',
           },
         ],
       },
